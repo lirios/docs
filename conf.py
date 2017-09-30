@@ -22,6 +22,7 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 from recommonmark.parser import CommonMarkParser
+from recommonmark.transform import AutoStructify
 
 
 # -- General configuration ------------------------------------------------
@@ -75,7 +76,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -89,7 +90,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -175,4 +176,13 @@ texinfo_documents = [
 ]
 
 
+# Markdown structure
 
+github_doc_root = 'https://github.com/lirios/docs/tree/master/'
+github_doc_root = ''
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+            'url_resolver': lambda url: github_doc_root + url,
+            'auto_toc_tree_section': 'Contents',
+            }, True)
+    app.add_transform(AutoStructify)
