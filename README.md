@@ -10,8 +10,14 @@ Install the dependencies:
 pip install mkdocs
 ```
 
+Run local test server:
+
+```sh
+mkdocs serve
+```
+
 Build:
 
 ```sh
-make html
+mkdocs build
 ```
