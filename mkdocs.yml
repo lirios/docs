@@ -1,5 +1,7 @@
-site_name: Liri developer documentation
+site_name: Liri Developers Documentation
 
 pages:
   - Home: 'index.md'
+  - About:
+    - Projects: 'about/projects.md'
   - Contributor Guide: 'contributor-guide/index.md'

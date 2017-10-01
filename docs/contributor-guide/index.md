@@ -1,13 +1,8 @@
-Liri apps and libraries are built using [Qt](https://www.qt.io/).
 
-The IDE of choice is [QtCreator](https://www.qt.io/ide/) a cross-platform IDE dedicated to development with Qt.
 
-All projects use the Qbs build system, a new build system that is much easier to use compared to qmake or CMake.
-If you want to learn more, please read the [Qbs manual](http://doc.qt.io/qbs/index.html),
-especially the [setup guide](http://doc.qt.io/qbs/configuring.html) and how to install artifacts
-from the [installation guide](http://doc.qt.io/qbs/installing-files.html).
 
-Source code is managed with [git](https://git-scm.com/) and we use the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) workflow. This means, in a nutshell, that the latest released code is in the `master` branch while development happens in the `develop` branch.
+
+
 
 With Google's [repo](https://source.android.com/source/using-repo) command you can download all the projects at once and open them from QtCreator.
 
