@@ -7,7 +7,7 @@ This is the Liri project documentation.
 Install the dependencies:
 
 ```sh
-pip install sphinx sphinx-autobuild recommonmark
+pip install mkdocs
 ```
 
 Build:

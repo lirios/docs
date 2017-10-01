@@ -1,0 +1,5 @@
+site_name: Liri developer documentation
+
+pages:
+  - Home: 'index.md'
+  - Contributor Guide: 'contributor-guide/index.md'
