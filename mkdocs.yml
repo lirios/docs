@@ -5,3 +5,6 @@ pages:
   - About:
     - Projects: 'about/projects.md'
   - Contributor Guide: 'contributor-guide/index.md'
+  - Packaging:
+    - Overview: 'packaging/index.md'
+    - Snap: 'packaging/snap.md'
