@@ -8,10 +8,12 @@ There are a few repositories containing sources and packaging data relevant for 
 
 ### Platform snap
 
-Our [platform snap](https://github.com/lirios/platform-snap) serves as a bundle for libraries commonly used by our projects. It contains Qt, KDE dependencies, Fluid and some others.
+Our [platform snap](https://github.com/lirios/platform-snap) serves as a bundle for libraries commonly used by our projects. It contains Qt, KDE dependencies, Fluid and some other pieces.
 
 Right now it has to be build on Ubuntu 16.04 because this is the current base for snap applications. 
 Even if you are running Ubuntu 16.04 however, you should use `snapcraft cleanbuild` or create your own [LXC container](https://linuxcontainers.org/) to build the platform snap in.
+
+By doing so, you make sure you don't pollute your system with libraries installed for the snap and you also make sure the snap will not be polluted by your system.
 
 Be warned that it will download and build a big chunk of its contents from source so the build might (depending on your machine) take several hours and will use multiple gigabytes of hard disk space.
 
@@ -24,7 +26,7 @@ Therefore there is no way for a snap to pin a given version of another snap (lik
 
 The platform snap naming roughly follows the Liri OS versioning and looks like the following:
 
-For a Liri OS version following semver `<major>.<minor>.<patch>`, the platform snap naming equals `liri-platform-<major>-<minor>[-<release build>`]. 
+For a Liri OS version following semver `<major>.<minor>.<patch>`, the platform snap naming equals `liri-platform-<major>-<minor>[-<release build>]`.
 `<release build>` is an incremental number to handle incompatible changes between Liri OS releases.
 
 For example, consider the following scenario:
@@ -47,7 +49,7 @@ See the [readme in the GitHub repository](https://github.com/lirios/snapcraft-pa
 
 [Snapcraft plugins](https://github.com/lirios/snapcraft-plugins) are used to share a common set of custom snapcraft plugins that are used by the projects depending on the platform snap.
 
-The custom Qbs plugin for example sets up the build environment and paths to make it possible to build packages against the platform snap package.
+The custom Qbs plugin for example sets up the build environment to make it possible to build packages against the platform snap package.
 
 ### Snap packages
 
