@@ -82,8 +82,7 @@ detached head that points to the last known good commit.
 Before you start developing make sure you have local branches:
 
 ```sh
-repo forall -c 'git checkout $REPO_RREV'
-repo forall -c 'git submodule update --init --recursive'
+repo start --all develop
 ```
 
 Now set git to use the commit template that will help you write
@@ -166,13 +165,6 @@ Make sure all your changes are either committed or stashed and run:
 ```sh
 cd ~/lirios
 repo sync
-```
-
-Make sure the branch is checked out and all submodules are updated:
-
-```sh
-repo forall -c 'git checkout $REPO_RREV'
-repo forall -c 'git submodule update --init --recursive'
 ```
 
 Now set git to use the commit template that will help you write
