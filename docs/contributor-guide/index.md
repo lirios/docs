@@ -166,3 +166,10 @@ Make sure all your changes are either committed or stashed and run:
 cd ~/lirios
 repo sync
 ```
+
+Now set git to use the commit template that will help you write
+good commit messages:
+
+```sh
+ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-template'
+```
