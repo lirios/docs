@@ -1,6 +1,6 @@
 ## Packaging
 
-We aim to provide a sensible set of packages for [our projects](../about/projects.md) upstream.
+We aim to provide a sensible set of packages for [our modules](../modules/index.md) upstream.
 
 ### Cross-distribution Bundles
 

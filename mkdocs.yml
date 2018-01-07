@@ -3,8 +3,25 @@ site_name: Liri Developers Documentation
 pages:
   - Home: 'index.md'
   - About:
-    - Projects: 'about/projects.md'
-  - Contributor Guide: 'contributor-guide/index.md'
+    - Philosophy: 'about/philosophy.md'
+    - Project Announcement: 'about/announcement.md'
+    - Project Management: 'about/project-management.md'
   - Packaging:
     - Overview: 'packaging/index.md'
     - Snap: 'packaging/snap.md'
+  - Contributing:
+    - Contributor Guide: 'contributing/contributor-guide/index.md'
+    - Upstream Issues: 'contributing/upstream-issues.md'
+    - Coding Conventions:
+      - Design Philosophy: 'contributing/coding-conventions/design-philosophy.md'
+      - C++ Coding Conventions: 'contributing/coding-conventions/cpp-conventions.md'
+      - C++ Coding Style: 'contributing/coding-conventions/cpp-style.md'
+      - QML Coding Conventions: 'contributing/coding-conventions/qml-conventions.md'
+  - Modules:
+    - Overview: 'modules/index.md'
+    - Text:
+      - Overview: 'modules/text/index.md'
+      - Syntax Highlighting: 'modules/text/syntax-highlighting.md'
+    - Browser:
+      - Overview: 'modules/browser/index.md'
+      - Shortcuts: 'modules/browser/shortcuts.md'
