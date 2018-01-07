@@ -93,13 +93,15 @@ The installation root is the directory where all files will be installed when bu
 To set your environment variables correctly so you will be able to launch the cross platform apps, run
 
 ```sh
-source env-setup.sh
+source env-setup.sh [nvidia]
 ```
 
-By default, `.build` inside your repo root will be used as installation root. To change this, issue this instead
+**Note** for users running the Nvidia proprietary drivers: Supply the `nvidia` argument every time you run the env-setup.sh script
+
+By default, `.build` inside your repo root will be used as installation root. To change this, issue the command with the LIRIDIR prefix instead
 
 ```sh
-LIRIDIR="path/to/directory" source env-setup.sh
+LIRIDIR="path/to/directory" source env-setup.sh [nvidia]
 ```
 
 ## Open the project
