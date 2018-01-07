@@ -1,9 +1,3 @@
-
-
-
-
-
-
 With Google's [repo](https://source.android.com/source/using-repo) command you can download all the projects at once and open them from QtCreator.
 
 ## Prerequisites
@@ -24,37 +18,37 @@ sudo pacman -S repo
 
 If you are using another distribution and it doesn't have a package available, follow these instructions:
 
-1. Create ~/bin/ subdirectory, include it in PATH, and then switch to it by executing the following commands:
+Create ~/bin/ subdirectory, include it in PATH, and then switch to it by executing the following commands:
 
 ```sh
 mkdir ~/bin/
 PATH=~/bin:$PATH
 ```
 
-2. Download the repo script by executing the following command:
+Download the repo script by executing the following command:
 
 ```sh
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 ```
 
-3. Change the attribute of repo to make it executable by executing the command:
+Change the attribute of repo to make it executable by executing the command:
 
 ```sh
 chmod a+x ~/bin/repo
-```
-
-Now create a new directory for Liri and then switch to it by executing the following commands:
-
-```sh
-mkdir ~/lirios
-cd ~/lirios
 ```
 
 ### Clone the repositories
 
 To clone the latest source of all projects over SSH, perform the following procedure:
 
-1. Initialize the repository by executing one of the following commands, as appropriate.
+Firstly, create a new directory for Liri. This will be referred to as repo root in the docs. Switch to it by executing the following commands:
+
+```sh
+mkdir ~/lirios
+cd ~/lirios
+```
+
+Initialize the repository by executing one of the following commands, as appropriate.
 
 For developer access:
 
@@ -68,7 +62,7 @@ For read-only access:
 repo init -u https://github.com/lirios/lirios.git -b develop
 ```
 
-2. Synchronize the repository by executing the following command:
+Synchronize the repository by executing the following command:
 
 ```sh
 repo sync
@@ -94,39 +88,25 @@ ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-templ
 
 ## Setup the environment
 
-Create the installation root:
-
-```sh
-mkdir -p ~/.opt/liri
-```
-
 The installation root is the directory where all files will be installed when building the Liri master project from QtCreator.
 
-Create a file with environment variables in case you want to run any Liri program from the terminal.
-Run your favorite text editor, write the following text and save it as `~/lenv`:
+To set your environment variables correctly so you will be able to launch the cross platform apps, run
 
 ```sh
-LIRIDIR=~/.opt/liri
-
-export LD_LIBRARY_PATH=$LIRIDIR/lib:$LD_LIBRARY_PATH
-export XDG_DATA_DIRS=$LIRIDIR/share:/usr/local/share:/usr/share:~/.local/share:~/.local/share/flatpak/exports/share
-export XDG_CONFIG_DIRS=$LIRIDIR/etc/xdg:/etc/xdg
-export QT_PLUGIN_PATH=$LIRIDIR/lib/plugins
-export QML2_IMPORT_PATH=$LIRIDIR/lib/qml:$QML2_IMPORT_PATH
-export PKG_CONFIG_PATH=$LIRIDIR/lib/pkgconfig:$PKG_CONFIG_PATH
-export PATH=$LIRIDIR/bin:$PATH
-#export QT_XCB_GL_INTEGRATION=xcb_egl  # uncomment this if you are not using the NVIDIA proprietary driver
+source env-setup.sh [nvidia]
 ```
 
-Every time you open a new terminal and want to run a Liri program you need to set the environment variables with:
+**Note** for users running the Nvidia proprietary drivers: Supply the `nvidia` argument every time you run the env-setup.sh script
+
+By default, `.build` inside your repo root will be used as installation root. To change this, issue the command with the LIRIDIR prefix instead
 
 ```sh
-source ~/lenv
+LIRIDIR="path/to/directory" source env-setup.sh [nvidia]
 ```
 
 ## Open the project
 
-Run `QtCreator` and open the master project file `~/lirios/lirios.qbs`.
+Run `QtCreator` and open the master project file `liri.qbs` inside your repo root.
 
 ![Project](images/Liri-QtCreator.png)
 

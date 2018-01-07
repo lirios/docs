@@ -28,3 +28,18 @@ please consider installing the binaries provided by The Qt Company.
 Download the [online installer](https://www1.qt.io/download-open-source/) and install both
 Qt and QtCreator. However keep in mind that the binaries provided by The Qt Company do not
 have QtWayland, this means that you will not be able to develop Liri Shell.
+
+Head over to the [Contributer Guide](contributing/contributor-guide/index.md) for more information on how to set everything up.
+
+## Getting in touch
+
+Connect with us on [Google+][liri-google-plus], [Twitter][liri-twitter], [Facebook][liri-facebook], [Reddit][liri-reddit], [Mastodon][liri-mastodon], [Chat via Matrix.org][liri-matrix] or [IRC][liri-irc] to keep updated.
+
+[liri-google-plus]: https://plus.google.com/u/0/100355783508323292342
+[liri-google-plus-community]: https://plus.google.com/u/0/communities/115722443491803015565
+[liri-twitter]: https://twitter.com/liridev
+[liri-facebook]: https://www.facebook.com/Liri-935614733238741
+[liri-reddit]: https://www.reddit.com/r/liri/
+[liri-mastodon]: https://mastodon.cloud/@liri
+[liri-matrix]: https://matrix.to/#/#liri:matrix.org
+[liri-irc]: irc://chat.freenode.net:6667/liri
