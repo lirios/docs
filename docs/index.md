@@ -29,7 +29,7 @@ Download the [online installer](https://www1.qt.io/download-open-source/) and in
 Qt and QtCreator. However keep in mind that the binaries provided by The Qt Company do not
 have QtWayland, this means that you will not be able to develop Liri Shell.
 
-Head over to the [Contributer Guide](contributing/contributor-guide/index.md) for more information on how to set everything up.
+Head over to the [Contributor Guide](contributing/contributor-guide/index.md) for more information on how to set everything up.
 
 ## Getting in touch
 
