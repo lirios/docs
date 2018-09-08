@@ -39,42 +39,28 @@ We also develop the following libraries:
 - [Fluid](https://github.com/lirios/fluid)
 - [QtAccountsService](https://github.com/lirios/qtaccountsservice)
 - [QtGSettings](https://github.com/lirios/qtgsettings)
+- [QtUDev](https://github.com/lirios/qtudev)
 - [QbsShared](https://github.com/lirios/qbs-shared)
 - [LibLiri](https://github.com/lirios/libliri)
-- [Vibe](https://github.com/lirios/vibe)
 
 ### Desktop environment
 
 The desktop environment is comprised of the following projects, all with the same release cycle.
 
 - [Shell](https://github.com/lirios/shell)
-- [Liri Wayland](https://github.com/lirios/wayland)
-- [Workspace](https://github.com/lirios/workspace)
+- [Screen Cast](https://github.com/lirios/screencast)
+- [Screenshot](https://github.com/lirios/screenshot)
 - [Settings](https://github.com/lirios/settings)
+- [eglfs](https://github.com/lirios/eglfs)
+- [Material Decoration](https://github.com/lirios/materialdecoration)
 - [QPA Theme](https://github.com/lirios/platformtheme)
+- [PulseAudio Support](https://github.com/lirios/pulseaudio)
+- [NetworkManager Support](https://github.com/lirios/networkmanager)
+- [Power Manager](https://github.com/lirios/power-manager)
+- [Portal Implementation](https://github.com/lirios/xdg-desktop-portal-liri)
+- [XWayland Support](https://github.com/lirios/qml-xwayland)
 - [Themes](https://github.com/lirios/themes)
 
 ### Operating system
 
 - [Calamares Branding](https://github.com/lirios/calamares-branding)
-
-## Vibe
-
-Vibe contains QML modules that are mostly used by the shell with dependencies to
-a lot of libraries such as networkmanager-qt, modemmanager-qt, policy kit, pulseaudio etc...
-It also has a couple of libraries that are needed by most core apps such as VibeCore and VibeGSettings.
-
-The idea is to move VibeCore to a repository called libliri and split the library into:
-
-- Core
-- DBusService
-- Notifications
-
-VibeGSettings would go into its own repository called qtgsettings.
-
-## Workspace
-
-The workspace repository contains desktop menu, GSettings schemas, Qt platform theme plugin, screenshot and screencast, with the most notable dependency being QtGStreamer.
-
-The Qt platform theme plugin really need to be moved to its own repository and depend only on qtgsettings.
-At this point the workspace repository would be left with a few things, so desktop menu and GSettings schemas could go into liri-shell and the screenshot and screencast utilities in their repository.
