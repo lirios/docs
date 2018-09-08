@@ -93,7 +93,7 @@ The installation root is the directory where all files will be installed when bu
 To set your environment variables correctly so you will be able to launch the cross platform apps, run
 
 ```sh
-source env-setup.sh [nvidia]
+source env-setup.sh [configuration-name] [nvidia]
 ```
 
 **Note** for users running the Nvidia proprietary drivers: Supply the `nvidia` argument every time you run the env-setup.sh script
