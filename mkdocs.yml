@@ -10,6 +10,7 @@ pages:
     - Snap: 'packaging/snap.md'
   - Contributing:
     - Contributor Guide: 'contributing/contributor-guide/index.md'
+    - Build from Sources: 'contributing/build-sources.md'
     - Upstream Issues: 'contributing/upstream-issues.md'
     - Coding Conventions:
       - Design Philosophy: 'contributing/coding-conventions/design-philosophy.md'
