@@ -38,6 +38,27 @@ For QML, see [QML Coding Conventions](qml-conventions.md).
 #include <private/whatever_p.h>
 ```
 
+### Include guards
+
+Never use `#pragma once` because it's not part of the C++ standard, it's not always supported and it's subject to double inclusion if
+any headers are copied somehere in the build process (which we does).
+
+Use include guards instead like these:
+
+```cpp
+#ifndef SOMEFILENAME_H
+#define SOMEFILENAME_H
+
+// contents
+
+#endif // SOMEFILENAME_H
+```
+
+See the following threads from the Qt mailing list:
+
+* [https://lists.qt-project.org/pipermail/development/2018-January/031966.html](https://lists.qt-project.org/pipermail/development/2018-January/031966.html)
+* [https://lists.qt-project.org/pipermail/development/2018-October/033726.html](https://lists.qt-project.org/pipermail/development/2018-October/033726.html)
+
 ### Casting
 
 - Avoid C casts, prefer C++ casts (`static_cast`, `const_cast`, `reinterpret_cast`)
