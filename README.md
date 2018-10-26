@@ -1,5 +1,7 @@
 # Documentation
 
+[![Documentation Status](https://readthedocs.org/projects/liri-dev/badge/?version=latest)](https://liri-dev.readthedocs.io/en/latest/?badge=latest)
+
 This is the Liri project documentation.
 
 ## Build
