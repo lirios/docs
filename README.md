@@ -7,7 +7,7 @@ This is the Liri project documentation.
 Install the dependencies:
 
 ```sh
-pip install mkdocs
+pip install mkdocs mkdocs-material
 ```
 
 Run local test server:

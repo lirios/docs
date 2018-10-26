@@ -50,7 +50,7 @@ cd ~/lirios
 
 Initialize the repository by executing one of the following commands, as appropriate.
 
-For developer access:
+For [write access](https://help.github.com/articles/access-permissions-on-github/):
 
 ```sh
 repo init -u ssh://git@github.com/lirios/lirios.git -b develop

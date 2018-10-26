@@ -1,5 +1,8 @@
 site_name: Liri Developers Documentation
 
+theme:
+  name: 'material'
+
 pages:
   - Home: 'index.md'
   - About:
