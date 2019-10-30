@@ -51,6 +51,15 @@ Other dependencies:
 | Fedora     | `sudo dnf install -y wayland-devel libqtxdg-devel pam-devel polkit-devel polkit-qt5-1-devel kf5-solid-devel systemd-devel libdrm-devel mesa-libgbm-devel libinput-devel xcb-util-cursor-devel pulseaudio-libs-devel NetworkManager-libnm-devel ModemManager-glib-devel kf5-networkmanager-qt-devel kf5-modemmanager-qt-devel glib2-devel dconf pipewire-devel pipewire-utils libxkbcommon-devel flatpak-devel appstream-qt-devel`                                        |
 | OpenSUSE   | `sudo zypper install wayland-devel libqtxdg-devel pam-devel polkit-devel libpolkit-qt5-1-devel solid-devel systemd-devel libdrm-devel libgbm-devel libinput-devel xcb-util-cursor-devel pulseaudio-libs-devel libKF5NetworkManagerQt-devel libKF5ModemManagerQt-devel glib-devel dconf gsettings-backend-dconf pipewire-devel pipewire-tools gstreamer-plugin-pipewire libxkbcommon-devel libQtGStreamer-0_10-devel flatpak-devel libAppstreamQt-devel`                                     |
 
+Marginal dependencies (used on unit tests, etc...):
+
+| Distro     | Command                                          |
+| ---------- | ------------------------------------------------ |
+| Debian     | `sudo apt-get install -y umockdev-dev`           |
+| Arch Linux | `sudo pacman -Syu umockdev`                      |
+| Fedora     | `sudo dnf install -y umockdev-devel`             |
+| OpenSUSE   | `sudo zypper install umockdev-devel`             |
+
 # Build
 
 Developers should open `liri.qbs` with QtCreator and build there, that is way easier.
