@@ -8,7 +8,7 @@ This is the Liri project documentation.
 
 If you are on Fedora:
 
-``sh
+```sh
 sudo dnf install -y mkdocs mkdocs-material
 ```
 
