@@ -1,6 +1,6 @@
 # Documentation
 
-[![Documentation Status](https://readthedocs.org/projects/liri-dev/badge/?version=latest)](https://liri-dev.readthedocs.io/en/latest/?badge=latest)
+[![Publishing](https://github.com/lirios/docs/workflows/Publish%20via%20GitHub%20Pages/badge.svg?branch=master)](https://github.com/lirios/docs/actions?query=workflow%3A%22Publish+via+GitHub+Pages%22)
 
 This is the Liri project documentation.
 
