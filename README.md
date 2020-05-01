@@ -6,7 +6,13 @@ This is the Liri project documentation.
 
 ## Build
 
-Install the dependencies:
+If you are on Fedora:
+
+``sh
+sudo dnf install -y mkdocs mkdocs-material
+```
+
+Otherwise install the dependencies with:
 
 ```sh
 pip install mkdocs mkdocs-material
