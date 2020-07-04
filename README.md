@@ -1,6 +1,6 @@
 # Documentation
 
-[![Publishing](https://github.com/lirios/docs/workflows/Publish%20via%20GitHub%20Pages/badge.svg?branch=master)](https://github.com/lirios/docs/actions?query=workflow%3A%22Publish+via+GitHub+Pages%22)
+[![CI](https://github.com/lirios/docs/workflows/CI/badge.svg?branch=master)](https://github.com/lirios/docs/actions?query=workflow%3A%22CI%22)
 
 This is the Liri project documentation.
 
