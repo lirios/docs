@@ -30,10 +30,8 @@ Head over to the [Contributor Guide](contributing/contributor-guide/index.md) fo
 
 ## Getting in touch
 
-Connect with us on [Google+][liri-google-plus], [Twitter][liri-twitter], [Facebook][liri-facebook], [Reddit][liri-reddit], [Mastodon][liri-mastodon], [Chat via Matrix.org][liri-matrix] or [IRC][liri-irc] to keep updated.
+Connect with us on [Twitter][liri-twitter], [Facebook][liri-facebook], [Reddit][liri-reddit], [Mastodon][liri-mastodon], [Chat via Matrix.org][liri-matrix] or [IRC][liri-irc] to keep updated.
 
-[liri-google-plus]: https://plus.google.com/u/0/100355783508323292342
-[liri-google-plus-community]: https://plus.google.com/u/0/communities/115722443491803015565
 [liri-twitter]: https://twitter.com/liridev
 [liri-facebook]: https://www.facebook.com/Liri-935614733238741
 [liri-reddit]: https://www.reddit.com/r/liri/
