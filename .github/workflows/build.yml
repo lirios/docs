@@ -52,7 +52,7 @@ jobs:
           sudo apt-get update -y
           sudo apt-get install -y git qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev qttools5-dev libqt5svg5-dev qdoc-qt5 qt5-doc qtbase5-doc
       - name: Clone
-        run: git clone --recursive git://github.com/lirios/fluid
+        run: git clone --recursive -b ${{ matrix.branch }} git://github.com/lirios/fluid
       - name: Build
         run: |
           set -x
