@@ -44,8 +44,8 @@ To clone the latest source of all projects over SSH, perform the following proce
 Firstly, create a new directory for Liri. This will be referred to as repo root in the docs. Switch to it by executing the following commands:
 
 ```sh
-mkdir ~/lirios
-cd ~/lirios
+mkdir -p ~/git/liri/lirios
+cd ~/git/liri/lirios
 ```
 
 Initialize the repository by executing one of the following commands, as appropriate.
@@ -93,12 +93,12 @@ The installation root is the directory where all files will be installed when bu
 To set your environment variables correctly so you will be able to launch the cross platform apps, run
 
 ```sh
-source env-setup.sh [configuration-name] [nvidia]
+source env-setup.sh [nvidia]
 ```
 
 **Note** for users running the Nvidia proprietary drivers: Supply the `nvidia` argument every time you run the env-setup.sh script
 
-By default, `.build` inside your repo root will be used as installation root. To change this, issue the command with the LIRIDIR prefix instead
+By default, `.build/install-root` inside your repo root will be used as installation root. To change this, issue the command with the LIRIDIR prefix instead
 
 ```sh
 LIRIDIR="path/to/directory" source env-setup.sh [nvidia]
@@ -106,7 +106,7 @@ LIRIDIR="path/to/directory" source env-setup.sh [nvidia]
 
 ## Open the project
 
-Run `QtCreator` and open the master project file `liri.qbs` inside your repo root.
+Run `QtCreator` and open the master project file `CMakeLists.txt` inside your repo root.
 
 ![Project](images/Liri-QtCreator.png)
 
@@ -122,13 +122,11 @@ Make sure the build steps are configured like in this screenshot:
 
 ![Build steps](images/Liri-QtCreator-Setup-BuildSteps.png)
 
-Especially the installation root:
+Set `CMAKE_INSTALL_PREFIX` to change the installation root.
 
-![Build steps](images/Liri-QtCreator-Setup-InstallRoot.png)
+Remember to replace `/home/plfiorini` to your actual home directory.
 
-Remember to replace `/home/tim` to your actual home directory.
-
-If you don't want to run all the unit tests during the build leave `projects.Liri.autotestEnabled:false` in the "Properties" field like in the screenshots, otherwise set it to `projects.Liri.autotestEnabled:true`.
+If you don't want to run all the unit tests during the build set `BUILD_TESTING` to `OFF`.
 
 Now create a custom build step like this:
 
@@ -143,7 +141,7 @@ New repositories might be added to the manifest or new commits are pushed to exi
 Make sure all your changes are either committed or stashed and run:
 
 ```sh
-cd ~/lirios
+cd ~/git/liri/lirios
 repo sync
 ```
 

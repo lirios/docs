@@ -20,7 +20,7 @@ We need:
   * qttools
   * qtmultimedia
   * qtwebengine
-* qbs (>= 1.10)
+* cmake (>= 3.10)
 
 ## Install dependencies
 
@@ -33,14 +33,14 @@ Build essentials:
 | Fedora     | `sudo dnf install -y gcc-c++ git`             |
 | OpenSUSE   | `sudo zypper install gcc-c++ git-core`        |
 
-Qt and qbs:
+Qt and cmake:
 
 | Distro     | Command                                                                                                                                                                                                                                        |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Debian     | `sudo apt-get install -y qt5-default qtquickcontrols2-5-dev qml-module-qtwayland-compositor qtwayland5-dev-tools qtwebengine5-dev-tools qtwebengine5-private-dev qtwebengine5-dev qtmultimedia5-dev qtsvg5 qt5-doc qttools5-dev qbs qtchooser` |
-| Arch Linux | `sudo pacman -Syu qt5-quickcontrols2 qt5-wayland qt5-webengine qt5-multimedia qt5-svg qt5-doc qt5-tools qbs`                                                                                                                                   |
-| Fedora     | `sudo dnf install -y qt5-qtbase-static qt5-qtbase-private-devel qt5-qtquickcontrols2-devel qt5-qtwayland-devel qt5-qtmultimedia-devel qt5-qtwebengine-devel qt5-qtsvg-devel qt5-qtdoc qt5-qttools-devel qbs qtchooser`                         |
-| OpenSUSE   | `sudo zypper install libqt5-qtquickcontrols2 libqt5-qtquickwayland-devel libqt5-qtwayland-private-headers-devel libqt5-qtwebengine-devel libqt5-qtmultimedia-devel libqt5-qtsvg-devel libqt5-qtdoc-devel libqt5-qttools-devel qbs`             |
+| Debian     | `sudo apt-get install -y qt5-default qtquickcontrols2-5-dev qml-module-qtwayland-compositor qtwayland5-dev-tools qtwebengine5-dev-tools qtwebengine5-private-dev qtwebengine5-dev qtmultimedia5-dev qtsvg5 qt5-doc qttools5-dev cmake qtchooser` |
+| Arch Linux | `sudo pacman -Syu qt5-quickcontrols2 qt5-wayland qt5-webengine qt5-multimedia qt5-svg qt5-doc qt5-tools cmake`                                                                                                                                   |
+| Fedora     | `sudo dnf install -y qt5-qtbase-static qt5-qtbase-private-devel qt5-qtquickcontrols2-devel qt5-qtwayland-devel qt5-qtmultimedia-devel qt5-qtwebengine-devel qt5-qtsvg-devel qt5-qtdoc qt5-qttools-devel cmake qtchooser`                         |
+| OpenSUSE   | `sudo zypper install libqt5-qtquickcontrols2 libqt5-qtquickwayland-devel libqt5-qtwayland-private-headers-devel libqt5-qtwebengine-devel libqt5-qtmultimedia-devel libqt5-qtsvg-devel libqt5-qtdoc-devel libqt5-qttools-devel cmake`             |
 
 Other dependencies:
 
@@ -62,22 +62,18 @@ Marginal dependencies (used on unit tests, etc...):
 
 # Build
 
-Developers should open `liri.qbs` with QtCreator and build there, that is way easier.
+Developers should open `CMakeLists.txt` with QtCreator and build there, that is way easier.
 
 However if you know bash-fu it's possibile to build from sources.
 
-We assume you have a terminal open in the sources root directory, where there's `liri.qbs`.
+We assume you have a terminal open in the sources root directory, where there's `CMakeLists.txt`.
 
-First, let's set up `qbs` if you haven't already done it yet.
-
-```
-qbs setup-toolchains --type gcc /usr/bin/g++ gcc
-qbs setup-qt $(which qmake) qt5
-qbs config profiles.qt5.baseProfile gcc
-```
-
-Then start the build:
+Build:
 
 ```
-qbs -d build -j $(nproc) profile:qt5
+mkdir .build
+cd .build
+cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/install-root ..
+make
+make install
 ```

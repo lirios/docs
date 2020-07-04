@@ -40,7 +40,7 @@ We also develop the following libraries:
 - [QtAccountsService](https://github.com/lirios/qtaccountsservice)
 - [QtGSettings](https://github.com/lirios/qtgsettings)
 - [QtUDev](https://github.com/lirios/qtudev)
-- [QbsShared](https://github.com/lirios/qbs-shared)
+- [CMakeShared](https://github.com/lirios/cmake-shared)
 - [LibLiri](https://github.com/lirios/libliri)
 
 ### Desktop environment
