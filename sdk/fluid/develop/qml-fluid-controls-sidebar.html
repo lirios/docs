@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Sidebar.qdoc -->
+  <title>Sidebar QML Type | Fluid Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/liri.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="liri-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <i class="icon-liri liri-bird pointer" onclick="location.href='index.html'"></i>
+        <span class="mdl-layout-title pointer mdl-layout--large-screen-only"               onclick="location.href='/'">Liri</span>
+        <span class="mdl-layout-title mdl-layout--small-screen-only">Fluid API</span>
+      </div>
+    </header>
+    <div class="liri-ribbon mdl-color--primary"></div>
+    <main class="liri-main mdl-layout__content">
+      <div class= liri-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="liri-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html">Fluid Reference Documentation</a></li>
+<li id="buildversion">Fluid 1.2.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Sidebar QML Type</h1>
+<span class="subtitle"></span>
+<!-- $$$Sidebar-brief -->
+<p>A sidebar component for use in adaptive layouts. <a href="#details">More...</a></p>
+<!-- @@@Sidebar -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Fluid.Controls 1.1</td></tr></table></div><ul>
+<li><a href="qml-fluid-controls-sidebar-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="qml-fluid-controls-sidebar.html#autoFlick-prop">autoFlick</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-sidebar.html#edge-prop">edge</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-sidebar.html#expanded-prop">expanded</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-sidebar.html#header-prop">header</a></b></b> : string</li>
+</ul>
+<!-- $$$Sidebar-description -->
+<a name="details"></a>
+<h2 id="details">Detailed Description</h2>
+<p>To use, simply add an instance to your code, and anchor other components to it.</p>
+<p>To show or hide, set the expanded property.</p>
+<p>By default, the sidebar has a flickable built in, and whatever contents are added will be placed in the flickable. When you want this disabled, or want to fill the entire sidebar, set the autoFill property to false.</p>
+<p>Examples:</p>
+<pre class="cpp">
+
+  Item {
+      property bool wideAspect: width <span class="operator">&gt;</span> Units<span class="operator">.</span>gu(<span class="number">80</span>)
+
+      Sidebar {
+          expanded: wideAspect
+
+          <span class="comment">// Anchoring is automatic</span>
+      }
+  }
+
+</pre>
+<p>For more information you can read the <a href="https://material.io/guidelines/patterns/navigation-drawer.html">Material Design guidelines</a>.</p>
+<!-- @@@Sidebar -->
+<h2>Property Documentation</h2>
+<!-- $$$autoFlick -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="autoFlick-prop">
+<td class="tblQmlPropNode"><p>
+<a name="autoFlick-prop"></a><span class="name">autoFlick</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds whether the sidebar is flickable or not.</p>
+</div></div><!-- @@@autoFlick -->
+<br/>
+<!-- $$$edge -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="edge-prop">
+<td class="tblQmlPropNode"><p>
+<a name="edge-prop"></a><span class="name">edge</span> : <span class="type">enumeration</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds the edge of the window at which the sidebar will be attached to. The acceptable values are:</p>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>Qt.TopEdge</code></td><td class="topAlign">The top edge of the window.</td></tr>
+<tr><td class="topAlign"><code>Qt.LeftEdge</code></td><td class="topAlign">The left edge of the window (default).</td></tr>
+<tr><td class="topAlign"><code>Qt.RightEdge</code></td><td class="topAlign">The right edge of the window.</td></tr>
+<tr><td class="topAlign"><code>Qt.BottomEdge</code></td><td class="topAlign">The bottom edge of the window.</td></tr>
+</table></div>
+</div></div><!-- @@@edge -->
+<br/>
+<!-- $$$expanded -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="expanded-prop">
+<td class="tblQmlPropNode"><p>
+<a name="expanded-prop"></a><span class="name">expanded</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds whether to show or hide the sidebar.</p>
+</div></div><!-- @@@expanded -->
+<br/>
+<!-- $$$header -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="header-prop">
+<td class="tblQmlPropNode"><p>
+<a name="header-prop"></a><span class="name">header</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds the text displayed as header.</p>
+</div></div><!-- @@@header -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

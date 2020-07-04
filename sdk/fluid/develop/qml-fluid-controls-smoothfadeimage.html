@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- SmoothFadeImage.qdoc -->
+  <title>SmoothFadeImage QML Type | Fluid Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/liri.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="liri-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <i class="icon-liri liri-bird pointer" onclick="location.href='index.html'"></i>
+        <span class="mdl-layout-title pointer mdl-layout--large-screen-only"               onclick="location.href='/'">Liri</span>
+        <span class="mdl-layout-title mdl-layout--small-screen-only">Fluid API</span>
+      </div>
+    </header>
+    <div class="liri-ribbon mdl-color--primary"></div>
+    <main class="liri-main mdl-layout__content">
+      <div class= liri-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="liri-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html">Fluid Reference Documentation</a></li>
+<li id="buildversion">Fluid 1.2.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">SmoothFadeImage QML Type</h1>
+<span class="subtitle"></span>
+<!-- $$$SmoothFadeImage-brief -->
+<p>Displays an image and smoothly fade when the source is changed. <a href="#details">More...</a></p>
+<!-- @@@SmoothFadeImage -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Fluid.Controls 1.1</td></tr></table></div><ul>
+<li><a href="qml-fluid-controls-smoothfadeimage-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#animationEnabled-prop">animationEnabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#fadeDuration-prop">fadeDuration</a></b></b> : int</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#fillMode-prop">fillMode</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#running-prop">running</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#smooth-prop">smooth</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#source-prop">source</a></b></b> : url</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#sourceSize-prop">sourceSize</a></b></b> : size</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#status-prop">status</a></b></b> : enumeration</li>
+</ul>
+<a name="signals"></a>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn"><b><b><a href="qml-fluid-controls-smoothfadeimage.html#imageSwapped-signal">imageSwapped</a></b></b>()</li>
+</ul>
+<!-- $$$SmoothFadeImage-description -->
+<a name="details"></a>
+<h2 id="details">Detailed Description</h2>
+<p>This component can be used in place of an Image when a smooth fade animation between two sources is needed.</p>
+<p>When the source is changed and the fade animation ends, the image loaded before is unloaded; this means that only one image at a time is loaded.</p>
+<p>Images are loaded asynchronously and are not cache, so unlike the Image component the <code>asynchronous</code> and <code>cache</code> properties are not available.</p>
+<p>Example of usage:</p>
+<pre class="cpp">
+
+  import <span class="type">QtQuick</span> <span class="number">2.10</span>
+  import Fluid<span class="operator">.</span>Controls <span class="number">1.0</span>
+
+  Item {
+      width: <span class="number">128</span>
+      height: <span class="number">128</span>
+
+      SmoothFadeImage {
+          anchors<span class="operator">.</span>fill: parent
+          source: <span class="string">&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Qt_logo_2015.svg/1380px-Qt_logo_2015.svg.png&quot;</span>
+          fillMode: Image<span class="operator">.</span>PreserveAspectFit
+          smooth: <span class="keyword">true</span>
+          fadeDuration: <span class="number">400</span>
+
+          MouseArea {
+              anchors<span class="operator">.</span>fill: parent
+              onClicked: parent<span class="operator">.</span>source <span class="operator">=</span> <span class="string">&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/1280px-Qt_logo_2016.svg.png&quot;</span>
+          }
+      }
+  }
+
+</pre>
+<!-- @@@SmoothFadeImage -->
+<h2>Property Documentation</h2>
+<!-- $$$animationEnabled -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="animationEnabled-prop">
+<td class="tblQmlPropNode"><p>
+<a name="animationEnabled-prop"></a><span class="name">animationEnabled</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Set this property to false to disable the fade animation. If the animation is disable, <a href="qml-fluid-controls-smoothfadeimage.html">SmoothFadeImage</a> behaves like a normal Image.</p>
+<p>The fade animation is enabled by default.</p>
+</div></div><!-- @@@animationEnabled -->
+<br/>
+<!-- $$$fadeDuration -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fadeDuration-prop">
+<td class="tblQmlPropNode"><p>
+<a name="fadeDuration-prop"></a><span class="name">fadeDuration</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Set this to change the fade animation time (in milliseconds). Default value is 250 ms.</p>
+</div></div><!-- @@@fadeDuration -->
+<br/>
+<!-- $$$fillMode -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fillMode-prop">
+<td class="tblQmlPropNode"><p>
+<a name="fillMode-prop"></a><span class="name">fillMode</span> : <span class="type">enumeration</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Set this property to define what happens when the source image has a different size than the item.</p>
+<ul>
+<li>Image.Stretch - the image is scaled to fit (default)</li>
+<li>Image.PreserveAspectFit - the image is scaled uniformly to fit without cropping</li>
+<li>Image.PreserveAspectCrop - the image is scaled uniformly to fill, cropping if necessary</li>
+<li>Image.Tile - the image is duplicated horizontally and vertically</li>
+<li>Image.TileVertically - the image is stretched horizontally and tiled vertically</li>
+<li>Image.TileHorizontally - the image is stretched vertically and tiled horizontally</li>
+<li>Image.Pad - the image is not transformed</li>
+</ul>
+<p>Defaults to <code>Image.Stretch</code>.</p>
+<p>Note that <code>clip</code> is false by default which means that the item might paint outside its bounding rectangle even if the fillMode is set to PreserveAspectCrop.</p>
+</div></div><!-- @@@fillMode -->
+<br/>
+<!-- $$$running -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="running-prop">
+<td class="tblQmlPropNode"><p>
+<a name="running-prop"></a><span class="qmlreadonly">[read-only] </span><span class="name">running</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds whether the fade animation is running or not.</p>
+</div></div><!-- @@@running -->
+<br/>
+<!-- $$$smooth -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="smooth-prop">
+<td class="tblQmlPropNode"><p>
+<a name="smooth-prop"></a><span class="name">smooth</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds whether the image is smoothly filtered when scaled or transformed. Smooth filtering gives better visual quality, but it may be slower on some hardware.</p>
+<p>If the image is displayed at its natural size, this property has no visual or performance effect.</p>
+<p>By default, this property is set to <code>true</code>.</p>
+</div></div><!-- @@@smooth -->
+<br/>
+<!-- $$$source -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="source-prop">
+<td class="tblQmlPropNode"><p>
+<a name="source-prop"></a><span class="name">source</span> : <span class="type">url</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The image being displayed. <a href="qml-fluid-controls-smoothfadeimage.html">SmoothFadeImage</a> can handle any image format supported by Qt, loaded from any URL scheme supported by Qt.</p>
+<p><b>See also </b>Image::source.</p>
+</div></div><!-- @@@source -->
+<br/>
+<!-- $$$sourceSize -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="sourceSize-prop">
+<td class="tblQmlPropNode"><p>
+<a name="sourceSize-prop"></a><span class="name">sourceSize</span> : <span class="type">size</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds the actual width and height of the loaded image.</p>
+<p>Unlike the <code>width</code> and <code>height</code> properties, which scale the painting of the image, this property sets the actual number of pixels stored for the loaded image so that large images do not use more memory than necessary.</p>
+<p>For example, this ensures the image in memory is no larger than 1024x1024 pixels, regardless of the <a href="qml-fluid-controls-smoothfadeimage.html">SmoothFadeImage</a>'s width and height values:</p>
+<pre class="cpp">
+
+  Rectangle {
+      width: <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+      height: <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+      Image {
+          anchors<span class="operator">.</span>fill: parent
+          source: <span class="string">&quot;reallyBigImage.jpg&quot;</span>
+          sourceSize<span class="operator">.</span>width: <span class="number">1024</span>
+          sourceSize<span class="operator">.</span>height: <span class="number">1024</span>
+      }
+  }
+
+</pre>
+<p>If the image's actual size is larger than the sourceSize, the image is scaled down. If only one dimension of the size is set to greater than 0, the other dimension is set in proportion to preserve the source image's aspect ratio. (The <code>fillMode</code> is independent of this.)</p>
+<p>If both the sourceSize.width and sourceSize.height are set the image will be scaled down to fit within the specified size, maintaining the image's aspect ratio. The actual size of the image after scaling is available via <code>Item::implicitWidth</code> and <code>Item::implicitHeight</code>.</p>
+<p>If the source is an intrinsically scalable image (eg. SVG), this property determines the size of the loaded image regardless of intrinsic size. Avoid changing this property dynamically; rendering an SVG is slow compared to an image.</p>
+<p>If the source is a non-scalable image (eg. JPEG), the loaded image will be no greater than this property specifies. For some formats (currently only JPEG), the whole image will never actually be loaded into memory.</p>
+<p>sourceSize can be cleared to the natural size of the image by setting sourceSize to undefined.</p>
+<p>Note: Changing this property dynamically causes the image source to be reloaded, potentially even from the network, if it is not in the disk cache.</p>
+</div></div><!-- @@@sourceSize -->
+<br/>
+<!-- $$$status -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="status-prop">
+<td class="tblQmlPropNode"><p>
+<a name="status-prop"></a><span class="qmlreadonly">[read-only] </span><span class="name">status</span> : <span class="type">enumeration</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds the status of image loading. It can be one of:</p>
+<ul>
+<li>Image.Null - no image has been set</li>
+<li>Image.Ready - the image has been loaded</li>
+<li>Image.Loading - the image is currently being loaded</li>
+<li>Image.Error - an error occurred while loading the image</li>
+</ul>
+</div></div><!-- @@@status -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$imageSwapped[overload1]$$$imageSwapped -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="imageSwapped-signal">
+<td class="tblQmlFuncNode"><p>
+<a name="imageSwapped-signal"></a><span class="name">imageSwapped</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This signal is emitted when the swap between the old source and the new one has happened.</p>
+</div></div><!-- @@@imageSwapped -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

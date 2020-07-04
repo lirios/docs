@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- AutomaticGrid.qml -->
+  <title>AutomaticGrid QML Type | Fluid Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/liri.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="liri-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <i class="icon-liri liri-bird pointer" onclick="location.href='index.html'"></i>
+        <span class="mdl-layout-title pointer mdl-layout--large-screen-only"               onclick="location.href='/'">Liri</span>
+        <span class="mdl-layout-title mdl-layout--small-screen-only">Fluid API</span>
+      </div>
+    </header>
+    <div class="liri-ribbon mdl-color--primary"></div>
+    <main class="liri-main mdl-layout__content">
+      <div class= liri-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="liri-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html">Fluid Reference Documentation</a></li>
+<li id="buildversion">Fluid 1.2.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">AutomaticGrid QML Type</h1>
+<span class="subtitle"></span>
+<!-- $$$AutomaticGrid-brief -->
+<p>Lay out children in a grid that automatically fits the available space. <a href="#details">More...</a></p>
+<!-- @@@AutomaticGrid -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Fluid.Layouts 1.1</td></tr></table></div><ul>
+<li><a href="qml-fluid-layouts-automaticgrid-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="qml-fluid-layouts-automaticgrid.html#cellHeight-prop">cellHeight</a></b></b> : real</li>
+<li class="fn"><b><b><a href="qml-fluid-layouts-automaticgrid.html#cellWidth-prop">cellWidth</a></b></b> : real</li>
+<li class="fn"><b><b><a href="qml-fluid-layouts-automaticgrid.html#delegate-prop">delegate</a></b></b> : Component</li>
+<li class="fn"><b><b><a href="qml-fluid-layouts-automaticgrid.html#heightOverride-prop">heightOverride</a></b></b> : real</li>
+<li class="fn"><b><b><a href="qml-fluid-layouts-automaticgrid.html#minColumnSpacing-prop">minColumnSpacing</a></b></b> : real</li>
+<li class="fn"><b><b><a href="qml-fluid-layouts-automaticgrid.html#model-prop">model</a></b></b> : any</li>
+<li class="fn"><b><b><a href="qml-fluid-layouts-automaticgrid.html#widthOverride-prop">widthOverride</a></b></b> : real</li>
+</ul>
+<!-- $$$AutomaticGrid-description -->
+<a name="details"></a>
+<h2 id="details">Detailed Description</h2>
+<pre class="cpp">
+
+  import <span class="type">QtQuick</span> <span class="number">2.10</span>
+  import Fluid<span class="operator">.</span>Layouts <span class="number">1.0</span> as FluidLayouts
+
+  Item {
+      width: <span class="number">600</span>
+      height: <span class="number">600</span>
+
+      FluidLayouts<span class="operator">.</span>AutomaticGrid {
+          anchors<span class="operator">.</span>fill: parent
+          cellWidth: <span class="number">100</span>
+          cellHeight: cellWidth
+          model: <span class="number">20</span>
+
+          delegate: Rectangle {
+              id: item
+              height: <span class="number">100.0</span> <span class="operator">*</span> Math<span class="operator">.</span>random()
+              color: <span class="type">Qt</span><span class="operator">.</span>rgba(Math<span class="operator">.</span>random()<span class="operator">,</span> Math<span class="operator">.</span>random()<span class="operator">,</span> Math<span class="operator">.</span>random()<span class="operator">,</span> Math<span class="operator">.</span>random())
+              Text {
+                  text: index
+              }
+          }
+      }
+  }
+
+</pre>
+<!-- @@@AutomaticGrid -->
+<h2>Property Documentation</h2>
+<!-- $$$cellHeight -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="cellHeight-prop">
+<td class="tblQmlPropNode"><p>
+<a name="cellHeight-prop"></a><span class="name">cellHeight</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Cell height.</p>
+</div></div><!-- @@@cellHeight -->
+<br/>
+<!-- $$$cellWidth -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="cellWidth-prop">
+<td class="tblQmlPropNode"><p>
+<a name="cellWidth-prop"></a><span class="name">cellWidth</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Cell width.</p>
+</div></div><!-- @@@cellWidth -->
+<br/>
+<!-- $$$delegate -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="delegate-prop">
+<td class="tblQmlPropNode"><p>
+<a name="delegate-prop"></a><span class="qmldefault">[default] </span><span class="name">delegate</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The delegate provides a template defining each item istantiated by the grid.</p>
+<p><b>See also </b>Repeater::delegate.</p>
+</div></div><!-- @@@delegate -->
+<br/>
+<!-- $$$heightOverride -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="heightOverride-prop">
+<td class="tblQmlPropNode"><p>
+<a name="heightOverride-prop"></a><span class="name">heightOverride</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Maximum height.</p>
+</div></div><!-- @@@heightOverride -->
+<br/>
+<!-- $$$minColumnSpacing -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="minColumnSpacing-prop">
+<td class="tblQmlPropNode"><p>
+<a name="minColumnSpacing-prop"></a><span class="name">minColumnSpacing</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Minimum spacing between columns.</p>
+</div></div><!-- @@@minColumnSpacing -->
+<br/>
+<!-- $$$model -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="model-prop">
+<td class="tblQmlPropNode"><p>
+<a name="model-prop"></a><span class="name">model</span> : <span class="type">any</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The model providing data to the grid.</p>
+<p>This property can be set to any of the supported data models.</p>
+<p><b>See also </b>Repeater::model.</p>
+</div></div><!-- @@@model -->
+<br/>
+<!-- $$$widthOverride -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="widthOverride-prop">
+<td class="tblQmlPropNode"><p>
+<a name="widthOverride-prop"></a><span class="name">widthOverride</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Maximum width.</p>
+</div></div><!-- @@@widthOverride -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

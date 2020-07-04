@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- DateTimePickerDialog.qdoc -->
+  <title>DateTimePickerDialog QML Type | Fluid Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/liri.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="liri-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <i class="icon-liri liri-bird pointer" onclick="location.href='index.html'"></i>
+        <span class="mdl-layout-title pointer mdl-layout--large-screen-only"               onclick="location.href='/'">Liri</span>
+        <span class="mdl-layout-title mdl-layout--small-screen-only">Fluid API</span>
+      </div>
+    </header>
+    <div class="liri-ribbon mdl-color--primary"></div>
+    <main class="liri-main mdl-layout__content">
+      <div class= liri-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="liri-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html">Fluid Reference Documentation</a></li>
+<li id="buildversion">Fluid 1.2.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">DateTimePickerDialog QML Type</h1>
+<span class="subtitle"></span>
+<!-- $$$DateTimePickerDialog-brief -->
+<p>Dialog with a picker to select dates and time. <a href="#details">More...</a></p>
+<!-- @@@DateTimePickerDialog -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Fluid.Controls 1.1</td></tr></table></div><ul>
+<li><a href="qml-fluid-controls-datetimepickerdialog-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="qml-fluid-controls-datetimepickerdialog.html#dayOfWeekRowVisible-prop">dayOfWeekRowVisible</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-datetimepickerdialog.html#from-prop">from</a></b></b> : date</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-datetimepickerdialog.html#orientation-prop">orientation</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-datetimepickerdialog.html#selectedDateTime-prop">selectedDateTime</a></b></b> : date</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-datetimepickerdialog.html#standardButtonsContainer-prop">standardButtonsContainer</a></b></b> : list&lt;Object&gt;</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-datetimepickerdialog.html#to-prop">to</a></b></b> : date</li>
+<li class="fn"><b><b><a href="qml-fluid-controls-datetimepickerdialog.html#weekNumberVisible-prop">weekNumberVisible</a></b></b> : bool</li>
+</ul>
+<!-- $$$DateTimePickerDialog-description -->
+<a name="details"></a>
+<h2 id="details">Detailed Description</h2>
+<p>A dialog that lets you select dates and time.</p>
+<pre class="cpp">
+
+  import <span class="type">QtQuick</span> <span class="number">2.10</span>
+  import Fluid<span class="operator">.</span>Controls <span class="number">1.0</span> as FluidControls
+
+  Item {
+      width: <span class="number">600</span>
+      height: <span class="number">600</span>
+
+      FluidControls<span class="operator">.</span>DateTimePickerDialog {
+          onAccepted: {
+              console<span class="operator">.</span>log(selectedDate);
+          }
+          standardButtons: DialogButtonBox<span class="operator">.</span>Ok <span class="operator">|</span> DialogButtonBox<span class="operator">.</span>Cancel
+      }
+  }
+
+</pre>
+<p>For more information you can read the <a href="https://material.io/guidelines/components/pickers.html">Material Design guidelines</a>.</p>
+<!-- @@@DateTimePickerDialog -->
+<h2>Property Documentation</h2>
+<!-- $$$dayOfWeekRowVisible -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="dayOfWeekRowVisible-prop">
+<td class="tblQmlPropNode"><p>
+<a name="dayOfWeekRowVisible-prop"></a><span class="name">dayOfWeekRowVisible</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property determines the visibility of the day of week row.</p>
+</div></div><!-- @@@dayOfWeekRowVisible -->
+<br/>
+<!-- $$$from -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="from-prop">
+<td class="tblQmlPropNode"><p>
+<a name="from-prop"></a><span class="name">from</span> : <span class="type">date</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds the start date.</p>
+</div></div><!-- @@@from -->
+<br/>
+<!-- $$$orientation -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="orientation-prop">
+<td class="tblQmlPropNode"><p>
+<a name="orientation-prop"></a><span class="name">orientation</span> : <span class="type">enumeration</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds the picker orientation. The default value is automatically selected based on the device orientation.</p>
+<p>Possible values:</p>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>DatePicker.Landscape</code></td><td class="topAlign">The picker is landscape.</td></tr>
+<tr><td class="topAlign"><code>DatePicker.Portrait</code></td><td class="topAlign">The picker is portrait.</td></tr>
+</table></div>
+</div></div><!-- @@@orientation -->
+<br/>
+<!-- $$$selectedDateTime -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedDateTime-prop">
+<td class="tblQmlPropNode"><p>
+<a name="selectedDateTime-prop"></a><span class="name">selectedDateTime</span> : <span class="type">date</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds the date and time that has been selected by the user. The default value is the current date and time.</p>
+</div></div><!-- @@@selectedDateTime -->
+<br/>
+<!-- $$$standardButtonsContainer -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="standardButtonsContainer-prop">
+<td class="tblQmlPropNode"><p>
+<a name="standardButtonsContainer-prop"></a><span class="name">standardButtonsContainer</span> : <span class="type">list</span>&lt;<span class="type"><a href="qml-fluid-core-object.html">Object</a></span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property allows you to place additional buttons alongside the standard buttons of the dialog, like in this example:</p>
+<pre class="cpp">
+
+  FluidControls<span class="operator">.</span>DateTimePickerDialog {
+      id: dateTimePickerDialog
+      standardButtons: DialogButtonBox<span class="operator">.</span>Ok <span class="operator">|</span> DialogButtonBox<span class="operator">.</span>Cancel
+      standardButtonsContainer: Button {
+          anchors<span class="operator">.</span>verticalCenter: parent<span class="operator">.</span>verticalCenter
+          text: qsTr(<span class="string">&quot;Now&quot;</span>)
+          flat: <span class="keyword">true</span>
+          onClicked: dateTimePickerDialog<span class="operator">.</span>selectedDate <span class="operator">=</span> <span class="keyword">new</span> Date()
+      }
+  }
+
+</pre>
+</div></div><!-- @@@standardButtonsContainer -->
+<br/>
+<!-- $$$to -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="to-prop">
+<td class="tblQmlPropNode"><p>
+<a name="to-prop"></a><span class="name">to</span> : <span class="type">date</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property holds the end date.</p>
+</div></div><!-- @@@to -->
+<br/>
+<!-- $$$weekNumberVisible -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="weekNumberVisible-prop">
+<td class="tblQmlPropNode"><p>
+<a name="weekNumberVisible-prop"></a><span class="name">weekNumberVisible</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>This property determines the visibility of the week number column.</p>
+</div></div><!-- @@@weekNumberVisible -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

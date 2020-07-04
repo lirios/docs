@@ -1,0 +1,3 @@
+# Browser
+
+- [Shortcuts](shortcuts.md)
