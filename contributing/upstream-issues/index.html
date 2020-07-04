@@ -1,0 +1,929 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Upstream Issues - Liri Developers Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#upstream-issues" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Liri Developers Documentation" class="md-header-nav__button md-logo" aria-label="Liri Developers Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Liri Developers Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Upstream Issues
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Liri Developers Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      About
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="About" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/philosophy/" title="Philosophy" class="md-nav__link">
+      Philosophy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/project-management/" title="Project Management" class="md-nav__link">
+      Project Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Packaging
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Packaging" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Packaging
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../packaging/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../packaging/snap/" title="Snap" class="md-nav__link">
+      Snap
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Contributing
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contributor-guide/" title="Contributor Guide" class="md-nav__link">
+      Contributor Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-sources/" title="Build from Sources" class="md-nav__link">
+      Build from Sources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Upstream Issues
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Upstream Issues" class="md-nav__link md-nav__link--active">
+      Upstream Issues
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wayland" class="md-nav__link">
+    Wayland
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xwayland" class="md-nav__link">
+    XWayland
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qtdeclarative" class="md-nav__link">
+    QtDeclarative
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qtwayland" class="md-nav__link">
+    QtWayland
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qtquick-controls-2" class="md-nav__link">
+    QtQuick Controls 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qtwebengine" class="md-nav__link">
+    QtWebEngine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solid" class="md-nav__link">
+    Solid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gtk" class="md-nav__link">
+    Gtk+
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snap-online-services" class="md-nav__link">
+    Snap Online Services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapcraft" class="md-nav__link">
+    Snapcraft
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Coding Conventions
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Coding Conventions" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Coding Conventions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../coding-conventions/design-philosophy/" title="Design Philosophy" class="md-nav__link">
+      Design Philosophy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../coding-conventions/cpp-conventions/" title="C++ Coding Conventions" class="md-nav__link">
+      C++ Coding Conventions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../coding-conventions/cpp-style/" title="C++ Coding Style" class="md-nav__link">
+      C++ Coding Style
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../coding-conventions/qml-conventions/" title="QML Coding Conventions" class="md-nav__link">
+      QML Coding Conventions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Modules
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Modules" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Text
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Text" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Text
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/text/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/text/syntax-highlighting/" title="Syntax Highlighting" class="md-nav__link">
+      Syntax Highlighting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Browser
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Browser" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Browser
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/browser/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/browser/shortcuts/" title="Shortcuts" class="md-nav__link">
+      Shortcuts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wayland" class="md-nav__link">
+    Wayland
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xwayland" class="md-nav__link">
+    XWayland
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qtdeclarative" class="md-nav__link">
+    QtDeclarative
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qtwayland" class="md-nav__link">
+    QtWayland
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qtquick-controls-2" class="md-nav__link">
+    QtQuick Controls 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qtwebengine" class="md-nav__link">
+    QtWebEngine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solid" class="md-nav__link">
+    Solid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gtk" class="md-nav__link">
+    Gtk+
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snap-online-services" class="md-nav__link">
+    Snap Online Services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapcraft" class="md-nav__link">
+    Snapcraft
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="upstream-issues">Upstream Issues</h1>
+<p>This is a living document that lists issues from upstream projects that introduce problems to Liri OS and apps and whose resolution is not a Liri responsability.</p>
+<h2 id="wayland">Wayland</h2>
+<p>Wayland needs to address some issues before claiming feature parity with Xorg.</p>
+<ul>
+<li>A client cannot change the keymap. This would be required to let Calamares change the keyboard layout, otherwise the user won't be able to test the keyboard layout during the installation.</li>
+<li>A compositor cannot change the cursor theme on all clients. We can craft a solution only for Qt clients, but it won't work for other toolkits. This means that changing the cursor theme from Settings requires to restart the desktop.</li>
+</ul>
+<h2 id="xwayland">XWayland</h2>
+<p>Clients are blurry on HiDPI. See this IRC conversation:</p>
+<pre><code class="md">&lt;plfiorini&gt; xwayland clients seem blurry on hidpi, compared to their wayland counterpart. doesn't seem to be a toolkit issue since this happens with both gtk and qt. is this a known issue?
+&lt;SardemFF7&gt; plfiorini: short answer: yes, nothing can be done about it
+&lt;plfiorini&gt; SardemFF7, so nothing i could fix with the compositor author hat on?
+&lt;SardemFF7&gt; the long answer is that you could, maybe, fix some of the clients by providing more information, or by lying, but that may break other clients, so you’d probably need special extra support in X11 toolkits/apps to make it work, and they probably have Wayland support anyway
+&lt;fredrikh&gt; a different scaling filter could help
+&lt;SardemFF7&gt; that one is up to the compositor
+&lt;SardemFF7&gt; but I don’t think it’d fix everything magically
+&lt;fredrikh&gt; nope
+&lt;fredrikh&gt; still, bilnear is probably the worst magnification filter if you don't want to things to look blurry
+&lt;plfiorini&gt; thanks for your answer
+&lt;SardemFF7&gt; plfiorini: there is a thread on the ML about that, btw
+&lt;SardemFF7&gt; plfiorini: https://lists.freedesktop.org/archives/wayland-devel/2017-September/034957.html
+</code></pre>
+
+<h2 id="qtdeclarative">QtDeclarative</h2>
+<ul>
+<li>TextEdit doesn't correctly update formats set by QSyntaxHighlighter: <a href="https://bugreports.qt.io/browse/QTBUG-58092">QTBUG-58092</a></li>
+<li>ListView with transitions does not always position delegates properly: <a href="https://bugreports.qt.io/browse/QTBUG-62148">QTBUG-62148</a></li>
+</ul>
+<h2 id="qtwayland">QtWayland</h2>
+<p>Qt 5.8.0 introduces QtWayland as an official module, finally the QtWaylandCompositor framework is considered stable.  However it still lack a few features or has bugs that need to be fixed:</p>
+<ul>
+<li>Partial subsurface support: missing raise, lower and synchronization.</li>
+<li>D&amp;D works only on one output: <a href="https://bugreports.qt.io/browse/QTBUG-55584">QTBUG-55584</a></li>
+<li>No support for animated mouse cursors: <a href="http://bugreports.qt.io/browse/QTBUG-48181">QTBUG-48181</a></li>
+<li>Dropdown window closes on key press: <a href="https://bugreports.qt.io/browse/QTBUG-55403">QTBUG-55403</a></li>
+<li>Compose key support missing in QtWayland: <a href="https://bugreports.qt.io/browse/QTBUG-54792">QTBUG-54792</a> <strong>FIXED IN 5.11.0</strong></li>
+<li>Key repeat settings ignored: <a href="https://bugreports.qt.io/browse/QTBUG-55615">QTBUG-55615</a></li>
+<li>[Wayland] Modifiers not working in wheelEvent: <a href="https://bugreports.qt.io/browse/QTBUG-61488">QTBUG-61488</a></li>
+</ul>
+<h2 id="qtquick-controls-2">QtQuick Controls 2</h2>
+<ul>
+<li>Roboto doesn't support all languages, should fallback to Noto: <a href="https://bugreports.qt.io/browse/QTBUG-59579">QTBUG-59579</a></li>
+<li>Dialog should respond to Enter key: <a href="https://bugreports.qt.io/browse/QTBUG-60361">QTBUG-60361</a></li>
+<li>MenuItem is not triggered by the "Enter" key: <a href="https://bugreports.qt.io/browse/QTBUG-67275">QTBUG-67275</a></li>
+</ul>
+<h2 id="qtwebengine">QtWebEngine</h2>
+<ul>
+<li>Crashes on Wayland, means that Liri Browser doesn't work on Wayland: <a href="https://bugreports.qt.io/browse/QTBUG-55384">QTBUG-55384</a></li>
+</ul>
+<h2 id="solid">Solid</h2>
+<ul>
+<li>udisks2 backend makes blocking dbus calls: <a href="https://bugs.kde.org/show_bug.cgi?id=380990">380990</a></li>
+</ul>
+<h2 id="gtk">Gtk+</h2>
+<p>While Liri OS is focused on Qt applications, we still want compatibility with Gtk+ applications.</p>
+<ul>
+<li>Bad app_id for Gtk+ apps: <a href="https://bugzilla.gnome.org/show_bug.cgi?id=769641">769641</a></li>
+</ul>
+<h2 id="snap-online-services">Snap Online Services</h2>
+<ul>
+<li><a href="https://build.snapcraft.io/">build.snapcraft.io</a> doesn't respect publishing rights for shared snaps: <a href="https://github.com/canonical-websites/build.snapcraft.io/issues/799">#799</a></li>
+<li>Proxy token lifetime for launchpad-buildd is limited <a href="https://bugs.launchpad.net/rutabaga/+bug/1709678">1709678</a></li>
+</ul>
+<h2 id="snapcraft">Snapcraft</h2>
+<ul>
+<li><code>qmake</code> plugin doesn't support choosing a custom Qt version: <a href="https://bugs.launchpad.net/snapcraft/+bug/1670146">1670146</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../build-sources/" title="Build from Sources" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Build from Sources
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../coding-conventions/design-philosophy/" title="Design Philosophy" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Design Philosophy
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

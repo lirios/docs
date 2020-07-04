@@ -1,0 +1,1285 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>C++ Coding Conventions - Liri Developers Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#c-coding-conventions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="Liri Developers Documentation" class="md-header-nav__button md-logo" aria-label="Liri Developers Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Liri Developers Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              C++ Coding Conventions
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Liri Developers Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      About
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="About" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/philosophy/" title="Philosophy" class="md-nav__link">
+      Philosophy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/project-management/" title="Project Management" class="md-nav__link">
+      Project Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Packaging
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Packaging" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Packaging
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../packaging/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../packaging/snap/" title="Snap" class="md-nav__link">
+      Snap
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Contributing
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributor-guide/" title="Contributor Guide" class="md-nav__link">
+      Contributor Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../build-sources/" title="Build from Sources" class="md-nav__link">
+      Build from Sources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upstream-issues/" title="Upstream Issues" class="md-nav__link">
+      Upstream Issues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" checked>
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Coding Conventions
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Coding Conventions" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Coding Conventions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../design-philosophy/" title="Design Philosophy" class="md-nav__link">
+      Design Philosophy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        C++ Coding Conventions
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="C++ Coding Conventions" class="md-nav__link md-nav__link--active">
+      C++ Coding Conventions
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c-features" class="md-nav__link">
+    C++ features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventions-in-c-source-code" class="md-nav__link">
+    Conventions in C++ source code
+  </a>
+  
+    <nav class="md-nav" aria-label="Conventions in C++ source code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#including-headers" class="md-nav__link">
+    Including headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#include-guards" class="md-nav__link">
+    Include guards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casting" class="md-nav__link">
+    Casting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilerplatform-specific-issues" class="md-nav__link">
+    Compiler/Platform specific issues
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aesthetics" class="md-nav__link">
+    Aesthetics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#things-to-avoid" class="md-nav__link">
+    Things to avoid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-and-source-compatibility" class="md-nav__link">
+    Binary and Source Compatibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventions-for-public-header-files" class="md-nav__link">
+    Conventions for public header files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventions-for-c11-usage" class="md-nav__link">
+    Conventions for C++11 usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Conventions for C++11 usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lambdas" class="md-nav__link">
+    Lambdas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-keyword" class="md-nav__link">
+    auto Keyword
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cpp-style/" title="C++ Coding Style" class="md-nav__link">
+      C++ Coding Style
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../qml-conventions/" title="QML Coding Conventions" class="md-nav__link">
+      QML Coding Conventions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Modules
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Modules" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modules/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Text
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Text" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Text
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modules/text/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modules/text/syntax-highlighting/" title="Syntax Highlighting" class="md-nav__link">
+      Syntax Highlighting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Browser
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Browser" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Browser
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modules/browser/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modules/browser/shortcuts/" title="Shortcuts" class="md-nav__link">
+      Shortcuts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c-features" class="md-nav__link">
+    C++ features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventions-in-c-source-code" class="md-nav__link">
+    Conventions in C++ source code
+  </a>
+  
+    <nav class="md-nav" aria-label="Conventions in C++ source code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#including-headers" class="md-nav__link">
+    Including headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#include-guards" class="md-nav__link">
+    Include guards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#casting" class="md-nav__link">
+    Casting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilerplatform-specific-issues" class="md-nav__link">
+    Compiler/Platform specific issues
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aesthetics" class="md-nav__link">
+    Aesthetics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#things-to-avoid" class="md-nav__link">
+    Things to avoid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-and-source-compatibility" class="md-nav__link">
+    Binary and Source Compatibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventions-for-public-header-files" class="md-nav__link">
+    Conventions for public header files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventions-for-c11-usage" class="md-nav__link">
+    Conventions for C++11 usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Conventions for C++11 usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lambdas" class="md-nav__link">
+    Lambdas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-keyword" class="md-nav__link">
+    auto Keyword
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="c-coding-conventions">C++ Coding Conventions</h1>
+<p>This is an overview of the high-level coding conventions we use when writing Qt code.
+See <a href="../cpp-style/">C++ Coding Style</a> for the lower-level conventions.</p>
+<p>For QML, see <a href="../qml-conventions/">QML Coding Conventions</a>.</p>
+<h3 id="c-features">C++ features</h3>
+<ul>
+<li>Don't use exceptions</li>
+<li>Don't use rtti (Run-Time Type Information; that is, the <code>typeinfo</code> struct, the <code>dynamic_cast</code> or the <code>typeid</code> operators, including throwing exceptions)</li>
+<li>Use templates wisely, not just because you can.</li>
+</ul>
+<h2 id="conventions-in-c-source-code">Conventions in C++ source code</h2>
+<ul>
+<li>All code is ascii only (7-bit characters only, run <code>man ascii</code> if unsure)</li>
+<li>Rationale: We have too many locales inhouse and an unhealthy mix of UTF-8 and latin1 systems. Usually, characters &gt; 127 can be broken without you even knowing by clicking SAVE in your favourite editor.</li>
+<li>For strings: Use <code>\nnn</code> (where <code>nnn</code> is the octal representation of whatever character encoding you want your string in) or <code>\xnn</code> (where <code>nn</code> is hexadecimal). Example: <code>QString s = QString::fromUtf8("13\005");</code></li>
+<li>For umlauts in documentation, or other non-ASCII characters, either use qdoc's command or use the relevant macro; e.g. <code>\uuml</code> for &uuml;.</li>
+<li>Every QObject subclass must have a <code>Q_OBJECT</code> macro, even if it doesn't have signals or slots, otherwise <code>qobject_cast</code> will fail.</li>
+<li>Normalize the arguments for signals + slots (see <code>QMetaObject::normalizedSignature</code>) inside connect statements to get faster signal/slot lookups. You can use <code>qtrepotools/util/normalize</code> to normalize existing code.</li>
+</ul>
+<h3 id="including-headers">Including headers</h3>
+<ul>
+<li>In public header files, always use this form to include Qt headers: <code>#include &lt;QtCore/qwhatever.h&gt;</code>. The library prefix is necessary for Mac OS X frameworks and is very convenient for non-qmake projects.</li>
+<li>In source files, include specialized headers first, then generic headers. Separate the categories with empty lines.</li>
+</ul>
+<pre><code class="cpp">#include &lt;qstring.h&gt; // Qt class
+#include &lt;new&gt; // STL stuff
+#include &lt;limits.h&gt; // system stuff
+</code></pre>
+
+<ul>
+<li>If you need to include <code>qplatformdefs.h</code>, always include it as the '''first''' header file.</li>
+<li>If you need to include private headers, be careful. Use the following syntax, irrespective of which module or directory whatever_p.h is in.</li>
+</ul>
+<pre><code class="cpp">#include &lt;private/whatever_p.h&gt;
+</code></pre>
+
+<h3 id="include-guards">Include guards</h3>
+<p>Never use <code>#pragma once</code> because it's not part of the C++ standard, it's not always supported and it's subject to double inclusion if
+any headers are copied somehere in the build process (which we does).</p>
+<p>Use include guards instead like these:</p>
+<pre><code class="cpp">#ifndef SOMEFILENAME_H
+#define SOMEFILENAME_H
+
+// contents
+
+#endif // SOMEFILENAME_H
+</code></pre>
+
+<p>See the following threads from the Qt mailing list:</p>
+<ul>
+<li><a href="https://lists.qt-project.org/pipermail/development/2018-January/031966.html">https://lists.qt-project.org/pipermail/development/2018-January/031966.html</a></li>
+<li><a href="https://lists.qt-project.org/pipermail/development/2018-October/033726.html">https://lists.qt-project.org/pipermail/development/2018-October/033726.html</a></li>
+</ul>
+<h3 id="casting">Casting</h3>
+<ul>
+<li>Avoid C casts, prefer C++ casts (<code>static_cast</code>, <code>const_cast</code>, <code>reinterpret_cast</code>)</li>
+<li>Rationale: Both reinterpret_cast and C-style casts are dangerous, but at least reinterpret_cast won't remove the const modifier</li>
+<li>Don't use <code>dynamic_cast</code>, use <code>qobject_cast</code> for QObjects or refactor your design, for example by introducing a type() method (see QListWidgetItem)</li>
+<li>Use the constructor to cast simple types: <code>int(myFloat)</code> instead of <code>(int)myFloat</code></li>
+<li>Rationale: When refactoring code, the compiler will instantly let you know if the cast would become dangerous.</li>
+</ul>
+<h3 id="compilerplatform-specific-issues">Compiler/Platform specific issues</h3>
+<ul>
+<li>Be extremely careful when using the questionmark operator. If the returned types aren't identical, some compilers generate code that crashes at runtime (you won't even get a compiler warning).</li>
+</ul>
+<pre><code class="cpp">QString s;
+return condition ? s : &quot;nothing&quot;; // crash at runtime - QString vs. const char *
+</code></pre>
+
+<ul>
+<li>Be extremely careful about alignment.</li>
+<li>Whenever a pointer is cast such that the required alignment of the target is increased, the resulting code might crash at runtime on some architectures. For example, if a <code>const char *</code> is cast to an <code>const int *</code>, it'll crash on machines where integers have to be aligned at two- or four-byte boundaries.</li>
+<li>Use a union to force the compiler to align variables correctly. In the example below, you can be sure that all instances of <code>AlignHelper</code> are aligned at integer-boundaries.</li>
+</ul>
+<pre><code class="cpp">union AlignHelper {
+    char c;
+    int i;
+};
+</code></pre>
+
+<ul>
+<li>Anything that has a constructor or needs to run code to be initialized cannot be used as global object in library code, since it is undefined when that constructor/code will be run (on first usage, on library load, before main() or not at all). Even if the execution time of the initializer is defined for shared libraries, you'll get into trouble when moving that code in a plugin or if the library is compiled statically:</li>
+</ul>
+<pre><code class="cpp">// global scope
+static const QString x; // Wrong - default constructor needs to be run to initialize x
+static const QString y = &quot;Hello&quot;; // Wrong - constructor that takes a const char * has to be run
+QString z; // super wrong
+static const int i = foo(); // wrong - call time of foo() undefined, might not be called at all
+</code></pre>
+
+<p>Things you can do:</p>
+<pre><code class="cpp">// global scope
+static const char x[] = &quot;someText&quot;; // Works - no constructor must be run, x set at compile time
+static int y = 7; // Works - y will be set at compile time
+static MyStruct s = {1, 2, 3}; // Works - will be initialized statically, no code being run
+static QString *ptr = 0; // Pointers to objects are ok - no code needed to be run to initialize ptr
+</code></pre>
+
+<p>Use <code>Q_GLOBAL_STATIC</code> to create static global objects instead:</p>
+<pre><code class="cpp">Q_GLOBAL_STATIC(QString, s)
+
+void foo()
+{
+    s()-&gt;append(&quot;moo&quot;);
+}
+</code></pre>
+
+<p>Note: Static objects in a scope are no problem, the constructor will be run the first time the scope is entered. The code is not reentrant, though.</p>
+<ul>
+<li>A <code>char</code> is signed or unsigned dependent on the architecture. Use <code>signed char</code> or <code>unsigned char</code> if you explicitely want a signed/unsigned char. The condition in the following code is always true on platforms where the default char is unsigned.</li>
+</ul>
+<pre><code class="cpp">char c; // c can't be negative if it is unsigned
+
+if (c &gt; 0) { … } // WRONG - condition is always true on platforms where the default is unsigned
+</code></pre>
+
+<ul>
+<li>Avoid 64-bit enum values.</li>
+<li>The aapcs embedded ABI hard codes all enum values to a 32-bit integer.</li>
+<li>Microsoft compilers don't support 64-bit enum values. (confirmed with Microsoft ® C/C++ Optimizing Compiler Version 15.00.30729.01 for x64)</li>
+</ul>
+<h3 id="aesthetics">Aesthetics</h3>
+<ul>
+<li>Prefer enums to define constants over <code>static const int</code> or defines.</li>
+<li>enum values will be replaced by the compiler at compile time, resulting in faster code</li>
+<li>defines are not namespace safe (and look ugly)</li>
+<li>Prefer verbose argument names in headers.</li>
+<li>Most IDEs will show the argument names in their completion-box.</li>
+<li>It will look better in the documentation</li>
+<li>Bad style: <code>doSomething(QRegion rgn, QPoint p)</code> - use <code>doSomething(QRegion clientRegion, QPoint gravitySource)</code> instead</li>
+<li>When reimplementing a virtual method, do not put the <code>virtual</code> keyword in the header file. On Qt5, annotate them with the <a href="http://doc.qt.io/qt-5/qtglobal.html#Q_DECL_OVERRIDE">Q_DECL_OVERRIDE</a> macro after the function declaration, just before the <code>;</code> (or the <code>{</code>).</li>
+</ul>
+<h3 id="things-to-avoid">Things to avoid</h3>
+<ul>
+<li>Do not inherit from template/tool classes</li>
+<li>The destructors are not virtual, leading to potential memory leaks</li>
+<li>The symbols are not exported (and mostly inline), leading to interesting symbol clashes.</li>
+<li>Example: Library A has <code>class Q_EXPORT X: public QList&lt;QVariant&gt; {};</code> and library B has <code>class Q_EXPORT Y: public QList&lt;QVariant&gt; {};</code> Suddenly, QList<QVariant>'s symbols are exported from two libraries - /clash/.</li>
+<li>Don't mix const and non-const iterators. This will silently crash on broken compilers.</li>
+</ul>
+<pre><code class="cpp">for (Container::const_iterator it = c.begin(); it != c.end(); ++it) // W R O N G
+for (Container::const_iterator it = c.cbegin(); it != c.cend(); ++it) // Right
+</code></pre>
+
+<ul>
+<li>Q[Core]Application is a singleton class. There can only be one instance at a time. However, that instance can be destroyed and a new one can be created, which is likely in an ActiveQt or browser plugin. Code like this will easily break:</li>
+</ul>
+<pre><code class="cpp">static QObject *obj = 0;
+if (!obj)
+    obj = new QObject(QCoreApplication::instance());
+</code></pre>
+
+<p>If the <code>QCoreApplication</code> application is destroyed, <code>obj</code> will be a dangling pointer. Use <code>Q_GLOBAL_STATIC</code> for static global objects or <code>qAddPostRoutine</code> to clean up.</p>
+<ul>
+<li>Avoid the use of anonymous namespaces in favor of the static keyword if possible. A name localized to the compilation unit with <code>static</code> is guaranteed to have internal linkage. For names declared in anonymous namespaces the C++ standard unfortunately mandates external linkage. (7.1.1/6, or see various discussions about this on the gcc mailing lists)</li>
+</ul>
+<h3 id="binary-and-source-compatibility">Binary and Source Compatibility</h3>
+<ul>
+<li>Definitions:</li>
+<li>Qt 4.0.0 is a major release, Qt 4.1.0 is a minor release, Qt 4.1.1 is a patch release</li>
+<li>Backward binary compatibility: Code linked to an earlier version of the library keeps working</li>
+<li>Forward binary compatibility: Code linked to a newer version of the library works with an older library</li>
+<li>Source code compatibility: Code compiles without modification</li>
+<li>Keep backward binary compatibility + backward source code compatibility in minor releases</li>
+<li>Keep backward and forward binary compatibility + forward and backward source code compatibility in patch releases</li>
+<li>Don't add/remove any public API (e.g. global functions, public/protected/private methods)</li>
+<li>Don't reimplement methods (not even inlines, nor protected/private methods)</li>
+<li>Check [[Binary Compatibility Workarounds]] for ways to keep b/c</li>
+<li>Info on binary compatibility: https://community.kde.org/Policies/Binary_Compatibility_Issues_With_C++</li>
+<li>When writing a QWidget subclass, always reimplement event(), even if it's empty. This makes sure that the widget can be fixed without breaking binary compatibility.</li>
+<li>All exported functions from Qt must start with either 'q' or 'Q'. Use the "symbols" autotest to find violations.</li>
+</ul>
+<h3 id="operators">Operators</h3>
+<p><a href="http://stackoverflow.com/questions/4421706/operator-overloading/4421729#4421729">"The decision between member and non-member"</a></p>
+<p>A binary operator that treats both of its arguments equally should not be a member. Because, in addition to the reasons mentioned in the stack overflow answer, the arguments are not equal when the operator is a member.</p>
+<p>Example with QLineF which unfortunately has its operator== as a member:</p>
+<pre><code class="cpp">QLineF lineF;
+QLine lineN;
+
+if (lineF == lineN) // Ok,  lineN is implicitly converted to QLineF
+if (lineN == lineF) // Error: QLineF cannot be converted implicitly to QLine, and the LHS is a member so no conversion applies
+</code></pre>
+
+<p>If the operator== was outside of the class, conversion rules would apply equally for both sides.</p>
+<h2 id="conventions-for-public-header-files">Conventions for public header files</h2>
+<p>Our public header files have to survive the strict settings of some of our users. All installed headers have to follow these rules:</p>
+<ul>
+<li>No C style casts (<code>-Wold-style-cast</code>)</li>
+<li>Use static_cast, const_cast or reinterpret_cast</li>
+<li>for basic types, use the constructor form: int(a) instead of (int)a</li>
+<li>
+<p>See chapter "Casting" for more info</p>
+</li>
+<li>
+<p>No float comparisons (<code>-Wfloat-equal</code>)</p>
+</li>
+<li>Use qFuzzyCompare to compare values with a delta</li>
+<li>
+<p>Use qIsNull to check whether a float is binary 0, instead of comparing it to 0.0. </p>
+</li>
+<li>
+<p>Don't hide virtual methods in subclasses (<code>-Woverloaded-virtual</code>)</p>
+</li>
+<li>
+<p>If the baseclass <code>A</code> has a <code>virtual int val()</code> and subclass <code>B</code> an overload with the same name, <code>int val(int x)</code>, <code>A</code>'s <code>val</code> function is hidden. Use the <code>using</code> keyword to make it visible again:</p>
+</li>
+</ul>
+<pre><code class="cpp">class B: public A
+{
+    using A::val;
+    int val(int x);
+};
+</code></pre>
+
+<ul>
+<li>Don't shadow variables (<code>-Wshadow</code>)</li>
+<li>avoid things like <code>this-&gt;x = x;</code></li>
+<li>don't give variables the same name as functions declared in your class</li>
+<li>Always check whether a preprocessor variable is defined before probing its value (<code>-Wundef</code>)</li>
+</ul>
+<pre><code class="cpp">#if Foo == 0  // W R O N G
+#if defined(Foo) &amp;&amp; (Foo == 0) // Right
+#if Foo - 0 == 0 // Clever, are we? Use the one above instead, for better readability
+</code></pre>
+
+<h2 id="conventions-for-c11-usage">Conventions for C++11 usage</h2>
+<p><strong>Note:</strong> This section is not an accepted convention yet. This section serves as baseline for further discussions.</p>
+<h3 id="lambdas">Lambdas</h3>
+<p>You can use lambdas with the following restrictions:</p>
+<ul>
+<li>You have to explicitly specify the return type, if the lambda contains more than a single expression. Otherwise it does not compile with VS2010.</li>
+</ul>
+<pre><code class="cpp">[]() -&gt; QString {
+    Foo *foo = activeFoo();
+    return foo ? foo-&gt;displayName() : QString();
+});
+</code></pre>
+
+<p><strong>NOT</strong></p>
+<pre><code class="cpp">[]() {
+    Foo *foo = activeFoo();
+    return foo ? foo-&gt;displayName() : QString();
+});
+</code></pre>
+
+<ul>
+<li>If you use static functions from the class that the lambda is located in, you have to explicitly capture this. Otherwise it does not compile with g++ 4.7 and earlier.</li>
+</ul>
+<pre><code class="cpp">void Foo::something()
+{
+    ...
+    [this]() { Foo::someStaticFunction(); }
+    ...
+}
+</code></pre>
+
+<p><strong>NOT</strong></p>
+<pre><code class="cpp">void Foo::something()
+{
+    ...
+    []() { Foo::someStaticFunction(); }
+    ...
+}
+</code></pre>
+
+<p>Format the lambda according to the following rules:</p>
+<ul>
+<li>Always write parentheses for the parameter list, even if the function does not take parameters.</li>
+</ul>
+<pre><code class="cpp">[]() { doSomething(); }
+</code></pre>
+
+<p><strong>NOT</strong></p>
+<pre><code class="cpp">[] { doSomething(); }
+</code></pre>
+
+<ul>
+<li>Place the capture-list, parameter list, return type, and opening brace on the first line, the body indented on the following lines, and the closing brace on a new line.</li>
+</ul>
+<pre><code class="cpp">[]() -&gt; bool {
+    something();
+    return isSomethingElse();
+}
+</code></pre>
+
+<p><strong>NOT</strong></p>
+<pre><code class="cpp">[]() -&gt; bool { something();
+    somethingElse(); }
+</code></pre>
+
+<ul>
+<li>Place a closing parenthesis and semicolon of an enclosing function call on the same line as the closing brace of the lambda.</li>
+</ul>
+<pre><code class="cpp">foo([]() {
+    something();
+});
+</code></pre>
+
+<ul>
+<li>If you are using a lambda in an 'if' statement, start the lambda on a new line, to avoid confusion between the opening brace for the lambda and the opening brace for the 'if' statement.</li>
+</ul>
+<pre><code class="cpp">if (anyOf(fooList,
+          [](Foo foo) {
+              return foo.isGreat();
+          }) {
+    return;
+}
+</code></pre>
+
+<p><strong>NOT</strong></p>
+<pre><code class="cpp">if (anyOf(fooList, [](Foo foo) {
+          return foo.isGreat();
+       }) {
+    return;
+}
+</code></pre>
+
+<ul>
+<li>Optionally, place the lambda completely on one line if it fits.</li>
+</ul>
+<pre><code class="cpp">foo([]() { return true; });
+
+if (foo([]() { return true; })) {
+    ...
+}
+</code></pre>
+
+<h3 id="auto-keyword">auto Keyword</h3>
+<p>Optionally, you can use the auto keyword in the following cases. If in doubt, for example if using auto could make the code less readable, do not use auto. Keep in mind that code is read much more often than written.</p>
+<ul>
+<li>When it avoids repetition of a type in the same statement.</li>
+</ul>
+<pre><code class="cpp">auto something = new MyCustomType;
+auto keyEvent = static_cast&lt;QKeyEvent *&gt;(event);
+auto myList = QStringList() &lt;&lt; QLatin1String(&quot;FooThing&quot;) &lt;&lt; QLatin1String(&quot;BarThing&quot;);
+</code></pre>
+
+<ul>
+<li>When assigning iterator types.</li>
+</ul>
+<pre><code class="cpp">auto it = myList.const_iterator();
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../design-philosophy/" title="Design Philosophy" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Design Philosophy
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../cpp-style/" title="C++ Coding Style" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                C++ Coding Style
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,978 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Philosophy - Liri Developers Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-liri-environment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Liri Developers Documentation" class="md-header-nav__button md-logo" aria-label="Liri Developers Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Liri Developers Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Philosophy
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Liri Developers Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      About
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="About" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Philosophy
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Philosophy" class="md-nav__link md-nav__link--active">
+      Philosophy
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-distraction-free-content-focused-desktop" class="md-nav__link">
+    A distraction free, content focused desktop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoiding-manual-configuration" class="md-nav__link">
+    Avoiding manual configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-out-of-the-box-experience" class="md-nav__link">
+    Creating An "Out of the Box" Experience
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-the-os-not-the-user" class="md-nav__link">
+    Ask the OS, Not the User
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-it-necessary-to-the-user-experience" class="md-nav__link">
+    Is It Necessary To The User Experience?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contextual-display" class="md-nav__link">
+    Contextual Display
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-screen-helps-users-focus" class="md-nav__link">
+    Full-Screen Helps Users Focus
+  </a>
+  
+    <nav class="md-nav" aria-label="Full-Screen Helps Users Focus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-applications-display-on-taskbar" class="md-nav__link">
+    How Applications Display On Taskbar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-user-experience-via-system-preferences" class="md-nav__link">
+    Customizing User Experience Via System Preferences
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-help-and-documentation-is-unobtrusively-available" class="md-nav__link">
+    User Help And Documentation Is Unobtrusively Available
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-users-on-a-single-system" class="md-nav__link">
+    Multiple Users On A Single System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility-and-internationalization" class="md-nav__link">
+    Accessibility and Internationalization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-focus-on-typography" class="md-nav__link">
+    A Focus On Typography
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../project-management/" title="Project Management" class="md-nav__link">
+      Project Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Packaging
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Packaging" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Packaging
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../packaging/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../packaging/snap/" title="Snap" class="md-nav__link">
+      Snap
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Contributing
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/contributor-guide/" title="Contributor Guide" class="md-nav__link">
+      Contributor Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/build-sources/" title="Build from Sources" class="md-nav__link">
+      Build from Sources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/upstream-issues/" title="Upstream Issues" class="md-nav__link">
+      Upstream Issues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Coding Conventions
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Coding Conventions" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Coding Conventions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/coding-conventions/design-philosophy/" title="Design Philosophy" class="md-nav__link">
+      Design Philosophy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/coding-conventions/cpp-conventions/" title="C++ Coding Conventions" class="md-nav__link">
+      C++ Coding Conventions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/coding-conventions/cpp-style/" title="C++ Coding Style" class="md-nav__link">
+      C++ Coding Style
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/coding-conventions/qml-conventions/" title="QML Coding Conventions" class="md-nav__link">
+      QML Coding Conventions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Modules
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Modules" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Text
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Text" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Text
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/text/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/text/syntax-highlighting/" title="Syntax Highlighting" class="md-nav__link">
+      Syntax Highlighting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Browser
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Browser" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Browser
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/browser/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modules/browser/shortcuts/" title="Shortcuts" class="md-nav__link">
+      Shortcuts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-distraction-free-content-focused-desktop" class="md-nav__link">
+    A distraction free, content focused desktop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoiding-manual-configuration" class="md-nav__link">
+    Avoiding manual configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-out-of-the-box-experience" class="md-nav__link">
+    Creating An "Out of the Box" Experience
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-the-os-not-the-user" class="md-nav__link">
+    Ask the OS, Not the User
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-it-necessary-to-the-user-experience" class="md-nav__link">
+    Is It Necessary To The User Experience?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contextual-display" class="md-nav__link">
+    Contextual Display
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-screen-helps-users-focus" class="md-nav__link">
+    Full-Screen Helps Users Focus
+  </a>
+  
+    <nav class="md-nav" aria-label="Full-Screen Helps Users Focus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-applications-display-on-taskbar" class="md-nav__link">
+    How Applications Display On Taskbar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-user-experience-via-system-preferences" class="md-nav__link">
+    Customizing User Experience Via System Preferences
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-help-and-documentation-is-unobtrusively-available" class="md-nav__link">
+    User Help And Documentation Is Unobtrusively Available
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-users-on-a-single-system" class="md-nav__link">
+    Multiple Users On A Single System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility-and-internationalization" class="md-nav__link">
+    Accessibility and Internationalization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-focus-on-typography" class="md-nav__link">
+    A Focus On Typography
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="the-liri-environment">The Liri environment</h1>
+<p>Liri aims to offer an excellent desktop experience.</p>
+<p>Instead of forcing the user to know every detail of their computer, we expect them to turn
+it on, sit down and simply use it. We are able to achieve this through concise design methodology and
+the fact that all the applications built for Liri are designed from top to bottom to work together,
+offer consistency and stability, and deliver the features users want.</p>
+<p>To develop an excellent application, you will need to understand the environment and why our
+users love it. With this understanding, have no doubt that you will be able to establish an
+application that takes adventures of core platform features and an interface that integrates
+seamlessly into the desktop experience.</p>
+<h2 id="a-distraction-free-content-focused-desktop">A distraction free, content focused desktop</h2>
+<p>Liri was created around the core belief that the majority of people use computers to create and
+experience digital content that they care about and throughout their daily activities.</p>
+<p>On a Liri device, the user is free to focus on their content and productivity because Liri
+performs many of the typical backend application management tasks that users are generally
+expected to handle.</p>
+<h2 id="avoiding-manual-configuration">Avoiding manual configuration</h2>
+<p>Liri is able to take much of the burden of adjusting and controlling the minor details of
+the system for the majority of users. This is achieved by promoting minimal configuration
+throughout the system and applications. </p>
+<p>Providing settings is usually an easy way out of making design decisions about an app’s behavior.
+The same as feature bloat, increased user settings mean more code, more bugs, more testing,
+more documentation, and more overall complexity for the user.</p>
+<h2 id="creating-an-out-of-the-box-experience">Creating An "Out of the Box" Experience</h2>
+<p>Always design with sane defaults in focus.</p>
+<p>Liri applications put a strong emphasis on the out of the box experience for the users.</p>
+<p>It is safe to assume that if your app requires configuration before a user can be comfortable
+using it, the user may not take the time to configure it at all and simply use another app
+in place.</p>
+<h2 id="ask-the-os-not-the-user">Ask the OS, Not the User</h2>
+<p>Get as much information automatically as possible. In place of asking the user for his or her
+name and location, ask the system for this information. This directly reduces the amount of
+tasks a user has to complete before they are able to have any amount of productivity, it also
+gives an extra layer of intelligence and integration to your app.</p>
+<h2 id="is-it-necessary-to-the-user-experience">Is It Necessary To The User Experience?</h2>
+<p>Always contemplate on if the configuration option you are adding is really necessary or vital
+to the user. Avoid asking users to make engineering or design related decisions. Configuration
+options should be strictly regulated and assigned to either the initial setup of the app or
+personal preference.</p>
+<h2 id="contextual-display">Contextual Display</h2>
+<p>Keep things in context. Actively make design decisions that allow you to display preferences in
+context with the objects they affect, rather than tucked away in a configuration dialog.</p>
+<p>If your app requires configuration upon initial use, or before it can be used (like a mail client),
+present this configuration inside the main app window much like a Welcome Screen. Once again, be
+mindful to only present configuration options when necessary.</p>
+<h2 id="full-screen-helps-users-focus">Full-Screen Helps Users Focus</h2>
+<p>At times it can make sense for an app to offer an immersive, full-screen experience to help users
+focus on tasks and avoid distractions from the desktop or background applications.</p>
+<p>Liri makes extensive use of this and compliments full-screen applications organically with ease.</p>
+<p>[INSERT FULL-SCREEN SCREENSHOT]</p>
+<p>Insert detailed information about the full-screen native functionality of applications.</p>
+<h3 id="how-applications-display-on-taskbar">How Applications Display On Taskbar</h3>
+<p>Relevant text.</p>
+<h3 id="customizing-user-experience-via-system-preferences">Customizing User Experience Via System Preferences</h3>
+<p>Relevant text.</p>
+<h3 id="user-help-and-documentation-is-unobtrusively-available">User Help And Documentation Is Unobtrusively Available</h3>
+<p>Relevant text.</p>
+<h3 id="multiple-users-on-a-single-system">Multiple Users On A Single System</h3>
+<p>Relevant text.</p>
+<h3 id="accessibility-and-internationalization">Accessibility and Internationalization</h3>
+<p>Relevant text.</p>
+<h3 id="a-focus-on-typography">A Focus On Typography</h3>
+<p>Relevant text.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../.." title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../project-management/" title="Project Management" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Project Management
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
