@@ -77,6 +77,9 @@
                     <section ref="qml-fluid-controls-floatingactionbutton.html" title="FloatingActionButton Type Reference">
                         <section ref="qml-fluid-controls-floatingactionbutton-members.html" title="List of all members"/>
                     </section>
+                    <section ref="qml-fluid-controls-fluid-controls-utils.html" title="Fluid.Controls::Utils Type Reference">
+                        <section ref="qml-fluid-controls-fluid-controls-utils-members.html" title="List of all members"/>
+                    </section>
                     <section ref="qml-fluid-controls-headlinelabel.html" title="HeadlineLabel Type Reference">
                         <section ref="qml-fluid-controls-headlinelabel-members.html" title="List of all members"/>
                     </section>
@@ -173,11 +176,11 @@
                     <section ref="qml-fluid-core-clipboard.html" title="Clipboard Type Reference">
                         <section ref="qml-fluid-core-clipboard-members.html" title="List of all members"/>
                     </section>
+                    <section ref="qml-fluid-core-fluid-core-utils.html" title="Fluid.Core::Utils Type Reference">
+                        <section ref="qml-fluid-core-fluid-core-utils-members.html" title="List of all members"/>
+                    </section>
                     <section ref="qml-fluid-core-object.html" title="Object Type Reference">
                         <section ref="qml-fluid-core-object-members.html" title="List of all members"/>
-                    </section>
-                    <section ref="qml-fluid-core-utils.html" title="Utils Type Reference">
-                        <section ref="qml-fluid-core-utils-members.html" title="List of all members"/>
                     </section>
                     <section ref="qml-fluid-effects-boxshadow.html" title="BoxShadow Type Reference">
                         <section ref="qml-fluid-effects-boxshadow-members.html" title="List of all members"/>
@@ -266,6 +269,9 @@
                     <section ref="qml-fluid-controls-floatingactionbutton.html" title="FloatingActionButton Type Reference">
                         <section ref="qml-fluid-controls-floatingactionbutton-members.html" title="List of all members"/>
                     </section>
+                    <section ref="qml-fluid-controls-fluid-controls-utils.html" title="Fluid.Controls::Utils Type Reference">
+                        <section ref="qml-fluid-controls-fluid-controls-utils-members.html" title="List of all members"/>
+                    </section>
                     <section ref="qml-fluid-controls-headlinelabel.html" title="HeadlineLabel Type Reference">
                         <section ref="qml-fluid-controls-headlinelabel-members.html" title="List of all members"/>
                     </section>
@@ -362,11 +368,11 @@
                     <section ref="qml-fluid-core-clipboard.html" title="Clipboard Type Reference">
                         <section ref="qml-fluid-core-clipboard-members.html" title="List of all members"/>
                     </section>
+                    <section ref="qml-fluid-core-fluid-core-utils.html" title="Fluid.Core::Utils Type Reference">
+                        <section ref="qml-fluid-core-fluid-core-utils-members.html" title="List of all members"/>
+                    </section>
                     <section ref="qml-fluid-core-object.html" title="Object Type Reference">
                         <section ref="qml-fluid-core-object-members.html" title="List of all members"/>
-                    </section>
-                    <section ref="qml-fluid-core-utils.html" title="Utils Type Reference">
-                        <section ref="qml-fluid-core-utils-members.html" title="List of all members"/>
                     </section>
                     <section ref="qml-fluid-effects-boxshadow.html" title="BoxShadow Type Reference">
                         <section ref="qml-fluid-effects-boxshadow-members.html" title="List of all members"/>
@@ -425,6 +431,8 @@
             <keyword name="Fluid Effects QML Types" id="Fluid Effects QML Types" ref="fluid-effects-qmlmodule.html"/>
             <keyword name="Fluid Layouts QML Types" id="Fluid Layouts QML Types" ref="fluid-layouts-qmlmodule.html"/>
             <keyword name="Fluid Templates QML Types" id="Fluid Templates QML Types" ref="fluid-templates-qmlmodule.html"/>
+            <keyword name="Fluid.Controls::Utils" id="QML.Fluid.Controls::Utils" ref="qml-fluid-controls-fluid-controls-utils.html"/>
+            <keyword name="Fluid.Core::Utils" id="QML.Fluid.Core::Utils" ref="qml-fluid-core-fluid-core-utils.html"/>
             <keyword name="HeadlineLabel" id="QML.HeadlineLabel" ref="qml-fluid-controls-headlinelabel.html"/>
             <keyword name="Icon" id="QML.Icon" ref="qml-fluid-controls-icon.html"/>
             <keyword name="InputDialog" id="QML.InputDialog" ref="qml-fluid-controls-inputdialog.html"/>
@@ -456,7 +464,6 @@
             <keyword name="TitleLabel" id="QML.TitleLabel" ref="qml-fluid-controls-titlelabel.html"/>
             <keyword name="ToolButton" id="QML.ToolButton" ref="qml-fluid-controls-toolbutton.html"/>
             <keyword name="Units" id="QML.Units" ref="qml-fluid-controls-units.html"/>
-            <keyword name="Utils" id="QML.Utils" ref="qml-fluid-core-utils.html"/>
             <keyword name="Vignette" id="QML.Vignette" ref="qml-fluid-effects-vignette.html"/>
             <keyword name="Wave" id="QML.Wave" ref="qml-fluid-controls-wave.html"/>
             <keyword name="abstractHeight" id="Wave::abstractHeight" ref="qml-fluid-controls-wave.html#abstractHeight-prop"/>
@@ -570,7 +577,6 @@
             <keyword name="icon" id="Placeholder::icon" ref="qml-fluid-controls-placeholder.html#icon-prop"/>
             <keyword name="icon" id="Tab::icon" ref="qml-fluid-controls-tab.html#icon-prop"/>
             <keyword name="iconSizes" id="Units::iconSizes" ref="qml-fluid-controls-units.html#iconSizes-prop"/>
-            <keyword name="iconUrl" id="Utils::iconUrl" ref="qml-fluid-core-utils.html#iconUrl-method"/>
             <keyword name="imageSwapped" id="SmoothFadeImage::imageSwapped" ref="qml-fluid-controls-smoothfadeimage.html#imageSwapped-signal"/>
             <keyword name="incrementCurrentIndex" id="TabbedPage::incrementCurrentIndex" ref="qml-fluid-controls-tabbedpage.html#incrementCurrentIndex-method"/>
             <keyword name="initialPage" id="ApplicationWindow::initialPage" ref="qml-fluid-controls-applicationwindow.html#initialPage-prop"/>
@@ -643,7 +649,6 @@
             <keyword name="rows" id="BottomSheetGrid::rows" ref="qml-fluid-controls-bottomsheetgrid.html#rows-prop"/>
             <keyword name="running" id="SmoothFadeImage::running" ref="qml-fluid-controls-smoothfadeimage.html#running-prop"/>
             <keyword name="running" id="SmoothFadeLoader::running" ref="qml-fluid-controls-smoothfadeloader.html#running-prop"/>
-            <keyword name="scale" id="Utils::scale" ref="qml-fluid-core-utils.html#scale-method"/>
             <keyword name="search" id="SearchBar::search" ref="qml-fluid-controls-searchbar.html#search-signal"/>
             <keyword name="searchPlaceHolder" id="SearchBar::searchPlaceHolder" ref="qml-fluid-controls-searchbar.html#searchPlaceHolder-prop"/>
             <keyword name="searchResults" id="SearchBar::searchResults" ref="qml-fluid-controls-searchbar.html#searchResults-prop"/>
@@ -784,6 +789,8 @@
             <file>qml-fluid-controls-displaylabel.html</file>
             <file>qml-fluid-controls-floatingactionbutton-members.html</file>
             <file>qml-fluid-controls-floatingactionbutton.html</file>
+            <file>qml-fluid-controls-fluid-controls-utils-members.html</file>
+            <file>qml-fluid-controls-fluid-controls-utils.html</file>
             <file>qml-fluid-controls-headlinelabel-members.html</file>
             <file>qml-fluid-controls-headlinelabel.html</file>
             <file>qml-fluid-controls-icon-members.html</file>
@@ -848,10 +855,10 @@
             <file>qml-fluid-controls-wave.html</file>
             <file>qml-fluid-core-clipboard-members.html</file>
             <file>qml-fluid-core-clipboard.html</file>
+            <file>qml-fluid-core-fluid-core-utils-members.html</file>
+            <file>qml-fluid-core-fluid-core-utils.html</file>
             <file>qml-fluid-core-object-members.html</file>
             <file>qml-fluid-core-object.html</file>
-            <file>qml-fluid-core-utils-members.html</file>
-            <file>qml-fluid-core-utils.html</file>
             <file>qml-fluid-effects-boxshadow-members.html</file>
             <file>qml-fluid-effects-boxshadow.html</file>
             <file>qml-fluid-effects-circlemask-members.html</file>

@@ -176,6 +176,7 @@
 <a name="goBack-signal"></a><span class="type">void</span> <span class="name">goBack</span>(<i>event</i>)</p></td></tr>
 </table></div></div>
 <div class="qmldoc"><p>This signal is emitted when the back action is triggered or back key is released.</p>
+<p>The <i>event</i> is provided with the signal.</p>
 <p>By default, the page will be popped from the page stack. To change the default behavior, for example to show a confirmation dialog, listen for this signal using <code>onGoBack</code> and set <code>event.accepted</code> to <code>true</code>. To dismiss the page from your dialog without triggering this signal and re-showing the dialog, call <code>page.forcePop()</code>.</p>
 <p><b>See also </b><a href="qml-fluid-controls-page.html#forcePop-method">Fluid.Controls::Page::forcePop()</a>.</p>
 </div></div><!-- @@@goBack -->
@@ -199,7 +200,8 @@
 <a name="pop-method"></a><span class="type">void</span> <span class="name">pop</span>(<i>event</i>,  <span class="type">bool</span> <i>force</i>)</p></td></tr>
 </table></div></div>
 <div class="qmldoc"><p>Pop this page from the page stack. This does nothing if this page is not the current page on the page stack.</p>
-<p>Use <code>force</code> to avoid calling the <a href="qml-fluid-controls-page.html#goBack-signal">goBack</a> signal. This is useful if you use the <a href="qml-fluid-controls-page.html#goBack-signal">goBack</a> signal to show a confirmation dialog, and want to close the page from your dialog without showing the dialog again. You can also use <a href="qml-fluid-controls-page.html#forcePop-method">Fluid.Controls::Page::forcePop()</a> as a shortcut to this behavior.</p>
+<p>The <i>event</i> will be passed to the <a href="qml-fluid-controls-page.html#goBack-signal">goBack</a> signal.</p>
+<p>Use <i>force</i> to avoid calling the <a href="qml-fluid-controls-page.html#goBack-signal">goBack</a> signal. This is useful if you use the <a href="qml-fluid-controls-page.html#goBack-signal">goBack</a> signal to show a confirmation dialog, and want to close the page from your dialog without showing the dialog again. You can also use <a href="qml-fluid-controls-page.html#forcePop-method">Fluid.Controls::Page::forcePop()</a> as a shortcut to this behavior.</p>
 <p><b>See also </b><a href="qml-fluid-controls-page.html#forcePop-method">Fluid.Controls::Page::forcePop()</a>.</p>
 </div></div><!-- @@@pop -->
 <br/>
@@ -210,7 +212,7 @@
 <td class="tblQmlFuncNode"><p>
 <a name="push-method"></a><span class="type">void</span> <span class="name">push</span>(<i>component</i>,  <span class="type">object</span> <i>properties</i>)</p></td></tr>
 </table></div></div>
-<div class="qmldoc"><p>Push the specified component onto the page stack.</p>
+<div class="qmldoc"><p>Push the specified <i>component</i> onto the page stack and set the <i>properties</i>.</p>
 <p><b>See also </b>StackView::push().</p>
 </div></div><!-- @@@push -->
 <br/>
