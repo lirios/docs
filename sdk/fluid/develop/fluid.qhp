@@ -77,6 +77,9 @@
                     <section ref="qml-fluid-controls-floatingactionbutton.html" title="FloatingActionButton Type Reference">
                         <section ref="qml-fluid-controls-floatingactionbutton-members.html" title="List of all members"/>
                     </section>
+                    <section ref="qml-fluid-controls-fluid-controls-card.html" title="Fluid.Controls.Card Type Reference">
+                        <section ref="qml-fluid-controls-fluid-controls-card-members.html" title="List of all members"/>
+                    </section>
                     <section ref="qml-fluid-controls-fluid-controls-utils.html" title="Fluid.Controls::Utils Type Reference">
                         <section ref="qml-fluid-controls-fluid-controls-utils-members.html" title="List of all members"/>
                     </section>
@@ -269,6 +272,9 @@
                     <section ref="qml-fluid-controls-floatingactionbutton.html" title="FloatingActionButton Type Reference">
                         <section ref="qml-fluid-controls-floatingactionbutton-members.html" title="List of all members"/>
                     </section>
+                    <section ref="qml-fluid-controls-fluid-controls-card.html" title="Fluid.Controls.Card Type Reference">
+                        <section ref="qml-fluid-controls-fluid-controls-card-members.html" title="List of all members"/>
+                    </section>
                     <section ref="qml-fluid-controls-fluid-controls-utils.html" title="Fluid.Controls::Utils Type Reference">
                         <section ref="qml-fluid-controls-fluid-controls-utils-members.html" title="List of all members"/>
                     </section>
@@ -431,6 +437,7 @@
             <keyword name="Fluid Effects QML Types" id="Fluid Effects QML Types" ref="fluid-effects-qmlmodule.html"/>
             <keyword name="Fluid Layouts QML Types" id="Fluid Layouts QML Types" ref="fluid-layouts-qmlmodule.html"/>
             <keyword name="Fluid Templates QML Types" id="Fluid Templates QML Types" ref="fluid-templates-qmlmodule.html"/>
+            <keyword name="Fluid.Controls.Card" id="QML.Fluid.Controls.Card" ref="qml-fluid-controls-fluid-controls-card.html"/>
             <keyword name="Fluid.Controls::Utils" id="QML.Fluid.Controls::Utils" ref="qml-fluid-controls-fluid-controls-utils.html"/>
             <keyword name="Fluid.Core::Utils" id="QML.Fluid.Core::Utils" ref="qml-fluid-core-fluid-core-utils.html"/>
             <keyword name="HeadlineLabel" id="QML.HeadlineLabel" ref="qml-fluid-controls-headlinelabel.html"/>
@@ -789,6 +796,8 @@
             <file>qml-fluid-controls-displaylabel.html</file>
             <file>qml-fluid-controls-floatingactionbutton-members.html</file>
             <file>qml-fluid-controls-floatingactionbutton.html</file>
+            <file>qml-fluid-controls-fluid-controls-card-members.html</file>
+            <file>qml-fluid-controls-fluid-controls-card.html</file>
             <file>qml-fluid-controls-fluid-controls-utils-members.html</file>
             <file>qml-fluid-controls-fluid-controls-utils.html</file>
             <file>qml-fluid-controls-headlinelabel-members.html</file>
