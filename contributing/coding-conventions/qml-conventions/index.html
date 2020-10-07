@@ -679,7 +679,7 @@
 </ul>
 <p>For better readability, we separate these different parts with an empty line.</p>
 <p>For example, a hypothetical photo QML object would look like this:</p>
-<pre><code class="qml">Rectangle {
+<pre><code class="language-qml">Rectangle {
     id: photo                                               // id on the first line makes it easy to find an object
 
     property bool thumbnail: false                          // property declarations
@@ -719,11 +719,10 @@
     }
 }
 </code></pre>
-
 <h2 id="grouped-properties">Grouped Properties</h2>
 <p>If using multiple properties from a group of properties, consider using group notation instead of dot notation if it improves readability.</p>
 <p>For example, this:</p>
-<pre><code class="qml">Rectangle {
+<pre><code class="language-qml">Rectangle {
     anchors.left: parent.left; anchors.top: parent.top; anchors.right: parent.right; anchors.leftMargin: 20
 }
 
@@ -732,9 +731,8 @@ Text {
     font.bold: true; font.italic: true; font.pixelSize: 20; font.capitalization: Font.AllUppercase
 }
 </code></pre>
-
 <p>could be written like this:</p>
-<pre><code class="qml">Rectangle {
+<pre><code class="language-qml">Rectangle {
     anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: 20 }
 }
 
@@ -743,33 +741,29 @@ Text {
     font { bold: true; italic: true; pixelSize: 20; capitalization: Font.AllUppercase }
 }
 </code></pre>
-
 <h2 id="lists">Lists</h2>
 <p>If a list contains only one element, we generally omit the square brackets.</p>
 <p>For example, it is very common for a component to only have one state.</p>
 <p>In this case, instead of:</p>
-<pre><code class="qml">states: [
+<pre><code class="language-qml">states: [
     State {
         name: &quot;open&quot;
         PropertyChanges { target: container; width: 200 }
     }
 ]
 </code></pre>
-
 <p>we will write this:</p>
-<pre><code class="qml">states: State {
+<pre><code class="language-qml">states: State {
     name: &quot;open&quot;
     PropertyChanges { target: container; width: 200 }
 }
 </code></pre>
-
 <h2 id="javascript-code">JavaScript Code</h2>
 <p>If the script is a single expression, we recommend writing it inline:</p>
-<pre><code class="qml">Rectangle { color: &quot;blue&quot;; width: parent.width / 3 }
+<pre><code class="language-qml">Rectangle { color: &quot;blue&quot;; width: parent.width / 3 }
 </code></pre>
-
 <p>If the script is only a couple of lines long, we generally use a block:</p>
-<pre><code class="qml">Rectangle {
+<pre><code class="language-qml">Rectangle {
     color: &quot;blue&quot;
     width: {
         var w = parent.width / 3;
@@ -778,9 +772,8 @@ Text {
     }
 }
 </code></pre>
-
 <p>If the script is more than a couple of lines long or can be used by different objects, we recommend creating a function and calling it like this:</p>
-<pre><code class="qml">function calculateWidth(object)
+<pre><code class="language-qml">function calculateWidth(object)
 {
     var w = object.width / 3;
     // ...
@@ -792,15 +785,13 @@ Text {
 
 Rectangle { color: &quot;blue&quot;; width: calculateWidth(parent) }
 </code></pre>
-
 <p>For long scripts, we will put the functions in their own JavaScript file and import it like this:</p>
-<pre><code class="qml">import &quot;myscript.js&quot; as Script
+<pre><code class="language-qml">import &quot;myscript.js&quot; as Script
 
 Rectangle { color: &quot;blue&quot;; width: Script.calculateWidth(parent) }
 </code></pre>
-
 <p>If the code is longer than one line and hence within a block, we use semicolons to indicate the end of each statement:</p>
-<pre><code class="qml">MouseArea {
+<pre><code class="language-qml">MouseArea {
     anchors.fill: parent
     onClicked: {
         var scenePos = mapToItem(null, mouseX, mouseY);
@@ -808,7 +799,6 @@ Rectangle { color: &quot;blue&quot;; width: Script.calculateWidth(parent) }
     }
 }
 </code></pre>
-
 <p>This document is based on <a href="http://doc.qt.io/qt-5/qml-codingconventions.html">Qt's QML Coding Conventions</a> which is (C) 2017 The Qt Company Ltd, licensed under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU Free Documentation License version 1.3</a> as published by the Free Software Foundation.</p>
                 
               

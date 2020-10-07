@@ -763,7 +763,7 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
 <li>Single character variable names are only okay for counters and temporaries, where the purpose of the variable is obvious</li>
 <li>Wait when declaring a variable until it is needed</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  int a, b;
  char *c, *d;
 
@@ -773,12 +773,11 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
  char *nameOfThis;
  char *nameOfThat;
 </code></pre>
-
 <ul>
 <li>Variables and functions start with a lower-case letter. Each consecutive word in a variable's name starts with an upper-case letter</li>
 <li>Avoid abbreviations</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  short Cntr;
  char ITEM_DELIM = ' ';
 
@@ -786,7 +785,6 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
  short counter;
  char itemDelimiter = ' ';
 </code></pre>
-
 <ul>
 <li>Classes always start with an upper-case letter. Public classes start with a 'Q' (QRgb) followed by an upper case letter. Public functions most often start with a 'q' (qRgb).</li>
 <li>Acronyms are camel-cased (e.g. QXmlStreamReader, not QXMLStreamReader).</li>
@@ -797,7 +795,7 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
 <li>Always use only one blank line</li>
 <li>Always use a single space after a keyword and before a curly brace:</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  if(foo){
  }
 
@@ -805,44 +803,40 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
  if (foo) {
  }
 </code></pre>
-
 <ul>
 <li>For pointers or references, always use a single space between the type and '<em>' or '&amp;', but no space between the '</em>' or '&amp;' and the variable name:</li>
 </ul>
-<pre><code class="cpp"> char *x;
+<pre><code class="language-cpp"> char *x;
  const QString &amp;myString;
  const char - const y = &quot;hello&quot;;
 </code></pre>
-
 <ul>
 <li>Surround binary operators with spaces</li>
 <li>No space after a cast</li>
 <li>Avoid C-style casts when possible</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  char- blockOfMemory = (char- ) malloc(data.size());
 
  // Correct
  char *blockOfMemory = reinterpret_cast&lt;char *&gt;(malloc(data.size()));
 </code></pre>
-
 <ul>
 <li>Do not put multiple statements on one line</li>
 <li>By extension, use a new line for the body of a control flow statement:</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  if (foo) bar();
 
  // Correct
  if (foo)
      bar();
 </code></pre>
-
 <h2 id="braces">Braces</h2>
 <ul>
 <li>Use attached braces: The opening brace goes on the same line as the start of the statement. If the closing brace is followed by another keyword, it goes into the same line as well:</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  if (codec)
  {
  }
@@ -855,11 +849,10 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
  } else {
  }
 </code></pre>
-
 <ul>
 <li>Exception: Function implementations and class declarations always have the left brace on the start of a line:</li>
 </ul>
-<pre><code class="cpp"> static void foo(int g)
+<pre><code class="language-cpp"> static void foo(int g)
  {
      qDebug(&quot;foo: %i&quot;, g);
  }
@@ -868,11 +861,10 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
  {
  };
 </code></pre>
-
 <ul>
 <li>Use curly braces only when the body of a conditional statement contains more than one line:</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  if (address.isEmpty()) {
      return false;
  }
@@ -888,21 +880,19 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
  for (int i = 0; i &lt; 10;i)
      qDebug(&quot;%i&quot;, i);
 </code></pre>
-
 <ul>
 <li>Exception 1: Use braces also if the parent statement covers several lines / wraps:</li>
 </ul>
-<pre><code class="cpp"> // Correct
+<pre><code class="language-cpp"> // Correct
  if (address.isEmpty() || !isValid()
      || !codec) {
      return false;
  }
 </code></pre>
-
 <ul>
 <li>Exception 2: Brace symmetry: Use braces also in if-then-else blocks where either the if-code or the else-code covers several lines:</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  if (address.isEmpty())
      qDebug(&quot;empty!&quot;);
  else {
@@ -933,22 +923,20 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
          …
  }
 </code></pre>
-
 <ul>
 <li>Use curly braces when the body of a conditional statement is empty</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  while (a);
 
  // Correct
  while (a) {}
 </code></pre>
-
 <h2 id="parentheses">Parentheses</h2>
 <ul>
 <li>Use parentheses to group expressions:</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  if (a &amp;&amp; b || c)
 
  // Correct
@@ -960,13 +948,12 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
  // Correct
  (a + b) &amp; c
 </code></pre>
-
 <h2 id="switch-statements">Switch statements</h2>
 <ul>
 <li>The case labels are in the same column as the switch</li>
 <li>Every case must have a break (or return) statement at the end or a comment to indicate that there's intentionally no break, unless another case follows immediately.</li>
 </ul>
-<pre><code class="cpp"> switch (myEnum) {
+<pre><code class="language-cpp"> switch (myEnum) {
  case Value1:
    doSomething();
    break;
@@ -979,12 +966,11 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
    break;
  }
 </code></pre>
-
 <h2 id="jump-statements-break-continue-return-and-goto">Jump statements (break, continue, return, and goto)</h2>
 <ul>
 <li>Do not put 'else' after jump statements:</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  if (thisOrThat)
      return;
  else
@@ -995,7 +981,6 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
      return;
  somethingElse();
 </code></pre>
-
 <ul>
 <li>Exception: If the code is inherently symmetrical, use of 'else' is allowed to visualize that symmetry</li>
 </ul>
@@ -1005,7 +990,7 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
 <li>Comment/apidoc lines should be kept below 80 columns of actual text. Adjust to the surroundings, and try to flow the text in a way that avoids "jagged" paragraphs.</li>
 <li>Commas go at the end of wrapped lines; operators start at the beginning of the new lines. An operator at the end of the line is easy to miss if the editor is too narrow.</li>
 </ul>
-<pre><code class="cpp"> // Wrong
+<pre><code class="language-cpp"> // Wrong
  if (longExpression +
      otherLongExpression +
      otherOtherLongExpression) {
@@ -1017,7 +1002,6 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
      + otherOtherLongExpression) {
  }
 </code></pre>
-
 <h2 id="general-exception">General exception</h2>
 <ul>
 <li>When strictly following a rule makes your code look bad, feel free to break it</li>
@@ -1035,9 +1019,8 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
 --pad-header
 --pad-oper
 </code></pre>
-
 <p>Note that "unlimited" <code>--max-instatement-indent</code> is used only because astyle is not smart enough to wrap the first argument if subsequent lines would need indentation limitation. You are encouraged to manually limit in-statement-indent to roughly 50 colums:</p>
-<pre><code class="cpp">    int foo = some_really_long_function_name(and_another_one_to_drive_the_point_home(
+<pre><code class="language-cpp">    int foo = some_really_long_function_name(and_another_one_to_drive_the_point_home(
             first_argument, second_argument, third_arugment));
 </code></pre>
                 

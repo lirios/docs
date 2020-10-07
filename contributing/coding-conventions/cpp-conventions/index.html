@@ -851,30 +851,27 @@ See <a href="../cpp-style/">C++ Coding Style</a> for the lower-level conventions
 <li>In public header files, always use this form to include Qt headers: <code>#include &lt;QtCore/qwhatever.h&gt;</code>. The library prefix is necessary for Mac OS X frameworks and is very convenient for non-qmake projects.</li>
 <li>In source files, include specialized headers first, then generic headers. Separate the categories with empty lines.</li>
 </ul>
-<pre><code class="cpp">#include &lt;qstring.h&gt; // Qt class
+<pre><code class="language-cpp">#include &lt;qstring.h&gt; // Qt class
 #include &lt;new&gt; // STL stuff
 #include &lt;limits.h&gt; // system stuff
 </code></pre>
-
 <ul>
 <li>If you need to include <code>qplatformdefs.h</code>, always include it as the '''first''' header file.</li>
 <li>If you need to include private headers, be careful. Use the following syntax, irrespective of which module or directory whatever_p.h is in.</li>
 </ul>
-<pre><code class="cpp">#include &lt;private/whatever_p.h&gt;
+<pre><code class="language-cpp">#include &lt;private/whatever_p.h&gt;
 </code></pre>
-
 <h3 id="include-guards">Include guards</h3>
 <p>Never use <code>#pragma once</code> because it's not part of the C++ standard, it's not always supported and it's subject to double inclusion if
 any headers are copied somehere in the build process (which we does).</p>
 <p>Use include guards instead like these:</p>
-<pre><code class="cpp">#ifndef SOMEFILENAME_H
+<pre><code class="language-cpp">#ifndef SOMEFILENAME_H
 #define SOMEFILENAME_H
 
 // contents
 
 #endif // SOMEFILENAME_H
 </code></pre>
-
 <p>See the following threads from the Qt mailing list:</p>
 <ul>
 <li><a href="https://lists.qt-project.org/pipermail/development/2018-January/031966.html">https://lists.qt-project.org/pipermail/development/2018-January/031966.html</a></li>
@@ -892,57 +889,51 @@ any headers are copied somehere in the build process (which we does).</p>
 <ul>
 <li>Be extremely careful when using the questionmark operator. If the returned types aren't identical, some compilers generate code that crashes at runtime (you won't even get a compiler warning).</li>
 </ul>
-<pre><code class="cpp">QString s;
+<pre><code class="language-cpp">QString s;
 return condition ? s : &quot;nothing&quot;; // crash at runtime - QString vs. const char *
 </code></pre>
-
 <ul>
 <li>Be extremely careful about alignment.</li>
 <li>Whenever a pointer is cast such that the required alignment of the target is increased, the resulting code might crash at runtime on some architectures. For example, if a <code>const char *</code> is cast to an <code>const int *</code>, it'll crash on machines where integers have to be aligned at two- or four-byte boundaries.</li>
 <li>Use a union to force the compiler to align variables correctly. In the example below, you can be sure that all instances of <code>AlignHelper</code> are aligned at integer-boundaries.</li>
 </ul>
-<pre><code class="cpp">union AlignHelper {
+<pre><code class="language-cpp">union AlignHelper {
     char c;
     int i;
 };
 </code></pre>
-
 <ul>
 <li>Anything that has a constructor or needs to run code to be initialized cannot be used as global object in library code, since it is undefined when that constructor/code will be run (on first usage, on library load, before main() or not at all). Even if the execution time of the initializer is defined for shared libraries, you'll get into trouble when moving that code in a plugin or if the library is compiled statically:</li>
 </ul>
-<pre><code class="cpp">// global scope
+<pre><code class="language-cpp">// global scope
 static const QString x; // Wrong - default constructor needs to be run to initialize x
 static const QString y = &quot;Hello&quot;; // Wrong - constructor that takes a const char * has to be run
 QString z; // super wrong
 static const int i = foo(); // wrong - call time of foo() undefined, might not be called at all
 </code></pre>
-
 <p>Things you can do:</p>
-<pre><code class="cpp">// global scope
+<pre><code class="language-cpp">// global scope
 static const char x[] = &quot;someText&quot;; // Works - no constructor must be run, x set at compile time
 static int y = 7; // Works - y will be set at compile time
 static MyStruct s = {1, 2, 3}; // Works - will be initialized statically, no code being run
 static QString *ptr = 0; // Pointers to objects are ok - no code needed to be run to initialize ptr
 </code></pre>
-
 <p>Use <code>Q_GLOBAL_STATIC</code> to create static global objects instead:</p>
-<pre><code class="cpp">Q_GLOBAL_STATIC(QString, s)
+<pre><code class="language-cpp">Q_GLOBAL_STATIC(QString, s)
 
 void foo()
 {
     s()-&gt;append(&quot;moo&quot;);
 }
 </code></pre>
-
 <p>Note: Static objects in a scope are no problem, the constructor will be run the first time the scope is entered. The code is not reentrant, though.</p>
 <ul>
 <li>A <code>char</code> is signed or unsigned dependent on the architecture. Use <code>signed char</code> or <code>unsigned char</code> if you explicitely want a signed/unsigned char. The condition in the following code is always true on platforms where the default char is unsigned.</li>
 </ul>
-<pre><code class="cpp">char c; // c can't be negative if it is unsigned
+<pre><code class="language-cpp">char c; // c can't be negative if it is unsigned
 
 if (c &gt; 0) { … } // WRONG - condition is always true on platforms where the default is unsigned
 </code></pre>
-
 <ul>
 <li>Avoid 64-bit enum values.</li>
 <li>The aapcs embedded ABI hard codes all enum values to a 32-bit integer.</li>
@@ -967,18 +958,16 @@ if (c &gt; 0) { … } // WRONG - condition is always true on platforms where the
 <li>Example: Library A has <code>class Q_EXPORT X: public QList&lt;QVariant&gt; {};</code> and library B has <code>class Q_EXPORT Y: public QList&lt;QVariant&gt; {};</code> Suddenly, QList<QVariant>'s symbols are exported from two libraries - /clash/.</li>
 <li>Don't mix const and non-const iterators. This will silently crash on broken compilers.</li>
 </ul>
-<pre><code class="cpp">for (Container::const_iterator it = c.begin(); it != c.end(); ++it) // W R O N G
+<pre><code class="language-cpp">for (Container::const_iterator it = c.begin(); it != c.end(); ++it) // W R O N G
 for (Container::const_iterator it = c.cbegin(); it != c.cend(); ++it) // Right
 </code></pre>
-
 <ul>
 <li>Q[Core]Application is a singleton class. There can only be one instance at a time. However, that instance can be destroyed and a new one can be created, which is likely in an ActiveQt or browser plugin. Code like this will easily break:</li>
 </ul>
-<pre><code class="cpp">static QObject *obj = 0;
+<pre><code class="language-cpp">static QObject *obj = 0;
 if (!obj)
     obj = new QObject(QCoreApplication::instance());
 </code></pre>
-
 <p>If the <code>QCoreApplication</code> application is destroyed, <code>obj</code> will be a dangling pointer. Use <code>Q_GLOBAL_STATIC</code> for static global objects or <code>qAddPostRoutine</code> to clean up.</p>
 <ul>
 <li>Avoid the use of anonymous namespaces in favor of the static keyword if possible. A name localized to the compilation unit with <code>static</code> is guaranteed to have internal linkage. For names declared in anonymous namespaces the C++ standard unfortunately mandates external linkage. (7.1.1/6, or see various discussions about this on the gcc mailing lists)</li>
@@ -1003,13 +992,12 @@ if (!obj)
 <p><a href="http://stackoverflow.com/questions/4421706/operator-overloading/4421729#4421729">"The decision between member and non-member"</a></p>
 <p>A binary operator that treats both of its arguments equally should not be a member. Because, in addition to the reasons mentioned in the stack overflow answer, the arguments are not equal when the operator is a member.</p>
 <p>Example with QLineF which unfortunately has its operator== as a member:</p>
-<pre><code class="cpp">QLineF lineF;
+<pre><code class="language-cpp">QLineF lineF;
 QLine lineN;
 
 if (lineF == lineN) // Ok,  lineN is implicitly converted to QLineF
 if (lineN == lineF) // Error: QLineF cannot be converted implicitly to QLine, and the LHS is a member so no conversion applies
 </code></pre>
-
 <p>If the operator== was outside of the class, conversion rules would apply equally for both sides.</p>
 <h2 id="conventions-for-public-header-files">Conventions for public header files</h2>
 <p>Our public header files have to survive the strict settings of some of our users. All installed headers have to follow these rules:</p>
@@ -1034,24 +1022,22 @@ if (lineN == lineF) // Error: QLineF cannot be converted implicitly to QLine, an
 <p>If the baseclass <code>A</code> has a <code>virtual int val()</code> and subclass <code>B</code> an overload with the same name, <code>int val(int x)</code>, <code>A</code>'s <code>val</code> function is hidden. Use the <code>using</code> keyword to make it visible again:</p>
 </li>
 </ul>
-<pre><code class="cpp">class B: public A
+<pre><code class="language-cpp">class B: public A
 {
     using A::val;
     int val(int x);
 };
 </code></pre>
-
 <ul>
 <li>Don't shadow variables (<code>-Wshadow</code>)</li>
 <li>avoid things like <code>this-&gt;x = x;</code></li>
 <li>don't give variables the same name as functions declared in your class</li>
 <li>Always check whether a preprocessor variable is defined before probing its value (<code>-Wundef</code>)</li>
 </ul>
-<pre><code class="cpp">#if Foo == 0  // W R O N G
+<pre><code class="language-cpp">#if Foo == 0  // W R O N G
 #if defined(Foo) &amp;&amp; (Foo == 0) // Right
 #if Foo - 0 == 0 // Clever, are we? Use the one above instead, for better readability
 </code></pre>
-
 <h2 id="conventions-for-c11-usage">Conventions for C++11 usage</h2>
 <p><strong>Note:</strong> This section is not an accepted convention yet. This section serves as baseline for further discussions.</p>
 <h3 id="lambdas">Lambdas</h3>
@@ -1059,115 +1045,102 @@ if (lineN == lineF) // Error: QLineF cannot be converted implicitly to QLine, an
 <ul>
 <li>You have to explicitly specify the return type, if the lambda contains more than a single expression. Otherwise it does not compile with VS2010.</li>
 </ul>
-<pre><code class="cpp">[]() -&gt; QString {
+<pre><code class="language-cpp">[]() -&gt; QString {
     Foo *foo = activeFoo();
     return foo ? foo-&gt;displayName() : QString();
 });
 </code></pre>
-
 <p><strong>NOT</strong></p>
-<pre><code class="cpp">[]() {
+<pre><code class="language-cpp">[]() {
     Foo *foo = activeFoo();
     return foo ? foo-&gt;displayName() : QString();
 });
 </code></pre>
-
 <ul>
 <li>If you use static functions from the class that the lambda is located in, you have to explicitly capture this. Otherwise it does not compile with g++ 4.7 and earlier.</li>
 </ul>
-<pre><code class="cpp">void Foo::something()
+<pre><code class="language-cpp">void Foo::something()
 {
     ...
     [this]() { Foo::someStaticFunction(); }
     ...
 }
 </code></pre>
-
 <p><strong>NOT</strong></p>
-<pre><code class="cpp">void Foo::something()
+<pre><code class="language-cpp">void Foo::something()
 {
     ...
     []() { Foo::someStaticFunction(); }
     ...
 }
 </code></pre>
-
 <p>Format the lambda according to the following rules:</p>
 <ul>
 <li>Always write parentheses for the parameter list, even if the function does not take parameters.</li>
 </ul>
-<pre><code class="cpp">[]() { doSomething(); }
+<pre><code class="language-cpp">[]() { doSomething(); }
 </code></pre>
-
 <p><strong>NOT</strong></p>
-<pre><code class="cpp">[] { doSomething(); }
+<pre><code class="language-cpp">[] { doSomething(); }
 </code></pre>
-
 <ul>
 <li>Place the capture-list, parameter list, return type, and opening brace on the first line, the body indented on the following lines, and the closing brace on a new line.</li>
 </ul>
-<pre><code class="cpp">[]() -&gt; bool {
+<pre><code class="language-cpp">[]() -&gt; bool {
     something();
     return isSomethingElse();
 }
 </code></pre>
-
 <p><strong>NOT</strong></p>
-<pre><code class="cpp">[]() -&gt; bool { something();
+<pre><code class="language-cpp">[]() -&gt; bool { something();
     somethingElse(); }
 </code></pre>
-
 <ul>
 <li>Place a closing parenthesis and semicolon of an enclosing function call on the same line as the closing brace of the lambda.</li>
 </ul>
-<pre><code class="cpp">foo([]() {
+<pre><code class="language-cpp">foo([]() {
     something();
 });
 </code></pre>
-
 <ul>
 <li>If you are using a lambda in an 'if' statement, start the lambda on a new line, to avoid confusion between the opening brace for the lambda and the opening brace for the 'if' statement.</li>
 </ul>
-<pre><code class="cpp">if (anyOf(fooList,
+<pre><code class="language-cpp">if (anyOf(fooList,
           [](Foo foo) {
               return foo.isGreat();
           }) {
     return;
 }
 </code></pre>
-
 <p><strong>NOT</strong></p>
-<pre><code class="cpp">if (anyOf(fooList, [](Foo foo) {
+<pre><code class="language-cpp">if (anyOf(fooList, [](Foo foo) {
           return foo.isGreat();
        }) {
     return;
 }
 </code></pre>
-
 <ul>
 <li>Optionally, place the lambda completely on one line if it fits.</li>
 </ul>
-<pre><code class="cpp">foo([]() { return true; });
+<pre><code class="language-cpp">foo([]() { return true; });
 
 if (foo([]() { return true; })) {
     ...
 }
 </code></pre>
-
 <h3 id="auto-keyword">auto Keyword</h3>
 <p>Optionally, you can use the auto keyword in the following cases. If in doubt, for example if using auto could make the code less readable, do not use auto. Keep in mind that code is read much more often than written.</p>
 <ul>
 <li>When it avoids repetition of a type in the same statement.</li>
 </ul>
-<pre><code class="cpp">auto something = new MyCustomType;
+<pre><code class="language-cpp">auto something = new MyCustomType;
 auto keyEvent = static_cast&lt;QKeyEvent *&gt;(event);
 auto myList = QStringList() &lt;&lt; QLatin1String(&quot;FooThing&quot;) &lt;&lt; QLatin1String(&quot;BarThing&quot;);
 </code></pre>
-
 <ul>
 <li>When assigning iterator types.</li>
 </ul>
-<pre><code class="cpp">auto it = myList.const_iterator();
+<pre><code class="language-cpp">auto it = myList.const_iterator();
 </code></pre>
                 
               

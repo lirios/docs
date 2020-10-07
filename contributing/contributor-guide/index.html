@@ -732,66 +732,54 @@
 <h3 id="install-repo">Install repo</h3>
 <p>Your Linux distribution might have <code>repo</code> available, check in their repositories.</p>
 <p>We know Arch Linux has got the package, if you are using it just:</p>
-<pre><code class="sh">sudo pacman -S repo
+<pre><code class="language-sh">sudo pacman -S repo
 </code></pre>
-
 <p>If you are using another distribution and it doesn't have a package available, follow these instructions:</p>
 <p>Create ~/bin/ subdirectory, include it in PATH, and then switch to it by executing the following commands:</p>
-<pre><code class="sh">mkdir ~/bin/
+<pre><code class="language-sh">mkdir ~/bin/
 PATH=~/bin:$PATH
 </code></pre>
-
 <p>Download the repo script by executing the following command:</p>
-<pre><code class="sh">curl http://commondatastorage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo
+<pre><code class="language-sh">curl http://commondatastorage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo
 </code></pre>
-
 <p>Change the attribute of repo to make it executable by executing the command:</p>
-<pre><code class="sh">chmod a+x ~/bin/repo
+<pre><code class="language-sh">chmod a+x ~/bin/repo
 </code></pre>
-
 <h3 id="clone-the-repositories">Clone the repositories</h3>
 <p>To clone the latest source of all projects over SSH, perform the following procedure:</p>
 <p>Firstly, create a new directory for Liri. This will be referred to as repo root in the docs. Switch to it by executing the following commands:</p>
-<pre><code class="sh">mkdir -p ~/git/liri/lirios
+<pre><code class="language-sh">mkdir -p ~/git/liri/lirios
 cd ~/git/liri/lirios
 </code></pre>
-
 <p>Initialize the repository by executing one of the following commands, as appropriate.</p>
 <p>For <a href="https://help.github.com/articles/access-permissions-on-github/">write access</a>:</p>
-<pre><code class="sh">repo init -u ssh://git@github.com/lirios/lirios.git -b develop
+<pre><code class="language-sh">repo init -u ssh://git@github.com/lirios/lirios.git -b develop
 </code></pre>
-
 <p>For read-only access:</p>
-<pre><code class="sh">repo init -u https://github.com/lirios/lirios.git -b develop
+<pre><code class="language-sh">repo init -u https://github.com/lirios/lirios.git -b develop
 </code></pre>
-
 <p>Synchronize the repository by executing the following command:</p>
-<pre><code class="sh">repo sync
+<pre><code class="language-sh">repo sync
 </code></pre>
-
 <h3 id="get-ready-for-development">Get ready for development</h3>
 <p><code>repo</code> doesn't create local branches for you, hence you end up with a
 detached head that points to the last known good commit.</p>
 <p>Before you start developing make sure you have local branches:</p>
-<pre><code class="sh">repo forall -c 'git checkout $REPO_RREV; git submodule update --init --recursive'
+<pre><code class="language-sh">repo forall -c 'git checkout $REPO_RREV; git submodule update --init --recursive'
 </code></pre>
-
 <p>Now set git to use the commit template that will help you write
 good commit messages:</p>
-<pre><code class="sh">ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-template'
+<pre><code class="language-sh">ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-template'
 </code></pre>
-
 <h2 id="setup-the-environment">Setup the environment</h2>
 <p>The installation root is the directory where all files will be installed when building the Liri master project from QtCreator.</p>
 <p>To set your environment variables correctly so you will be able to launch the cross platform apps, run</p>
-<pre><code class="sh">source env-setup.sh [nvidia]
+<pre><code class="language-sh">source env-setup.sh [nvidia]
 </code></pre>
-
 <p><strong>Note</strong> for users running the Nvidia proprietary drivers: Supply the <code>nvidia</code> argument every time you run the env-setup.sh script</p>
 <p>By default, <code>.build/install-root</code> inside your repo root will be used as installation root. To change this, issue the command with the LIRIDIR prefix instead</p>
-<pre><code class="sh">LIRIDIR=&quot;path/to/directory&quot; source env-setup.sh [nvidia]
+<pre><code class="language-sh">LIRIDIR=&quot;path/to/directory&quot; source env-setup.sh [nvidia]
 </code></pre>
-
 <h2 id="open-the-project">Open the project</h2>
 <p>Run <code>QtCreator</code> and open the master project file <code>CMakeLists.txt</code> inside your repo root.</p>
 <p><img alt="Project" src="images/Liri-QtCreator.png" /></p>
@@ -810,13 +798,12 @@ good commit messages:</p>
 <h2 id="update-sources">Update sources</h2>
 <p>New repositories might be added to the manifest or new commits are pushed to existing repositories, so from time to time you need to fetch updated versions.</p>
 <p>Make sure all your changes are either committed or stashed and run:</p>
-<pre><code class="sh">cd ~/git/liri/lirios
+<pre><code class="language-sh">cd ~/git/liri/lirios
 repo sync
 </code></pre>
-
 <p>Now set git to use the commit template that will help you write
 good commit messages:</p>
-<pre><code class="sh">ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-template'
+<pre><code class="language-sh">ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-template'
 </code></pre>
                 
               
