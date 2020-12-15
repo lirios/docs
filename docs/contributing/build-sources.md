@@ -37,9 +37,9 @@ Qt and cmake:
 
 | Distro     | Command                                                                                                                                                                                                                                        |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Debian     | `sudo apt-get install -y qt5-default qtquickcontrols2-5-dev qml-module-qtwayland-compositor qtwayland5-dev-tools qtwebengine5-dev-tools qtwebengine5-private-dev qtwebengine5-dev qtmultimedia5-dev qtsvg5 qt5-doc qttools5-dev cmake qtchooser` |
+| Debian     | `sudo apt-get install -y qt5-default qtquickcontrols2-5-dev qml-module-qtwayland-compositor qtwayland5-dev-tools qtwebengine5-dev-tools qtwebengine5-private-dev qtwebengine5-dev qtmultimedia5-dev qtsvg5 qt5-doc qttools5-dev cmake` |
 | Arch Linux | `sudo pacman -Syu qt5-quickcontrols2 qt5-wayland qt5-webengine qt5-multimedia qt5-svg qt5-doc qt5-tools cmake`                                                                                                                                   |
-| Fedora     | `sudo dnf install -y qt5-qtbase-static qt5-qtbase-private-devel qt5-qtquickcontrols2-devel qt5-qtwayland-devel qt5-qtmultimedia-devel qt5-qtwebengine-devel qt5-qtsvg-devel qt5-qtdoc qt5-qttools-devel cmake qtchooser`                         |
+| Fedora     | `sudo dnf install -y qt5-qtbase-static qt5-qtbase-private-devel qt5-qtquickcontrols2-devel qt5-qtwayland-devel qt5-qtmultimedia-devel qt5-qtwebengine-devel qt5-qtsvg-devel qt5-qtdoc qt5-qttools-devel cmake`                         |
 | OpenSUSE   | `sudo zypper install libqt5-qtquickcontrols2 libqt5-qtquickwayland-devel libqt5-qtwayland-private-headers-devel libqt5-qtwebengine-devel libqt5-qtmultimedia-devel libqt5-qtsvg-devel libqt5-qtdoc-devel libqt5-qttools-devel cmake`             |
 
 Other dependencies:
