@@ -39,10 +39,7 @@ Qt 5.8.0 introduces QtWayland as an official module, finally the QtWaylandCompos
 
 * Partial subsurface support: missing raise, lower and synchronization.
 * D&D works only on one output: [QTBUG-55584](https://bugreports.qt.io/browse/QTBUG-55584)
-* No support for animated mouse cursors: [QTBUG-48181](http://bugreports.qt.io/browse/QTBUG-48181)
 * Dropdown window closes on key press: [QTBUG-55403](https://bugreports.qt.io/browse/QTBUG-55403)
-* Compose key support missing in QtWayland: [QTBUG-54792](https://bugreports.qt.io/browse/QTBUG-54792) **FIXED IN 5.11.0**
-* Key repeat settings ignored: [QTBUG-55615](https://bugreports.qt.io/browse/QTBUG-55615)
 * [Wayland] Modifiers not working in wheelEvent: [QTBUG-61488](https://bugreports.qt.io/browse/QTBUG-61488)
 
 ## QtQuick Controls 2
