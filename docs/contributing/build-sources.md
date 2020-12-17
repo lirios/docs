@@ -9,7 +9,7 @@ We need:
 
 * Git (>= 1.6.x)
 * A working C++ compiler
-* Qt (>= 5.10)
+* Qt (>= 5.15)
   * qtbase
   * qtdoc
   * qtdeclarative
