@@ -3,7 +3,7 @@ site_name: Liri Developers Documentation
 theme:
   name: 'material'
 
-pages:
+nav:
   - Home: 'index.md'
   - About:
     - Philosophy: 'about/philosophy.md'
