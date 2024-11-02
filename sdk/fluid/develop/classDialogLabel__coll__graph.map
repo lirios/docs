@@ -1,0 +1,7 @@
+<map id="DialogLabel" name="DialogLabel">
+<area shape="rect" id="Node000001" title="Text label with standard font and styling suitable to message box text." alt="" coords="5,152,104,177"/>
+<area shape="rect" id="Node000002" href="$classLabel.html" title=" " alt="" coords="26,79,83,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,118,57,152,52,152,52,118"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="17,5,92,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,44,57,79,52,79,52,44"/>
+</map>

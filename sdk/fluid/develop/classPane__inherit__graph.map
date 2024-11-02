@@ -1,0 +1,7 @@
+<map id="Pane" name="Pane">
+<area shape="rect" id="Node000001" title=" " alt="" coords="14,79,67,104"/>
+<area shape="rect" id="Node000003" href="$classSidebar.html" title="A sidebar component for use in adaptive layouts." alt="" coords="5,152,76,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="43,118,43,152,38,152,38,118"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,76,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,44,43,79,38,79,38,44"/>
+</map>

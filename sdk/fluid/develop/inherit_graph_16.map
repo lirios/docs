@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,104,87,129"/>
+<area shape="rect" id="Node000001" href="$classDialog.html" title=" " alt="" coords="135,104,199,129"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="101,114,134,114,134,119,101,119"/>
+<area shape="rect" id="Node000002" href="$classAlertDialog.html" title="Alert dialogs are urgent interruptions to inform the user about a situation." alt="" coords="283,5,377,31"/>
+<area shape="poly" id="edge19_Node000001_Node000002" title=" " alt="" coords="185,91,212,64,245,40,281,25,283,30,248,44,216,68,189,95"/>
+<area shape="rect" id="Node000003" href="$classDatePickerDialog.html" title="Dialog to select a single date." alt="" coords="263,55,397,80"/>
+<area shape="poly" id="edge20_Node000001_Node000003" title=" " alt="" coords="211,100,246,89,284,78,285,83,247,94,213,105"/>
+<area shape="rect" id="Node000004" href="$classDateTimePickerDialog.html" title="Dialog with a picker to select dates and time." alt="" coords="247,104,413,129"/>
+<area shape="poly" id="edge21_Node000001_Node000004" title=" " alt="" coords="213,114,246,114,246,119,213,119"/>
+<area shape="rect" id="Node000005" href="$classInputDialog.html" title="Input dialogs ask the user to input data with certain constraints." alt="" coords="281,153,379,179"/>
+<area shape="poly" id="edge22_Node000001_Node000005" title=" " alt="" coords="213,128,288,151,286,156,211,133"/>
+<area shape="rect" id="Node000006" href="$classTimePickerDialog.html" title="Dialog with a picker to select time." alt="" coords="262,203,398,228"/>
+<area shape="poly" id="edge23_Node000001_Node000006" title=" " alt="" coords="189,138,216,164,248,188,276,200,274,205,245,192,212,168,186,142"/>
+</map>

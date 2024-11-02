@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000001" href="$classCard.html" title="Cards display content composed of different elements." alt="" coords="213,5,265,31"/>
+<area shape="poly" id="edge81_Node000000_Node000001" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="49,55,120,80"/>
+<area shape="poly" id="edge82_Node000002_Node000001" title=" " alt="" coords="132,50,163,39,212,24,213,29,165,45,134,55"/>
+<area shape="rect" id="Node000003" href="$classPane.html" title=" " alt="" coords="212,55,265,80"/>
+<area shape="poly" id="edge83_Node000002_Node000003" title=" " alt="" coords="134,65,212,65,212,70,134,70"/>
+<area shape="rect" id="Node000004" href="$classSidebar.html" title="A sidebar component for use in adaptive layouts." alt="" coords="313,55,384,80"/>
+<area shape="poly" id="edge84_Node000003_Node000004" title=" " alt="" coords="279,65,313,65,313,70,279,70"/>
+</map>

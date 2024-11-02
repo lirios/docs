@@ -1,0 +1,7 @@
+<map id="Card" name="Card">
+<area shape="rect" id="Node000001" title="Cards display content composed of different elements." alt="" coords="128,79,180,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,164,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,39,145,77,141,80,104,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="188,5,259,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,43,167,80,163,77,201,39"/>
+</map>

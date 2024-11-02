@@ -8,5 +8,6 @@ var searchData=
   ['get_5',['get',['../classYearModel.html#adb1a82695cad975ab6e746c81dfadd22',1,'YearModel']]],
   ['getwlsurface_6',['getWlSurface',['../fluiddecorationv1_8cpp.html#a2f7fdd735d989b30d8c5ebd6365c6e5d',1,'fluiddecorationv1.cpp']]],
   ['gridunit_7',['gridunit',['../classDevice.html#a5370468b07bef4af6f93881107dae838',1,'Device::gridUnit'],['../classDevice.html#a04af3f439562e0ec8e47edc9146778f2',1,'Device::gridUnit() const']]],
-  ['groupbox_2eqml_8',['GroupBox.qml',['../GroupBox_8qml.html',1,'']]]
+  ['groupbox_8',['GroupBox',['../classGroupBox.html',1,'']]],
+  ['groupbox_2eqml_9',['GroupBox.qml',['../GroupBox_8qml.html',1,'']]]
 ];

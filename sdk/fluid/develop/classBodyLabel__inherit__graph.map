@@ -1,0 +1,7 @@
+<map id="BodyLabel" name="BodyLabel">
+<area shape="rect" id="Node000001" title="Text label with standard font and styling suitable to body text." alt="" coords="5,152,96,177"/>
+<area shape="rect" id="Node000002" href="$classLabel.html" title=" " alt="" coords="22,79,79,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,118,53,152,48,152,48,118"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="13,5,88,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="53,44,53,79,48,79,48,44"/>
+</map>

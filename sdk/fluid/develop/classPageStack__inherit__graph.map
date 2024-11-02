@@ -1,0 +1,7 @@
+<map id="PageStack" name="PageStack">
+<area shape="rect" id="Node000001" title="Manages the page stack used for navigation." alt="" coords="14,152,103,177"/>
+<area shape="rect" id="Node000002" href="$classStackView.html" title=" " alt="" coords="13,79,104,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,118,61,152,56,152,56,118"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,112,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="61,44,61,79,56,79,56,44"/>
+</map>

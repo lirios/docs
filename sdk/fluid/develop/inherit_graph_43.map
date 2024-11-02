@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,112,31"/>
+<area shape="rect" id="Node000001" href="$classStackView.html" title=" " alt="" coords="160,5,251,31"/>
+<area shape="poly" id="edge58_Node000000_Node000001" title=" " alt="" coords="126,15,160,15,160,21,126,21"/>
+<area shape="rect" id="Node000002" href="$classPageStack.html" title="Manages the page stack used for navigation." alt="" coords="299,5,388,31"/>
+<area shape="poly" id="edge59_Node000001_Node000002" title=" " alt="" coords="265,15,299,15,299,21,265,21"/>
+</map>

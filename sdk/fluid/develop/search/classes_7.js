@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['windowdecoration_0',['WindowDecoration',['../classWindowDecoration.html',1,'']]]
+  ['headlinelabel_0',['HeadlineLabel',['../classHeadlineLabel.html',1,'']]],
+  ['horizontalheaderview_1',['HorizontalHeaderView',['../classHorizontalHeaderView.html',1,'']]]
 ];
