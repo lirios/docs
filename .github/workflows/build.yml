@@ -39,7 +39,7 @@ jobs:
         branch:
           #- master
           - develop
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -50,16 +50,16 @@ jobs:
           wget -qO - 'http://archive.neon.kde.org/public.key' | sudo apt-key add -
           sudo apt-add-repository http://archive.neon.kde.org/user
           sudo apt-get update -y
-          sudo apt-get install -y git qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev qttools5-dev libqt5svg5-dev qdoc-qt5 qt5-doc qtbase5-doc
+          sudo apt-get install -y git extra-cmake-modules qt6-base-dev doxygen graphviz doxyqml
       - name: Clone
-        run: git clone --recursive -b ${{ matrix.branch }} git://github.com/lirios/fluid
+        run: git clone --recursive -b ${{ matrix.branch }} https://github.com/lirios/fluid
       - name: Build
         run: |
           set -x
           cd fluid
           mkdir -p build
           cd build
-          cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DFLUID_WITH_DOCUMENTATION:BOOL=ON -DFLUID_WITH_DEMO:BOOL=OFF -DFLUID_WITH_QML_MODULES:BOOL=OFF -DFLUID_INSTALL_ICONS:BOOL=OFF
+          cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DFLUID_WITH_DOCUMENTATION:BOOL=ON -DFLUID_WITH_DEMO:BOOL=OFF -DFLUID_WITH_QML_MODULES:BOOL=OFF -DFLUID_INSTALL_ICONS:BOOL=OFF -DBUILD_TESTING:BOOL=OFF
           make -j $(getconf _NPROCESSORS_ONLN)
           sudo make install
           cd ../..
