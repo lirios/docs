@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,55,256,80"/>
+<area shape="rect" id="Node000001" href="$classFluidDecoration.html" title=" " alt="" coords="333,31,458,56"/>
+<area shape="poly" id="edge23_Node000000_Node000001" title=" " alt="" coords="270,52,332,46,333,52,270,57"/>
+<area shape="rect" id="Node000003" href="$classFluidDecorationManager.html" title=" " alt="" coords="304,84,487,109"/>
+<area shape="poly" id="edge24_Node000000_Node000003" title=" " alt="" coords="259,79,304,84,303,89,258,84"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="25,105,237,145"/>
+<area shape="poly" id="edge25_Node000004_Node000003" title=" " alt="" coords="250,109,304,104,304,109,251,115"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="13,5,248,31"/>
+<area shape="poly" id="edge26_Node000002_Node000001" title=" " alt="" coords="262,28,333,35,332,40,261,33"/>
+</map>

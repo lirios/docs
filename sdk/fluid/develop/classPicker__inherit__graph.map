@@ -1,0 +1,11 @@
+<map id="Picker" name="Picker">
+<area shape="rect" id="Node000001" title=" " alt="" coords="154,79,215,104"/>
+<area shape="rect" id="Node000003" href="$classDatePicker.html" title="Control to select a single date." alt="" coords="5,152,97,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,113,74,154,72,149,150,108"/>
+<area shape="rect" id="Node000004" href="$classDateTimePicker.html" title="Control to select a both date and time." alt="" coords="122,152,247,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,118,187,152,182,152,182,118"/>
+<area shape="rect" id="Node000005" href="$classTimePicker.html" title="Control to select a time." alt="" coords="272,152,367,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="220,108,299,149,296,154,217,113"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="135,5,234,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,44,187,79,182,79,182,44"/>
+</map>

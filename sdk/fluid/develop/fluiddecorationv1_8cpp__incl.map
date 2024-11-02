@@ -1,0 +1,21 @@
+<map id="/home/runner/work/docs/docs/fluid/src/imports/private/extensions/fluiddecorationv1.cpp" name="/home/runner/work/docs/docs/fluid/src/imports/private/extensions/fluiddecorationv1.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,5,511,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,132,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,63,122,107,121,102,274,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="156,108,331,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="330,62,273,102,270,98,327,58"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="355,108,622,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="405,58,462,98,459,102,402,62"/>
+<area shape="rect" id="Node000005" href="$fluiddecorationv1_8h.html" title=" " alt="" coords="646,108,793,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="475,57,660,102,659,107,473,63"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="432,189,492,214"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="670,136,591,156,504,184,499,186,497,181,502,179,590,151,669,131"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="516,189,600,214"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="697,136,595,185,592,180,695,131"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="624,189,815,214"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="722,134,722,175,717,175,717,134"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="839,189,970,214"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="747,131,866,181,864,186,745,136"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="994,181,1186,221"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="774,131,989,176,988,181,773,136"/>
+</map>
