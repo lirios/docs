@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['areas_0',['areas',['../classInputRegion.html#ac6e6171bb1e2a9a8d2606aa18ce0f632',1,'InputRegion']]]
+  ['background_0',['background',['../classPicker.html#aa034c51af69b8be1a4d066d92b063617',1,'Picker']]]
 ];

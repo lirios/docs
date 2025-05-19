@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['durationformat_0',['DurationFormat',['../classDateUtils.html#ad6a7aae35d5f17dd2bfbc1dcb467f5d8',1,'DateUtils']]],
-  ['durationtype_1',['DurationType',['../classDateUtils.html#acd9aa59d87a14e37a78bc292bac0f7a3',1,'DateUtils']]]
+  ['mode_0',['mode',['../classDatePicker.html#a2631e199ee753f102b6da1acb23586b0',1,'DatePicker::Mode'],['../classDateTimePicker.html#a99f49fd8d9aa2cc395b5ae9eb87bf4f2',1,'DateTimePicker::Mode'],['../classTimeSelector.html#a6c23cef0462341787a7bca031723ebbb',1,'TimeSelector::Mode']]]
 ];

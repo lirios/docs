@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['name_0',['name',['../classDevice.html#ade880930e94a13e633b843073012975d',1,'Device']]],
-  ['navigator_1',['navigator',['../classDateSelector.html#aa840d5c0fbcc9b60cdb9283f822686a4',1,'DateSelector']]],
-  ['navigatorchanged_2',['navigatorChanged',['../classDateSelector.html#a4c1aef0bf16594b85182bbcb5ff07ca3',1,'DateSelector']]]
+  ['orientation_0',['orientation',['../classPicker.html#a19b5db2d3bd6fcbe56c6bf7bd6324cda',1,'Picker']]],
+  ['orientationchanged_1',['orientationChanged',['../classPicker.html#a7e678a05b334b141f2e7604f1e9d46a5',1,'Picker']]]
 ];

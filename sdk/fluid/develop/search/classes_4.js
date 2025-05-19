@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['elevation_0',['Elevation',['../classElevation.html',1,'']]]
+  ['windowdecoration_0',['WindowDecoration',['../classWindowDecoration.html',1,'']]]
 ];

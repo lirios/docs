@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dayofweekrowvisible_0',['dayofweekrowvisible',['../classDatePicker.html#a4faa970bf7434a586815bcdc51890aa7',1,'DatePicker::dayOfWeekRowVisible'],['../classDateSelector.html#ab53f8781f20a97e40bdaec7202ced475',1,'DateSelector::dayOfWeekRowVisible'],['../classDateTimePicker.html#a61f7b924601d06e530cb80960b8d28a2',1,'DateTimePicker::dayOfWeekRowVisible']]],
-  ['delegate_1',['delegate',['../classYearSelector.html#a73f865e1432d916d03fc87fb33e438dc',1,'YearSelector']]]
+  ['footer_0',['footer',['../classPicker.html#aa61c1978c75699f8141d085bca10cf68',1,'Picker']]],
+  ['from_1',['from',['../classDatePicker.html#afa14bf0f0915e3a8ec2e9910f602a220',1,'DatePicker::from'],['../classDateSelector.html#a4621cc7f87d91f6937b76f6a707f4117',1,'DateSelector::from'],['../classDateTimePicker.html#a9b6a337f4071bba2182277f56ec8fb24',1,'DateTimePicker::from'],['../classYearModel.html#a2882b7bec20838a057dfab0ef229daa4',1,'YearModel::from'],['../classYearSelector.html#a12177386a1e832f4b152aef2aee4276d',1,'YearSelector::from']]]
 ];

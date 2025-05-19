@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['elevation_2eqml_0',['Elevation.qml',['../Elevation_8qml.html',1,'']]]
+  ['windowdecoration_2ecpp_0',['windowdecoration.cpp',['../windowdecoration_8cpp.html',1,'']]],
+  ['windowdecoration_2eh_1',['windowdecoration.h',['../windowdecoration_8h.html',1,'']]]
 ];

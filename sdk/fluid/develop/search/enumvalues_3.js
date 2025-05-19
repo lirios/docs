@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fontslocation_0',['FontsLocation',['../classStandardPaths.html#ab81f42a64c128f33c9e5958b10b238aaa8916f2721195fa8164ba3fa4dfe2db71',1,'StandardPaths']]]
+  ['landscape_0',['Landscape',['../classPicker.html#a52e261cbb828ebb473643ce580c9347daffb1de12c8697c4a5f48ec403317dc17',1,'Picker']]],
+  ['light_1',['Light',['../classWindowDecoration.html#a5d82c65ba472082d1f075f20b6b88fb9a5e98454246822e9fc79898deb179af62',1,'WindowDecoration']]]
 ];

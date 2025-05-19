@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['calendar_0',['calendar',['../classDateSelector.html#a55bec18b026860df1f53a4099c9f8fc8',1,'DateSelector']]],
-  ['circle_1',['circle',['../classTimeSelector.html#ac72780b188b81640e13602c971f917d5',1,'TimeSelector']]],
-  ['color_2',['color',['../classWindowDecoration.html#a02fe6d14ee896df684760e05564abf1d',1,'WindowDecoration']]],
-  ['contentitem_3',['contentitem',['../classDateSelector.html#a178a2f16149e595a21ca0fca76781a54',1,'DateSelector::contentItem'],['../classYearSelector.html#a98fe94a8d6e8c561147037c6ba6bbc04',1,'YearSelector::contentItem']]],
-  ['count_4',['count',['../classYearModel.html#afc73006387775a182fc230bc26bb7741',1,'YearModel::count'],['../classYearSelector.html#a6a3a867b0a9573a13a0ee9f783462aab',1,'YearSelector::count']]]
+  ['dayofweekrowvisible_0',['dayofweekrowvisible',['../classDatePicker.html#a4faa970bf7434a586815bcdc51890aa7',1,'DatePicker::dayOfWeekRowVisible'],['../classDateSelector.html#ab53f8781f20a97e40bdaec7202ced475',1,'DateSelector::dayOfWeekRowVisible'],['../classDateTimePicker.html#a61f7b924601d06e530cb80960b8d28a2',1,'DateTimePicker::dayOfWeekRowVisible']]],
+  ['delegate_1',['delegate',['../classYearSelector.html#a73f865e1432d916d03fc87fb33e438dc',1,'YearSelector']]]
 ];
