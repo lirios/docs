@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../cpp-conventions/">
+        <link rel="prev" href="index.html">
       
       
-        <link rel="next" href="../qml-conventions/">
+        <link rel="next" href="../contributing/contributor-guide/index.html">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>C++ Coding Style - Liri Developers Documentation</title>
+        <title>Snap - Liri Developers Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#c-coding-style" class="md-skip">
+        <a href="#snap" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Liri Developers Documentation" class="md-header__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
+    <a href="../index.html" title="Liri Developers Documentation" class="md-header__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              C++ Coding Style
+              Snap
             
           </span>
         </div>
@@ -176,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
+    <a href="../index.html" title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -194,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/philosophy/" class="md-nav__link">
+      <a href="../about/philosophy.html" class="md-nav__link">
         
   
   
@@ -277,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/project-management/" class="md-nav__link">
+      <a href="../about/project-management.html" class="md-nav__link">
         
   
   
@@ -288,6 +288,203 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Packaging
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Packaging
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Snap
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="snap.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#snap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Snap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platform-snap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform snap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Platform snap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-and-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming and versioning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snapcraft-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snapcraft parts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snapcraft-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snapcraft plugins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snap-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snap packages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -315,100 +512,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Packaging
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Packaging
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../packaging/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../packaging/snap/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Snap
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -424,7 +528,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Contributing
@@ -438,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contributor-guide/" class="md-nav__link">
+      <a href="../contributing/contributor-guide/index.html" class="md-nav__link">
         
   
   
@@ -461,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build-sources/" class="md-nav__link">
+      <a href="../contributing/build-sources.html" class="md-nav__link">
         
   
   
@@ -484,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../upstream-issues/" class="md-nav__link">
+      <a href="../contributing/upstream-issues.html" class="md-nav__link">
         
   
   
@@ -504,20 +608,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
           
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -533,7 +635,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             Coding Conventions
@@ -547,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design-philosophy/" class="md-nav__link">
+      <a href="../contributing/coding-conventions/design-philosophy.html" class="md-nav__link">
         
   
   
@@ -570,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cpp-conventions/" class="md-nav__link">
+      <a href="../contributing/coding-conventions/cpp-conventions.html" class="md-nav__link">
         
   
   
@@ -590,32 +692,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    C++ Coding Style
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../contributing/coding-conventions/cpp-style.html" class="md-nav__link">
         
   
   
@@ -626,116 +706,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#indentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Indentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#declaring-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Declaring variables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whitespace" class="md-nav__link">
-    <span class="md-ellipsis">
-      Whitespace
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#braces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Braces
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parentheses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parentheses
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#switch-statements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Switch statements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jump-statements-break-continue-return-and-goto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Jump statements (break, continue, return, and goto)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#line-breaks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Line breaks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-exception" class="md-nav__link">
-    <span class="md-ellipsis">
-      General exception
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#artistic-style" class="md-nav__link">
-    <span class="md-ellipsis">
-      Artistic Style
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -748,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../qml-conventions/" class="md-nav__link">
+      <a href="../contributing/coding-conventions/qml-conventions.html" class="md-nav__link">
         
   
   
@@ -824,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modules/" class="md-nav__link">
+      <a href="../modules/index.html" class="md-nav__link">
         
   
   
@@ -885,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modules/text/" class="md-nav__link">
+      <a href="../modules/text/index.html" class="md-nav__link">
         
   
   
@@ -908,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modules/text/syntax-highlighting/" class="md-nav__link">
+      <a href="../modules/text/syntax-highlighting.html" class="md-nav__link">
         
   
   
@@ -977,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modules/browser/" class="md-nav__link">
+      <a href="../modules/browser/index.html" class="md-nav__link">
         
   
   
@@ -1000,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modules/browser/shortcuts/" class="md-nav__link">
+      <a href="../modules/browser/shortcuts.html" class="md-nav__link">
         
   
   
@@ -1048,8 +1018,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1058,92 +1026,68 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#indentation" class="md-nav__link">
+  <a href="#snap" class="md-nav__link">
     <span class="md-ellipsis">
-      Indentation
+      Snap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Snap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platform-snap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform snap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Platform snap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-and-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming and versioning
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#declaring-variables" class="md-nav__link">
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snapcraft-parts" class="md-nav__link">
     <span class="md-ellipsis">
-      Declaring variables
+      Snapcraft parts
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#whitespace" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#snapcraft-plugins" class="md-nav__link">
     <span class="md-ellipsis">
-      Whitespace
+      Snapcraft plugins
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#braces" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#snap-packages" class="md-nav__link">
     <span class="md-ellipsis">
-      Braces
+      Snap packages
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#parentheses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parentheses
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#switch-statements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Switch statements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jump-statements-break-continue-return-and-goto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Jump statements (break, continue, return, and goto)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#line-breaks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Line breaks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-exception" class="md-nav__link">
-    <span class="md-ellipsis">
-      General exception
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#artistic-style" class="md-nav__link">
-    <span class="md-ellipsis">
-      Artistic Style
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1163,282 +1107,42 @@
 
 
 
-<h1 id="c-coding-style">C++ Coding Style</h1>
-<p>This is an overview of the low-level coding conventions we use when writing Qt code.
-See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-level conventions.</p>
-<p>The data has been gathered by mining the Qt sources, discussion forums, email threads and through collaboration of the developers.</p>
-<h2 id="indentation">Indentation</h2>
-<ul>
-<li>4 spaces are used for indentation</li>
-<li>Spaces, not tabs!</li>
-</ul>
-<h2 id="declaring-variables">Declaring variables</h2>
-<ul>
-<li>Declare each variable on a separate line</li>
-<li>Avoid short or meaningless names (e.g. "a", "rbarr", "nughdeget")</li>
-<li>Single character variable names are only okay for counters and temporaries, where the purpose of the variable is obvious</li>
-<li>Wait when declaring a variable until it is needed</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- int a, b;
- char *c, *d;
+  <h1>Snap</h1>
 
- // Correct
- int height;
- int width;
- char *nameOfThis;
- char *nameOfThat;
-</code></pre>
-<ul>
-<li>Variables and functions start with a lower-case letter. Each consecutive word in a variable's name starts with an upper-case letter</li>
-<li>Avoid abbreviations</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- short Cntr;
- char ITEM_DELIM = ' ';
-
- // Correct
- short counter;
- char itemDelimiter = ' ';
-</code></pre>
-<ul>
-<li>Classes always start with an upper-case letter. Public classes start with a 'Q' (QRgb) followed by an upper case letter. Public functions most often start with a 'q' (qRgb).</li>
-<li>Acronyms are camel-cased (e.g. QXmlStreamReader, not QXMLStreamReader).</li>
-</ul>
-<h2 id="whitespace">Whitespace</h2>
-<ul>
-<li>Use blank lines to group statements together where suited</li>
-<li>Always use only one blank line</li>
-<li>Always use a single space after a keyword and before a curly brace:</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- if(foo){
- }
-
- // Correct
- if (foo) {
- }
-</code></pre>
-<ul>
-<li>For pointers or references, always use a single space between the type and '<em>' or '&amp;', but no space between the '</em>' or '&amp;' and the variable name:</li>
-</ul>
-<pre><code class="language-cpp"> char *x;
- const QString &amp;myString;
- const char - const y = &quot;hello&quot;;
-</code></pre>
-<ul>
-<li>Surround binary operators with spaces</li>
-<li>No space after a cast</li>
-<li>Avoid C-style casts when possible</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- char- blockOfMemory = (char- ) malloc(data.size());
-
- // Correct
- char *blockOfMemory = reinterpret_cast&lt;char *&gt;(malloc(data.size()));
-</code></pre>
-<ul>
-<li>Do not put multiple statements on one line</li>
-<li>By extension, use a new line for the body of a control flow statement:</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- if (foo) bar();
-
- // Correct
- if (foo)
-     bar();
-</code></pre>
-<h2 id="braces">Braces</h2>
-<ul>
-<li>Use attached braces: The opening brace goes on the same line as the start of the statement. If the closing brace is followed by another keyword, it goes into the same line as well:</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- if (codec)
- {
- }
- else
- {
- }
-
- // Correct
- if (codec) {
- } else {
- }
-</code></pre>
-<ul>
-<li>Exception: Function implementations and class declarations always have the left brace on the start of a line:</li>
-</ul>
-<pre><code class="language-cpp"> static void foo(int g)
- {
-     qDebug(&quot;foo: %i&quot;, g);
- }
-
- class Moo
- {
- };
-</code></pre>
-<ul>
-<li>Use curly braces only when the body of a conditional statement contains more than one line:</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- if (address.isEmpty()) {
-     return false;
- }
-
- for (int i = 0; i &lt; 10; +''i) {
-     qDebug(&quot;%i&quot;, i);
- }
-
- // Correct
- if (address.isEmpty())
-     return false;
-
- for (int i = 0; i &lt; 10;i)
-     qDebug(&quot;%i&quot;, i);
-</code></pre>
-<ul>
-<li>Exception 1: Use braces also if the parent statement covers several lines / wraps:</li>
-</ul>
-<pre><code class="language-cpp"> // Correct
- if (address.isEmpty() || !isValid()
-     || !codec) {
-     return false;
- }
-</code></pre>
-<ul>
-<li>Exception 2: Brace symmetry: Use braces also in if-then-else blocks where either the if-code or the else-code covers several lines:</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- if (address.isEmpty())
-     qDebug(&quot;empty!&quot;);
- else {
-     qDebug(&quot;%s&quot;, qPrintable(address));
-     it;
- }
-
- // Correct
- if (address.isEmpty()) {
-     qDebug(&quot;empty!&quot;);
- } else {
-     qDebug(&quot;%s&quot;, qPrintable(address));
-     it;
- }
-
- // Wrong
- if (a)
-     …
- else
-     if (b)
-         …
-
- // Correct
- if (a) {
-     …
- } else {
-     if (b)
-         …
- }
-</code></pre>
-<ul>
-<li>Use curly braces when the body of a conditional statement is empty</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- while (a);
-
- // Correct
- while (a) {}
-</code></pre>
-<h2 id="parentheses">Parentheses</h2>
-<ul>
-<li>Use parentheses to group expressions:</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- if (a &amp;&amp; b || c)
-
- // Correct
- if ((a &amp;&amp; b) || c)
-
- // Wrong
- a + b &amp; c
-
- // Correct
- (a + b) &amp; c
-</code></pre>
-<h2 id="switch-statements">Switch statements</h2>
-<ul>
-<li>The case labels are in the same column as the switch</li>
-<li>Every case must have a break (or return) statement at the end or a comment to indicate that there's intentionally no break, unless another case follows immediately.</li>
-</ul>
-<pre><code class="language-cpp"> switch (myEnum) {
- case Value1:
-   doSomething();
-   break;
- case Value2:
- case Value3:
-   doSomethingElse();
-   // fall through
- default:
-   defaultHandling();
-   break;
- }
-</code></pre>
-<h2 id="jump-statements-break-continue-return-and-goto">Jump statements (break, continue, return, and goto)</h2>
-<ul>
-<li>Do not put 'else' after jump statements:</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- if (thisOrThat)
-     return;
- else
-     somethingElse();
-
- // Correct
- if (thisOrThat)
-     return;
- somethingElse();
-</code></pre>
-<ul>
-<li>Exception: If the code is inherently symmetrical, use of 'else' is allowed to visualize that symmetry</li>
-</ul>
-<h2 id="line-breaks">Line breaks</h2>
-<ul>
-<li>Keep lines shorter than 100 characters; wrap if necessary</li>
-<li>Comment/apidoc lines should be kept below 80 columns of actual text. Adjust to the surroundings, and try to flow the text in a way that avoids "jagged" paragraphs.</li>
-<li>Commas go at the end of wrapped lines; operators start at the beginning of the new lines. An operator at the end of the line is easy to miss if the editor is too narrow.</li>
-</ul>
-<pre><code class="language-cpp"> // Wrong
- if (longExpression +
-     otherLongExpression +
-     otherOtherLongExpression) {
- }
-
- // Correct
- if (longExpression
-     + otherLongExpression
-     + otherOtherLongExpression) {
- }
-</code></pre>
-<h2 id="general-exception">General exception</h2>
-<ul>
-<li>When strictly following a rule makes your code look bad, feel free to break it</li>
-</ul>
-<h2 id="artistic-style">Artistic Style</h2>
-<p>The following snippet can be used by artistic style for reformatting your code.</p>
-<pre><code>--style=kr 
---indent=spaces=4 
---align-pointer=name 
---align-reference=name 
---convert-tabs 
---attach-namespaces
---max-code-length=100 
---max-instatement-indent=120 
---pad-header
---pad-oper
-</code></pre>
-<p>Note that "unlimited" <code>--max-instatement-indent</code> is used only because astyle is not smart enough to wrap the first argument if subsequent lines would need indentation limitation. You are encouraged to manually limit in-statement-indent to roughly 50 colums:</p>
-<pre><code class="language-cpp">    int foo = some_really_long_function_name(and_another_one_to_drive_the_point_home(
-            first_argument, second_argument, third_arugment));
-</code></pre>
+<h2 id="snap">Snap</h2>
+<p>Our snap packages are built with <a href="https://snapcraft.io/">snapcraft</a>.</p>
+<p>If you are new to snapcraft, we highly recommend you to check out their <a href="https://docs.snapcraft.io/build-snaps/">introduction to building snaps</a></p>
+<p>There are a few repositories containing sources and packaging data relevant for building our snap packages.</p>
+<h3 id="platform-snap">Platform snap</h3>
+<p>Our <a href="https://github.com/lirios/platform-snap">platform snap</a> serves as a bundle for libraries commonly used by our projects. It contains Qt, KDE dependencies, Fluid and some other pieces.</p>
+<p>Right now it has to be build on Ubuntu 16.04 because this is the current base for snap applications. 
+Even if you are running Ubuntu 16.04 however, you should use <code>snapcraft cleanbuild</code> or create your own <a href="https://linuxcontainers.org/">LXC container</a> to build the platform snap in.</p>
+<p>By doing so, you make sure you don't pollute your system with libraries installed for the snap and you also make sure the snap will not be polluted by your system.</p>
+<p>Be warned that it will download and build a big chunk of its contents from source so the build might (depending on your machine) take several hours and will use multiple gigabytes of hard disk space.</p>
+<h4 id="naming-and-versioning">Naming and versioning</h4>
+<p>Projects depending on the platform snap connect to it using the content interface. 
+Unfortunately, the only way to handle compatibility breaks right now is to publish a new platform snap with a new name.
+Because of the way snap is designed, there is currently no way to have more than one version of a snap package installed.
+Therefore there is no way for a snap to pin a given version of another snap (like the platform snap) as that would require the ability to have mutliple versions installed.</p>
+<p>The platform snap naming roughly follows the Liri OS versioning and looks like the following:</p>
+<p>For a Liri OS version following semver <code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</code>, the platform snap naming equals <code>liri-platform-&lt;major&gt;-&lt;minor&gt;[-&lt;release build&gt;]</code>.
+<code>&lt;release build&gt;</code> is an incremental number to handle incompatible changes between Liri OS releases.</p>
+<p>For example, consider the following scenario:</p>
+<p>Liri OS 1.0.0 gets released. <code>liri-platform-1-0</code> gets released. 
+An incompatible change in one of the included packages happens which would affect projects depending on the platform snap.
+As Liri OS 1.1.0 is not released yet, <code>liri-platform-1-0-1</code> is being created.
+Once Liri OS 1.1.0 is out, <code>liri-platform-1-1</code> will be created.</p>
+<h3 id="snapcraft-parts">Snapcraft parts</h3>
+<p>To deduplicate snapcraft configuration, there is a set of <a href="https://github.com/lirios/snapcraft-parts">snapcraft parts</a> available.
+They can be used in snap applications using the <code>after</code> keywoard, e.g. <code>after: [liri-platform-&lt;version&gt;]</code>, where <code>&lt;version&gt;</code> is the current platform snap version.</p>
+<p>Snapcraft parts contain a launcher to manage the connection with the platform snap and setup the runtime environment as well as other assets like a <code>qt.conf</code> and workarounds for upstream issues.</p>
+<p>See the <a href="https://github.com/lirios/snapcraft-parts">readme in the GitHub repository</a> for more information.</p>
+<h3 id="snapcraft-plugins">Snapcraft plugins</h3>
+<p><a href="https://github.com/lirios/snapcraft-plugins">Snapcraft plugins</a> are used to share a common set of custom snapcraft plugins that are used by the projects depending on the platform snap.</p>
+<p>The custom Qbs plugin for example sets up the build environment to make it possible to build packages against the platform snap package.</p>
+<h3 id="snap-packages">Snap packages</h3>
+<p>The <a href="https://github.com/lirios/snap-packages">snap packages</a> repository is where development on the snap packages for our projects takes place.
+The packaging depends on the snapcraft plugins and parts mentioned above as well as the platform snap at build time.</p>
 
 
 
@@ -1487,10 +1191,10 @@ See <a href="../cpp-conventions/">C++ Coding Conventions</a> for the higher-leve
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>

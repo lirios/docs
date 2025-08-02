@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../contributor-guide/">
+        <link rel="prev" href="../upstream-issues.html">
       
       
-        <link rel="next" href="../upstream-issues/">
+        <link rel="next" href="cpp-conventions.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Build from Sources - Liri Developers Documentation</title>
+        <title>Design Philosophy - Liri Developers Documentation</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#design-philosophy" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Liri Developers Documentation" class="md-header__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
+    <a href="../../index.html" title="Liri Developers Documentation" class="md-header__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Build from Sources
+              Design Philosophy
             
           </span>
         </div>
@@ -176,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
+    <a href="../../index.html" title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -194,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/philosophy/" class="md-nav__link">
+      <a href="../../about/philosophy.html" class="md-nav__link">
         
   
   
@@ -277,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/project-management/" class="md-nav__link">
+      <a href="../../about/project-management.html" class="md-nav__link">
         
   
   
@@ -345,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../packaging/" class="md-nav__link">
+      <a href="../../packaging/index.html" class="md-nav__link">
         
   
   
@@ -368,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../packaging/snap/" class="md-nav__link">
+      <a href="../../packaging/snap.html" class="md-nav__link">
         
   
   
@@ -438,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributor-guide/" class="md-nav__link">
+      <a href="../contributor-guide/index.html" class="md-nav__link">
         
   
   
@@ -458,19 +458,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../build-sources.html" class="md-nav__link">
         
   
   
@@ -481,7 +472,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -494,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../upstream-issues/" class="md-nav__link">
+      <a href="../upstream-issues.html" class="md-nav__link">
         
   
   
@@ -514,18 +504,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -541,7 +533,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             Coding Conventions
@@ -552,10 +544,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../coding-conventions/design-philosophy/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Design Philosophy
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="design-philosophy.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -566,6 +580,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-design-is-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Design Is Not
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-with-the-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting with the fundamentals
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -578,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coding-conventions/cpp-conventions/" class="md-nav__link">
+      <a href="cpp-conventions.html" class="md-nav__link">
         
   
   
@@ -601,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coding-conventions/cpp-style/" class="md-nav__link">
+      <a href="cpp-style.html" class="md-nav__link">
         
   
   
@@ -624,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coding-conventions/qml-conventions/" class="md-nav__link">
+      <a href="qml-conventions.html" class="md-nav__link">
         
   
   
@@ -700,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/" class="md-nav__link">
+      <a href="../../modules/index.html" class="md-nav__link">
         
   
   
@@ -761,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/text/" class="md-nav__link">
+      <a href="../../modules/text/index.html" class="md-nav__link">
         
   
   
@@ -784,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/text/syntax-highlighting/" class="md-nav__link">
+      <a href="../../modules/text/syntax-highlighting.html" class="md-nav__link">
         
   
   
@@ -853,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/browser/" class="md-nav__link">
+      <a href="../../modules/browser/index.html" class="md-nav__link">
         
   
   
@@ -876,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/browser/shortcuts/" class="md-nav__link">
+      <a href="../../modules/browser/shortcuts.html" class="md-nav__link">
         
   
   
@@ -927,6 +979,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-design-is-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Design Is Not
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-with-the-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting with the fundamentals
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -941,147 +1019,35 @@
 
 
 
-<h1 id="introduction">Introduction</h1>
-<p>In this guide we deal with building the Liri projects from git.
-Check in the <a href="../contributor-guide/">Contributor Guide</a> how to get sources from the git repositories.</p>
-<h1 id="dependencies">Dependencies</h1>
-<p>We need:</p>
-<ul>
-<li>Git (&gt;= 1.6.x)</li>
-<li>A working C++ compiler</li>
-<li>Qt (&gt;= 6.6)</li>
-<li>qtbase</li>
-<li>qtdoc</li>
-<li>qtdeclarative</li>
-<li>qtgraphicaleffects</li>
-<li>qtquickcontrols2</li>
-<li>qtsvg</li>
-<li>qtwayland</li>
-<li>qttools</li>
-<li>qtmultimedia</li>
-<li>qtwebengine</li>
-<li>cmake (&gt;= 3.10)</li>
-</ul>
-<h2 id="install-dependencies">Install dependencies</h2>
-<p>Build essentials:</p>
-<table>
-<thead>
-<tr>
-<th>Distro</th>
-<th>Command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Debian</td>
-<td><code>sudo apt-get install -y build-essential clang git</code></td>
-</tr>
-<tr>
-<td>Arch Linux</td>
-<td><code>sudo pacman -Syu base-devel git</code></td>
-</tr>
-<tr>
-<td>Fedora</td>
-<td><code>sudo dnf install -y clang git</code></td>
-</tr>
-<tr>
-<td>OpenSUSE</td>
-<td><code>sudo zypper install clang git-core</code></td>
-</tr>
-</tbody>
-</table>
-<p>Qt and cmake:</p>
-<table>
-<thead>
-<tr>
-<th>Distro</th>
-<th>Command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Debian</td>
-<td><code>sudo apt-get install -y qt6-default qtquickcontrols2-6-dev qml-module-qtwayland-compositor qtwayland6-dev-tools qtwebengine6-dev-tools qtwebengine6-private-dev qtwebengine6-dev qtmultimedia6-dev qtsvg6 qt6-doc qttools6-dev cmake ninja</code></td>
-</tr>
-<tr>
-<td>Arch Linux</td>
-<td><code>sudo pacman -Syu qt6-quickcontrols2 qt6-wayland qt6-webengine qt6-multimedia qt6-svg qt6-doc qt6-tools qt6-5compat cmake ninja</code></td>
-</tr>
-<tr>
-<td>Fedora</td>
-<td><code>sudo dnf install -y qt6-qtbase-static qt6-qtbase-private-devel qt6-qtquickcontrols2-devel qt6-qtwayland-devel qt6-qtmultimedia-devel qt6-qtwebengine-devel qt6-qtsvg-devel qt6-doc-devel qt6-qttools-devel qt6-qt5compat-devel cmake ninja</code></td>
-</tr>
-<tr>
-<td>OpenSUSE</td>
-<td><code>sudo zypper install libqt6-qtquickcontrols2 libqt6-qtquickwayland-devel libqt6-qtwayland-private-headers-devel libqt6-qtwebengine-devel libqt6-qtmultimedia-devel libqt6-qtsvg-devel libqt6-qtdoc-devel libqt6-qttools-devel cmake ninja</code></td>
-</tr>
-</tbody>
-</table>
-<p>Other dependencies:</p>
-<table>
-<thead>
-<tr>
-<th>Distro</th>
-<th>Command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Debian</td>
-<td><code>sudo apt-get install -y extra-cmake-modules libwayland-dev wayland-protocols libpam0g-dev libpolkit-qt6-1-dev libpolkit-gobject-1-dev libkf6solid-dev libsystemd-dev libdrm-dev libgbm-dev libinput-dev libxcb-cursor-dev libxcursor-dev libpulse-dev libkf6networkmanagerqt-dev libmodemmanagerqt-dev libglib2.0-dev dconf-service dconf-cli dconf-gsettings-backend dconf-tools libpipewire-0.2-dev gstreamer1.0-pipewire libxkbcommon-dev libqtgstreamer-dev libflatpak-dev libappstreamqt-dev</code></td>
-</tr>
-<tr>
-<td>Arch Linux</td>
-<td><code>sudo pacman -Syu extra-cmake-modules wayland pam polkit-qt6 solid libdrm libinput xcb-util-cursor pipewire-pulse networkmanager-qt modemmanager-qt glib2 dconf pipewire libxkbcommon flatpak appstream-qt libxcvt libdisplay-info</code></td>
-</tr>
-<tr>
-<td>Fedora</td>
-<td><code>sudo dnf install -y extra-cmake-modules wayland-devel wayland-protocols-devel pam-devel polkit-devel polkit-qt6-1-devel kf6-solid-devel systemd-devel libdrm-devel mesa-libgbm-devel libinput-devel xcb-util-cursor-devel libXcursor-devel pulseaudio-libs-devel NetworkManager-libnm-devel ModemManager-glib-devel kf6-networkmanager-qt-devel kf6-modemmanager-qt-devel glib2-devel dconf pipewire-devel pipewire-utils libxkbcommon-devel flatpak-devel appstream-qt-devel gstreamer1-devel libxcvt-devel libdisplay-info-devel</code></td>
-</tr>
-<tr>
-<td>OpenSUSE</td>
-<td><code>sudo zypper install extra-cmake-modules wayland-devel wayland-protocols pam-devel polkit-devel libpolkit-qt6-1-devel solid-devel systemd-devel libdrm-devel libgbm-devel libinput-devel xcb-util-cursor-devel libXcursor-devel pulseaudio-libs-devel libKF6NetworkManagerQt-devel libKF6ModemManagerQt-devel glib-devel dconf gsettings-backend-dconf pipewire-devel pipewire-tools gstreamer-plugin-pipewire libxkbcommon-devel flatpak-devel libAppstreamQt-devel</code></td>
-</tr>
-</tbody>
-</table>
-<p>Marginal dependencies (used on unit tests, etc...):</p>
-<table>
-<thead>
-<tr>
-<th>Distro</th>
-<th>Command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Debian</td>
-<td><code>sudo apt-get install -y umockdev-dev</code></td>
-</tr>
-<tr>
-<td>Arch Linux</td>
-<td><code>sudo pacman -Syu umockdev</code></td>
-</tr>
-<tr>
-<td>Fedora</td>
-<td><code>sudo dnf install -y umockdev-devel</code></td>
-</tr>
-<tr>
-<td>OpenSUSE</td>
-<td><code>sudo zypper install umockdev-devel</code></td>
-</tr>
-</tbody>
-</table>
-<h1 id="build">Build</h1>
-<p>Developers should open <code>CMakeLists.txt</code> with QtCreator and build there, that is way easier.</p>
-<p>However if you know bash-fu it's possibile to build from sources.</p>
-<p>We assume you have a terminal open in the sources root directory, where there's <code>CMakeLists.txt</code>.</p>
-<p>Build:</p>
-<pre><code>mkdir .build
-cd .build
-cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/install-root ..
-make
-make install
-</code></pre>
+<h1 id="design-philosophy">Design Philosophy</h1>
+<h2 id="what-design-is-not">What Design Is Not</h2>
+<p>Before getting into the details we need to clarify what design is about.</p>
+<ol>
+<li>
+<p><strong>Design is not something you can add later.</strong>
+Design is an integral part of building something.
+It's not just colors and fonts, design is how things work.
+When you add a button to your application, that is design. You made a decision to
+add a button with a particular label, icon, location and size.
+The decisions you make are designs.</p>
+</li>
+<li>
+<p><strong>Design is not an opinion</strong> Design is testable, therefore one design will
+meet a specific goal better than another one.
+Design is about solving a specific problem and so you can objectively
+compare the effectiveness of two designs at solving those problems.</p>
+</li>
+</ol>
+<h2 id="starting-with-the-fundamentals">Starting with the fundamentals</h2>
+<p>Liri strives to provide a beautiful but unique and user friendly experience to
+the user. Before you begin designing your application, get fully acquainted with the environment.</p>
+<p>Understanding the interior of Liri will aid you in producing an application that
+integrates seamlessly with the desktop environment and is enjoyable to the user.</p>
+<p>Most individuals are not acquainted with the concepts or principles of human interface design,
+but they can easily identify which applications follow the guidelines and which applications stray from them.</p>
+<p>Become familiar with Liri and the fundamental principles contained within the human
+interface guidelines so that you can integrate them into your design to create the
+most user-friendly application possible.</p>
 
 
 
