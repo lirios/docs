@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../index.html">
+        <link rel="prev" href="../cpp-style/">
       
       
-        <link rel="next" href="project-management.html">
+        <link rel="next" href="../../../modules/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Philosophy - Liri Developers Documentation</title>
+        <title>QML Coding Conventions - Liri Developers Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-liri-environment" class="md-skip">
+        <a href="#qml-coding-conventions" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="Liri Developers Documentation" class="md-header__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
+    <a href="../../.." title="Liri Developers Documentation" class="md-header__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Philosophy
+              QML Coding Conventions
             
           </span>
         </div>
@@ -176,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
+    <a href="../../.." title="Liri Developers Documentation" class="md-nav__button md-logo" aria-label="Liri Developers Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -194,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -213,20 +213,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -242,7 +240,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             About
@@ -253,32 +251,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Philosophy
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="philosophy.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../about/philosophy/" class="md-nav__link">
         
   
   
@@ -289,149 +265,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#a-distraction-free-content-focused-desktop" class="md-nav__link">
-    <span class="md-ellipsis">
-      A distraction free, content focused desktop
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#avoiding-manual-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Avoiding manual configuration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-an-out-of-the-box-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating An "Out of the Box" Experience
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ask-the-os-not-the-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ask the OS, Not the User
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#is-it-necessary-to-the-user-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      Is It Necessary To The User Experience?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contextual-display" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contextual Display
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-screen-helps-users-focus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Full-Screen Helps Users Focus
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Full-Screen Helps Users Focus">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-applications-display-on-taskbar" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Applications Display On Taskbar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customizing-user-experience-via-system-preferences" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customizing User Experience Via System Preferences
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-help-and-documentation-is-unobtrusively-available" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Help And Documentation Is Unobtrusively Available
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-users-on-a-single-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multiple Users On A Single System
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#accessibility-and-internationalization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessibility and Internationalization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#a-focus-on-typography" class="md-nav__link">
-    <span class="md-ellipsis">
-      A Focus On Typography
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -444,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="project-management.html" class="md-nav__link">
+      <a href="../../../about/project-management/" class="md-nav__link">
         
   
   
@@ -512,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../packaging/index.html" class="md-nav__link">
+      <a href="../../../packaging/" class="md-nav__link">
         
   
   
@@ -535,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../packaging/snap.html" class="md-nav__link">
+      <a href="../../../packaging/snap/" class="md-nav__link">
         
   
   
@@ -562,18 +395,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -589,7 +424,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Contributing
@@ -603,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/contributor-guide/index.html" class="md-nav__link">
+      <a href="../../contributor-guide/" class="md-nav__link">
         
   
   
@@ -626,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/build-sources.html" class="md-nav__link">
+      <a href="../../build-sources/" class="md-nav__link">
         
   
   
@@ -649,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/upstream-issues.html" class="md-nav__link">
+      <a href="../../upstream-issues/" class="md-nav__link">
         
   
   
@@ -669,18 +504,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -696,7 +533,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             Coding Conventions
@@ -710,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/coding-conventions/design-philosophy.html" class="md-nav__link">
+      <a href="../design-philosophy/" class="md-nav__link">
         
   
   
@@ -733,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/coding-conventions/cpp-conventions.html" class="md-nav__link">
+      <a href="../cpp-conventions/" class="md-nav__link">
         
   
   
@@ -756,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/coding-conventions/cpp-style.html" class="md-nav__link">
+      <a href="../cpp-style/" class="md-nav__link">
         
   
   
@@ -776,10 +613,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../contributing/coding-conventions/qml-conventions.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    QML Coding Conventions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -790,6 +649,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qml-object-declarations" class="md-nav__link">
+    <span class="md-ellipsis">
+      QML Object Declarations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grouped-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grouped Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript Code
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -855,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/index.html" class="md-nav__link">
+      <a href="../../../modules/" class="md-nav__link">
         
   
   
@@ -916,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/text/index.html" class="md-nav__link">
+      <a href="../../../modules/text/" class="md-nav__link">
         
   
   
@@ -939,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/text/syntax-highlighting.html" class="md-nav__link">
+      <a href="../../../modules/text/syntax-highlighting/" class="md-nav__link">
         
   
   
@@ -1008,7 +923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/browser/index.html" class="md-nav__link">
+      <a href="../../../modules/browser/" class="md-nav__link">
         
   
   
@@ -1031,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/browser/shortcuts.html" class="md-nav__link">
+      <a href="../../../modules/browser/shortcuts/" class="md-nav__link">
         
   
   
@@ -1089,125 +1004,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-distraction-free-content-focused-desktop" class="md-nav__link">
+  <a href="#qml-object-declarations" class="md-nav__link">
     <span class="md-ellipsis">
-      A distraction free, content focused desktop
+      QML Object Declarations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#avoiding-manual-configuration" class="md-nav__link">
+  <a href="#grouped-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Avoiding manual configuration
+      Grouped Properties
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-an-out-of-the-box-experience" class="md-nav__link">
+  <a href="#lists" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating An "Out of the Box" Experience
+      Lists
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ask-the-os-not-the-user" class="md-nav__link">
+  <a href="#javascript-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Ask the OS, Not the User
+      JavaScript Code
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#is-it-necessary-to-the-user-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      Is It Necessary To The User Experience?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contextual-display" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contextual Display
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-screen-helps-users-focus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Full-Screen Helps Users Focus
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Full-Screen Helps Users Focus">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-applications-display-on-taskbar" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Applications Display On Taskbar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customizing-user-experience-via-system-preferences" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customizing User Experience Via System Preferences
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-help-and-documentation-is-unobtrusively-available" class="md-nav__link">
-    <span class="md-ellipsis">
-      User Help And Documentation Is Unobtrusively Available
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-users-on-a-single-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multiple Users On A Single System
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#accessibility-and-internationalization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessibility and Internationalization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#a-focus-on-typography" class="md-nav__link">
-    <span class="md-ellipsis">
-      A Focus On Typography
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1227,69 +1055,143 @@
 
 
 
-<h1 id="the-liri-environment">The Liri environment</h1>
-<p>Liri aims to offer an excellent desktop experience.</p>
-<p>Instead of forcing the user to know every detail of their computer, we expect them to turn
-it on, sit down and simply use it. We are able to achieve this through concise design methodology and
-the fact that all the applications built for Liri are designed from top to bottom to work together,
-offer consistency and stability, and deliver the features users want.</p>
-<p>To develop an excellent application, you will need to understand the environment and why our
-users love it. With this understanding, have no doubt that you will be able to establish an
-application that takes adventures of core platform features and an interface that integrates
-seamlessly into the desktop experience.</p>
-<h2 id="a-distraction-free-content-focused-desktop">A distraction free, content focused desktop</h2>
-<p>Liri was created around the core belief that the majority of people use computers to create and
-experience digital content that they care about and throughout their daily activities.</p>
-<p>On a Liri device, the user is free to focus on their content and productivity because Liri
-performs many of the typical backend application management tasks that users are generally
-expected to handle.</p>
-<h2 id="avoiding-manual-configuration">Avoiding manual configuration</h2>
-<p>Liri is able to take much of the burden of adjusting and controlling the minor details of
-the system for the majority of users. This is achieved by promoting minimal configuration
-throughout the system and applications. </p>
-<p>Providing settings is usually an easy way out of making design decisions about an app’s behavior.
-The same as feature bloat, increased user settings mean more code, more bugs, more testing,
-more documentation, and more overall complexity for the user.</p>
-<h2 id="creating-an-out-of-the-box-experience">Creating An "Out of the Box" Experience</h2>
-<p>Always design with sane defaults in focus.</p>
-<p>Liri applications put a strong emphasis on the out of the box experience for the users.</p>
-<p>It is safe to assume that if your app requires configuration before a user can be comfortable
-using it, the user may not take the time to configure it at all and simply use another app
-in place.</p>
-<h2 id="ask-the-os-not-the-user">Ask the OS, Not the User</h2>
-<p>Get as much information automatically as possible. In place of asking the user for his or her
-name and location, ask the system for this information. This directly reduces the amount of
-tasks a user has to complete before they are able to have any amount of productivity, it also
-gives an extra layer of intelligence and integration to your app.</p>
-<h2 id="is-it-necessary-to-the-user-experience">Is It Necessary To The User Experience?</h2>
-<p>Always contemplate on if the configuration option you are adding is really necessary or vital
-to the user. Avoid asking users to make engineering or design related decisions. Configuration
-options should be strictly regulated and assigned to either the initial setup of the app or
-personal preference.</p>
-<h2 id="contextual-display">Contextual Display</h2>
-<p>Keep things in context. Actively make design decisions that allow you to display preferences in
-context with the objects they affect, rather than tucked away in a configuration dialog.</p>
-<p>If your app requires configuration upon initial use, or before it can be used (like a mail client),
-present this configuration inside the main app window much like a Welcome Screen. Once again, be
-mindful to only present configuration options when necessary.</p>
-<h2 id="full-screen-helps-users-focus">Full-Screen Helps Users Focus</h2>
-<p>At times it can make sense for an app to offer an immersive, full-screen experience to help users
-focus on tasks and avoid distractions from the desktop or background applications.</p>
-<p>Liri makes extensive use of this and compliments full-screen applications organically with ease.</p>
-<p>[INSERT FULL-SCREEN SCREENSHOT]</p>
-<p>Insert detailed information about the full-screen native functionality of applications.</p>
-<h3 id="how-applications-display-on-taskbar">How Applications Display On Taskbar</h3>
-<p>Relevant text.</p>
-<h3 id="customizing-user-experience-via-system-preferences">Customizing User Experience Via System Preferences</h3>
-<p>Relevant text.</p>
-<h3 id="user-help-and-documentation-is-unobtrusively-available">User Help And Documentation Is Unobtrusively Available</h3>
-<p>Relevant text.</p>
-<h3 id="multiple-users-on-a-single-system">Multiple Users On A Single System</h3>
-<p>Relevant text.</p>
-<h3 id="accessibility-and-internationalization">Accessibility and Internationalization</h3>
-<p>Relevant text.</p>
-<h3 id="a-focus-on-typography">A Focus On Typography</h3>
-<p>Relevant text.</p>
+<h1 id="qml-coding-conventions">QML Coding Conventions</h1>
+<p>This document contains the QML coding conventions that all Liri projects follow.</p>
+<h2 id="qml-object-declarations">QML Object Declarations</h2>
+<p>Throughout our code, documentation and examples, QML object attributes are always structured in the following order:</p>
+<ul>
+<li>id</li>
+<li>property declarations</li>
+<li>signal declarations</li>
+<li>JavaScript functions</li>
+<li>object properties</li>
+<li>child objects</li>
+<li>states</li>
+<li>transitions</li>
+</ul>
+<p>For better readability, we separate these different parts with an empty line.</p>
+<p>For example, a hypothetical photo QML object would look like this:</p>
+<pre><code class="language-qml">Rectangle {
+    id: photo                                               // id on the first line makes it easy to find an object
+
+    property bool thumbnail: false                          // property declarations
+    property alias image: photoImage.source
+
+    signal clicked()                                        // signal declarations
+
+    function doSomething(x)                                 // javascript functions
+    {
+        return x + photoImage.width;
+    }
+
+    color: &quot;gray&quot;                                           // object properties
+    x: 20; y: 20; height: 150                               // try to group related properties together
+    width: {                                                // large bindings
+        if (photoImage.width &gt; 200)
+            photoImage.width;
+        else
+            200;
+    }
+
+    Rectangle {                                             // child objects
+        id: border
+        anchors.centerIn: parent; color: &quot;white&quot;
+
+        Image { id: photoImage; anchors.centerIn: parent }
+    }
+
+    states: State {                                         // states
+        name: &quot;selected&quot;
+        PropertyChanges { target: border; color: &quot;red&quot; }
+    }
+
+    transitions: Transition {                               // transitions
+        from: &quot;&quot;; to: &quot;selected&quot;
+        ColorAnimation { target: border; duration: 200 }
+    }
+}
+</code></pre>
+<h2 id="grouped-properties">Grouped Properties</h2>
+<p>If using multiple properties from a group of properties, consider using group notation instead of dot notation if it improves readability.</p>
+<p>For example, this:</p>
+<pre><code class="language-qml">Rectangle {
+    anchors.left: parent.left; anchors.top: parent.top; anchors.right: parent.right; anchors.leftMargin: 20
+}
+
+Text {
+    text: &quot;hello&quot;
+    font.bold: true; font.italic: true; font.pixelSize: 20; font.capitalization: Font.AllUppercase
+}
+</code></pre>
+<p>could be written like this:</p>
+<pre><code class="language-qml">Rectangle {
+    anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: 20 }
+}
+
+Text {
+    text: &quot;hello&quot;
+    font { bold: true; italic: true; pixelSize: 20; capitalization: Font.AllUppercase }
+}
+</code></pre>
+<h2 id="lists">Lists</h2>
+<p>If a list contains only one element, we generally omit the square brackets.</p>
+<p>For example, it is very common for a component to only have one state.</p>
+<p>In this case, instead of:</p>
+<pre><code class="language-qml">states: [
+    State {
+        name: &quot;open&quot;
+        PropertyChanges { target: container; width: 200 }
+    }
+]
+</code></pre>
+<p>we will write this:</p>
+<pre><code class="language-qml">states: State {
+    name: &quot;open&quot;
+    PropertyChanges { target: container; width: 200 }
+}
+</code></pre>
+<h2 id="javascript-code">JavaScript Code</h2>
+<p>If the script is a single expression, we recommend writing it inline:</p>
+<pre><code class="language-qml">Rectangle { color: &quot;blue&quot;; width: parent.width / 3 }
+</code></pre>
+<p>If the script is only a couple of lines long, we generally use a block:</p>
+<pre><code class="language-qml">Rectangle {
+    color: &quot;blue&quot;
+    width: {
+        var w = parent.width / 3;
+        console.debug(w);
+        return w;
+    }
+}
+</code></pre>
+<p>If the script is more than a couple of lines long or can be used by different objects, we recommend creating a function and calling it like this:</p>
+<pre><code class="language-qml">function calculateWidth(object)
+{
+    var w = object.width / 3;
+    // ...
+    // more javascript code
+    // ...
+    console.debug(w);
+    return w;
+}
+
+Rectangle { color: &quot;blue&quot;; width: calculateWidth(parent) }
+</code></pre>
+<p>For long scripts, we will put the functions in their own JavaScript file and import it like this:</p>
+<pre><code class="language-qml">import &quot;myscript.js&quot; as Script
+
+Rectangle { color: &quot;blue&quot;; width: Script.calculateWidth(parent) }
+</code></pre>
+<p>If the code is longer than one line and hence within a block, we use semicolons to indicate the end of each statement:</p>
+<pre><code class="language-qml">MouseArea {
+    anchors.fill: parent
+    onClicked: {
+        var scenePos = mapToItem(null, mouseX, mouseY);
+        console.log(&quot;MouseArea was clicked at scene pos &quot; + scenePos);
+    }
+}
+</code></pre>
+<p>This document is based on <a href="http://doc.qt.io/qt-5/qml-codingconventions.html">Qt's QML Coding Conventions</a> which is (C) 2017 The Qt Company Ltd, licensed under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU Free Documentation License version 1.3</a> as published by the Free Software Foundation.</p>
 
 
 
@@ -1338,10 +1240,10 @@ focus on tasks and avoid distractions from the desktop or background application
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>
