@@ -1,0 +1,7 @@
+<map id="BottomSheet" name="BottomSheet">
+<area shape="rect" id="Node000001" title="A sheet of paper that slides up from the bottom." alt="" coords="5,152,112,177"/>
+<area shape="rect" id="Node000002" href="$classDrawer.html" title=" " alt="" coords="24,79,93,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,118,61,152,56,152,56,118"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="15,5,102,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="61,44,61,79,56,79,56,44"/>
+</map>

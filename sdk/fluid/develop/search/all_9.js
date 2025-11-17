@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['kambientalpha_0',['kAmbientAlpha',['../elevation_8cpp.html#a3783cbc92e4a4960742972c68ffe1bb4',1,'elevation.cpp']]],
+  ['kambientgeomfactor_1',['kAmbientGeomFactor',['../namespaceFluid_1_1Skia.html#a482e6aa8b6e61b51ccb2a8916eeac9ed',1,'Fluid::Skia']]],
+  ['kambientheightfactor_2',['kAmbientHeightFactor',['../namespaceFluid_1_1Skia.html#aa8e49d5e29902bc2ea46e0845650f21f',1,'Fluid::Skia']]],
+  ['kfill_5frrecttype_3',['kFill_RRectType',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a748da35b5514dadb407240f02ffd44c8a3131cfea59d7ac103a378bcebd7ec63e',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kindicesperfillcircle_4',['kIndicesPerFillCircle',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#ac0eabceca6de7e8abdbfd2fbf2cd3b63',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kindicesperfillrrect_5',['kIndicesPerFillRRect',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a655c435201d2fd16c13761099940b053',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kindicesperoverstrokerrect_6',['kIndicesPerOverstrokeRRect',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a5f241ccc583da7527cb3d28e4f9bf6cb',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kindicesperstrokecircle_7',['kIndicesPerStrokeCircle',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a6051c8836a850ea6a4c3ed5e035be175',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kindicesperstrokerrect_8',['kIndicesPerStrokeRRect',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a2f3f54ba72488765ae06b68930ed2ca7',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['klightpos_9',['kLightPos',['../elevation_8cpp.html#a6c723bf7d20642fe0c183e6e92944bb9',1,'elevation.cpp']]],
+  ['kmaxambientradius_10',['kMaxAmbientRadius',['../namespaceFluid_1_1Skia.html#a4ceb5ddb090620e836b29ddc2fa138dd',1,'Fluid::Skia']]],
+  ['koverstroke_5frrecttype_11',['kOverstroke_RRectType',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a748da35b5514dadb407240f02ffd44c8a726dcc1e9193f1150820c8487c3131e1',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kshadowlightheight_12',['kShadowLightHeight',['../elevation_8cpp.html#a69368af6e85de645520e2d3441566df2',1,'elevation.cpp']]],
+  ['kshadowlightradius_13',['kShadowLightRadius',['../elevation_8cpp.html#a3ea89f6a4d81942f9fad0774057972d5',1,'elevation.cpp']]],
+  ['kspotalpha_14',['kSpotAlpha',['../elevation_8cpp.html#aff22aec6f5534910ed1a726c6b54af3f',1,'elevation.cpp']]],
+  ['kstroke_5frrecttype_15',['kStroke_RRectType',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a748da35b5514dadb407240f02ffd44c8ae3a83f1330eb5de656112acbb619e98e',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kvertsperfillcircle_16',['kVertsPerFillCircle',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#ac90ffa2cbef88e95bd78f534add08cea',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kvertsperfillrrect_17',['kVertsPerFillRRect',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a20ec220e7c93496e5212685c023adf12',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kvertsperoverstrokerrect_18',['kVertsPerOverstrokeRRect',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#aac062325812310c74814024ba030f5dc',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kvertsperstrokecircle_19',['kVertsPerStrokeCircle',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a036ba683c967e3ae2b7984dddac415dc',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['kvertsperstrokerrect_20',['kVertsPerStrokeRRect',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a5ba7778735654899dba533a0ce79847d',1,'Fluid::Skia::ShadowCircularRRectOp']]]
+];

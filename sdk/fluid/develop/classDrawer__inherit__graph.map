@@ -1,0 +1,13 @@
+<map id="Drawer" name="Drawer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="190,79,259,104"/>
+<area shape="rect" id="Node000003" href="$classBottomSheet.html" title="A sheet of paper that slides up from the bottom." alt="" coords="98,152,205,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,116,165,154,161,150,201,112"/>
+<area shape="rect" id="Node000006" href="$classNavigationDrawer.html" title="The navigation drawer slides in from the left and is a common pattern in apps." alt="" coords="229,152,369,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="248,111,289,150,285,154,245,115"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="181,5,268,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,44,227,79,222,79,222,44"/>
+<area shape="rect" id="Node000004" href="$classBottomSheetGrid.html" title="A sheet of paper with actions and an optional title that slides up from the bottom." alt="" coords="5,225,140,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="130,189,87,227,84,223,127,185"/>
+<area shape="rect" id="Node000005" href="$classBottomSheetList.html" title="A sheet of paper with actions and an optional title that slides up from the bottom." alt="" coords="165,225,295,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="176,185,219,223,215,227,172,189"/>
+</map>

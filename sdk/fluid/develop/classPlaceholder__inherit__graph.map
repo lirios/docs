@@ -1,0 +1,7 @@
+<map id="Placeholder" name="Placeholder">
+<area shape="rect" id="Node000001" title="Shows a placeholder icon and text." alt="" coords="5,152,104,177"/>
+<area shape="rect" id="Node000002" href="$classControl.html" title=" " alt="" coords="20,79,89,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,118,57,152,52,152,52,118"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="11,5,98,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,44,57,79,52,79,52,44"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,301,57,327"/>
+<area shape="rect" id="Node000001" href="$classCircleImage.html" title="Circular image." alt="" coords="129,5,229,31"/>
+<area shape="poly" id="edge105_Node000000_Node000001" title=" " alt="" coords="29,288,32,236,41,170,51,136,64,101,81,69,104,40,127,25,130,29,107,44,86,72,69,103,56,137,47,172,37,237,35,288"/>
+<area shape="rect" id="Node000002" href="$classCircleMask.html" title="Circular mask." alt="" coords="131,55,226,80"/>
+<area shape="poly" id="edge106_Node000000_Node000002" title=" " alt="" coords="31,287,36,244,48,192,69,137,85,112,104,89,130,73,132,78,107,93,89,115,74,140,53,193,42,245,37,288"/>
+<area shape="rect" id="Node000003" href="$classColumnFlow.html" title="Automatically position children in columns." alt="" coords="127,104,230,129"/>
+<area shape="poly" id="edge107_Node000000_Node000003" title=" " alt="" coords="34,287,42,254,55,214,75,174,104,139,126,125,128,130,107,143,80,177,60,216,47,255,39,288"/>
+<area shape="rect" id="Node000004" href="$classIcon.html" title="Displays an icon from the Material Design icon collection, the platform&#39;s icon theme,..." alt="" coords="154,153,203,179"/>
+<area shape="poly" id="edge108_Node000000_Node000004" title=" " alt="" coords="39,287,63,237,81,211,104,188,128,174,153,167,155,172,130,179,107,192,85,214,68,240,44,290"/>
+<area shape="rect" id="Node000005" href="$classLoadable.html" title="Loadable component." alt="" coords="138,203,219,228"/>
+<area shape="poly" id="edge109_Node000000_Node000005" title=" " alt="" coords="49,288,73,262,104,237,137,222,139,227,107,242,77,266,53,292"/>
+<area shape="rect" id="Node000006" href="$classSearchBar.html" title="Provides a searchbar, that supports autocompletion and displays search results using cards." alt="" coords="135,252,223,277"/>
+<area shape="poly" id="edge110_Node000000_Node000006" title=" " alt="" coords="69,298,104,286,138,275,140,280,106,291,71,303"/>
+<area shape="rect" id="Node000007" href="$classSmoothFadeImage.html" title="Displays an image and smoothly fade when the source is changed." alt="" coords="107,301,250,327"/>
+<area shape="poly" id="edge111_Node000000_Node000007" title=" " alt="" coords="71,311,107,311,107,317,71,317"/>
+<area shape="rect" id="Node000008" href="$classSmoothFadeLoader.html" title="Displays an item and smoothly fade when the source is changed." alt="" coords="105,351,252,376"/>
+<area shape="poly" id="edge112_Node000000_Node000008" title=" " alt="" coords="72,325,141,348,139,353,70,330"/>
+<area shape="rect" id="Node000009" href="$classSnackBar.html" title="SnackBar provides a brief feedback about an operation." alt="" coords="137,400,220,425"/>
+<area shape="poly" id="edge113_Node000000_Node000009" title=" " alt="" coords="53,336,77,362,107,385,138,400,136,404,104,390,74,366,49,340"/>
+<area shape="rect" id="Node000010" href="$classTab.html" title="Tab for tabbed pages." alt="" coords="157,449,201,475"/>
+<area shape="poly" id="edge114_Node000000_Node000010" title=" " alt="" coords="44,338,68,387,86,413,107,435,132,448,157,456,156,461,130,453,104,439,82,416,63,390,39,341"/>
+<area shape="rect" id="Node000011" href="$classUnits.html" title="Units." alt="" coords="151,499,207,524"/>
+<area shape="poly" id="edge115_Node000000_Node000011" title=" " alt="" coords="40,340,47,373,60,411,80,450,107,484,128,497,151,505,150,510,126,502,104,488,76,453,56,413,42,374,34,341"/>
+<area shape="rect" id="Node000012" href="$classVignette.html" title="Vignette effect." alt="" coords="140,548,217,573"/>
+<area shape="poly" id="edge116_Node000000_Node000012" title=" " alt="" coords="37,340,42,382,54,434,75,487,89,512,107,533,123,545,141,552,139,557,120,549,104,537,85,515,70,490,49,435,37,383,31,341"/>
+<area shape="rect" id="Node000013" href="$classWave.html" title="Provides a wave animation for transitioning between views of content." alt="" coords="149,597,208,623"/>
+<area shape="poly" id="edge117_Node000000_Node000013" title=" " alt="" coords="35,340,37,391,47,456,69,523,86,555,107,583,127,597,150,604,148,609,125,601,103,587,81,558,64,526,42,457,32,391,29,340"/>
+</map>

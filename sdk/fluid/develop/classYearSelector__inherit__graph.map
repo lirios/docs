@@ -1,0 +1,7 @@
+<map id="YearSelector" name="YearSelector">
+<area shape="rect" id="Node000001" title=" " alt="" coords="75,79,178,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,104,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,39,117,77,113,80,75,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="129,5,271,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,42,140,80,137,77,176,38"/>
+</map>
