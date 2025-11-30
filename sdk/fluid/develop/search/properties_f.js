@@ -16,5 +16,8 @@ var searchData=
   ['spacingsmall_13',['spacingSmall',['../classToken.html#ae680e801ed6a36e403b2542410239c44',1,'Token']]],
   ['surfacecolor_14',['surfaceColor',['../classStyle.html#a45742d9b8bf82dd5def7f066950b690a',1,'Style']]],
   ['surfacetintcolor_15',['surfaceTintColor',['../classStyle.html#a1e05ad1b9c63e4915cf5f08284d93fb8',1,'Style']]],
-  ['surfacevariantcolor_16',['surfaceVariantColor',['../classStyle.html#a225cf615de718b6260effae7be29797b',1,'Style']]]
+  ['surfacevariantcolor_16',['surfaceVariantColor',['../classStyle.html#a225cf615de718b6260effae7be29797b',1,'Style']]],
+  ['symbolsoutlinedfontfamily_17',['symbolsOutlinedFontFamily',['../classTheme.html#ae83b0e0665d6f9d0419bc78d9d027bd1',1,'Theme']]],
+  ['symbolsroundedfontfamily_18',['symbolsRoundedFontFamily',['../classTheme.html#a0a5c6e8cd227d7d2759b101c317e73d7',1,'Theme']]],
+  ['symbolssharpfontfamily_19',['symbolsSharpFontFamily',['../classTheme.html#a68c1c60996ac885aea381ebaf4b840a7',1,'Theme']]]
 ];

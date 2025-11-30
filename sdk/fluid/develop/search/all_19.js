@@ -6,5 +6,6 @@ var searchData=
   ['_7efluiddecoration_3',['~FluidDecoration',['../classFluidDecoration.html#a9c0e9554200b74a3c10b54ec6c82b8b0',1,'FluidDecoration']]],
   ['_7efluiddecorationmanager_4',['~FluidDecorationManager',['../classFluidDecorationManager.html#a39020ead671d7993eeaa95d2c5498c2b',1,'FluidDecorationManager']]],
   ['_7einputarea_5',['~InputArea',['../classInputArea.html#ac3272d92c029b8e6c20e1d15873f7276',1,'InputArea']]],
-  ['_7erectangle_6',['~Rectangle',['../classFluid_1_1Rectangle.html#a6e3ed18583022b35e04c109345d1e7d6',1,'Fluid::Rectangle']]]
+  ['_7erectangle_6',['~Rectangle',['../classFluid_1_1Rectangle.html#a6e3ed18583022b35e04c109345d1e7d6',1,'Fluid::Rectangle']]],
+  ['_7etheme_7',['~Theme',['../classTheme.html#afc1ece6aa5135b98e14dddac7dddbda8',1,'Theme']]]
 ];

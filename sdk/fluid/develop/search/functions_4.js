@@ -1,7 +1,7 @@
 var searchData=
 [
   ['effectivetheme_0',['effectiveTheme',['../classStyle.html#a93294fe37200d0d5d522d6c66b711e62',1,'Style']]],
-  ['elevation_1',['elevation',['../classFluid_1_1Elevation.html#a08904e846f5ba6ad446815a411101b1d',1,'Fluid::Elevation::elevation()'],['../classStyle.html#a18bd6a2905082114013dcdcbe05d10c9',1,'Style::elevation()'],['../classFluid_1_1Elevation.html#a9dfd5f494d09df24dab03f9227a944fd',1,'Fluid::Elevation::Elevation(QQuickItem *parent=nullptr)']]],
+  ['elevation_1',['elevation',['../classFluid_1_1Elevation.html#a9dfd5f494d09df24dab03f9227a944fd',1,'Fluid::Elevation::Elevation(QQuickItem *parent=nullptr)'],['../classFluid_1_1Elevation.html#a08904e846f5ba6ad446815a411101b1d',1,'Fluid::Elevation::elevation() const'],['../classStyle.html#a18bd6a2905082114013dcdcbe05d10c9',1,'Style::elevation()']]],
   ['elevationchanged_2',['elevationchanged',['../classFluid_1_1Elevation.html#a24d5c40686ecdceafc1df1248fc1d1d8',1,'Fluid::Elevation::elevationChanged()'],['../classStyle.html#a4e0b4c28e412d4df3af51129a75ea2db',1,'Style::elevationChanged()']]],
   ['elevationlevel0_3',['elevationLevel0',['../classToken.html#ab3d4bc4c470e09c40052b162d6ab971e',1,'Token']]],
   ['elevationlevel1_4',['elevationLevel1',['../classToken.html#a14c58fc4dee081bf3ced15caa97ddb64',1,'Token']]],

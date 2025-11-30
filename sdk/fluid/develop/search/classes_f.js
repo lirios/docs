@@ -23,5 +23,7 @@ var searchData=
   ['subheader_20',['Subheader',['../classSubheader.html',1,'']]],
   ['subheadinglabel_21',['SubheadingLabel',['../classSubheadingLabel.html',1,'']]],
   ['swipeview_22',['SwipeView',['../classSwipeView.html',1,'']]],
-  ['switch_23',['Switch',['../classSwitch.html',1,'']]]
+  ['switch_23',['Switch',['../classSwitch.html',1,'']]],
+  ['symbol_24',['Symbol',['../classSymbol.html',1,'']]],
+  ['symbolnames_25',['SymbolNames',['../classSymbolNames.html',1,'']]]
 ];

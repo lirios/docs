@@ -23,5 +23,7 @@ var searchData=
   ['subheader_2eqml_20',['Subheader.qml',['../Subheader_8qml.html',1,'']]],
   ['subheadinglabel_2eqml_21',['SubheadingLabel.qml',['../SubheadingLabel_8qml.html',1,'']]],
   ['swipeview_2eqml_22',['SwipeView.qml',['../SwipeView_8qml.html',1,'']]],
-  ['switch_2eqml_23',['Switch.qml',['../Switch_8qml.html',1,'']]]
+  ['switch_2eqml_23',['Switch.qml',['../Switch_8qml.html',1,'']]],
+  ['symbol_2eqml_24',['Symbol.qml',['../Symbol_8qml.html',1,'']]],
+  ['symbolnames_2eqml_25',['SymbolNames.qml',['../SymbolNames_8qml.html',1,'']]]
 ];

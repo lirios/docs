@@ -4,7 +4,7 @@ var searchData=
   ['tertiarycontainercolor_1',['tertiaryContainerColor',['../classStyle.html#aa4c22bf23b43b9469f45c14ebaa5edf8',1,'Style']]],
   ['text_2',['text',['../classClipboard.html#a25c077ebdf704c0aedab69dd948b2876',1,'Clipboard']]],
   ['textchanged_3',['textChanged',['../classClipboard.html#a22366b773a42ae8ffa990baa9ce4f91d',1,'Clipboard']]],
-  ['theme_4',['theme',['../classStyle.html#aa4714507d98f941fa7f1bf1a5d1558ce',1,'Style::theme()'],['../classWindowDecoration.html#a3d5be421b015537de0dda03ba0cb2a9c',1,'WindowDecoration::theme()']]],
+  ['theme_4',['theme',['../classStyle.html#aa4714507d98f941fa7f1bf1a5d1558ce',1,'Style::theme()'],['../classWindowDecoration.html#a3d5be421b015537de0dda03ba0cb2a9c',1,'WindowDecoration::theme()'],['../classTheme.html#ac1dc66c7172de7af417d1dbe06d2f23d',1,'Theme::Theme()']]],
   ['themechanged_5',['themechanged',['../classStyle.html#a566d861571e43c21ca4d5ccb6ead550b',1,'Style::themeChanged()'],['../classWindowDecoration.html#ad045f5ce7221d0343fcd98c2b0649444',1,'WindowDecoration::themeChanged()']]],
   ['timemode_6',['timeMode',['../classTimeSelector.html#a666ef56ec234d02d865eeed95b1142b1',1,'TimeSelector']]],
   ['timemodechanged_7',['timeModeChanged',['../classTimeSelector.html#a47b175327d64c33d473648c54d05a004',1,'TimeSelector']]],
