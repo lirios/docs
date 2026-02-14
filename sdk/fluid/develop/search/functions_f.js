@@ -25,8 +25,9 @@ var searchData=
   ['resetvisibleitemcount_22',['resetVisibleItemCount',['../classYearSelector.html#af51029efea5eeb5e81339c01281b8945',1,'YearSelector']]],
   ['resetweeknumbervisible_23',['resetWeekNumberVisible',['../classDateSelector.html#a36d1032f77eb88862d99e014ff1af7a6',1,'DateSelector']]],
   ['rolenames_24',['roleNames',['../classYearModel.html#a6eb2c2b887d1e94c86544d9b6bdc5e2a',1,'YearModel']]],
-  ['rowcount_25',['rowCount',['../classYearModel.html#a6b63efddf1fc15c1748dc9e4ca959b8a',1,'YearModel']]],
-  ['rrect_5ftype_5fto_5findex_5fcount_26',['rrect_type_to_index_count',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a02733600299cb261cffa3f46171721f5',1,'Fluid::Skia::ShadowCircularRRectOp']]],
-  ['rrect_5ftype_5fto_5findices_27',['rrect_type_to_indices',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a71cc5e820a071f6885488e55d149fe8c',1,'Fluid::Skia::ShadowCircularRRectOp']]],
-  ['rrect_5ftype_5fto_5fvert_5fcount_28',['rrect_type_to_vert_count',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#aec6bcc31aaa6e493c6913c27c0cb99b5',1,'Fluid::Skia::ShadowCircularRRectOp']]]
+  ['rond_25',['rond',['../structFluid_1_1TypeScaleValue.html#af2cb351eb12e987a9801514c26e6c641',1,'Fluid::TypeScaleValue']]],
+  ['rowcount_26',['rowCount',['../classYearModel.html#a6b63efddf1fc15c1748dc9e4ca959b8a',1,'YearModel']]],
+  ['rrect_5ftype_5fto_5findex_5fcount_27',['rrect_type_to_index_count',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a02733600299cb261cffa3f46171721f5',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['rrect_5ftype_5fto_5findices_28',['rrect_type_to_indices',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a71cc5e820a071f6885488e55d149fe8c',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['rrect_5ftype_5fto_5fvert_5fcount_29',['rrect_type_to_vert_count',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#aec6bcc31aaa6e493c6913c27c0cb99b5',1,'Fluid::Skia::ShadowCircularRRectOp']]]
 ];

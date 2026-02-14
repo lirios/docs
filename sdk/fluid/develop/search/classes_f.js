@@ -21,9 +21,8 @@ var searchData=
   ['standardpaths_18',['StandardPaths',['../classStandardPaths.html',1,'']]],
   ['style_19',['Style',['../classStyle.html',1,'']]],
   ['subheader_20',['Subheader',['../classSubheader.html',1,'']]],
-  ['subheadinglabel_21',['SubheadingLabel',['../classSubheadingLabel.html',1,'']]],
-  ['swipeview_22',['SwipeView',['../classSwipeView.html',1,'']]],
-  ['switch_23',['Switch',['../classSwitch.html',1,'']]],
-  ['symbol_24',['Symbol',['../classSymbol.html',1,'']]],
-  ['symbolnames_25',['SymbolNames',['../classSymbolNames.html',1,'']]]
+  ['swipeview_21',['SwipeView',['../classSwipeView.html',1,'']]],
+  ['switch_22',['Switch',['../classSwitch.html',1,'']]],
+  ['symbol_23',['Symbol',['../classSymbol.html',1,'']]],
+  ['symbolnames_24',['SymbolNames',['../classSymbolNames.html',1,'']]]
 ];

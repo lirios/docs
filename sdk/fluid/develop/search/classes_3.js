@@ -12,7 +12,5 @@ var searchData=
   ['dial_9',['Dial',['../classDial.html',1,'']]],
   ['dialog_10',['Dialog',['../classDialog.html',1,'']]],
   ['dialogbuttonbox_11',['DialogButtonBox',['../classDialogButtonBox.html',1,'']]],
-  ['dialoglabel_12',['DialogLabel',['../classDialogLabel.html',1,'']]],
-  ['displaylabel_13',['DisplayLabel',['../classDisplayLabel.html',1,'']]],
-  ['drawer_14',['Drawer',['../classDrawer.html',1,'']]]
+  ['drawer_12',['Drawer',['../classDrawer.html',1,'']]]
 ];

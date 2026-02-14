@@ -20,7 +20,5 @@ var searchData=
   ['dial_2eqml_17',['Dial.qml',['../Dial_8qml.html',1,'']]],
   ['dialog_2eqml_18',['Dialog.qml',['../Dialog_8qml.html',1,'']]],
   ['dialogbuttonbox_2eqml_19',['DialogButtonBox.qml',['../DialogButtonBox_8qml.html',1,'']]],
-  ['dialoglabel_2eqml_20',['DialogLabel.qml',['../DialogLabel_8qml.html',1,'']]],
-  ['displaylabel_2eqml_21',['DisplayLabel.qml',['../DisplayLabel_8qml.html',1,'']]],
-  ['drawer_2eqml_22',['Drawer.qml',['../Drawer_8qml.html',1,'']]]
+  ['drawer_2eqml_20',['Drawer.qml',['../Drawer_8qml.html',1,'']]]
 ];

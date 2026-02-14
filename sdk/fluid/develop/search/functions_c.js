@@ -15,8 +15,9 @@ var searchData=
   ['operator_20qvector2d_12',['operator QVector2D',['../structFluid_1_1SceneGraph_1_1RectangleVertex.html#a34681133087a0d9d2de8287bac170ace',1,'Fluid::SceneGraph::RectangleVertex']]],
   ['operator_20qvector4d_13',['operator QVector4D',['../classFluid_1_1CornersGroup.html#a0f498a573c9c73f460883832234e2419',1,'Fluid::CornersGroup']]],
   ['operator_3d_14',['operator=',['../classFluid_1_1CornersGroup.html#a480307cf346b50ca705641536e6de959',1,'Fluid::CornersGroup::operator=(const CornersGroup &amp;)=default'],['../classFluid_1_1CornersGroup.html#a0aa9430ef1197d648ab0ef30396fc06a',1,'Fluid::CornersGroup::operator=(CornersGroup &amp;&amp;)=default']]],
-  ['orientation_15',['orientation',['../classPicker.html#a19b5db2d3bd6fcbe56c6bf7bd6324cda',1,'Picker']]],
-  ['orientationchanged_16',['orientationChanged',['../classPicker.html#a7e678a05b334b141f2e7604f1e9d46a5',1,'Picker']]],
-  ['outlinecolor_17',['outlineColor',['../classStyle.html#a53295f27086918b2a83f351bf65ed085',1,'Style']]],
-  ['outlinevariantcolor_18',['outlineVariantColor',['../classStyle.html#ac90ec4a831c3cfab300984b4a60772cd',1,'Style']]]
+  ['opsz_15',['opsz',['../structFluid_1_1TypeScaleValue.html#a42ad6f2a513f1d7f7d2eb18453682091',1,'Fluid::TypeScaleValue']]],
+  ['orientation_16',['orientation',['../classPicker.html#a19b5db2d3bd6fcbe56c6bf7bd6324cda',1,'Picker']]],
+  ['orientationchanged_17',['orientationChanged',['../classPicker.html#a7e678a05b334b141f2e7604f1e9d46a5',1,'Picker']]],
+  ['outlinecolor_18',['outlineColor',['../classStyle.html#a53295f27086918b2a83f351bf65ed085',1,'Style']]],
+  ['outlinevariantcolor_19',['outlineVariantColor',['../classStyle.html#ac90ec4a831c3cfab300984b4a60772cd',1,'Style']]]
 ];

@@ -17,9 +17,10 @@ var searchData=
   ['gfillcircleindices_14',['gFillCircleIndices',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a9c8bdf8a1c44b414bd251db6ac991400',1,'Fluid::Skia::ShadowCircularRRectOp']]],
   ['globalelevation_15',['globalElevation',['../style_8cpp.html#abe9d8272485375eea5ebd89551abf383',1,'style.cpp']]],
   ['globaltheme_16',['globalTheme',['../style_8cpp.html#afefd2a701bbf278216a1bb46a4c8c0e8',1,'style.cpp']]],
-  ['gridunit_17',['gridunit',['../classDevice.html#a04af3f439562e0ec8e47edc9146778f2',1,'Device::gridUnit() const'],['../classDevice.html#a5370468b07bef4af6f93881107dae838',1,'Device::gridUnit']]],
-  ['groupbox_18',['GroupBox',['../classGroupBox.html',1,'']]],
-  ['groupbox_2eqml_19',['GroupBox.qml',['../GroupBox_8qml.html',1,'']]],
-  ['grrectindices_20',['gRRectIndices',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a8c961fd242cf1080d3f5bd4f6a916b40',1,'Fluid::Skia::ShadowCircularRRectOp']]],
-  ['gstrokecircleindices_21',['gStrokeCircleIndices',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a9325c017aa7dde2fc07357e1116ef256',1,'Fluid::Skia::ShadowCircularRRectOp']]]
+  ['grad_17',['grad',['../structFluid_1_1TypeScaleValue.html#ae4566086ebe8fbfc6b31f3f86d308617',1,'Fluid::TypeScaleValue::grad() const'],['../structFluid_1_1TypeScaleValue.html#aade13505ef77c2c6cca4b44acfe6922f',1,'Fluid::TypeScaleValue::grad']]],
+  ['gridunit_18',['gridunit',['../classDevice.html#a04af3f439562e0ec8e47edc9146778f2',1,'Device::gridUnit() const'],['../classDevice.html#a5370468b07bef4af6f93881107dae838',1,'Device::gridUnit']]],
+  ['groupbox_19',['GroupBox',['../classGroupBox.html',1,'']]],
+  ['groupbox_2eqml_20',['GroupBox.qml',['../GroupBox_8qml.html',1,'']]],
+  ['grrectindices_21',['gRRectIndices',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a8c961fd242cf1080d3f5bd4f6a916b40',1,'Fluid::Skia::ShadowCircularRRectOp']]],
+  ['gstrokecircleindices_22',['gStrokeCircleIndices',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a9325c017aa7dde2fc07357e1116ef256',1,'Fluid::Skia::ShadowCircularRRectOp']]]
 ];

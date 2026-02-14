@@ -1,0 +1,15 @@
+<map id="/home/runner/work/docs/docs/fluid/src/controls/cpp/style/tokens.h" name="/home/runner/work/docs/docs/fluid/src/controls/cpp/style/tokens.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="28,5,207,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,80,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,62,64,99,60,96,93,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,255,219,280"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,60,165,240,160,241,120,61"/>
+<area shape="rect" id="Node000004" href="$typescale_8h.html" title=" " alt="" coords="171,108,269,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,58,197,97,194,101,147,62"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="217,135,196,182,177,242,172,240,191,180,212,133"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="206,181,266,207"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="225,133,233,168,228,169,220,134"/>
+<area shape="rect" id="Node000006" href="$enum_8h.html" title=" " alt="" coords="291,181,373,207"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="239,131,303,171,300,176,237,136"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="307,209,208,252,206,247,305,204"/>
+</map>

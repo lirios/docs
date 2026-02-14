@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['sk_5ffloatsqrt2_0',['SK_FloatSqrt2',['../classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#ad71c88e8da8b38002c2238384c2171f8',1,'Fluid::Skia::ShadowCircularRRectOp']]],
-  ['sk_5fmaxs32fitsinfloat_1',['SK_MaxS32FitsInFloat',['../namespaceFluid_1_1Skia.html#a06d12fee04e383f06f849d54bec8fab2',1,'Fluid::Skia']]],
-  ['sk_5fmins32fitsinfloat_2',['SK_MinS32FitsInFloat',['../namespaceFluid_1_1Skia.html#a8ecaebdb318ca21157ac3f432b6511c7',1,'Fluid::Skia']]],
-  ['sk_5fscalar1_3',['SK_Scalar1',['../namespaceFluid_1_1Skia.html#a500b349525ca5d0e1b8407531a3a40a3',1,'Fluid::Skia']]],
-  ['sk_5fscalarnearlyzero_4',['SK_ScalarNearlyZero',['../namespaceFluid_1_1Skia.html#a5aafe16adf1bbb63c2b7a1a132de3600',1,'Fluid::Skia']]],
-  ['spot_5fcolor_5',['spot_color',['../structFluid_1_1SceneGraph_1_1ShadowParams.html#aef3e4ccf524bf1ad86fac3f19d230ec8',1,'Fluid::SceneGraph::ShadowParams']]]
+  ['r_0',['r',['../structFluid_1_1SceneGraph_1_1BasicVertex.html#a323236e1d5efed4e821b016c779f6289',1,'Fluid::SceneGraph::BasicVertex']]],
+  ['radius_1',['radius',['../classFluid_1_1SceneGraph_1_1RectangleNode.html#a1a11081900f5caa1c8d6ab569880c0e0',1,'Fluid::SceneGraph::RectangleNode::radius'],['../structFluid_1_1SceneGraph_1_1ShadowParams.html#afc3d6010b9c18567e4e3c8eae0d6abef',1,'Fluid::SceneGraph::ShadowParams::radius'],['../classFluid_1_1SceneGraph_1_1ElevationNode.html#a5a0f78644d6452f65ac02c262d96d7ae',1,'Fluid::SceneGraph::ElevationNode::radius']]],
+  ['rect_2',['rect',['../classFluid_1_1SceneGraph_1_1RectangleNode.html#af73e2a332a9dfbb00ffcfcaae4258c4e',1,'Fluid::SceneGraph::RectangleNode::rect'],['../classFluid_1_1SceneGraph_1_1ElevationNode.html#a07bf30e790db9d0657c30d5a83433504',1,'Fluid::SceneGraph::ElevationNode::rect']]]
 ];
