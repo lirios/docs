@@ -8,6 +8,5 @@ var searchData=
   ['yearmodel_2eh_5',['yearmodel.h',['../yearmodel_8h.html',1,'']]],
   ['yearselector_6',['yearselector',['../classYearSelector.html',1,'YearSelector'],['../classYearSelector.html#aa7ef1fd449e45258876eb086a10f61b2',1,'YearSelector::YearSelector()']]],
   ['yearselector_2ecpp_7',['yearselector.cpp',['../yearselector_8cpp.html',1,'']]],
-  ['yearselector_2eh_8',['yearselector.h',['../yearselector_8h.html',1,'']]],
-  ['yearselector_2eqml_9',['YearSelector.qml',['../YearSelector_8qml.html',1,'']]]
+  ['yearselector_2eh_8',['yearselector.h',['../yearselector_8h.html',1,'']]]
 ];

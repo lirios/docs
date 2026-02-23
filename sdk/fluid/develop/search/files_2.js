@@ -14,11 +14,5 @@ var searchData=
   ['columnflow_2eqml_11',['ColumnFlow.qml',['../ColumnFlow_8qml.html',1,'']]],
   ['combobox_2eqml_12',['ComboBox.qml',['../ComboBox_8qml.html',1,'']]],
   ['container_2eqml_13',['Container.qml',['../Container_8qml.html',1,'']]],
-  ['control_2eqml_14',['Control.qml',['../Control_8qml.html',1,'']]],
-  ['controlsplugin_2ecpp_15',['controlsplugin.cpp',['../controlsplugin_8cpp.html',1,'']]],
-  ['controlsplugin_2eh_16',['controlsplugin.h',['../controlsplugin_8h.html',1,'']]],
-  ['controlsutils_2ecpp_17',['controlsutils.cpp',['../controlsutils_8cpp.html',1,'']]],
-  ['controlsutils_2eh_18',['controlsutils.h',['../controlsutils_8h.html',1,'']]],
-  ['cornersgroup_2ecpp_19',['cornersgroup.cpp',['../cornersgroup_8cpp.html',1,'']]],
-  ['cornersgroup_2eh_20',['cornersgroup.h',['../cornersgroup_8h.html',1,'']]]
+  ['control_2eqml_14',['Control.qml',['../Control_8qml.html',1,'']]]
 ];

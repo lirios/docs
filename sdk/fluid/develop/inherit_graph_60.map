@@ -1,33 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="218,5,350,31"/>
-<area shape="rect" id="Node000001" href="$classDatePicker.html" title="Control to select a single date." alt="" coords="431,43,523,68"/>
-<area shape="poly" id="edge75_Node000000_Node000001" title=" " alt="" coords="364,31,432,44,431,49,363,36"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="6,55,153,80"/>
-<area shape="rect" id="Node000008" href="$classDateSelector.html" title=" " alt="" coords="231,55,337,80"/>
-<area shape="poly" id="edge76_Node000009_Node000008" title=" " alt="" coords="166,65,230,65,230,70,166,70"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="201,153,367,179"/>
-<area shape="rect" id="Node000003" href="$classDateTimePicker.html" title="Control to select a both date and time." alt="" coords="415,129,540,155"/>
-<area shape="poly" id="edge77_Node000004_Node000003" title=" " alt="" coords="380,151,414,147,415,152,381,157"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="30,227,129,252"/>
-<area shape="poly" id="edge78_Node000007_Node000008" title=" " alt="" coords="92,213,135,151,165,118,200,89,229,75,231,80,203,94,169,122,139,155,96,216"/>
-<area shape="rect" id="Node000010" href="$classFluid_1_1Elevation.html" title="A QQuickItem that renders elevation&#45;based shadow effects." alt="" coords="223,252,345,277"/>
-<area shape="poly" id="edge79_Node000007_Node000010" title=" " alt="" coords="143,244,223,254,222,260,142,250"/>
-<area shape="rect" id="Node000011" href="$classFluid_1_1Rectangle.html" title=" " alt="" coords="221,203,347,228"/>
-<area shape="poly" id="edge80_Node000007_Node000011" title=" " alt="" coords="142,229,220,220,221,225,143,235"/>
-<area shape="rect" id="Node000002" href="$classPicker.html" title=" " alt="" coords="253,104,315,129"/>
-<area shape="poly" id="edge81_Node000007_Node000002" title=" " alt="" coords="101,215,145,176,200,138,252,120,254,125,203,143,148,180,105,219"/>
-<area shape="rect" id="Node000012" href="$classTimeSelector.html" title=" " alt="" coords="230,351,338,376"/>
-<area shape="poly" id="edge85_Node000007_Node000012" title=" " alt="" coords="104,260,148,300,203,337,231,349,229,354,200,342,145,304,101,264"/>
-<area shape="rect" id="Node000014" href="$classYearSelector.html" title=" " alt="" coords="233,400,335,425"/>
-<area shape="poly" id="edge86_Node000007_Node000014" title=" " alt="" coords="99,261,152,332,180,365,203,386,233,401,231,405,200,391,176,369,147,335,95,265"/>
-<area shape="poly" id="edge82_Node000002_Node000001" title=" " alt="" coords="327,101,366,89,437,66,438,71,367,94,329,106"/>
-<area shape="poly" id="edge83_Node000002_Node000003" title=" " alt="" coords="328,120,415,131,414,136,328,125"/>
-<area shape="rect" id="Node000005" href="$classTimePicker.html" title="Control to select a time." alt="" coords="430,228,525,253"/>
-<area shape="poly" id="edge84_Node000002_Node000005" title=" " alt="" coords="329,123,368,138,399,159,427,183,468,226,464,230,423,187,396,163,365,143,327,128"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="217,301,351,327"/>
-<area shape="poly" id="edge87_Node000006_Node000005" title=" " alt="" coords="341,295,366,286,448,251,450,256,368,291,343,300"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="5,351,153,376"/>
-<area shape="poly" id="edge88_Node000013_Node000012" title=" " alt="" coords="167,361,229,361,229,366,167,366"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="8,400,151,425"/>
-<area shape="poly" id="edge89_Node000015_Node000014" title=" " alt="" coords="164,410,232,410,232,415,164,415"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,185,31"/>
+<area shape="rect" id="Node000001" href="$classNavigationListView.html" title="The navigation drawer slides in from the left and is a common pattern in apps." alt="" coords="233,5,381,31"/>
+<area shape="poly" id="edge85_Node000000_Node000001" title=" " alt="" coords="199,15,233,15,233,21,199,21"/>
 </map>

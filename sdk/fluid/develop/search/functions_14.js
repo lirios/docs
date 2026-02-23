@@ -6,7 +6,6 @@ var searchData=
   ['wght_3',['wght',['../structFluid_1_1TypeScaleValue.html#ae7e3257d90e1256f44697c76c911f74c',1,'Fluid::TypeScaleValue']]],
   ['width_4',['width',['../classInputArea.html#a33f2f426a868edbd6720c899d1274c50',1,'InputArea']]],
   ['widthchanged_5',['widthChanged',['../classInputArea.html#af9574a65508a4c64390a9d085e60f13f',1,'InputArea']]],
-  ['window_6',['window',['../classInputRegion.html#a0337df08bff95760c26397a9fc28bb47',1,'InputRegion::window()'],['../classFluidDecoration.html#a63f408925cb1830b469d8c7ad9703ce2',1,'FluidDecoration::window()'],['../classWindowDecoration.html#aa2e580102dfc522a6b912eccf14f7989',1,'WindowDecoration::window()']]],
-  ['windowchanged_7',['windowchanged',['../classInputRegion.html#ac694183e25665d1edbfb4fb304679c73',1,'InputRegion::windowChanged()'],['../classWindowDecoration.html#a73ececa1764498cd910081ea226b2508',1,'WindowDecoration::windowChanged()']]],
-  ['windowdecoration_8',['WindowDecoration',['../classWindowDecoration.html#af1300b9d17dab1ada280a5ff0c98fbc5',1,'WindowDecoration']]]
+  ['window_6',['window',['../classInputRegion.html#a0337df08bff95760c26397a9fc28bb47',1,'InputRegion']]],
+  ['windowchanged_7',['windowChanged',['../classInputRegion.html#ac694183e25665d1edbfb4fb304679c73',1,'InputRegion']]]
 ];

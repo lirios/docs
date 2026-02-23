@@ -1,33 +1,26 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="38,277,113,303"/>
-<area shape="rect" id="Node000001" href="$classClipboard.html" title="Clipboard." alt="" coords="224,5,308,31"/>
-<area shape="poly" id="edge117_Node000000_Node000001" title=" " alt="" coords="79,263,92,215,114,156,146,94,167,65,192,40,206,30,223,23,225,28,209,35,195,44,171,69,151,97,119,158,97,217,85,264"/>
-<area shape="rect" id="Node000002" href="$classColor.html" title="Utility functions for colors." alt="" coords="238,55,294,80"/>
-<area shape="poly" id="edge118_Node000000_Node000002" title=" " alt="" coords="83,263,98,225,121,178,152,131,192,89,214,76,237,69,239,74,216,81,195,93,156,134,126,181,103,227,88,265"/>
-<area shape="rect" id="Node000003" href="$classControlsUtils.html" title="A collection of helpful utility methods." alt="" coords="213,104,319,129"/>
-<area shape="poly" id="edge119_Node000000_Node000003" title=" " alt="" coords="88,264,129,201,158,168,192,138,213,127,216,132,195,143,162,171,133,205,92,267"/>
-<area shape="rect" id="Node000004" href="$classDateUtils.html" title=" " alt="" coords="225,153,307,179"/>
-<area shape="poly" id="edge120_Node000000_Node000004" title=" " alt="" coords="96,265,138,226,192,188,224,174,226,179,195,192,142,230,100,269"/>
-<area shape="rect" id="Node000005" href="$classDevice.html" title=" " alt="" coords="233,203,299,228"/>
-<area shape="poly" id="edge121_Node000000_Node000005" title=" " alt="" coords="116,269,192,237,232,223,233,228,194,242,118,274"/>
-<area shape="rect" id="Node000006" href="$classFluid_1_1Tokens.html" title="Material Design 3 design tokens." alt="" coords="213,252,319,277"/>
-<area shape="poly" id="edge122_Node000000_Node000006" title=" " alt="" coords="126,281,212,269,213,274,127,286"/>
-<area shape="rect" id="Node000007" href="$classFluid_1_1TypeScale.html" title="Material Design 3 type scale tokens." alt="" coords="203,301,329,327"/>
-<area shape="poly" id="edge123_Node000000_Node000007" title=" " alt="" coords="127,294,203,303,202,309,126,299"/>
-<area shape="rect" id="Node000009" href="$classInputArea.html" title=" " alt="" coords="223,449,309,475"/>
-<area shape="poly" id="edge125_Node000000_Node000009" title=" " alt="" coords="92,313,133,375,162,407,195,436,224,450,222,455,192,440,158,411,129,378,88,316"/>
-<area shape="rect" id="Node000011" href="$classInputRegion.html" title=" " alt="" coords="216,499,316,524"/>
-<area shape="poly" id="edge126_Node000000_Node000011" title=" " alt="" coords="88,315,103,353,126,398,156,445,195,485,217,498,214,502,192,489,152,448,121,401,98,355,83,317"/>
-<area shape="rect" id="Node000013" href="$classStandardPaths.html" title=" " alt="" coords="209,351,323,376"/>
-<area shape="poly" id="edge127_Node000000_Node000013" title=" " alt="" coords="119,306,194,337,226,348,224,353,192,342,117,311"/>
-<area shape="rect" id="Node000014" href="$classTheme.html" title=" " alt="" coords="233,400,299,425"/>
-<area shape="poly" id="edge128_Node000000_Node000014" title=" " alt="" coords="101,311,142,349,195,386,233,402,231,407,192,391,139,354,97,315"/>
-<area shape="rect" id="Node000012" href="$classWindowDecoration.html" title=" " alt="" coords="193,548,339,573"/>
-<area shape="poly" id="edge129_Node000000_Node000012" title=" " alt="" coords="85,316,97,363,119,421,151,482,171,510,195,535,212,546,209,550,192,539,167,514,146,485,114,424,92,364,79,317"/>
-<area shape="rect" id="Node000008" href="$classFluid_1_1EmphasizedTypeScale.html" title="Material Design 3 emphasized type scale tokens." alt="" coords="387,301,593,327"/>
-<area shape="poly" id="edge124_Node000007_Node000008" title=" " alt="" coords="343,311,386,311,386,317,343,317"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="5,499,145,524"/>
-<area shape="poly" id="edge130_Node000010_Node000009" title=" " alt="" coords="138,493,222,470,223,476,139,498"/>
-<area shape="poly" id="edge131_Node000010_Node000011" title=" " alt="" coords="159,509,216,509,216,514,159,514"/>
-<area shape="poly" id="edge132_Node000010_Node000012" title=" " alt="" coords="139,525,216,545,215,550,138,530"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="38,203,113,228"/>
+<area shape="rect" id="Node000001" href="$classClipboard.html" title="Clipboard." alt="" coords="215,301,299,327"/>
+<area shape="poly" id="edge112_Node000000_Node000001" title=" " alt="" coords="107,234,148,261,195,288,220,299,218,304,192,292,145,265,104,238"/>
+<area shape="rect" id="Node000002" href="$classColor.html" title="Utility functions for colors." alt="" coords="229,5,285,31"/>
+<area shape="poly" id="edge113_Node000000_Node000002" title=" " alt="" coords="85,189,126,116,156,75,192,40,209,29,227,22,229,27,211,34,195,44,160,79,130,119,90,191"/>
+<area shape="rect" id="Node000003" href="$classDateUtils.html" title=" " alt="" coords="215,55,298,80"/>
+<area shape="poly" id="edge114_Node000000_Node000003" title=" " alt="" coords="92,190,134,140,162,113,192,89,214,77,217,82,195,94,165,117,138,143,96,193"/>
+<area shape="rect" id="Node000004" href="$classDevice.html" title=" " alt="" coords="223,104,290,129"/>
+<area shape="poly" id="edge115_Node000000_Node000004" title=" " alt="" coords="104,193,145,165,192,138,222,125,224,130,195,143,148,170,107,197"/>
+<area shape="rect" id="Node000005" href="$classFluid_1_1Tokens.html" title="Material Design 3 design tokens." alt="" coords="203,153,310,179"/>
+<area shape="poly" id="edge116_Node000000_Node000005" title=" " alt="" coords="125,199,208,176,210,181,127,204"/>
+<area shape="rect" id="Node000006" href="$classFluid_1_1TypeScale.html" title="Material Design 3 type scale tokens." alt="" coords="193,203,320,228"/>
+<area shape="poly" id="edge117_Node000000_Node000006" title=" " alt="" coords="126,213,193,213,193,218,126,218"/>
+<area shape="rect" id="Node000008" href="$classInputArea.html" title=" " alt="" coords="214,400,299,425"/>
+<area shape="poly" id="edge119_Node000000_Node000008" title=" " alt="" coords="90,239,130,312,160,352,195,387,215,398,212,403,192,391,156,355,126,315,85,242"/>
+<area shape="rect" id="Node000010" href="$classInputRegion.html" title=" " alt="" coords="207,351,307,376"/>
+<area shape="poly" id="edge120_Node000000_Node000010" title=" " alt="" coords="96,238,138,287,165,314,195,337,216,348,213,353,192,342,162,318,134,291,92,241"/>
+<area shape="rect" id="Node000011" href="$classTheme.html" title=" " alt="" coords="223,252,290,277"/>
+<area shape="poly" id="edge121_Node000000_Node000011" title=" " alt="" coords="127,226,224,253,222,258,125,232"/>
+<area shape="rect" id="Node000007" href="$classFluid_1_1EmphasizedTypeScale.html" title="Material Design 3 emphasized type scale tokens." alt="" coords="368,203,575,228"/>
+<area shape="poly" id="edge118_Node000006_Node000007" title=" " alt="" coords="334,213,368,213,368,218,334,218"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,376,145,401"/>
+<area shape="poly" id="edge122_Node000009_Node000008" title=" " alt="" coords="160,397,214,404,213,410,159,402"/>
+<area shape="poly" id="edge123_Node000009_Node000010" title=" " alt="" coords="159,374,206,368,207,373,160,380"/>
 </map>

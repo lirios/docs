@@ -18,13 +18,12 @@ var searchData=
   ['any_15',['Any',['../classDateUtils.html#acd9aa59d87a14e37a78bc292bac0f7a3a82fecf9d50df7e86f78d72c3a92e6f81',1,'DateUtils']]],
   ['appbar_16',['AppBar',['../classAppBar.html',1,'']]],
   ['appbar_2eqml_17',['AppBar.qml',['../AppBar_8qml.html',1,'']]],
-  ['applicationslocation_18',['ApplicationsLocation',['../classStandardPaths.html#ab81f42a64c128f33c9e5958b10b238aaa7ed2a2f4ef10acc4e002a42d05ef77bf',1,'StandardPaths']]],
-  ['applicationwindow_19',['ApplicationWindow',['../classApplicationWindow.html',1,'']]],
-  ['applicationwindow_2eqml_20',['ApplicationWindow.qml',['../ApplicationWindow_8qml.html',1,'']]],
-  ['apptoolbar_21',['AppToolBar',['../classAppToolBar.html',1,'']]],
-  ['apptoolbar_2eqml_22',['AppToolBar.qml',['../AppToolBar_8qml.html',1,'']]],
-  ['areas_23',['areas',['../classInputRegion.html#ac6e6171bb1e2a9a8d2606aa18ce0f632',1,'InputRegion::areas'],['../classInputRegion.html#a65d2da3fe41c020f4d190b3161d10829',1,'InputRegion::areas()']]],
-  ['attachedparentchange_24',['attachedParentChange',['../classStyle.html#a1160687d1ed25e1f33818b892f0b34cb',1,'Style']]],
-  ['automaticgrid_25',['AutomaticGrid',['../classAutomaticGrid.html',1,'']]],
-  ['automaticgrid_2eqml_26',['AutomaticGrid.qml',['../AutomaticGrid_8qml.html',1,'']]]
+  ['applicationwindow_18',['ApplicationWindow',['../classApplicationWindow.html',1,'']]],
+  ['applicationwindow_2eqml_19',['ApplicationWindow.qml',['../ApplicationWindow_8qml.html',1,'']]],
+  ['apptoolbar_20',['AppToolBar',['../classAppToolBar.html',1,'']]],
+  ['apptoolbar_2eqml_21',['AppToolBar.qml',['../AppToolBar_8qml.html',1,'']]],
+  ['areas_22',['areas',['../classInputRegion.html#ac6e6171bb1e2a9a8d2606aa18ce0f632',1,'InputRegion::areas'],['../classInputRegion.html#a65d2da3fe41c020f4d190b3161d10829',1,'InputRegion::areas()']]],
+  ['attachedparentchange_23',['attachedParentChange',['../classStyle.html#a1160687d1ed25e1f33818b892f0b34cb',1,'Style']]],
+  ['automaticgrid_24',['AutomaticGrid',['../classAutomaticGrid.html',1,'']]],
+  ['automaticgrid_2eqml_25',['AutomaticGrid.qml',['../AutomaticGrid_8qml.html',1,'']]]
 ];

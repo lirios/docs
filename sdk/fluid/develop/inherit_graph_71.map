@@ -1,7 +1,33 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,116,56"/>
-<area shape="rect" id="Node000001" href="$classListItem.html" title="A standard list item, with one or more lines of text and optional left and right items." alt="" coords="172,5,247,31"/>
-<area shape="poly" id="edge111_Node000000_Node000001" title=" " alt="" coords="129,29,171,22,172,27,130,34"/>
-<area shape="rect" id="Node000002" href="$classSubheader.html" title="Subheaders are special list tiles that delineate distinct sections of a list or grid list." alt="" coords="164,55,255,80"/>
-<area shape="poly" id="edge112_Node000000_Node000002" title=" " alt="" coords="130,52,164,57,163,63,129,57"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,351,57,376"/>
+<area shape="rect" id="Node000001" href="$classCircleImage.html" title="Circular image." alt="" coords="129,5,229,31"/>
+<area shape="poly" id="edge92_Node000000_Node000001" title=" " alt="" coords="33,336,41,267,56,179,76,96,89,63,103,40,127,25,130,29,107,44,94,66,81,98,61,180,46,268,38,337"/>
+<area shape="rect" id="Node000002" href="$classCircleMask.html" title="Circular mask." alt="" coords="131,55,226,80"/>
+<area shape="poly" id="edge93_Node000000_Node000002" title=" " alt="" coords="29,337,32,286,41,220,51,185,64,151,81,118,104,89,130,73,133,78,107,93,86,121,69,153,56,186,47,221,37,286,35,337"/>
+<area shape="rect" id="Node000003" href="$classColumnFlow.html" title="Automatically position children in columns." alt="" coords="127,104,230,129"/>
+<area shape="poly" id="edge94_Node000000_Node000003" title=" " alt="" coords="31,336,36,294,48,241,69,187,85,161,104,139,126,124,128,129,107,143,89,164,74,189,53,242,42,294,37,337"/>
+<area shape="rect" id="Node000004" href="$classIconLabel.html" title=" " alt="" coords="137,153,221,179"/>
+<area shape="poly" id="edge95_Node000000_Node000004" title=" " alt="" coords="34,337,42,303,55,263,75,223,104,188,119,178,135,171,137,176,121,182,107,192,80,226,60,265,47,305,39,338"/>
+<area shape="rect" id="Node000005" href="$classLoadable.html" title="Loadable component." alt="" coords="138,203,219,228"/>
+<area shape="poly" id="edge96_Node000000_Node000005" title=" " alt="" coords="39,337,63,287,81,260,104,237,137,221,139,225,107,241,85,263,68,289,44,339"/>
+<area shape="rect" id="Node000006" href="$classRipple.html" title=" " alt="" coords="147,252,210,277"/>
+<area shape="poly" id="edge97_Node000000_Node000006" title=" " alt="" coords="49,338,73,311,104,286,146,269,148,274,107,291,77,315,53,341"/>
+<area shape="rect" id="Node000007" href="$classSearchBar.html" title="Provides a searchbar, that supports autocompletion and displays search results using cards." alt="" coords="135,301,223,327"/>
+<area shape="poly" id="edge98_Node000000_Node000007" title=" " alt="" coords="69,348,104,335,138,324,140,329,106,341,71,353"/>
+<area shape="rect" id="Node000008" href="$classSmoothFadeImage.html" title="Displays an image and smoothly fade when the source is changed." alt="" coords="107,351,250,376"/>
+<area shape="poly" id="edge99_Node000000_Node000008" title=" " alt="" coords="71,361,107,361,107,366,71,366"/>
+<area shape="rect" id="Node000009" href="$classSmoothFadeLoader.html" title="Displays an item and smoothly fade when the source is changed." alt="" coords="105,400,252,425"/>
+<area shape="poly" id="edge100_Node000000_Node000009" title=" " alt="" coords="72,374,141,397,139,402,70,379"/>
+<area shape="rect" id="Node000010" href="$classSnackBar.html" title="SnackBar provides a brief feedback about an operation." alt="" coords="137,449,220,475"/>
+<area shape="poly" id="edge101_Node000000_Node000010" title=" " alt="" coords="53,385,77,411,107,434,138,449,136,454,104,439,74,415,49,389"/>
+<area shape="rect" id="Node000011" href="$classSymbol.html" title="Displays an icon from the Material Symbols collection." alt="" coords="143,499,214,524"/>
+<area shape="poly" id="edge102_Node000000_Node000011" title=" " alt="" coords="44,388,68,437,86,462,107,484,125,495,144,502,142,507,122,500,104,488,82,465,63,439,39,390"/>
+<area shape="rect" id="Node000012" href="$classTab.html" title="Tab for tabbed pages." alt="" coords="157,548,201,573"/>
+<area shape="poly" id="edge103_Node000000_Node000012" title=" " alt="" coords="40,389,47,422,60,461,80,500,107,533,131,548,157,555,155,560,129,553,104,537,76,502,56,463,42,423,34,390"/>
+<area shape="rect" id="Node000013" href="$classUnits.html" title="Units." alt="" coords="151,597,207,623"/>
+<area shape="poly" id="edge104_Node000000_Node000013" title=" " alt="" coords="37,390,42,432,54,483,75,537,89,561,107,583,128,597,151,604,150,609,126,601,104,587,85,564,70,539,49,485,37,432,31,390"/>
+<area shape="rect" id="Node000014" href="$classVignette.html" title="Vignette effect." alt="" coords="140,647,217,672"/>
+<area shape="poly" id="edge105_Node000000_Node000014" title=" " alt="" coords="35,390,37,440,47,505,69,573,86,604,107,632,123,644,141,651,139,656,120,648,103,636,81,607,64,575,42,506,32,441,29,390"/>
+<area shape="rect" id="Node000015" href="$classWave.html" title="Provides a wave animation for transitioning between views of content." alt="" coords="149,696,208,721"/>
+<area shape="poly" id="edge106_Node000000_Node000015" title=" " alt="" coords="38,389,47,458,61,545,82,628,94,660,107,682,127,695,150,703,148,708,125,700,103,685,89,662,76,629,56,546,41,459,33,390"/>
 </map>

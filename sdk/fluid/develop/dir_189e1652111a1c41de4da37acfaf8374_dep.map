@@ -1,18 +1,19 @@
 <map id="/home/runner/work/docs/docs/fluid/src/controls/qml" name="/home/runner/work/docs/docs/fluid/src/controls/qml">
-<area shape="rect" id="node2" href="dir_1d4dc4f3bf269754b42ccaf061482bf2.html" title="buttons" alt="" coords="1251,63,1322,88"/>
-<area shape="rect" id="node3" href="dir_66aa40d08420bf489d77cb02fcd2002b.html" title="calendar" alt="" coords="1149,63,1227,88"/>
-<area shape="rect" id="node4" href="dir_d4f46cae31c5c06e49c0d42dfa889a65.html" title="controls" alt="" coords="1049,63,1124,88"/>
-<area shape="rect" id="node5" href="dir_41895a31dc34ae26629e53d73f668c24.html" title="core" alt="" coords="975,63,1025,88"/>
-<area shape="rect" id="node6" href="dir_6ab2fb80e24db60102f33ab5f5130767.html" title="dialogs" alt="" coords="881,63,951,88"/>
-<area shape="rect" id="node7" href="dir_9a22d14a7d1fa52079c9596673952696.html" title="effects" alt="" coords="791,63,857,88"/>
-<area shape="rect" id="node8" href="dir_261a8dc549973b7a22479fe354b56a8d.html" title="items" alt="" coords="708,63,767,88"/>
-<area shape="rect" id="node9" href="dir_add46e62f88d6a829d72f8b0140674e0.html" title="layout" alt="" coords="621,63,683,88"/>
-<area shape="rect" id="node10" href="dir_610d5a4def8453661fc9e7cf3ef711cd.html" title="navigation" alt="" coords="505,63,596,88"/>
-<area shape="rect" id="node11" href="dir_8752f28a91a712e31c8e1a6939a37d9e.html" title="pages" alt="" coords="420,63,481,88"/>
-<area shape="rect" id="node12" href="dir_89b9e67aaaf24b13550c17c2c4b5b9ac.html" title="pickers" alt="" coords="327,63,395,88"/>
-<area shape="rect" id="node13" href="dir_f813858fd3d8bce3cdb63ab2687b44d8.html" title="sheets" alt="" coords="238,63,303,88"/>
-<area shape="rect" id="node14" href="dir_77358bf31dae1835d0d9c3970ef4b33f.html" title="symbols" alt="" coords="136,63,213,88"/>
-<area shape="rect" id="node15" href="dir_8ba39269b7718cfe05f2dd801579d67f.html" title="toolbars" alt="" coords="37,63,112,88"/>
-<area shape="rect" id="clust2" href="dir_189e1652111a1c41de4da37acfaf8374.html" alt="" coords="27,52,1404,99"/>
-<area shape="rect" id="clust1" href="dir_7afd03d72c1de07a6d47e666c364824c.html" title="controls" alt="" coords="16,16,1415,109"/>
+<area shape="rect" id="node2" href="dir_1d4dc4f3bf269754b42ccaf061482bf2.html" title="buttons" alt="" coords="1347,63,1418,88"/>
+<area shape="rect" id="node3" href="dir_66aa40d08420bf489d77cb02fcd2002b.html" title="calendar" alt="" coords="1245,63,1323,88"/>
+<area shape="rect" id="node4" href="dir_d4f46cae31c5c06e49c0d42dfa889a65.html" title="controls" alt="" coords="1145,63,1220,88"/>
+<area shape="rect" id="node5" href="dir_41895a31dc34ae26629e53d73f668c24.html" title="core" alt="" coords="1071,63,1121,88"/>
+<area shape="rect" id="node6" href="dir_6ab2fb80e24db60102f33ab5f5130767.html" title="dialogs" alt="" coords="977,63,1047,88"/>
+<area shape="rect" id="node7" href="dir_9a22d14a7d1fa52079c9596673952696.html" title="effects" alt="" coords="887,63,953,88"/>
+<area shape="rect" id="node8" href="dir_e4894dce8db08a60b82387f64581b29b.html" title="internal" alt="" coords="791,63,863,88"/>
+<area shape="rect" id="node9" href="dir_261a8dc549973b7a22479fe354b56a8d.html" title="items" alt="" coords="708,63,767,88"/>
+<area shape="rect" id="node10" href="dir_add46e62f88d6a829d72f8b0140674e0.html" title="layout" alt="" coords="621,63,683,88"/>
+<area shape="rect" id="node11" href="dir_610d5a4def8453661fc9e7cf3ef711cd.html" title="navigation" alt="" coords="505,63,596,88"/>
+<area shape="rect" id="node12" href="dir_8752f28a91a712e31c8e1a6939a37d9e.html" title="pages" alt="" coords="420,63,481,88"/>
+<area shape="rect" id="node13" href="dir_89b9e67aaaf24b13550c17c2c4b5b9ac.html" title="pickers" alt="" coords="327,63,395,88"/>
+<area shape="rect" id="node14" href="dir_f813858fd3d8bce3cdb63ab2687b44d8.html" title="sheets" alt="" coords="238,63,303,88"/>
+<area shape="rect" id="node15" href="dir_77358bf31dae1835d0d9c3970ef4b33f.html" title="symbols" alt="" coords="136,63,213,88"/>
+<area shape="rect" id="node16" href="dir_8ba39269b7718cfe05f2dd801579d67f.html" title="toolbars" alt="" coords="37,63,112,88"/>
+<area shape="rect" id="clust2" href="dir_189e1652111a1c41de4da37acfaf8374.html" alt="" coords="27,52,1500,99"/>
+<area shape="rect" id="clust1" href="dir_7afd03d72c1de07a6d47e666c364824c.html" title="controls" alt="" coords="16,16,1511,109"/>
 </map>

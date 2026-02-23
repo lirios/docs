@@ -1,5 +1,25 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,183,31"/>
-<area shape="rect" id="Node000001" href="$classWeekNumberColumn.html" title=" " alt="" coords="231,5,391,31"/>
-<area shape="poly" id="edge74_Node000000_Node000001" title=" " alt="" coords="196,15,230,15,230,21,196,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="169,5,301,31"/>
+<area shape="rect" id="Node000001" href="$classDatePicker.html" title="Control to select a single date." alt="" coords="382,55,474,80"/>
+<area shape="poly" id="edge74_Node000000_Node000001" title=" " alt="" coords="299,31,382,53,381,58,297,37"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="152,104,317,129"/>
+<area shape="rect" id="Node000003" href="$classDateTimePicker.html" title="Control to select a both date and time." alt="" coords="365,153,491,179"/>
+<area shape="poly" id="edge75_Node000004_Node000003" title=" " alt="" coords="299,130,378,151,376,156,297,135"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,203,104,228"/>
+<area shape="rect" id="Node000008" href="$classDateSelector.html" title=" " alt="" coords="181,55,288,80"/>
+<area shape="poly" id="edge76_Node000007_Node000008" title=" " alt="" coords="67,189,100,138,124,112,151,89,180,75,182,80,153,94,127,116,104,142,71,192"/>
+<area shape="rect" id="Node000009" href="$classFluid_1_1Elevation.html" title="A QQuickItem that renders elevation&#45;based shadow effects." alt="" coords="173,153,296,179"/>
+<area shape="poly" id="edge77_Node000007_Node000009" title=" " alt="" coords="114,196,186,176,188,181,116,201"/>
+<area shape="rect" id="Node000002" href="$classPicker.html" title=" " alt="" coords="204,203,265,228"/>
+<area shape="poly" id="edge78_Node000007_Node000002" title=" " alt="" coords="118,213,204,213,204,218,118,218"/>
+<area shape="rect" id="Node000010" href="$classTimeSelector.html" title=" " alt="" coords="181,252,289,277"/>
+<area shape="poly" id="edge82_Node000007_Node000010" title=" " alt="" coords="116,229,188,249,186,254,114,234"/>
+<area shape="rect" id="Node000011" href="$classYearSelector.html" title=" " alt="" coords="183,301,286,327"/>
+<area shape="poly" id="edge83_Node000007_Node000011" title=" " alt="" coords="82,236,115,262,153,286,184,299,182,304,151,291,112,266,79,240"/>
+<area shape="poly" id="edge79_Node000002_Node000001" title=" " alt="" coords="278,204,316,188,360,142,414,79,418,82,364,145,319,192,280,209"/>
+<area shape="poly" id="edge80_Node000002_Node000003" title=" " alt="" coords="278,202,377,176,378,181,279,207"/>
+<area shape="rect" id="Node000005" href="$classTimePicker.html" title="Control to select a time." alt="" coords="381,252,475,277"/>
+<area shape="poly" id="edge81_Node000002_Node000005" title=" " alt="" coords="279,224,381,250,380,255,278,229"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="167,351,302,376"/>
+<area shape="poly" id="edge84_Node000006_Node000005" title=" " alt="" coords="297,344,316,336,368,305,409,275,412,280,371,310,319,340,299,349"/>
 </map>

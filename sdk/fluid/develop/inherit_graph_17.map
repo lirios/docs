@@ -1,5 +1,13 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,155,31"/>
-<area shape="rect" id="Node000001" href="$classDialogButtonBox.html" title=" " alt="" coords="203,5,335,31"/>
-<area shape="poly" id="edge24_Node000000_Node000001" title=" " alt="" coords="168,15,202,15,202,21,168,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,55,92,80"/>
+<area shape="rect" id="Node000001" href="$classDrawer.html" title=" " alt="" coords="140,55,209,80"/>
+<area shape="poly" id="edge24_Node000000_Node000001" title=" " alt="" coords="106,65,140,65,140,70,106,70"/>
+<area shape="rect" id="Node000002" href="$classBottomSheet.html" title="A sheet of paper that slides up from the bottom." alt="" coords="274,29,381,55"/>
+<area shape="poly" id="edge25_Node000001_Node000002" title=" " alt="" coords="223,57,273,48,274,53,224,62"/>
+<area shape="rect" id="Node000005" href="$classNavigationDrawer.html" title="The navigation drawer slides in from the left and is a common pattern in apps." alt="" coords="257,79,397,104"/>
+<area shape="poly" id="edge28_Node000001_Node000005" title=" " alt="" coords="224,72,257,78,256,83,223,78"/>
+<area shape="rect" id="Node000003" href="$classBottomSheetGrid.html" title="A sheet of paper with actions and an optional title that slides up from the bottom." alt="" coords="445,5,580,31"/>
+<area shape="poly" id="edge26_Node000002_Node000003" title=" " alt="" coords="394,31,445,24,446,29,395,36"/>
+<area shape="rect" id="Node000004" href="$classBottomSheetList.html" title="A sheet of paper with actions and an optional title that slides up from the bottom." alt="" coords="447,55,578,80"/>
+<area shape="poly" id="edge27_Node000002_Node000004" title=" " alt="" coords="395,48,448,56,447,61,394,54"/>
 </map>

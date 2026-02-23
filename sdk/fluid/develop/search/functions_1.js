@@ -7,7 +7,9 @@ var searchData=
   ['bodylarge_4',['bodyLarge',['../classFluid_1_1TypeScale.html#a430c2ddad2bae43f894a763b66c46a4d',1,'Fluid::TypeScale']]],
   ['bodymedium_5',['bodyMedium',['../classFluid_1_1TypeScale.html#adb99576ae2e4afa6c900ca48f509abaa',1,'Fluid::TypeScale']]],
   ['bodysmall_6',['bodySmall',['../classFluid_1_1TypeScale.html#ab9bd3e966c61db7245aae7639c67fb0c',1,'Fluid::TypeScale']]],
-  ['bottomleft_7',['bottomLeft',['../classFluid_1_1CornersGroup.html#a424dedfdc3a7aa29c91d9ab401def47b',1,'Fluid::CornersGroup']]],
-  ['bottomright_8',['bottomRight',['../classFluid_1_1CornersGroup.html#a06c7035ed6b9266c01a03b78efd7493f',1,'Fluid::CornersGroup']]],
-  ['brandfontfamily_9',['brandFontFamily',['../classStyle.html#af7c27db3a15e4f25e02954ca2d544485',1,'Style']]]
+  ['bottomleftradius_7',['bottomLeftRadius',['../classFluid_1_1Elevation.html#a2a9dc2ce654c176c2d1900e4a75b966e',1,'Fluid::Elevation']]],
+  ['bottomleftradiuschanged_8',['bottomLeftRadiusChanged',['../classFluid_1_1Elevation.html#ac42f6bf894e418857a39e4abf8f55a57',1,'Fluid::Elevation']]],
+  ['bottomrightradius_9',['bottomRightRadius',['../classFluid_1_1Elevation.html#aee3d115a800f3715789d5ecc54759bca',1,'Fluid::Elevation']]],
+  ['bottomrightradiuschanged_10',['bottomRightRadiusChanged',['../classFluid_1_1Elevation.html#add615a33ba29039853583d163da9b6e6',1,'Fluid::Elevation']]],
+  ['brandfontfamily_11',['brandFontFamily',['../classStyle.html#af7c27db3a15e4f25e02954ca2d544485',1,'Style']]]
 ];

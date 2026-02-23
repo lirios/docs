@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fontslocation_0',['FontsLocation',['../classStandardPaths.html#ab81f42a64c128f33c9e5958b10b238aaa8916f2721195fa8164ba3fa4dfe2db71',1,'StandardPaths']]]
+  ['error_0',['Error',['../namespacePalette.html#a17193389f023bd26d678af3bf36c3a41a6fe8d82691caf80d4e452db7a8c3efee',1,'Palette']]]
 ];
