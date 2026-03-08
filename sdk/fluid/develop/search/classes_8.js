@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['iconlabel_0',['IconLabel',['../classIconLabel.html',1,'']]],
-  ['inputarea_1',['InputArea',['../classInputArea.html',1,'']]],
-  ['inputdialog_2',['InputDialog',['../classInputDialog.html',1,'']]],
-  ['inputregion_3',['InputRegion',['../classInputRegion.html',1,'']]]
+  ['iconbutton_0',['IconButton',['../classIconButton.html',1,'']]],
+  ['iconlabel_1',['IconLabel',['../classIconLabel.html',1,'']]],
+  ['inputarea_2',['InputArea',['../classInputArea.html',1,'']]],
+  ['inputdialog_3',['InputDialog',['../classInputDialog.html',1,'']]],
+  ['inputregion_4',['InputRegion',['../classInputRegion.html',1,'']]]
 ];
