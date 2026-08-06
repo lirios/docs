@@ -73,16 +73,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A standard list item, with one or more lines of text and optional left and right items.  
+<p>A Material Design 3 list item with leading, content, and trailing slots.  
  <a href="classListItem.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ListItem:</div>
 <div class="dyncontent">
 <div class="center"><img src="classListItem__inherit__graph.png" border="0" usemap="#aListItem_inherit__map" alt="Inheritance graph"/></div>
 <map name="aListItem_inherit__map" id="aListItem_inherit__map">
-<area shape="rect" title="A standard list item, with one or more lines of text and optional left and right items." alt="" coords="23,79,98,104"/>
-<area shape="rect" title=" " alt="" coords="5,5,116,31"/>
-<area shape="poly" title=" " alt="" coords="63,44,63,79,58,79,58,44"/>
+<area shape="rect" title="A Material Design 3 list item with leading, content, and trailing slots." alt="" coords="31,79,106,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,132,31"/>
+<area shape="poly" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -90,15 +90,29 @@ Collaboration diagram for ListItem:</div>
 <div class="dyncontent">
 <div class="center"><img src="classListItem__coll__graph.png" border="0" usemap="#aListItem_coll__map" alt="Collaboration graph"/></div>
 <map name="aListItem_coll__map" id="aListItem_coll__map">
-<area shape="rect" title="A standard list item, with one or more lines of text and optional left and right items." alt="" coords="23,79,98,104"/>
-<area shape="rect" title=" " alt="" coords="5,5,116,31"/>
-<area shape="poly" title=" " alt="" coords="63,44,63,79,58,79,58,44"/>
+<area shape="rect" title="A Material Design 3 list item with leading, content, and trailing slots." alt="" coords="31,79,106,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,132,31"/>
+<area shape="poly" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A standard list item, with one or more lines of text and optional left and right items. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/qml/<a class="el" href="ListItem_8qml.html">ListItem.qml</a></li>
+<div class="textblock"><p>A Material Design 3 list item with leading, content, and trailing slots. </p>
+<p>A list item is composed of three slots: leading, content, and trailing. The content slot is required and contains a label plus optional overline and supporting text. The leading and trailing slots are optional and accept visual elements, selection controls, or any custom content.</p>
+<p>Height adapts automatically according to the MD3 baseline specification: one-line items are 56 dp tall, two-line items are 72 dp tall, and three-line items are 88 dp tall.</p>
+<div class="fragment"><div class="line">MD.ListItem {</div>
+<div class="line">    text: <span class="stringliteral">&quot;Primary label&quot;</span></div>
+<div class="line">    supportingText: <span class="stringliteral">&quot;Supporting line&quot;</span></div>
+<div class="line"> </div>
+<div class="line">    leading: MD.Icon {</div>
+<div class="line">        name: <span class="stringliteral">&quot;account_circle&quot;</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    trailing: MD.Icon {</div>
+<div class="line">        name: <span class="stringliteral">&quot;chevron_right&quot;</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/runner/work/docs/docs/fluid/src/controls/qml/delegates/<a class="el" href="ListItem_8qml.html">ListItem.qml</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

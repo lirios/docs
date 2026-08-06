@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,92,56"/>
-<area shape="rect" id="Node000001" href="$classElevationRectangle.html" title=" " alt="" coords="140,5,288,31"/>
-<area shape="poly" id="edge132_Node000000_Node000001" title=" " alt="" coords="105,32,139,27,140,32,106,37"/>
-<area shape="rect" id="Node000002" href="$classThinDivider.html" title="A 1px high divider for use in lists and other columns of content." alt="" coords="165,55,263,80"/>
-<area shape="poly" id="edge133_Node000000_Node000002" title=" " alt="" coords="106,49,165,58,164,63,105,54"/>
-</map>

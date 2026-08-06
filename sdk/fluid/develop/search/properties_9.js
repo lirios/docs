@@ -7,6 +7,5 @@ var searchData=
   ['legacyaccelerate_4',['legacyAccelerate',['../structFluid_1_1Easing.html#a70fc1319eff19462d514a09c8cb4cc55',1,'Fluid::Easing']]],
   ['legacydecelerate_5',['legacyDecelerate',['../structFluid_1_1Easing.html#a1f87552c18a71f9ffb5e8936f608302f',1,'Fluid::Easing']]],
   ['linear_6',['linear',['../structFluid_1_1Easing.html#a5dcda790f25365795c9b5ba439f2d398',1,'Fluid::Easing']]],
-  ['lineheight_7',['lineHeight',['../structFluid_1_1TypeScaleValue.html#a46d784d34cab053e385a8e5e0b086ded',1,'Fluid::TypeScaleValue']]],
-  ['locale_8',['locale',['../classDateSelector.html#ae0074b99252077c35741d29e773e831d',1,'DateSelector::locale'],['../classPicker.html#a6741d67aaf036414a3a8eec001e8b3c6',1,'Picker::locale']]]
+  ['lineheight_7',['lineHeight',['../structFluid_1_1TypeScaleValue.html#a46d784d34cab053e385a8e5e0b086ded',1,'Fluid::TypeScaleValue']]]
 ];

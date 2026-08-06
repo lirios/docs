@@ -1,9 +1,0 @@
-<map id="DatePicker" name="DatePicker">
-<area shape="rect" id="Node000001" title="Control to select a single date." alt="" coords="69,152,161,177"/>
-<area shape="rect" id="Node000002" href="$classPicker.html" title=" " alt="" coords="24,79,85,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,113,107,150,103,154,71,116"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,104,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,44,57,79,52,79,52,44"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="110,79,242,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,116,127,154,123,150,155,113"/>
-</map>

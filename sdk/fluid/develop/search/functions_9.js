@@ -8,7 +8,5 @@ var searchData=
   ['legacydecelerate_5',['legacyDecelerate',['../structFluid_1_1Easing.html#a475d1759a0d2deabd0ad7b33504b97fb',1,'Fluid::Easing']]],
   ['lightdark_6',['lightDark',['../classColor.html#a65bbbe9e6a47ba99b6ceed0dd707f5e3',1,'Color']]],
   ['linear_7',['linear',['../structFluid_1_1Easing.html#adeb3f35725d223515fab95a4c84a116f',1,'Fluid::Easing']]],
-  ['locale_8',['locale',['../classDateSelector.html#a02be936257b9cac62f723d19f2779063',1,'DateSelector::locale()'],['../classPicker.html#a40f883d0f87012f7796486ae96fab7bd',1,'Picker::locale()']]],
-  ['localechanged_9',['localechanged',['../classDateSelector.html#a65b8f65156321791affaf8295e98bac1',1,'DateSelector::localeChanged()'],['../classPicker.html#acfbb93326c253a0711759ab90630ca03',1,'Picker::localeChanged()']]],
-  ['luminance_10',['luminance',['../classColor.html#a1c5d0b50c626130f5017eba4db8adc29',1,'Color']]]
+  ['luminance_8',['luminance',['../classColor.html#a1c5d0b50c626130f5017eba4db8adc29',1,'Color']]]
 ];

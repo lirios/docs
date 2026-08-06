@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['hastouchscreen_0',['hasTouchScreen',['../classDevice.html#aeede6046355fd1a89d72ef44b5b3e61e',1,'Device']]],
-  ['header_1',['header',['../classPicker.html#a6756a476783a2d7bd66e163490a432fc',1,'Picker']]],
-  ['headlinelarge_2',['headlineLarge',['../classFluid_1_1TypeScale.html#a4e77e82bc6853f2ff10c85daa38ee621',1,'Fluid::TypeScale']]],
-  ['headlinemedium_3',['headlineMedium',['../classFluid_1_1TypeScale.html#ac1e87af095dc5f44afd771368592c93f',1,'Fluid::TypeScale']]],
-  ['headlinesmall_4',['headlineSmall',['../classFluid_1_1TypeScale.html#ae488a9dcdc004ead1780a6492b7bb4a7',1,'Fluid::TypeScale']]],
-  ['height_5',['height',['../classInputArea.html#a5cb7e62a5def6649e82be5ccb6df1d69',1,'InputArea']]],
-  ['hexp_6',['hexp',['../structFluid_1_1TypeScaleValue.html#aab461fec015958b999a14b71edee259e',1,'Fluid::TypeScaleValue']]],
-  ['hoverenabled_7',['hoverEnabled',['../classDevice.html#a40c959b016eab514053844656e4372c3',1,'Device']]]
+  ['handleheight_0',['handleHeight',['../structFluid_1_1Slider.html#a8e7a952634de937671330376f622f9ba',1,'Fluid::Slider']]],
+  ['handletrackgap_1',['handleTrackGap',['../structFluid_1_1Slider.html#a068246bb539cd1d4683dbc83e638f09e',1,'Fluid::Slider']]],
+  ['handlewidth_2',['handleWidth',['../structFluid_1_1Slider.html#a75ac991f037ed183e7522d84364a4778',1,'Fluid::Slider']]],
+  ['headlinelarge_3',['headlineLarge',['../classFluid_1_1TypeScale.html#a4e77e82bc6853f2ff10c85daa38ee621',1,'Fluid::TypeScale']]],
+  ['headlinemedium_4',['headlineMedium',['../classFluid_1_1TypeScale.html#ac1e87af095dc5f44afd771368592c93f',1,'Fluid::TypeScale']]],
+  ['headlinesmall_5',['headlineSmall',['../classFluid_1_1TypeScale.html#ae488a9dcdc004ead1780a6492b7bb4a7',1,'Fluid::TypeScale']]],
+  ['height_6',['height',['../classInputArea.html#a5cb7e62a5def6649e82be5ccb6df1d69',1,'InputArea']]],
+  ['hexp_7',['hexp',['../structFluid_1_1TypeScaleValue.html#aab461fec015958b999a14b71edee259e',1,'Fluid::TypeScaleValue']]],
+  ['hiddenopacity_8',['hiddenOpacity',['../structFluid_1_1Slider.html#ac96def5944c4777763ac479a3694a90a',1,'Fluid::Slider']]],
+  ['hoverstatelayeropacity_9',['hoverStateLayerOpacity',['../structFluid_1_1Slider.html#a0ffc10ce28a86c5bd2269393ff7c1cea',1,'Fluid::Slider']]]
 ];

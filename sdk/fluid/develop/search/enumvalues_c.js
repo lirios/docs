@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['second_0',['second',['../classDateTimePicker.html#a99f49fd8d9aa2cc395b5ae9eb87bf4f2a3db9c36266c4e2e12de2009c4b1833e1',1,'DateTimePicker::Second'],['../classTimeSelector.html#a6c23cef0462341787a7bca031723ebbba94d49b1f28a73a3c3e2f370381cc4b47',1,'TimeSelector::Second']]],
-  ['secondary_1',['Secondary',['../namespacePalette.html#a17193389f023bd26d678af3bf36c3a41a4743ccbfc0bb41950d2a0dd82a189838',1,'Palette']]],
-  ['seconds_2',['Seconds',['../classDateUtils.html#acd9aa59d87a14e37a78bc292bac0f7a3ada6f4b9d2e184a78bbff139f0ab80e79',1,'DateUtils']]],
-  ['short_3',['Short',['../classDateUtils.html#ad6a7aae35d5f17dd2bfbc1dcb467f5d8ab3d2fff5c90f9a1f9a41bde4c5296415',1,'DateUtils']]],
-  ['system_4',['System',['../classStyle.html#a67412ada3648c8bd154887b94cccec45a375c31c7c5c37b9fb1ee3357c1c53c47',1,'Style']]]
-];

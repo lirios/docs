@@ -1,7 +1,0 @@
-<map id="NavigationDrawer" name="NavigationDrawer">
-<area shape="rect" id="Node000001" title="The navigation drawer slides in from the left and is a common pattern in apps." alt="" coords="5,152,145,177"/>
-<area shape="rect" id="Node000002" href="$classDrawer.html" title=" " alt="" coords="41,79,110,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,118,78,152,73,152,73,118"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="32,5,119,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,44,78,79,73,79,73,44"/>
-</map>

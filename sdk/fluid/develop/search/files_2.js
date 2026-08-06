@@ -1,18 +1,11 @@
 var searchData=
 [
-  ['calendar_2eqml_0',['Calendar.qml',['../Calendar_8qml.html',1,'']]],
-  ['calendarmodel_2eqml_1',['CalendarModel.qml',['../CalendarModel_8qml.html',1,'']]],
-  ['card_2eqml_2',['Card.qml',['../Card_8qml.html',1,'']]],
-  ['checkbox_2eqml_3',['CheckBox.qml',['../CheckBox_8qml.html',1,'']]],
-  ['chip_2eqml_4',['Chip.qml',['../Chip_8qml.html',1,'']]],
-  ['circleimage_2eqml_5',['CircleImage.qml',['../CircleImage_8qml.html',1,'']]],
-  ['circlemask_2eqml_6',['CircleMask.qml',['../CircleMask_8qml.html',1,'']]],
-  ['clipboard_2ecpp_7',['clipboard.cpp',['../clipboard_8cpp.html',1,'']]],
-  ['clipboard_2eh_8',['clipboard.h',['../clipboard_8h.html',1,'']]],
-  ['color_2ecpp_9',['color.cpp',['../color_8cpp.html',1,'']]],
-  ['color_2eh_10',['color.h',['../color_8h.html',1,'']]],
-  ['columnflow_2eqml_11',['ColumnFlow.qml',['../ColumnFlow_8qml.html',1,'']]],
-  ['combobox_2eqml_12',['ComboBox.qml',['../ComboBox_8qml.html',1,'']]],
-  ['container_2eqml_13',['Container.qml',['../Container_8qml.html',1,'']]],
-  ['control_2eqml_14',['Control.qml',['../Control_8qml.html',1,'']]]
+  ['checkbox_2eqml_0',['CheckBox.qml',['../CheckBox_8qml.html',1,'']]],
+  ['checkindicator_2eqml_1',['CheckIndicator.qml',['../CheckIndicator_8qml.html',1,'']]],
+  ['clipboard_2ecpp_2',['clipboard.cpp',['../clipboard_8cpp.html',1,'']]],
+  ['clipboard_2eh_3',['clipboard.h',['../clipboard_8h.html',1,'']]],
+  ['color_2ecpp_4',['color.cpp',['../color_8cpp.html',1,'']]],
+  ['color_2eh_5',['color.h',['../color_8h.html',1,'']]],
+  ['columnflow_2eqml_6',['ColumnFlow.qml',['../ColumnFlow_8qml.html',1,'']]],
+  ['control_2eqml_7',['Control.qml',['../Control_8qml.html',1,'']]]
 ];

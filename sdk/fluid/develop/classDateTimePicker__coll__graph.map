@@ -1,9 +1,0 @@
-<map id="DateTimePicker" name="DateTimePicker">
-<area shape="rect" id="Node000001" title="Control to select a both date and time." alt="" coords="60,152,185,177"/>
-<area shape="rect" id="Node000002" href="$classPicker.html" title=" " alt="" coords="24,79,85,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,112,114,150,110,154,73,116"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,104,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,44,57,79,52,79,52,44"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="109,79,275,104"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,116,136,154,132,150,169,112"/>
-</map>

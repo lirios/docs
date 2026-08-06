@@ -1,5 +1,27 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,149,31"/>
-<area shape="rect" id="Node000001" href="$classDayOfWeekRow.html" title=" " alt="" coords="197,5,324,31"/>
-<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="163,15,197,15,197,21,163,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,277,57,303"/>
+<area shape="rect" id="Node000001" href="$classCheckIndicator.html" title=" " alt="" coords="119,5,238,31"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="30,263,34,216,45,157,66,95,83,66,103,40,119,29,122,33,107,44,87,69,71,97,50,158,39,217,35,264"/>
+<area shape="rect" id="Node000002" href="$classColumnFlow.html" title="Automatically position children in columns." alt="" coords="127,55,230,80"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="32,263,39,225,51,179,72,131,104,89,126,75,129,80,107,93,77,134,56,180,44,226,38,264"/>
+<area shape="rect" id="Node000003" href="$classIconLabel.html" title=" " alt="" coords="137,104,221,129"/>
+<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="36,263,59,201,78,168,104,139,119,128,136,122,138,127,121,133,107,143,82,171,64,204,41,265"/>
+<area shape="rect" id="Node000004" href="$classLoadable.html" title="Loadable component." alt="" coords="138,153,219,179"/>
+<area shape="poly" id="edge10_Node000000_Node000004" title=" " alt="" coords="43,264,67,225,84,205,104,188,137,172,139,177,107,192,88,209,72,228,47,267"/>
+<area shape="rect" id="Node000005" href="$classRipple.html" title=" " alt="" coords="147,203,210,228"/>
+<area shape="poly" id="edge11_Node000000_Node000005" title=" " alt="" coords="58,266,104,237,146,221,148,226,107,242,61,271"/>
+<area shape="rect" id="Node000006" href="$classSliderHandle.html" title=" " alt="" coords="126,252,231,277"/>
+<area shape="poly" id="edge12_Node000000_Node000006" title=" " alt="" coords="71,281,125,271,126,276,71,286"/>
+<area shape="rect" id="Node000007" href="$classSliderTrack.html" title=" " alt="" coords="132,301,225,327"/>
+<area shape="poly" id="edge13_Node000000_Node000007" title=" " alt="" coords="72,294,132,304,132,309,71,299"/>
+<area shape="rect" id="Node000008" href="$classSmoothFadeImage.html" title="Displays an image and smoothly fade when the source is changed." alt="" coords="107,351,250,376"/>
+<area shape="poly" id="edge14_Node000000_Node000008" title=" " alt="" coords="62,308,107,336,137,348,134,353,104,340,59,313"/>
+<area shape="rect" id="Node000009" href="$classSmoothFadeLoader.html" title="Displays an item and smoothly fade when the source is changed." alt="" coords="105,400,252,425"/>
+<area shape="poly" id="edge15_Node000000_Node000009" title=" " alt="" coords="48,314,73,351,107,385,130,398,127,402,104,389,69,354,44,317"/>
+<area shape="rect" id="Node000010" href="$classSymbol.html" title="Displays an icon from the Material Symbols collection." alt="" coords="143,449,214,475"/>
+<area shape="poly" id="edge16_Node000000_Node000010" title=" " alt="" coords="42,315,64,375,83,407,107,435,124,446,144,453,142,458,122,451,104,439,79,410,60,378,37,317"/>
+<area shape="rect" id="Node000011" href="$classVignette.html" title="Vignette effect." alt="" coords="140,499,217,524"/>
+<area shape="poly" id="edge17_Node000000_Node000011" title=" " alt="" coords="38,316,45,353,57,398,77,444,107,484,123,495,141,502,139,507,120,500,103,488,73,447,52,400,39,354,33,317"/>
+<area shape="rect" id="Node000012" href="$classWave.html" title="Provides a wave animation for transitioning between views of content." alt="" coords="149,548,208,573"/>
+<area shape="poly" id="edge18_Node000000_Node000012" title=" " alt="" coords="36,316,40,363,50,421,72,481,88,509,107,533,127,547,150,554,148,560,125,552,104,537,83,512,67,483,45,422,34,363,30,317"/>
 </map>

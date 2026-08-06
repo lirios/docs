@@ -1,23 +1,11 @@
 var searchData=
 [
-  ['datepicker_2ecpp_0',['datepicker.cpp',['../datepicker_8cpp.html',1,'']]],
-  ['datepicker_2eh_1',['datepicker.h',['../datepicker_8h.html',1,'']]],
-  ['datepicker_2eqml_2',['DatePicker.qml',['../DatePicker_8qml.html',1,'']]],
-  ['datepickerdialog_2eqml_3',['DatePickerDialog.qml',['../DatePickerDialog_8qml.html',1,'']]],
-  ['dateselector_2ecpp_4',['dateselector.cpp',['../dateselector_8cpp.html',1,'']]],
-  ['dateselector_2eh_5',['dateselector.h',['../dateselector_8h.html',1,'']]],
-  ['datetimepicker_2ecpp_6',['datetimepicker.cpp',['../datetimepicker_8cpp.html',1,'']]],
-  ['datetimepicker_2eh_7',['datetimepicker.h',['../datetimepicker_8h.html',1,'']]],
-  ['datetimepicker_2eqml_8',['DateTimePicker.qml',['../DateTimePicker_8qml.html',1,'']]],
-  ['datetimepickerdialog_2eqml_9',['DateTimePickerDialog.qml',['../DateTimePickerDialog_8qml.html',1,'']]],
-  ['dateutils_2ecpp_10',['dateutils.cpp',['../dateutils_8cpp.html',1,'']]],
-  ['dateutils_2eh_11',['dateutils.h',['../dateutils_8h.html',1,'']]],
-  ['dayofweekrow_2eqml_12',['DayOfWeekRow.qml',['../DayOfWeekRow_8qml.html',1,'']]],
-  ['delaybutton_2eqml_13',['DelayButton.qml',['../DelayButton_8qml.html',1,'']]],
-  ['device_2ecpp_14',['device.cpp',['../device_8cpp.html',1,'']]],
-  ['device_2eh_15',['device.h',['../device_8h.html',1,'']]],
-  ['dial_2eqml_16',['Dial.qml',['../Dial_8qml.html',1,'']]],
-  ['dialog_2eqml_17',['Dialog.qml',['../Dialog_8qml.html',1,'']]],
-  ['dialogbuttonbox_2eqml_18',['DialogButtonBox.qml',['../DialogButtonBox_8qml.html',1,'']]],
-  ['drawer_2eqml_19',['Drawer.qml',['../Drawer_8qml.html',1,'']]]
+  ['easing_2ecpp_0',['easing.cpp',['../easing_8cpp.html',1,'']]],
+  ['easing_2eh_1',['easing.h',['../easing_8h.html',1,'']]],
+  ['elevation_2ecpp_2',['elevation.cpp',['../elevation_8cpp.html',1,'']]],
+  ['elevation_2eh_3',['elevation.h',['../elevation_8h.html',1,'']]],
+  ['elevation_2eqml_4',['Elevation.qml',['../Elevation_8qml.html',1,'']]],
+  ['elevationmaterial_2ecpp_5',['elevationmaterial.cpp',['../elevationmaterial_8cpp.html',1,'']]],
+  ['elevationmaterial_2eh_6',['elevationmaterial.h',['../elevationmaterial_8h.html',1,'']]],
+  ['elevationrectangle_2eqml_7',['ElevationRectangle.qml',['../ElevationRectangle_8qml.html',1,'']]]
 ];
