@@ -6,7 +6,7 @@ var searchData=
   ['classbegin_3',['classbegin',['../classInputArea.html#a143b2aaef86988109930c1e52da4d32e',1,'InputArea::classBegin()'],['../classInputRegion.html#a5223931e6f9de222343a0586cebde45e',1,'InputRegion::classBegin()']]],
   ['clear_4',['clear',['../classClipboard.html#a01655a05452e67cc1ffaf7d0f215cce8',1,'Clipboard']]],
   ['clipboard_5',['Clipboard',['../classClipboard.html#a1af6e765b8d052024204cc55f591716f',1,'Clipboard']]],
-  ['color_6',['color',['../classColor.html#ad550aae61666fb940ecb1dd6ed1dfc24',1,'Color::Color()'],['../classFluid_1_1Elevation.html#ab897693d053a6527e739c500c63dac4f',1,'Fluid::Elevation::color() const']]],
+  ['color_6',['color',['../classFluid_1_1Elevation.html#ab897693d053a6527e739c500c63dac4f',1,'Fluid::Elevation::color()'],['../classColor.html#ad550aae61666fb940ecb1dd6ed1dfc24',1,'Color::Color()']]],
   ['colorchanged_7',['colorChanged',['../classFluid_1_1Elevation.html#a9b44b00e43c13bb3da3d9c1436d2dba0',1,'Fluid::Elevation']]],
   ['compare_8',['compare',['../classFluid_1_1SceneGraph_1_1ElevationMaterial.html#a9591e84f35c16972d9776674515e8ca7',1,'Fluid::SceneGraph::ElevationMaterial']]],
   ['componentcomplete_9',['componentcomplete',['../classFluid_1_1Elevation.html#a777fa3e2d2d9ff2234f3fc3178fb5ed5',1,'Fluid::Elevation::componentComplete()'],['../classInputRegion.html#a831217841671c2bc844e2c2c1d2b6d3a',1,'InputRegion::componentComplete()'],['../classInputArea.html#a6077ea1690de2cad61c1d8796e0e2514',1,'InputArea::componentComplete()']]],

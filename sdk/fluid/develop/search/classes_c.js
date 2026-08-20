@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wave_0',['Wave',['../classWave.html',1,'']]]
+  ['vignette_0',['Vignette',['../classVignette.html',1,'']]]
 ];

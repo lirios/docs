@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,120,31"/>
-<area shape="rect" id="Node000001" href="$classRangeSlider.html" title=" " alt="" coords="168,5,268,31"/>
-<area shape="poly" id="edge45_Node000000_Node000001" title=" " alt="" coords="134,15,168,15,168,21,134,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,132,31"/>
+<area shape="rect" id="Node000001" href="$classListItem.html" title="A Material Design 3 list item with leading, content, and trailing slots." alt="" coords="180,5,255,31"/>
+<area shape="poly" id="edge45_Node000000_Node000001" title=" " alt="" coords="146,15,180,15,180,21,146,21"/>
 </map>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['easing_0',['easing',['../classFluid_1_1Tokens.html#a9076179177da099730c391af21932a60',1,'Fluid::Tokens']]],
   ['effectivetheme_1',['effectiveTheme',['../classStyle.html#a93294fe37200d0d5d522d6c66b711e62',1,'Style']]],
-  ['elevation_2',['elevation',['../classFluid_1_1Elevation.html#a08904e846f5ba6ad446815a411101b1d',1,'Fluid::Elevation::elevation()'],['../classStyle.html#a18bd6a2905082114013dcdcbe05d10c9',1,'Style::elevation()'],['../classFluid_1_1Elevation.html#a9dfd5f494d09df24dab03f9227a944fd',1,'Fluid::Elevation::Elevation(QQuickItem *parent=nullptr)']]],
+  ['elevation_2',['elevation',['../classFluid_1_1Elevation.html#a9dfd5f494d09df24dab03f9227a944fd',1,'Fluid::Elevation::Elevation(QQuickItem *parent=nullptr)'],['../classFluid_1_1Elevation.html#a08904e846f5ba6ad446815a411101b1d',1,'Fluid::Elevation::elevation() const'],['../classStyle.html#a18bd6a2905082114013dcdcbe05d10c9',1,'Style::elevation()']]],
   ['elevationchanged_3',['elevationchanged',['../classFluid_1_1Elevation.html#acc54150a99205af77b7ad47743d38d4b',1,'Fluid::Elevation::elevationChanged()'],['../classStyle.html#a4e0b4c28e412d4df3af51129a75ea2db',1,'Style::elevationChanged()']]],
   ['elevationlevel0_4',['elevationLevel0',['../classFluid_1_1Tokens.html#ae6facf0a9385783e92585e4e156b0181',1,'Fluid::Tokens']]],
   ['elevationlevel1_5',['elevationLevel1',['../classFluid_1_1Tokens.html#ad526b4043090fb0ded91401e8e6ad503',1,'Fluid::Tokens']]],
@@ -16,7 +16,7 @@ var searchData=
   ['emphasized_13',['emphasized',['../structFluid_1_1Easing.html#a3b33282b3f2432a4bbd0b41f1895dd7c',1,'Fluid::Easing']]],
   ['emphasizedaccelerate_14',['emphasizedAccelerate',['../structFluid_1_1Easing.html#ab82ad364c6ab9f38eaa7efd20ecfcf34',1,'Fluid::Easing']]],
   ['emphasizeddecelerate_15',['emphasizedDecelerate',['../structFluid_1_1Easing.html#a3b685a21e5d2839774284ff828fbfad2',1,'Fluid::Easing']]],
-  ['emphasizedtypescale_16',['emphasizedtypescale',['../classFluid_1_1Tokens.html#ab7a01d8dab3ea186c4dddd75c63ca9d4',1,'Fluid::Tokens::emphasizedTypeScale()'],['../classFluid_1_1EmphasizedTypeScale.html#a4b45ec25d87e65e3a62607583bc1c43d',1,'Fluid::EmphasizedTypeScale::EmphasizedTypeScale()']]],
+  ['emphasizedtypescale_16',['emphasizedtypescale',['../classFluid_1_1EmphasizedTypeScale.html#a4b45ec25d87e65e3a62607583bc1c43d',1,'Fluid::EmphasizedTypeScale::EmphasizedTypeScale()'],['../classFluid_1_1Tokens.html#ab7a01d8dab3ea186c4dddd75c63ca9d4',1,'Fluid::Tokens::emphasizedTypeScale()']]],
   ['enabledchanged_17',['enabledchanged',['../classInputArea.html#af78c9c9952d3b3bd05cdf36a949d7ca7',1,'InputArea::enabledChanged()'],['../classInputRegion.html#a547b6fc9bf430000d49006b0e71232e6',1,'InputRegion::enabledChanged()']]],
   ['errorcolor_18',['errorColor',['../classStyle.html#aa04811794d00bf999d5fd567680bb65d',1,'Style']]],
   ['errorcontainercolor_19',['errorContainerColor',['../classStyle.html#afc9099af04a2e9ff3c60116cb4975d92',1,'Style']]],
