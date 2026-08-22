@@ -1,14 +1,19 @@
 var searchData=
 [
   ['handleheight_0',['handleHeight',['../structFluid_1_1Slider.html#a9b5f6787b4cac3b5ddc86e2e886bb62c',1,'Fluid::Slider']]],
-  ['handletrackgap_1',['handleTrackGap',['../structFluid_1_1Slider.html#a0c5adde9512edb974f03ab62eb07405c',1,'Fluid::Slider']]],
-  ['handlewidth_2',['handleWidth',['../structFluid_1_1Slider.html#ae794f844243376823371814a2d4667bc',1,'Fluid::Slider']]],
-  ['headlinelarge_3',['headlineLarge',['../classFluid_1_1TypeScale.html#adcaee4d1b780ab3ebdbfd9ec8aba2e9c',1,'Fluid::TypeScale']]],
-  ['headlinemedium_4',['headlineMedium',['../classFluid_1_1TypeScale.html#aeb4404a89cd33220398e80944e207962',1,'Fluid::TypeScale']]],
-  ['headlinesmall_5',['headlineSmall',['../classFluid_1_1TypeScale.html#a3d5d253ee4c92cc27803ef16cf5e3bf6',1,'Fluid::TypeScale']]],
-  ['height_6',['height',['../classInputArea.html#a02191bb3a51ee2cb6866c19fbeb361a1',1,'InputArea']]],
-  ['heightchanged_7',['heightChanged',['../classInputArea.html#a66506e61b538da06f44514a9e71e699c',1,'InputArea']]],
-  ['hexp_8',['hexp',['../structFluid_1_1TypeScaleValue.html#ae0b9ff883c092a964332066a9c1f7041',1,'Fluid::TypeScaleValue']]],
-  ['hiddenopacity_9',['hiddenOpacity',['../structFluid_1_1Slider.html#a97636ec26409c803cfcbcb6516998aaa',1,'Fluid::Slider']]],
-  ['hoverstatelayeropacity_10',['hoverStateLayerOpacity',['../structFluid_1_1Slider.html#af3c47ff5e389647d3e81251a58be21fe',1,'Fluid::Slider']]]
+  ['handleshape_1',['handleShape',['../structFluid_1_1Switch.html#a946332668b253482429112b28c718130',1,'Fluid::Switch']]],
+  ['handletrackgap_2',['handleTrackGap',['../structFluid_1_1Slider.html#a0c5adde9512edb974f03ab62eb07405c',1,'Fluid::Slider']]],
+  ['handlewidth_3',['handleWidth',['../structFluid_1_1Slider.html#ae794f844243376823371814a2d4667bc',1,'Fluid::Slider']]],
+  ['headlinelarge_4',['headlineLarge',['../classFluid_1_1TypeScale.html#adcaee4d1b780ab3ebdbfd9ec8aba2e9c',1,'Fluid::TypeScale']]],
+  ['headlinemedium_5',['headlineMedium',['../classFluid_1_1TypeScale.html#aeb4404a89cd33220398e80944e207962',1,'Fluid::TypeScale']]],
+  ['headlinesmall_6',['headlineSmall',['../classFluid_1_1TypeScale.html#a3d5d253ee4c92cc27803ef16cf5e3bf6',1,'Fluid::TypeScale']]],
+  ['height_7',['height',['../classInputArea.html#a02191bb3a51ee2cb6866c19fbeb361a1',1,'InputArea']]],
+  ['heightchanged_8',['heightChanged',['../classInputArea.html#a66506e61b538da06f44514a9e71e699c',1,'InputArea']]],
+  ['hexp_9',['hexp',['../structFluid_1_1TypeScaleValue.html#ae0b9ff883c092a964332066a9c1f7041',1,'Fluid::TypeScaleValue']]],
+  ['hiddenopacity_10',['hiddenOpacity',['../structFluid_1_1Slider.html#a97636ec26409c803cfcbcb6516998aaa',1,'Fluid::Slider']]],
+  ['horizontalpadding_11',['horizontalPadding',['../structFluid_1_1AppBar.html#a856deaea4d170ba70c209d84fa5d74c0',1,'Fluid::AppBar']]],
+  ['hovercontainerelevation_12',['hoverContainerElevation',['../structFluid_1_1Fab.html#a8452197cc57c1021f6b702aae5e06086',1,'Fluid::Fab']]],
+  ['hoveredcontainerexpressiveshape_13',['hoveredContainerExpressiveShape',['../structFluid_1_1ListItem.html#afa5623f4defd7356e561c290d02e8f4e',1,'Fluid::ListItem']]],
+  ['hoverhandlewidth_14',['hoverHandleWidth',['../structFluid_1_1Slider.html#a96cfde313553d2007fa3e1e037551172',1,'Fluid::Slider']]],
+  ['hoverstatelayeropacity_15',['hoverstatelayeropacity',['../structFluid_1_1AppBar.html#a5cc97ff1589a746d4622f921caf896fb',1,'Fluid::AppBar::hoverStateLayerOpacity()'],['../structFluid_1_1Button.html#a8da49135d7d1a0dc3c3900b5be0cab63',1,'Fluid::Button::hoverStateLayerOpacity()'],['../structFluid_1_1CheckBox.html#aa82d0e5c0479397773c0bf5e2aaa1403',1,'Fluid::CheckBox::hoverStateLayerOpacity()'],['../structFluid_1_1Fab.html#ab227775663e9cc3097258c6267be76aa',1,'Fluid::Fab::hoverStateLayerOpacity()'],['../structFluid_1_1IconButton.html#ada925feb54ec27d616186538f96387e2',1,'Fluid::IconButton::hoverStateLayerOpacity()'],['../structFluid_1_1ListItem.html#a5266e102950649ac4105feda88f6c02e',1,'Fluid::ListItem::hoverStateLayerOpacity()'],['../structFluid_1_1Menu.html#a52a380f3503b0d0642ded5409106d956',1,'Fluid::Menu::hoverStateLayerOpacity()'],['../structFluid_1_1Slider.html#af3c47ff5e389647d3e81251a58be21fe',1,'Fluid::Slider::hoverStateLayerOpacity()'],['../structFluid_1_1Switch.html#a9183c210b3b41d1d3c74241d1b826c04',1,'Fluid::Switch::hoverStateLayerOpacity()']]]
 ];

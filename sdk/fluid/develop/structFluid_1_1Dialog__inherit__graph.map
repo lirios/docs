@@ -1,0 +1,7 @@
+<map id="Fluid::Dialog" name="Fluid::Dialog">
+<area shape="rect" id="Node000001" title="Material Design 3 dialog tokens." alt="" coords="61,5,165,31"/>
+<area shape="rect" id="Node000002" href="$classAlertDialog.html" title="Alert dialogs are urgent interruptions to inform the user about a situation." alt="" coords="5,79,100,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,43,64,80,60,77,92,40"/>
+<area shape="rect" id="Node000003" href="$classInputDialog.html" title="Input dialogs ask the user to input data with certain constraints." alt="" coords="124,79,221,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,40,165,77,161,80,129,43"/>
+</map>

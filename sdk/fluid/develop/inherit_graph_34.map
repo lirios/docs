@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,111,31"/>
-<area shape="rect" id="Node000001" href="$classScrollView.html" title=" " alt="" coords="159,5,249,31"/>
-<area shape="poly" id="edge50_Node000000_Node000001" title=" " alt="" coords="124,15,158,15,158,21,124,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,92,31"/>
+<area shape="rect" id="Node000001" href="$classElevationRectangle.html" title="A rectangle that casts a Material 3 elevation shadow." alt="" coords="140,5,288,31"/>
+<area shape="poly" id="edge43_Node000000_Node000001" title=" " alt="" coords="106,15,140,15,140,21,106,21"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="AlertDialog" name="AlertDialog">
-<area shape="rect" id="Node000001" title="Alert dialogs are urgent interruptions to inform the user about a situation." alt="" coords="5,79,100,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="21,5,85,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,44,55,79,50,79,50,44"/>
+<area shape="rect" id="Node000001" title="Alert dialogs are urgent interruptions to inform the user about a situation." alt="" coords="10,79,105,104"/>
+<area shape="rect" id="Node000002" href="$structFluid_1_1Dialog.html" title="Material Design 3 dialog tokens." alt="" coords="5,5,109,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,44,60,79,55,79,55,44"/>
 </map>

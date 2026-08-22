@@ -1,21 +1,13 @@
 var searchData=
 [
-  ['onbackgroundcolor_0',['onBackgroundColor',['../classStyle.html#aff18fe5078dbd196e4f170229c34ec2f',1,'Style']]],
-  ['onerrorcolor_1',['onErrorColor',['../classStyle.html#a3d2046210eb36b4c0b8508a66cf1d1e2',1,'Style']]],
-  ['onerrorcontainercolor_2',['onErrorContainerColor',['../classStyle.html#a80b293b49a773f2a5c2dfe575c59f17f',1,'Style']]],
-  ['onprimarycolor_3',['onPrimaryColor',['../classStyle.html#a94e970d317b53d05882c88a9fd71719b',1,'Style']]],
-  ['onprimarycontainercolor_4',['onPrimaryContainerColor',['../classStyle.html#afd1139689320b2fd2c0bb051a79550f3',1,'Style']]],
-  ['onprimaryfixedcolor_5',['onPrimaryFixedColor',['../classStyle.html#a888890f60f408431c6a95f3471d5a9fd',1,'Style']]],
-  ['onprimaryfixedvariantcolor_6',['onPrimaryFixedVariantColor',['../classStyle.html#a9211bc3ee9143ab43aa571a53f830a6b',1,'Style']]],
-  ['onsecondarycolor_7',['onSecondaryColor',['../classStyle.html#a7a5452237f5747f71d4e4e01c1e37353',1,'Style']]],
-  ['onsecondarycontainercolor_8',['onSecondaryContainerColor',['../classStyle.html#a60ac5f9c2272939b7a911a9254b29f0d',1,'Style']]],
-  ['onsurfacecolor_9',['onSurfaceColor',['../classStyle.html#a5f85146e4a4e4f81c7eb522f560893ec',1,'Style']]],
-  ['onsurfacevariantcolor_10',['onSurfaceVariantColor',['../classStyle.html#a905daa61b311d7f14ab22722cda546c2',1,'Style']]],
-  ['ontertiarycolor_11',['onTertiaryColor',['../classStyle.html#acc8a9ec3adf50ea6fff010975ae24907',1,'Style']]],
-  ['ontertiarycontainercolor_12',['onTertiaryContainerColor',['../classStyle.html#a7a2a4176fa82d563bac0b2c691adf30f',1,'Style']]],
-  ['operator_20qcolor_13',['operator QColor',['../structFluid_1_1SceneGraph_1_1RectangleVertex.html#a95a723b1418a1816560186849414ec8a',1,'Fluid::SceneGraph::RectangleVertex']]],
-  ['operator_20qvector2d_14',['operator QVector2D',['../structFluid_1_1SceneGraph_1_1RectangleVertex.html#a34681133087a0d9d2de8287bac170ace',1,'Fluid::SceneGraph::RectangleVertex']]],
-  ['opsz_15',['opsz',['../structFluid_1_1TypeScaleValue.html#a42ad6f2a513f1d7f7d2eb18453682091',1,'Fluid::TypeScaleValue']]],
-  ['outlinecolor_16',['outlineColor',['../classStyle.html#a53295f27086918b2a83f351bf65ed085',1,'Style']]],
-  ['outlinevariantcolor_17',['outlineVariantColor',['../classStyle.html#ac90ec4a831c3cfab300984b4a60772cd',1,'Style']]]
+  ['narrowleadingspaceextralarge_0',['narrowLeadingSpaceExtraLarge',['../structFluid_1_1IconButton.html#a11f6ba81f24e6e6336c495ecf18a4559',1,'Fluid::IconButton']]],
+  ['narrowleadingspaceextrasmall_1',['narrowLeadingSpaceExtraSmall',['../structFluid_1_1IconButton.html#acac13fe2a0f13aba5657cff865560979',1,'Fluid::IconButton']]],
+  ['narrowleadingspacelarge_2',['narrowLeadingSpaceLarge',['../structFluid_1_1IconButton.html#a785b4c6b797d80a0654c815352e74516',1,'Fluid::IconButton']]],
+  ['narrowleadingspacemedium_3',['narrowLeadingSpaceMedium',['../structFluid_1_1IconButton.html#a9e8d3a1a6608da6e4767f0d2ac676772',1,'Fluid::IconButton']]],
+  ['narrowleadingspacesmall_4',['narrowLeadingSpaceSmall',['../structFluid_1_1IconButton.html#a1653b26dbf2082ffd9a6ea957a7cd9c3',1,'Fluid::IconButton']]],
+  ['narrowtrailingspaceextralarge_5',['narrowTrailingSpaceExtraLarge',['../structFluid_1_1IconButton.html#a1edfb6d0d1af3afdf7f3b771bc13b1e0',1,'Fluid::IconButton']]],
+  ['narrowtrailingspaceextrasmall_6',['narrowTrailingSpaceExtraSmall',['../structFluid_1_1IconButton.html#acf448414ed0f7864f0b466fc6aa66499',1,'Fluid::IconButton']]],
+  ['narrowtrailingspacelarge_7',['narrowTrailingSpaceLarge',['../structFluid_1_1IconButton.html#ad3542df7f079666d55d7b14e83ace30c',1,'Fluid::IconButton']]],
+  ['narrowtrailingspacemedium_8',['narrowTrailingSpaceMedium',['../structFluid_1_1IconButton.html#aca88d84344a3c222b4db3d54572497a1',1,'Fluid::IconButton']]],
+  ['narrowtrailingspacesmall_9',['narrowTrailingSpaceSmall',['../structFluid_1_1IconButton.html#a98aa6b57e99584e2dbbe1d91d9920321',1,'Fluid::IconButton']]]
 ];

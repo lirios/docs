@@ -1,7 +1,24 @@
 var searchData=
 [
-  ['inset_0',['inset',['../structFluid_1_1Divider.html#a9a277175bac18bd03e90938505153111',1,'Fluid::Divider']]],
-  ['inverseonsurfacecolor_1',['inverseOnSurfaceColor',['../classStyle.html#ad6b92013b70848a8d82617ef4bcf4878',1,'Style']]],
-  ['inverseprimarycolor_2',['inversePrimaryColor',['../classStyle.html#a4e602cd8b457269040d516894ad98b9d',1,'Style']]],
-  ['inversesurfacecolor_3',['inverseSurfaceColor',['../classStyle.html#a5957ac19c4ed9a70269bc223355114a7',1,'Style']]]
+  ['iconbutton_0',['iconButton',['../classFluid_1_1Tokens.html#a4e6f2fa3d40d2373345e40bd9ceb3ea0',1,'Fluid::Tokens']]],
+  ['iconbuttonspace_1',['iconButtonSpace',['../structFluid_1_1AppBar.html#a0fc9b64d10620b088cc751b63ca02c8d',1,'Fluid::AppBar']]],
+  ['iconlabelgap_2',['iconLabelGap',['../structFluid_1_1Menu.html#a70ecdfcedc6956e59c0e159dc9ac9636',1,'Fluid::Menu']]],
+  ['iconlabelspaceextralarge_3',['iconLabelSpaceExtraLarge',['../structFluid_1_1Button.html#afeffb72c3edfba727e302cedd0186f31',1,'Fluid::Button']]],
+  ['iconlabelspaceextrasmall_4',['iconLabelSpaceExtraSmall',['../structFluid_1_1Button.html#aa01d036d85abeda32c4db7452eed50bb',1,'Fluid::Button']]],
+  ['iconlabelspacelarge_5',['iconLabelSpaceLarge',['../structFluid_1_1Button.html#a332f23d66b17f5f3ae6fd017bf80188f',1,'Fluid::Button']]],
+  ['iconlabelspacemedium_6',['iconLabelSpaceMedium',['../structFluid_1_1Button.html#a64bd73d32fc2489b5babc408efa9e35c',1,'Fluid::Button']]],
+  ['iconlabelspacesmall_7',['iconLabelSpaceSmall',['../structFluid_1_1Button.html#a442d644c7bd8e1c4fb484d2ec914ebae',1,'Fluid::Button']]],
+  ['iconsize_8',['iconsize',['../structFluid_1_1AppBar.html#a070b3629010243d01761bd9073f85afa',1,'Fluid::AppBar::iconSize'],['../structFluid_1_1CheckBox.html#a5292b7e1648f3b2f54ddb5dc074912f9',1,'Fluid::CheckBox::iconSize'],['../structFluid_1_1Fab.html#acbe81bc59bd4539b79257b65a8a3083e',1,'Fluid::Fab::iconSize'],['../structFluid_1_1Menu.html#a263012f28543a31f952f3b88fcadd3b2',1,'Fluid::Menu::iconSize']]],
+  ['iconsizeextralarge_9',['iconsizeextralarge',['../structFluid_1_1Button.html#a01c29c29ebcbaa1990546ae30fc43a26',1,'Fluid::Button::iconSizeExtraLarge'],['../structFluid_1_1IconButton.html#abe6d8cab08daff715b1a98ceca786aa1',1,'Fluid::IconButton::iconSizeExtraLarge']]],
+  ['iconsizeextrasmall_10',['iconsizeextrasmall',['../structFluid_1_1Button.html#ad531f5d7dadd6d18b03d85302dc067c4',1,'Fluid::Button::iconSizeExtraSmall'],['../structFluid_1_1IconButton.html#a9740f6169f68c522636e9434d03aa57b',1,'Fluid::IconButton::iconSizeExtraSmall']]],
+  ['iconsizelarge_11',['iconsizelarge',['../structFluid_1_1Button.html#ab09c4db23d6146476237363ef0a42b1c',1,'Fluid::Button::iconSizeLarge'],['../structFluid_1_1IconButton.html#a310e11899853821abe7d5ada6f4338af',1,'Fluid::IconButton::iconSizeLarge']]],
+  ['iconsizemedium_12',['iconsizemedium',['../structFluid_1_1Button.html#a594fb461e815811c480abd29da1ed9a5',1,'Fluid::Button::iconSizeMedium'],['../structFluid_1_1IconButton.html#a35acf6cac37f0a59593292b96f71d21a',1,'Fluid::IconButton::iconSizeMedium']]],
+  ['iconsizesmall_13',['iconsizesmall',['../structFluid_1_1Button.html#aa761e6c2d3ca46d5ddef18e1809696c1',1,'Fluid::Button::iconSizeSmall'],['../structFluid_1_1IconButton.html#ada1245fe66999f21f2b0b1377ec5f217',1,'Fluid::IconButton::iconSizeSmall']]],
+  ['inactivestopindicatorcontaineropacity_14',['inactiveStopIndicatorContainerOpacity',['../structFluid_1_1Slider.html#a239937e635d25519577b548558e1320b',1,'Fluid::Slider']]],
+  ['inset_15',['inset',['../structFluid_1_1Divider.html#a9a277175bac18bd03e90938505153111',1,'Fluid::Divider']]],
+  ['inverseonsurfacecolor_16',['inverseOnSurfaceColor',['../classStyle.html#ad6b92013b70848a8d82617ef4bcf4878',1,'Style']]],
+  ['inverseprimarycolor_17',['inversePrimaryColor',['../classStyle.html#a4e602cd8b457269040d516894ad98b9d',1,'Style']]],
+  ['inversesurfacecolor_18',['inverseSurfaceColor',['../classStyle.html#a5957ac19c4ed9a70269bc223355114a7',1,'Style']]],
+  ['itemheight_19',['itemHeight',['../structFluid_1_1Menu.html#a50b7d33900b56cb99cec3a34e48688af',1,'Fluid::Menu']]],
+  ['itemhorizontalpadding_20',['itemHorizontalPadding',['../structFluid_1_1Menu.html#accf3995de351be2e57095f613ef05e07',1,'Fluid::Menu']]]
 ];

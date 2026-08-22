@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['checkbox_0',['CheckBox',['../classCheckBox.html',1,'']]],
+  ['checkbox_0',['checkbox',['../classCheckBox.html',1,'CheckBox'],['../structFluid_1_1CheckBox.html',1,'Fluid::CheckBox']]],
   ['checkindicator_1',['CheckIndicator',['../classCheckIndicator.html',1,'']]],
   ['clipboard_2',['Clipboard',['../classClipboard.html',1,'']]],
   ['color_3',['Color',['../classColor.html',1,'']]],

@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['wdth_0',['wdth',['../structFluid_1_1TypeScaleValue.html#a040ab671dfc4ba6eeaaf73b8a3b16a84',1,'Fluid::TypeScaleValue']]],
-  ['wght_1',['wght',['../structFluid_1_1TypeScaleValue.html#ae7e3257d90e1256f44697c76c911f74c',1,'Fluid::TypeScaleValue']]],
-  ['width_2',['width',['../classInputArea.html#a33f2f426a868edbd6720c899d1274c50',1,'InputArea']]],
-  ['widthchanged_3',['widthChanged',['../classInputArea.html#af9574a65508a4c64390a9d085e60f13f',1,'InputArea']]],
-  ['window_4',['window',['../classInputRegion.html#a0337df08bff95760c26397a9fc28bb47',1,'InputRegion']]],
-  ['windowchanged_5',['windowChanged',['../classInputRegion.html#ac694183e25665d1edbfb4fb304679c73',1,'InputRegion']]]
+  ['valueindicatoractivebottomspace_0',['valueIndicatorActiveBottomSpace',['../structFluid_1_1Slider.html#a4fcfe1bcb77e148bc78537868797cd18',1,'Fluid::Slider']]],
+  ['valueindicatorhorizontalpadding_1',['valueIndicatorHorizontalPadding',['../structFluid_1_1Slider.html#afb10e599d27c79247fdcd9aac34d0c74',1,'Fluid::Slider']]],
+  ['valueindicatorminheight_2',['valueIndicatorMinHeight',['../structFluid_1_1Slider.html#a9f2e2065ff2dfe5ce07005ba85ff0a6f',1,'Fluid::Slider']]],
+  ['valueindicatorminwidth_3',['valueIndicatorMinWidth',['../structFluid_1_1Slider.html#a7c9a10d7a3742b5c5ee99da74c16fdb6',1,'Fluid::Slider']]],
+  ['valueindicatorverticalpadding_4',['valueIndicatorVerticalPadding',['../structFluid_1_1Slider.html#a7f12a81fb1bd98a170daff934f133f3f',1,'Fluid::Slider']]],
+  ['viewportmargin_5',['viewportMargin',['../structFluid_1_1Menu.html#ad9eadaf0e7b7fc9f2dcbf55036601dc1',1,'Fluid::Menu']]],
+  ['visibleopacity_6',['visibleOpacity',['../structFluid_1_1Slider.html#a320fd95ece07e81c20ab3a0486b0d75c',1,'Fluid::Slider']]]
 ];

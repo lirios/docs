@@ -1,5 +1,5 @@
 <map id="InputDialog" name="InputDialog">
-<area shape="rect" id="Node000001" title="Input dialogs ask the user to input data with certain constraints." alt="" coords="5,79,103,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="22,5,86,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,44,57,79,51,79,51,44"/>
+<area shape="rect" id="Node000001" title="Input dialogs ask the user to input data with certain constraints." alt="" coords="9,79,106,104"/>
+<area shape="rect" id="Node000002" href="$structFluid_1_1Dialog.html" title="Material Design 3 dialog tokens." alt="" coords="5,5,109,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,44,60,79,55,79,55,44"/>
 </map>
