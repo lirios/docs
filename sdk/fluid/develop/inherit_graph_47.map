@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,111,31"/>
-<area shape="rect" id="Node000001" href="$classScrollView.html" title="A scrolling viewport with Material&#45;themed horizontal and vertical scrollbars." alt="" coords="159,5,249,31"/>
-<area shape="poly" id="edge56_Node000000_Node000001" title=" " alt="" coords="124,15,158,15,158,21,124,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,120,31"/>
+<area shape="rect" id="Node000001" href="$classRangeSlider.html" title="A Material 3 Expressive slider for selecting a value range." alt="" coords="168,5,268,31"/>
+<area shape="poly" id="edge55_Node000000_Node000001" title=" " alt="" coords="134,15,168,15,168,21,134,21"/>
 </map>

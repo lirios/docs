@@ -16,9 +16,9 @@ var searchData=
   ['iconsizesmall_13',['iconsizesmall',['../structFluid_1_1Button.html#aa761e6c2d3ca46d5ddef18e1809696c1',1,'Fluid::Button::iconSizeSmall'],['../structFluid_1_1IconButton.html#ada1245fe66999f21f2b0b1377ec5f217',1,'Fluid::IconButton::iconSizeSmall']]],
   ['inactivestopindicatorcontaineropacity_14',['inactiveStopIndicatorContainerOpacity',['../structFluid_1_1Slider.html#a239937e635d25519577b548558e1320b',1,'Fluid::Slider']]],
   ['inset_15',['inset',['../structFluid_1_1Divider.html#a9a277175bac18bd03e90938505153111',1,'Fluid::Divider']]],
-  ['inverseonsurfacecolor_16',['inverseOnSurfaceColor',['../classStyle.html#ad6b92013b70848a8d82617ef4bcf4878',1,'Style']]],
-  ['inverseprimarycolor_17',['inversePrimaryColor',['../classStyle.html#a4e602cd8b457269040d516894ad98b9d',1,'Style']]],
-  ['inversesurfacecolor_18',['inverseSurfaceColor',['../classStyle.html#a5957ac19c4ed9a70269bc223355114a7',1,'Style']]],
+  ['inverseonsurfacecolor_16',['inverseOnSurfaceColor',['../classFluidStyle.html#aaa3cb9b22cdf0d6c11b5b879b9044ce8',1,'FluidStyle']]],
+  ['inverseprimarycolor_17',['inversePrimaryColor',['../classFluidStyle.html#a379b3d77ecf0d891bfdfdd91548226ee',1,'FluidStyle']]],
+  ['inversesurfacecolor_18',['inverseSurfaceColor',['../classFluidStyle.html#a6cb5821f8a735f2501a0d672d4b9788a',1,'FluidStyle']]],
   ['itemheight_19',['itemHeight',['../structFluid_1_1Menu.html#a50b7d33900b56cb99cec3a34e48688af',1,'Fluid::Menu']]],
   ['itemhorizontalpadding_20',['itemHorizontalPadding',['../structFluid_1_1Menu.html#accf3995de351be2e57095f613ef05e07',1,'Fluid::Menu']]]
 ];

@@ -40,7 +40,7 @@ var searchData=
   ['applicationwindow_37',['ApplicationWindow',['../classApplicationWindow.html',1,'']]],
   ['applicationwindow_2eqml_38',['ApplicationWindow.qml',['../ApplicationWindow_8qml.html',1,'']]],
   ['areas_39',['areas',['../classInputRegion.html#ac6e6171bb1e2a9a8d2606aa18ce0f632',1,'InputRegion::areas'],['../classInputRegion.html#a65d2da3fe41c020f4d190b3161d10829',1,'InputRegion::areas()']]],
-  ['attachedparentchange_40',['attachedParentChange',['../classStyle.html#a1160687d1ed25e1f33818b892f0b34cb',1,'Style']]],
+  ['attachedparentchange_40',['attachedParentChange',['../classFluidStyle.html#aac32f89c24d7585f3ffb3bed5405ef81',1,'FluidStyle']]],
   ['automaticgrid_41',['AutomaticGrid',['../classAutomaticGrid.html',1,'']]],
   ['automaticgrid_2eqml_42',['AutomaticGrid.qml',['../AutomaticGrid_8qml.html',1,'']]],
   ['avatarsize_43',['avatarsize',['../structFluid_1_1AppBar.html#a3d101272cc51cb9834ebc5a9d9d40616',1,'Fluid::AppBar::avatarSize'],['../structFluid_1_1AppBar.html#ab175827e855ea5ba753c1b8a80fa17d7',1,'Fluid::AppBar::avatarSize() const']]]

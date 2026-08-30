@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qmlattachedproperties_0',['qmlAttachedProperties',['../classStyle.html#a2bb7f59fa1bfb00f665849be9d129748',1,'Style']]]
+  ['qmlattachedproperties_0',['qmlAttachedProperties',['../classFluidStyle.html#ac3af79e3e2b3d8c456b2c688875e6152',1,'FluidStyle']]]
 ];

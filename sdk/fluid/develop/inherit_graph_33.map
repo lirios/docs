@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,84,31"/>
-<area shape="rect" id="Node000001" href="$classObject.html" title="A \l QtObject with children." alt="" coords="132,5,196,31"/>
-<area shape="poly" id="edge41_Node000000_Node000001" title=" " alt="" coords="98,15,132,15,132,21,98,21"/>
-<area shape="rect" id="Node000002" href="$classSymbolNames.html" title=" " alt="" coords="244,5,361,31"/>
-<area shape="poly" id="edge42_Node000001_Node000002" title=" " alt="" coords="210,15,244,15,244,21,210,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,155,38"/>
+<area shape="rect" id="Node000001" href="$classFluid_1_1SceneGraph_1_1ElevationShader.html" title=" " alt="" coords="203,5,351,45"/>
+<area shape="poly" id="edge40_Node000000_Node000001" title=" " alt="" coords="168,23,203,23,203,28,168,28"/>
 </map>

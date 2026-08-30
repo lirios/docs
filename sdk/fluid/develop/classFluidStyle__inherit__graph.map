@@ -1,5 +1,5 @@
-<map id="Style" name="Style">
-<area shape="rect" id="Node000001" title=" " alt="" coords="105,79,159,104"/>
+<map id="FluidStyle" name="FluidStyle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="89,79,175,104"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,259,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,44,135,79,129,79,129,44"/>
 </map>

@@ -26,6 +26,6 @@ var searchData=
   ['ambientrecipalpha_23',['AmbientRecipAlpha',['../namespaceFluid_1_1Skia.html#acbe066b71f070f12a3ca00fb5685c017',1,'Fluid::Skia']]],
   ['appbar_24',['appBar',['../classFluid_1_1Tokens.html#a1851da8ce709cb9dee53591cb5c33d73',1,'Fluid::Tokens']]],
   ['areas_25',['areas',['../classInputRegion.html#a65d2da3fe41c020f4d190b3161d10829',1,'InputRegion']]],
-  ['attachedparentchange_26',['attachedParentChange',['../classStyle.html#a1160687d1ed25e1f33818b892f0b34cb',1,'Style']]],
+  ['attachedparentchange_26',['attachedParentChange',['../classFluidStyle.html#aac32f89c24d7585f3ffb3bed5405ef81',1,'FluidStyle']]],
   ['avatarsize_27',['avatarSize',['../structFluid_1_1AppBar.html#ab175827e855ea5ba753c1b8a80fa17d7',1,'Fluid::AppBar']]]
 ];

@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,77,31"/>
-<area shape="rect" id="Node000001" href="$classLabel.html" title="Displays text using a selectable Material 3 type scale." alt="" coords="125,5,183,31"/>
-<area shape="poly" id="edge50_Node000000_Node000001" title=" " alt="" coords="91,15,125,15,125,21,91,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,107,31"/>
+<area shape="rect" id="Node000001" href="$classGroupBox.html" title="Groups related controls under a shared title and outline." alt="" coords="155,5,241,31"/>
+<area shape="poly" id="edge49_Node000000_Node000001" title=" " alt="" coords="120,15,154,15,154,21,120,21"/>
 </map>

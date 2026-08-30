@@ -1,7 +1,7 @@
 var searchData=
 [
   ['b_0',['b',['../structFluid_1_1SceneGraph_1_1BasicVertex.html#a51702552a63cf654e59a049986a6cbd9',1,'Fluid::SceneGraph::BasicVertex']]],
-  ['backgroundcolor_1',['backgroundcolor',['../classStyle.html#a94319086780e41225d921424883f7c7c',1,'Style::backgroundColor'],['../classStyle.html#a3ac95655a0a76b4c2537db695869e16b',1,'Style::backgroundColor() const']]],
+  ['backgroundcolor_1',['backgroundcolor',['../classFluidStyle.html#a3fc748667e1ded49be83e7158369d267',1,'FluidStyle::backgroundColor'],['../classFluidStyle.html#a23aa94b8ff42ba21f785566387821bdb',1,'FluidStyle::backgroundColor() const']]],
   ['baseappbar_2',['BaseAppBar',['../classBaseAppBar.html',1,'']]],
   ['baseappbar_2eqml_3',['BaseAppBar.qml',['../BaseAppBar_8qml.html',1,'']]],
   ['basicvertex_4',['BasicVertex',['../structFluid_1_1SceneGraph_1_1BasicVertex.html',1,'Fluid::SceneGraph']]],
@@ -17,8 +17,8 @@ var searchData=
   ['bottomrightradius_14',['bottomrightradius',['../classFluid_1_1Elevation.html#aee3d115a800f3715789d5ecc54759bca',1,'Fluid::Elevation::bottomRightRadius() const'],['../classFluid_1_1Elevation.html#addf33530f142c46e1d9002da1c1fcfe2',1,'Fluid::Elevation::bottomRightRadius']]],
   ['bottomrightradiuschanged_15',['bottomRightRadiusChanged',['../classFluid_1_1Elevation.html#add615a33ba29039853583d163da9b6e6',1,'Fluid::Elevation']]],
   ['bottomspace_16',['bottomspace',['../structFluid_1_1ListItem.html#afc96b515d88690512b8f659baeb71607',1,'Fluid::ListItem::bottomSpace() const'],['../structFluid_1_1ListItem.html#a99a4d8cd3101e9b075d5076776518fa5',1,'Fluid::ListItem::bottomSpace']]],
-  ['brand_17',['Brand',['../classStyle.html#a0c7d6aa27ef50d00a4aba1de57780ef6a1be6f9eb563f3bf85c78b4219bf09de9',1,'Style']]],
-  ['brandfontfamily_18',['brandfontfamily',['../classStyle.html#ac6fe0e9c9c87fe354a9ec7251f122a65',1,'Style::brandFontFamily'],['../classStyle.html#af7c27db3a15e4f25e02954ca2d544485',1,'Style::brandFontFamily() const']]],
+  ['brand_17',['Brand',['../classFluidStyle.html#ad201ac91b069cfaeef2f04383291286ca1be6f9eb563f3bf85c78b4219bf09de9',1,'FluidStyle']]],
+  ['brandfontfamily_18',['brandfontfamily',['../classFluidStyle.html#a1601e4e1ffcc9d741e62b2a7aa6dbe4c',1,'FluidStyle::brandFontFamily'],['../classFluidStyle.html#a41cd08c708faf19aa0ca535d4e9d4feb',1,'FluidStyle::brandFontFamily() const']]],
   ['button_19',['button',['../classFluid_1_1Tokens.html#a7ea233cfe7ad55fdbc5f845ec5d730c3',1,'Fluid::Tokens::button'],['../classFluid_1_1Tokens.html#a298e6aacb983415f1ecbbdbc11748547',1,'Fluid::Tokens::button() const'],['../classButton.html',1,'Button'],['../structFluid_1_1Button.html',1,'Fluid::Button']]],
   ['button_2ecpp_20',['button.cpp',['../button_8cpp.html',1,'']]],
   ['button_2eh_21',['button.h',['../button_8h.html',1,'']]],

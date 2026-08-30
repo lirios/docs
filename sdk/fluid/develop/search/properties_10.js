@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['tertiarycolor_0',['tertiaryColor',['../classStyle.html#a63155e54a28de06e7aa8e5ae7941e8a3',1,'Style']]],
-  ['tertiarycontainercolor_1',['tertiaryContainerColor',['../classStyle.html#a18077560c3375f97be0714c907b49a33',1,'Style']]],
+  ['tertiarycolor_0',['tertiaryColor',['../classFluidStyle.html#ac7efc25049add40e2ceac74b292dd2d8',1,'FluidStyle']]],
+  ['tertiarycontainercolor_1',['tertiaryContainerColor',['../classFluidStyle.html#a8b02461e522ca21de898488f6c149c92',1,'FluidStyle']]],
   ['text_2',['text',['../classClipboard.html#ad1a1fe0cebeff83ba6f3b88f3a0ce276',1,'Clipboard']]],
-  ['theme_3',['theme',['../classStyle.html#a2afe025c752a78f127e3d98c23a56dab',1,'Style']]],
+  ['theme_3',['theme',['../classFluidStyle.html#a0207e18a3e5e160eccdc8c3632b6affc',1,'FluidStyle']]],
   ['thickness_4',['thickness',['../structFluid_1_1Divider.html#adbdf3c6d4b65076d0b6893a0b6e713bb',1,'Fluid::Divider']]],
   ['threelinecontainerheight_5',['threeLineContainerHeight',['../structFluid_1_1ListItem.html#a5926351529c02785661abc5cc9ce0ed0',1,'Fluid::ListItem']]],
   ['tickminspacing_6',['tickMinSpacing',['../structFluid_1_1Slider.html#a4ee664b9dfa8202f30cf846e4f67184f',1,'Fluid::Slider']]],
