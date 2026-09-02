@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,73,31"/>
-<area shape="rect" id="Node000001" href="$classFabMenu.html" title="A Material Design 3 Expressive FAB menu." alt="" coords="121,5,201,31"/>
-<area shape="poly" id="edge54_Node000000_Node000001" title=" " alt="" coords="88,15,121,15,121,21,88,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,104,31"/>
+<area shape="rect" id="Node000001" href="$classFluid_1_1Elevation.html" title="A QQuickItem that renders elevation&#45;based shadow effects." alt="" coords="152,5,275,31"/>
+<area shape="poly" id="edge43_Node000000_Node000001" title=" " alt="" coords="117,15,152,15,152,21,117,21"/>
 </map>

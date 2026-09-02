@@ -97,23 +97,42 @@ Collaboration diagram for Menu:</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Material Design 3 Expressive menu. </p>
-<p><a class="el" href="classMenu.html" title="A Material Design 3 Expressive menu.">Menu</a> presents a temporary list of actions. Actions declared as children are represented by accessible menu-item delegates with Material typography, selection, icon, shortcut, disabled, pointer, and keyboard-focus states.</p>
+<p><a class="el" href="classMenu.html" title="A Material Design 3 Expressive menu.">Menu</a> presents a temporary list of actions. \l <a class="el" href="classAction.html" title="Describes a reusable Fluid action.">Action</a> objects declared as children are represented by accessible menu-item delegates with Material typography, selection, icon, shortcut, disabled, pointer, and keyboard-focus states. The default delegate also maps the action's <code>supportingText</code>, <code>trailingText</code>, and <code>badgeContent</code> properties to \l <a class="el" href="classMenuItem.html" title="A selectable Material Design 3 menu item.">MenuItem</a>. A custom delegate must map these extended fields explicitly when it needs them. Actions not derived from \l <a class="el" href="classAction.html" title="Describes a reusable Fluid action.">Action</a> still render their inherited action fields, but the extended fields remain empty.</p>
 <p>The surface grows to fit its content between the Material minimum and maximum widths. On compact windows it may become narrower than the preferred minimum, and tall menus are constrained to the available viewport and become scrollable. Logical layout and cascading-menu arrows mirror automatically in right-to-left locales.</p>
 <p>Keyboard navigation, focus restoration, menu roles, checked state, and accessible names are provided by Qt Quick Templates. Give every action a short, localized <code>text</code> value so it has a meaningful accessible name.</p>
+<p>Vertical menu actions can be organized with \l <a class="el" href="classMenuDivider.html" title="A non-interactive semantic divider for menu content.">MenuDivider</a> and \l <a class="el" href="classMenuGap.html" title="A non-interactive gap between Expressive menu segments.">MenuGap</a>. A divider separates action groups within one surface; a gap starts a new elevated surface. \l <a class="el" href="classMenuSectionLabel.html" title="A non-interactive label identifying a menu section.">MenuSectionLabel</a> adds an optional non-interactive label to the surrounding surface. The same grouping is used whether the menu is opened from an anchor or at a context-menu position.</p>
 <div class="fragment"><div class="line">MD.Menu {</div>
 <div class="line">    id: editMenu</div>
 <div class="line"> </div>
-<div class="line">    Action {</div>
+<div class="line">    MD.Action {</div>
 <div class="line">        text: qsTr(<span class="stringliteral">&quot;Copy&quot;</span>)</div>
 <div class="line">        icon.name: MD.<a class="code hl_class" href="classSymbolNames.html">SymbolNames</a>.symbolContentCopy</div>
 <div class="line">        onTriggered: copySelection()</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    Action {</div>
+<div class="line">    MD.<a class="code hl_class" href="classAction.html">Action</a> {</div>
 <div class="line">        text: qsTr(<span class="stringliteral">&quot;Show formatting&quot;</span>)</div>
 <div class="line">        checkable: true</div>
+<div class="line">        supportingText: qsTr(&quot;Use rich text styles&quot;)</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    MD.<a class="code hl_class" href="classMenuDivider.html">MenuDivider</a> {}</div>
+<div class="line"> </div>
+<div class="line">    MD.Action {</div>
+<div class="line">        text: qsTr(<span class="stringliteral">&quot;Select all&quot;</span>)</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    MD.MenuGap {}</div>
+<div class="line">    MD.MenuSectionLabel { text: qsTr(<span class="stringliteral">&quot;Sharing&quot;</span>) }</div>
+<div class="line"> </div>
+<div class="line">    MD.Action {</div>
+<div class="line">        text: qsTr(<span class="stringliteral">&quot;Share&quot;</span>)</div>
+<div class="line">        trailingText: qsTr(&quot;Team&quot;)</div>
+<div class="line">        badgeContent: qsTr(&quot;New&quot;)</div>
 <div class="line">    }</div>
 <div class="line">}</div>
+<div class="ttc" id="aclassAction_html"><div class="ttname"><a href="classAction.html">Action</a></div><div class="ttdoc">Describes a reusable Fluid action.</div><div class="ttdef"><b>Definition</b> Action.qml:30</div></div>
+<div class="ttc" id="aclassMenuDivider_html"><div class="ttname"><a href="classMenuDivider.html">MenuDivider</a></div><div class="ttdoc">A non-interactive semantic divider for menu content.</div><div class="ttdef"><b>Definition</b> MenuDivider.qml:13</div></div>
 <div class="ttc" id="aclassSymbolNames_html"><div class="ttname"><a href="classSymbolNames.html">SymbolNames</a></div><div class="ttdef"><b>Definition</b> SymbolNames.qml:6</div></div>
 </div><!-- fragment --><p>For more information see the <a href="https://m3.material.io/components/menus/overview">Material Design 3 menu guidelines</a>. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>

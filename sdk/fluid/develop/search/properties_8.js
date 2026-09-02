@@ -8,7 +8,7 @@ var searchData=
   ['iconlabelspacelarge_5',['iconLabelSpaceLarge',['../structFluid_1_1Button.html#a332f23d66b17f5f3ae6fd017bf80188f',1,'Fluid::Button']]],
   ['iconlabelspacemedium_6',['iconLabelSpaceMedium',['../structFluid_1_1Button.html#a64bd73d32fc2489b5babc408efa9e35c',1,'Fluid::Button']]],
   ['iconlabelspacesmall_7',['iconLabelSpaceSmall',['../structFluid_1_1Button.html#a442d644c7bd8e1c4fb484d2ec914ebae',1,'Fluid::Button']]],
-  ['iconsize_8',['iconsize',['../structFluid_1_1AppBar.html#a070b3629010243d01761bd9073f85afa',1,'Fluid::AppBar::iconSize'],['../structFluid_1_1CheckBox.html#a5292b7e1648f3b2f54ddb5dc074912f9',1,'Fluid::CheckBox::iconSize'],['../structFluid_1_1Fab.html#acbe81bc59bd4539b79257b65a8a3083e',1,'Fluid::Fab::iconSize'],['../structFluid_1_1Menu.html#a263012f28543a31f952f3b88fcadd3b2',1,'Fluid::Menu::iconSize']]],
+  ['iconsize_8',['iconsize',['../structFluid_1_1AppBar.html#a070b3629010243d01761bd9073f85afa',1,'Fluid::AppBar::iconSize'],['../structFluid_1_1CheckBox.html#a5292b7e1648f3b2f54ddb5dc074912f9',1,'Fluid::CheckBox::iconSize'],['../structFluid_1_1Fab.html#acbe81bc59bd4539b79257b65a8a3083e',1,'Fluid::Fab::iconSize'],['../structFluid_1_1Menu.html#a263012f28543a31f952f3b88fcadd3b2',1,'Fluid::Menu::iconSize'],['../structFluid_1_1NavigationRail.html#aabff6567c8bc071c2e346670b7d4ad52',1,'Fluid::NavigationRail::iconSize']]],
   ['iconsizeextralarge_9',['iconsizeextralarge',['../structFluid_1_1Button.html#a01c29c29ebcbaa1990546ae30fc43a26',1,'Fluid::Button::iconSizeExtraLarge'],['../structFluid_1_1IconButton.html#abe6d8cab08daff715b1a98ceca786aa1',1,'Fluid::IconButton::iconSizeExtraLarge']]],
   ['iconsizeextrasmall_10',['iconsizeextrasmall',['../structFluid_1_1Button.html#ad531f5d7dadd6d18b03d85302dc067c4',1,'Fluid::Button::iconSizeExtraSmall'],['../structFluid_1_1IconButton.html#a9740f6169f68c522636e9434d03aa57b',1,'Fluid::IconButton::iconSizeExtraSmall']]],
   ['iconsizelarge_11',['iconsizelarge',['../structFluid_1_1Button.html#ab09c4db23d6146476237363ef0a42b1c',1,'Fluid::Button::iconSizeLarge'],['../structFluid_1_1IconButton.html#a310e11899853821abe7d5ada6f4338af',1,'Fluid::IconButton::iconSizeLarge']]],
@@ -19,6 +19,9 @@ var searchData=
   ['inverseonsurfacecolor_16',['inverseOnSurfaceColor',['../classFluidStyle.html#aaa3cb9b22cdf0d6c11b5b879b9044ce8',1,'FluidStyle']]],
   ['inverseprimarycolor_17',['inversePrimaryColor',['../classFluidStyle.html#a379b3d77ecf0d891bfdfdd91548226ee',1,'FluidStyle']]],
   ['inversesurfacecolor_18',['inverseSurfaceColor',['../classFluidStyle.html#a6cb5821f8a735f2501a0d672d4b9788a',1,'FluidStyle']]],
-  ['itemheight_19',['itemHeight',['../structFluid_1_1Menu.html#a50b7d33900b56cb99cec3a34e48688af',1,'Fluid::Menu']]],
-  ['itemhorizontalpadding_20',['itemHorizontalPadding',['../structFluid_1_1Menu.html#accf3995de351be2e57095f613ef05e07',1,'Fluid::Menu']]]
+  ['itemcontainerheight_19',['itemContainerHeight',['../structFluid_1_1NavigationRail.html#a041bbdbf3a93651ad882afdf4413f270',1,'Fluid::NavigationRail']]],
+  ['itemcontainershape_20',['itemContainerShape',['../structFluid_1_1NavigationRail.html#af7e371e3ee2f5b500b02f52117fc49ae',1,'Fluid::NavigationRail']]],
+  ['itemcontainerverticalspace_21',['itemContainerVerticalSpace',['../structFluid_1_1NavigationRail.html#a41a2b3a8a30d28f7ef30efdf1c3cfa5f',1,'Fluid::NavigationRail']]],
+  ['itemheight_22',['itemHeight',['../structFluid_1_1Menu.html#a50b7d33900b56cb99cec3a34e48688af',1,'Fluid::Menu']]],
+  ['itemhorizontalpadding_23',['itemhorizontalpadding',['../structFluid_1_1Menu.html#accf3995de351be2e57095f613ef05e07',1,'Fluid::Menu::itemHorizontalPadding'],['../structFluid_1_1NavigationRail.html#a060729758e003e99b58ff4d2f846c04f',1,'Fluid::NavigationRail::itemHorizontalPadding']]]
 ];

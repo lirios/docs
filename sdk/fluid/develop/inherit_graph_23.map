@@ -1,31 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,327,57,352"/>
-<area shape="rect" id="Node000001" href="$classAppBarActionDelegate.html" title=" " alt="" coords="105,5,275,31"/>
-<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="33,313,42,248,57,167,77,91,90,61,103,40,119,29,122,33,107,44,94,63,82,93,62,168,47,249,38,313"/>
-<area shape="rect" id="Node000002" href="$classCheckIndicator.html" title="Draws the Material 3 checked, unchecked, or indeterminate checkbox indicator." alt="" coords="131,55,249,80"/>
-<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="30,313,33,265,44,205,66,144,82,115,104,89,129,74,132,78,107,93,87,118,71,146,49,207,38,266,35,313"/>
-<area shape="rect" id="Node000003" href="$classColumnFlow.html" title="Automatically position children in columns." alt="" coords="139,104,241,129"/>
-<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="32,312,38,274,51,227,72,180,86,158,104,139,120,128,137,121,139,126,122,132,107,143,90,161,76,182,56,229,44,275,37,313"/>
-<area shape="rect" id="Node000004" href="$classDivider.html" title="A Material Design 3 divider." alt="" coords="155,153,225,179"/>
-<area shape="poly" id="edge10_Node000000_Node000004" title=" " alt="" coords="36,312,58,250,78,217,104,188,128,174,155,167,156,172,130,179,107,192,82,220,63,252,41,314"/>
-<area shape="rect" id="Node000005" href="$classIconLabel.html" title="Lays out an icon and text as a single reusable visual." alt="" coords="148,203,232,228"/>
-<area shape="poly" id="edge11_Node000000_Node000005" title=" " alt="" coords="42,313,67,274,84,254,104,237,125,226,147,219,149,224,127,231,107,242,88,258,71,277,47,316"/>
-<area shape="rect" id="Node000006" href="$classLoadable.html" title="Loads an item and coordinates its show and hide animations." alt="" coords="149,252,231,277"/>
-<area shape="poly" id="edge12_Node000000_Node000006" title=" " alt="" coords="57,316,104,286,148,271,150,276,106,291,60,320"/>
-<area shape="rect" id="Node000007" href="$classRipple.html" title=" " alt="" coords="159,301,221,327"/>
-<area shape="poly" id="edge13_Node000000_Node000007" title=" " alt="" coords="70,331,158,316,159,322,71,336"/>
-<area shape="rect" id="Node000008" href="$classSliderHandle.html" title=" " alt="" coords="137,351,243,376"/>
-<area shape="poly" id="edge14_Node000000_Node000008" title=" " alt="" coords="71,343,137,353,137,358,71,348"/>
-<area shape="rect" id="Node000009" href="$classSliderTrack.html" title=" " alt="" coords="143,400,237,425"/>
-<area shape="poly" id="edge15_Node000000_Node000009" title=" " alt="" coords="62,358,106,385,144,399,142,404,104,390,59,363"/>
-<area shape="rect" id="Node000010" href="$classSmoothFadeImage.html" title="Displays an image and smoothly fades when its source changes." alt="" coords="119,449,261,475"/>
-<area shape="poly" id="edge16_Node000000_Node000010" title=" " alt="" coords="48,363,72,400,88,419,107,434,131,447,128,452,104,439,85,423,68,403,43,366"/>
-<area shape="rect" id="Node000011" href="$classSmoothFadeLoader.html" title="Displays an item and smoothly fades when its source changes." alt="" coords="117,499,263,524"/>
-<area shape="poly" id="edge17_Node000000_Node000011" title=" " alt="" coords="41,364,64,425,82,457,107,484,127,496,125,501,104,488,78,460,59,427,36,366"/>
-<area shape="rect" id="Node000012" href="$classSymbol.html" title="Displays an icon from the Material Symbols collection." alt="" coords="155,548,225,573"/>
-<area shape="poly" id="edge18_Node000000_Node000012" title=" " alt="" coords="38,366,44,403,56,448,77,494,107,533,130,547,155,555,154,560,127,552,104,537,72,497,51,450,39,404,32,366"/>
-<area shape="rect" id="Node000013" href="$classVignette.html" title="Applies a vignette shader effect to an item." alt="" coords="151,597,229,623"/>
-<area shape="poly" id="edge19_Node000000_Node000013" title=" " alt="" coords="35,365,39,412,50,470,71,531,87,558,107,583,128,596,152,604,150,609,126,601,104,587,83,561,66,533,44,472,34,413,30,366"/>
-<area shape="rect" id="Node000014" href="$classWave.html" title="Provides a wave animation for transitioning between views of content." alt="" coords="161,647,219,672"/>
-<area shape="poly" id="edge20_Node000000_Node000014" title=" " alt="" coords="38,365,62,509,83,584,94,613,107,632,133,648,161,655,160,660,130,653,103,636,90,615,78,586,57,510,33,366"/>
+<area shape="rect" id="Node000000" href="$structFluid_1_1SceneGraph_1_1BasicVertex.html" title=" " alt="" coords="5,37,153,77"/>
+<area shape="rect" id="Node000001" href="$structFluid_1_1SceneGraph_1_1RectangleVertex.html" title=" " alt="" coords="201,5,349,45"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="166,40,200,35,201,40,167,46"/>
+<area shape="rect" id="Node000002" href="$structFluid_1_1SceneGraph_1_1ShadowVertex.html" title=" " alt="" coords="201,69,349,109"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="167,69,201,75,200,80,166,74"/>
 </map>

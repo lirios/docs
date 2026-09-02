@@ -1,5 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,111,31"/>
-<area shape="rect" id="Node000001" href="$classScrollView.html" title="A scrolling viewport with Material&#45;themed horizontal and vertical scrollbars." alt="" coords="159,5,249,31"/>
-<area shape="poly" id="edge58_Node000000_Node000001" title=" " alt="" coords="124,15,158,15,158,21,124,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,84,56"/>
+<area shape="rect" id="Node000001" href="$classBreakpoints.html" title="Material Design 3 width breakpoints and adaptive grid metrics." alt="" coords="132,5,232,31"/>
+<area shape="poly" id="edge47_Node000000_Node000001" title=" " alt="" coords="97,31,131,25,132,30,98,36"/>
+<area shape="rect" id="Node000002" href="$classObject.html" title="A \l QtObject with children." alt="" coords="150,55,214,80"/>
+<area shape="poly" id="edge48_Node000000_Node000002" title=" " alt="" coords="98,50,150,59,149,64,97,55"/>
+<area shape="rect" id="Node000003" href="$classSymbolNames.html" title=" " alt="" coords="280,55,397,80"/>
+<area shape="poly" id="edge49_Node000002_Node000003" title=" " alt="" coords="228,65,280,65,280,70,228,70"/>
 </map>

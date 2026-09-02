@@ -1,7 +1,15 @@
 <map id="/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/iconbutton.h" name="/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/iconbutton.h">
 <area shape="rect" id="Node000001" title=" " alt="" coords="72,5,253,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,136,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,62,95,100,91,96,133,58"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="161,108,349,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,58,234,96,230,100,189,62"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,181,136,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,62,50,82,26,109,22,125,26,140,48,170,44,173,21,143,17,125,22,107,47,78,79,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="161,181,349,207"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,58,277,78,302,107,307,124,303,142,281,173,277,170,298,140,302,124,298,109,274,82,243,62"/>
+<area shape="rect" id="Node000004" href="$shapetokens_8h.html" title=" " alt="" coords="37,108,153,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,62,115,99,110,95,140,58"/>
+<area shape="rect" id="Node000005" href="$statetokens_8h.html" title=" " alt="" coords="177,108,287,133"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="186,58,216,95,212,99,182,62"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="93,135,81,169,76,167,88,133"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="121,131,217,173,215,178,119,136"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="207,136,111,178,108,173,205,131"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="238,133,249,167,244,169,233,134"/>
 </map>

@@ -9,5 +9,6 @@ var searchData=
   ['narrowtrailingspaceextrasmall_6',['narrowTrailingSpaceExtraSmall',['../structFluid_1_1IconButton.html#acf448414ed0f7864f0b466fc6aa66499',1,'Fluid::IconButton']]],
   ['narrowtrailingspacelarge_7',['narrowTrailingSpaceLarge',['../structFluid_1_1IconButton.html#ad3542df7f079666d55d7b14e83ace30c',1,'Fluid::IconButton']]],
   ['narrowtrailingspacemedium_8',['narrowTrailingSpaceMedium',['../structFluid_1_1IconButton.html#aca88d84344a3c222b4db3d54572497a1',1,'Fluid::IconButton']]],
-  ['narrowtrailingspacesmall_9',['narrowTrailingSpaceSmall',['../structFluid_1_1IconButton.html#a98aa6b57e99584e2dbbe1d91d9920321',1,'Fluid::IconButton']]]
+  ['narrowtrailingspacesmall_9',['narrowTrailingSpaceSmall',['../structFluid_1_1IconButton.html#a98aa6b57e99584e2dbbe1d91d9920321',1,'Fluid::IconButton']]],
+  ['navigationrail_10',['navigationRail',['../classFluid_1_1Tokens.html#a306404477ee81328160e91e7b018ded2',1,'Fluid::Tokens']]]
 ];

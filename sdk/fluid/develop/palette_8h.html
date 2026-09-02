@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fluid: /home/runner/work/docs/docs/fluid/src/controls/cpp/style/palette.h File Reference</title>
+<title>Fluid: /home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/palette.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,103 +69,111 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7afd03d72c1de07a6d47e666c364824c.html">controls</a></li><li class="navelem"><a class="el" href="dir_ef320f7069305a10dd9fa1ae1ce7c8f5.html">cpp</a></li><li class="navelem"><a class="el" href="dir_c12aa671f38c4bcdb996dd4f1c5870d8.html">style</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_7afd03d72c1de07a6d47e666c364824c.html">controls</a></li><li class="navelem"><a class="el" href="dir_ef320f7069305a10dd9fa1ae1ce7c8f5.html">cpp</a></li><li class="navelem"><a class="el" href="dir_4a742cbc3947d0c3648adf1e954edac0.html">tokens</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">palette.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;QRgb&gt;</code><br />
+<div class="textblock"><code>#include &lt;QtCore/qobject.h&gt;</code><br />
+<code>#include &lt;QtGui/qcolor.h&gt;</code><br />
+<code>#include &lt;QtQml/qqmlregistration.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for palette.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="palette_8h__incl.png" border="0" usemap="#a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2style_2palette_8h" alt=""/></div>
-<map name="a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2style_2palette_8h" id="a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2style_2palette_8h">
-<area shape="rect" title=" " alt="" coords="5,5,184,60"/>
-<area shape="rect" title=" " alt="" coords="66,108,123,133"/>
-<area shape="poly" title=" " alt="" coords="97,60,97,94,92,94,92,60"/>
+<div class="center"><img src="palette_8h__incl.png" border="0" usemap="#a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2tokens_2palette_8h" alt=""/></div>
+<map name="a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2tokens_2palette_8h" id="a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2tokens_2palette_8h">
+<area shape="rect" title=" " alt="" coords="128,5,307,60"/>
+<area shape="rect" title=" " alt="" coords="5,108,136,133"/>
+<area shape="poly" title=" " alt="" coords="174,62,104,103,101,99,171,58"/>
+<area shape="rect" title=" " alt="" coords="160,108,275,133"/>
+<area shape="poly" title=" " alt="" coords="220,60,220,94,215,94,215,60"/>
+<area shape="rect" title=" " alt="" coords="299,108,487,133"/>
+<area shape="poly" title=" " alt="" coords="272,58,359,100,356,104,270,62"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="palette_8h__dep__incl.png" border="0" usemap="#a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2style_2palette_8hdep" alt=""/></div>
-<map name="a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2style_2palette_8hdep" id="a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2style_2palette_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,184,60"/>
+<div class="center"><img src="palette_8h__dep__incl.png" border="0" usemap="#a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2tokens_2palette_8hdep" alt=""/></div>
+<map name="a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2tokens_2palette_8hdep" id="a_2home_2runner_2work_2docs_2docs_2fluid_2src_2controls_2cpp_2tokens_2palette_8hdep">
+<area shape="rect" title=" " alt="" coords="425,5,604,60"/>
 <area shape="rect" href="style_8cpp.html" title=" " alt="" coords="5,108,184,163"/>
-<area shape="poly" title=" " alt="" coords="97,74,97,108,92,108,92,74"/>
+<area shape="poly" title=" " alt="" coords="413,60,198,111,185,114,184,109,197,105,411,55"/>
+<area shape="rect" href="colordark_8cpp.html" title=" " alt="" coords="209,108,397,163"/>
+<area shape="poly" title=" " alt="" coords="449,68,359,110,357,106,446,63"/>
+<area shape="rect" href="colorlight_8cpp.html" title=" " alt="" coords="421,108,609,163"/>
+<area shape="poly" title=" " alt="" coords="517,74,517,108,512,108,512,74"/>
+<area shape="rect" href="palette_8cpp.html" title=" " alt="" coords="633,108,812,163"/>
+<area shape="poly" title=" " alt="" coords="582,63,670,106,667,110,580,68"/>
+<area shape="rect" href="tokens_8h.html" title=" " alt="" coords="836,108,1015,163"/>
+<area shape="poly" title=" " alt="" coords="618,55,825,105,836,108,835,114,823,111,616,61"/>
+<area shape="rect" href="tokens_8cpp.html" title=" " alt="" coords="836,211,1015,265"/>
+<area shape="poly" title=" " alt="" coords="928,176,928,211,923,211,923,176"/>
 </map>
 </div>
 </div>
 <p><a href="palette_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacePalette" id="r_namespacePalette"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePalette.html">Palette</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1PaletteTokens.html">Fluid::PaletteTokens</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a2512b6924e0c5e8277d99002ab49b651" id="r_a2512b6924e0c5e8277d99002ab49b651"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651">Palette::ToneIndex</a> { <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651ad8cc8c63446abcb7225c5b21bbc17843">Palette::Tone0</a> = 0
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a465b095212edc9149890da0514b577d6">Palette::Tone4</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a14e43c5b07c9341421ea67e424d437e0">Palette::Tone5</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651aabbe5b045867ca143fa73ba7ee83eb7c">Palette::Tone6</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651adb9206cd0fd17658adcc6f18bf609994">Palette::Tone10</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a1f2b9c60e8b46c9bae88af794ab7ade8">Palette::Tone12</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651aec18151cc6566d81b82d658da7e39e0e">Palette::Tone15</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a905281e53dcf0a8e8b93881626347387">Palette::Tone17</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651af91c75c47d528b12d4ef6b399215e410">Palette::Tone20</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a8a9c8c236dfc5b7c21d9baac5110a2a7">Palette::Tone22</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a06aa61c4edac66076a043eaf2828fb6a">Palette::Tone24</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a85f30797a71e62cfe0c46edb8dae430b">Palette::Tone25</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a538663596d07473c505043e46316d9ba">Palette::Tone30</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a04016a83682f4274cb4dbc657bd64284">Palette::Tone35</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651ad23239aab365268ef1f595cd868e09b6">Palette::Tone40</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a89d596fbdd744ac67ed52839e870945f">Palette::Tone50</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651ab07001f6526825d029acaace70275d28">Palette::Tone60</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651ab2cb27bbe8439261263ebcc3e3f09c1f">Palette::Tone70</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a12c31d11b8d4e42a281ca4c853e16161">Palette::Tone80</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651acab87c38fdab5897cc541599e4b7995a">Palette::Tone87</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a2a8666c3acfd3d59eea028ae3588dac2">Palette::Tone90</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a810add0325dc323834d7edd038e28649">Palette::Tone92</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a0c0baaa72ae3a2a4cadec6737d6b89d1">Palette::Tone94</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651ad886a8dc85903e7a3cbd6924e9b6eddc">Palette::Tone95</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a9b7fda415579d42aab4d372b8b9ba088">Palette::Tone96</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651afc36b60b531dd9f0502931ba9530bfe9">Palette::Tone98</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651abf3623d10c13252872fd44b4cc6908ca">Palette::Tone99</a>
-, <a class="el" href="namespacePalette.html#a2512b6924e0c5e8277d99002ab49b651a1f889291de48fb375784f1da1665a9ac">Palette::Tone100</a>
-<br />
- }</td></tr>
-<tr class="separator:a2512b6924e0c5e8277d99002ab49b651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17193389f023bd26d678af3bf36c3a41" id="r_a17193389f023bd26d678af3bf36c3a41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePalette.html#a17193389f023bd26d678af3bf36c3a41">Palette::PaletteType</a> { <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a17193389f023bd26d678af3bf36c3a41aea7d70f7381892d346370ce792cf6328">Palette::Primary</a> = 0
-, <a class="el" href="namespacePalette.html#a17193389f023bd26d678af3bf36c3a41a4743ccbfc0bb41950d2a0dd82a189838">Palette::Secondary</a>
-, <a class="el" href="namespacePalette.html#a17193389f023bd26d678af3bf36c3a41aa1ad4339158599060eae39c5fab8aaf8">Palette::Tertiary</a>
-, <a class="el" href="namespacePalette.html#a17193389f023bd26d678af3bf36c3a41a6fe8d82691caf80d4e452db7a8c3efee">Palette::Error</a>
-, <br />
-&#160;&#160;<a class="el" href="namespacePalette.html#a17193389f023bd26d678af3bf36c3a41a9ebec1a3e5720554446a5bc26d7c6ba5">Palette::Neutral</a>
-, <a class="el" href="namespacePalette.html#a17193389f023bd26d678af3bf36c3a41abb8f905f222f6442a8e189e5fd617bf4">Palette::NeutralVariant</a>
-<br />
- }</td></tr>
-<tr class="separator:a17193389f023bd26d678af3bf36c3a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceFluid" id="r_namespaceFluid"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceFluid.html">Fluid</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a01e4bd36bcbc44eebd42057f4e76bb0a" id="r_a01e4bd36bcbc44eebd42057f4e76bb0a"><td class="memItemLeft" align="right" valign="top">static const QRgb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePalette.html#a01e4bd36bcbc44eebd42057f4e76bb0a">Palette::refPalette</a> [6][28]</td></tr>
-<tr class="separator:a01e4bd36bcbc44eebd42057f4e76bb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a82af54216a9224086f86ec62375d18b2" id="r_a82af54216a9224086f86ec62375d18b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a82af54216a9224086f86ec62375d18b2">FLUID_PALETTE_PROPERTY</a>(name)&#160;&#160;&#160;Q_PROPERTY(QColor name READ name CONSTANT FINAL)</td></tr>
+<tr class="separator:a82af54216a9224086f86ec62375d18b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad232ba252b2c16246d9e26fcb7cea86" id="r_aad232ba252b2c16246d9e26fcb7cea86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#aad232ba252b2c16246d9e26fcb7cea86">FLUID_PALETTE_GETTER</a>(name)&#160;&#160;&#160;QColor name() const;</td></tr>
+<tr class="separator:aad232ba252b2c16246d9e26fcb7cea86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aad232ba252b2c16246d9e26fcb7cea86" name="aad232ba252b2c16246d9e26fcb7cea86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad232ba252b2c16246d9e26fcb7cea86">&#9670;&#160;</a></span>FLUID_PALETTE_GETTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLUID_PALETTE_GETTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td>&#160;&#160;&#160;QColor name() const;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82af54216a9224086f86ec62375d18b2" name="a82af54216a9224086f86ec62375d18b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82af54216a9224086f86ec62375d18b2">&#9670;&#160;</a></span>FLUID_PALETTE_PROPERTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLUID_PALETTE_PROPERTY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td>&#160;&#160;&#160;Q_PROPERTY(QColor name READ name CONSTANT FINAL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
