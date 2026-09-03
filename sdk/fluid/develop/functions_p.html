@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -47,6 +52,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_p.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -74,7 +95,7 @@ $(function() {
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>palette()&#160;:&#160;<a class="el" href="classFluid_1_1Tokens.html#abdff29462b231d2c362eaf8141a1b7be">Fluid::Tokens</a></li>
 <li>plainContainerShape()&#160;:&#160;<a class="el" href="structFluid_1_1ToolTip.html#a85ae26ae3f0ab4180cbf2d8b0647f2af">Fluid::ToolTip</a></li>
-<li>plainFontFamily()&#160;:&#160;<a class="el" href="classFluidStyle.html#ad7d2b8d36c25b349bd47b3fe1eea8ca3">FluidStyle</a></li>
+<li>plainFontFamily&#160;:&#160;<a class="el" href="classFluidStyle.html#ac105bd70ff1767cf7e2ab5f3c1c074cc">FluidStyle</a></li>
 <li>plainHorizontalPadding&#160;:&#160;<a class="el" href="structFluid_1_1ToolTip.html#a542dc94ab5f1fb4864ea4f808bff004a">Fluid::ToolTip</a></li>
 <li>plainMaximumWidth&#160;:&#160;<a class="el" href="structFluid_1_1ToolTip.html#aa7ba84372f598c5b1f7eced918cf795d">Fluid::ToolTip</a></li>
 <li>PlainToolTipAttached()&#160;:&#160;<a class="el" href="classFluid_1_1PlainToolTipAttached.html#a48840e0d60886497d3575501e2841bae">Fluid::PlainToolTipAttached</a></li>
@@ -89,20 +110,23 @@ $(function() {
 <li>pressedContainerShapeExtraLarge&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#af3cae12400d3a953a16fd5271a65a95d">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a6587cd9df50584f1b4e63692e9b4194f">Fluid::IconButton</a></li>
 <li>pressedContainerShapeExtraSmall&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a6763b9ae145d4967ec3aa05695935765">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a59d17ab64d19e6c7288bbaad6b551f64">Fluid::IconButton</a></li>
 <li>pressedContainerShapeLarge&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a45941eb40eb55564a3ebb4deac9a1f88">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a8a81accd8c94a338d7bfa59bdbad6895">Fluid::IconButton</a></li>
-<li>pressedContainerShapeMedium()&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a9d690cc1dea6eeac293b87ac7b051500">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a6c20647b3a586c884109f4337b568c4b">Fluid::IconButton</a></li>
+<li>pressedContainerShapeMedium&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a6e9107128eb5f6104c198a8dea4592e6">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a6c20647b3a586c884109f4337b568c4b">Fluid::IconButton</a></li>
 <li>pressedContainerShapeSmall&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a293d38c3334757365ad4fb2cb9edb92f">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a9846706bdd6e4b0100b9fe3833f6346e">Fluid::IconButton</a></li>
 <li>pressedHandleSize&#160;:&#160;<a class="el" href="structFluid_1_1Switch.html#a6456a8a447e158ece40f751d65b99651">Fluid::Switch</a></li>
 <li>pressedHandleWidth&#160;:&#160;<a class="el" href="structFluid_1_1Slider.html#ade6de5a4a298b45770e69c7fdfbea109">Fluid::Slider</a></li>
-<li>pressedStateLayerOpacity()&#160;:&#160;<a class="el" href="structFluid_1_1AppBar.html#a4e58c35a6dc52b74f8f8dc514bc81c32">Fluid::AppBar</a>, <a class="el" href="structFluid_1_1Button.html#acd166ee0122130bff8acf1efb3be1ef6">Fluid::Button</a>, <a class="el" href="structFluid_1_1CheckBox.html#aae96b76c8a4959456ab806ee0f7cfee0">Fluid::CheckBox</a>, <a class="el" href="structFluid_1_1Fab.html#ac7298342dde5428577a68d682c3e30e6">Fluid::Fab</a>, <a class="el" href="structFluid_1_1FabMenu.html#afb6751fc578499b45459e0aa3c5c8ac0">Fluid::FabMenu</a>, <a class="el" href="structFluid_1_1IconButton.html#a0befd5c2f9a722bd62392018f3cedbb5">Fluid::IconButton</a>, <a class="el" href="structFluid_1_1ListItem.html#a752569d24e89ffb71c33242c08a9d393">Fluid::ListItem</a>, <a class="el" href="structFluid_1_1Menu.html#a1bf6e82c7e94e58c77d65b9892bedc38">Fluid::Menu</a>, <a class="el" href="structFluid_1_1NavigationRail.html#a1b8d986e2f99847462b016a0f38315ac">Fluid::NavigationRail</a>, <a class="el" href="structFluid_1_1Slider.html#af7ff1046593b325b306b06cfd408ab3d">Fluid::Slider</a>, <a class="el" href="structFluid_1_1StateTokens.html#a6143fbe310ed66d4599bbeb967c3c75c">Fluid::StateTokens</a>, <a class="el" href="structFluid_1_1Switch.html#a92ecb3d2ad196e3935251060dd1b87d7">Fluid::Switch</a></li>
+<li>pressedStateLayerOpacity&#160;:&#160;<a class="el" href="structFluid_1_1AppBar.html#a39e0b8f6d4de91528e422c64d2f5f4e6">Fluid::AppBar</a>, <a class="el" href="structFluid_1_1Button.html#acd166ee0122130bff8acf1efb3be1ef6">Fluid::Button</a>, <a class="el" href="structFluid_1_1CheckBox.html#aae96b76c8a4959456ab806ee0f7cfee0">Fluid::CheckBox</a>, <a class="el" href="structFluid_1_1Fab.html#ac7298342dde5428577a68d682c3e30e6">Fluid::Fab</a>, <a class="el" href="structFluid_1_1FabMenu.html#ac9085a65b616326a97081b5c59b0c925">Fluid::FabMenu</a>, <a class="el" href="structFluid_1_1IconButton.html#a0befd5c2f9a722bd62392018f3cedbb5">Fluid::IconButton</a>, <a class="el" href="structFluid_1_1ListItem.html#a4c37b6ea276bcd83f7b1c98e7084e5b9">Fluid::ListItem</a>, <a class="el" href="structFluid_1_1Menu.html#a07beed6aa078772f0383202c19a3fb2a">Fluid::Menu</a>, <a class="el" href="structFluid_1_1NavigationRail.html#ab89bd40ddff6b1f45a92e2b9ea6d11ca">Fluid::NavigationRail</a>, <a class="el" href="structFluid_1_1RadioButton.html#afda73649fdc6ad1682ef5ae00b0e51c1">Fluid::RadioButton</a>, <a class="el" href="structFluid_1_1Slider.html#af7ff1046593b325b306b06cfd408ab3d">Fluid::Slider</a>, <a class="el" href="structFluid_1_1StateTokens.html#ade27e01f1c4ef8891ec8dd551094c4c4">Fluid::StateTokens</a>, <a class="el" href="structFluid_1_1Switch.html#a92ecb3d2ad196e3935251060dd1b87d7">Fluid::Switch</a></li>
 <li>primaryColor&#160;:&#160;<a class="el" href="classFluidStyle.html#aecf5a62769b48d2cbff9f92fe95c6c1a">FluidStyle</a></li>
 <li>primaryContainerColor&#160;:&#160;<a class="el" href="classFluidStyle.html#ac88619e560b402d3589223d156866aa9">FluidStyle</a></li>
 <li>primaryFixedColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a606f022d0d2eb42213cf26db63827e27">FluidStyle</a></li>
 <li>primaryFixedDimColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a7c00ac2d184897bc5911b05c354bbfa2">FluidStyle</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

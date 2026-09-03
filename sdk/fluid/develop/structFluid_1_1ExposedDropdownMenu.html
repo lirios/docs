@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structFluid_1_1ExposedDropdownMenu.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1ExposedDropdownMenu.html">ExposedDropdownMenu</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -110,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad6a20cdd30476e1bfb29993c14ddf740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Space above supporting or error text.  <br /></td></tr>
 <tr class="separator:ad6a20cdd30476e1bfb29993c14ddf740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6521cf3942f3b0ef47d0e7c9dc28e37c" id="r_a6521cf3942f3b0ef47d0e7c9dc28e37c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a6521cf3942f3b0ef47d0e7c9dc28e37c">filledContainerShape</a> () const</td></tr>
-<tr class="memdesc:a6521cf3942f3b0ef47d0e7c9dc28e37c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the filled field container.  <br /></td></tr>
+<tr class="memdesc:a6521cf3942f3b0ef47d0e7c9dc28e37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the filled field container.  <br /></td></tr>
 <tr class="separator:a6521cf3942f3b0ef47d0e7c9dc28e37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae722579495f3c68c985be9797fb209fb" id="r_ae722579495f3c68c985be9797fb209fb"><td class="memItemLeft" align="right" valign="top">constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ExposedDropdownMenu.html#ae722579495f3c68c985be9797fb209fb">filledLeadingIconSize</a> () const</td></tr>
 <tr class="memdesc:ae722579495f3c68c985be9797fb209fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the optional leading icon in a filled field.  <br /></td></tr>
@@ -128,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa4bd1f72d21fd8f89192a6567d06388c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opacity of the filled container when disabled.  <br /></td></tr>
 <tr class="separator:aa4bd1f72d21fd8f89192a6567d06388c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18088a12e4fa9e77a616857d7a6dcb16" id="r_a18088a12e4fa9e77a616857d7a6dcb16"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a18088a12e4fa9e77a616857d7a6dcb16">outlinedContainerShape</a> () const</td></tr>
-<tr class="memdesc:a18088a12e4fa9e77a616857d7a6dcb16"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the outlined field container.  <br /></td></tr>
+<tr class="memdesc:a18088a12e4fa9e77a616857d7a6dcb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the outlined field container.  <br /></td></tr>
 <tr class="separator:a18088a12e4fa9e77a616857d7a6dcb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e51ffce613e66828e7de8f99f7963d4" id="r_a3e51ffce613e66828e7de8f99f7963d4"><td class="memItemLeft" align="right" valign="top">constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a3e51ffce613e66828e7de8f99f7963d4">outlinedLeadingIconSize</a> () const</td></tr>
 <tr class="memdesc:a3e51ffce613e66828e7de8f99f7963d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the optional leading icon in an outlined field.  <br /></td></tr>
@@ -164,7 +181,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae2cc7a12416ecf88b387e22abac3cf16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical distance between the field and popup.  <br /></td></tr>
 <tr class="separator:ae2cc7a12416ecf88b387e22abac3cf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f1a3cde9a66ab500d1f4df2331486b" id="r_a79f1a3cde9a66ab500d1f4df2331486b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a79f1a3cde9a66ab500d1f4df2331486b">popupContainerShape</a> () const</td></tr>
-<tr class="memdesc:a79f1a3cde9a66ab500d1f4df2331486b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the popup surface.  <br /></td></tr>
+<tr class="memdesc:a79f1a3cde9a66ab500d1f4df2331486b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the popup surface.  <br /></td></tr>
 <tr class="separator:a79f1a3cde9a66ab500d1f4df2331486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb640936c76cfb315774f2762dfa0f0b" id="r_abb640936c76cfb315774f2762dfa0f0b"><td class="memItemLeft" align="right" valign="top">constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ExposedDropdownMenu.html#abb640936c76cfb315774f2762dfa0f0b">popupContainerElevation</a> () const</td></tr>
 <tr class="memdesc:abb640936c76cfb315774f2762dfa0f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classFluid_1_1Elevation.html" title="A QQuickItem that renders elevation-based shadow effects.">Elevation</a> of the popup surface.  <br /></td></tr>
@@ -229,6 +246,8 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Material Design 3 tokens for exposed dropdown menus. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00019">19</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a92cea4ac3d7529381339f2d7edfe1ba4" name="a92cea4ac3d7529381339f2d7edfe1ba4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92cea4ac3d7529381339f2d7edfe1ba4">&#9670;&#160;</a></span>contentVerticalPadding()</h2>
@@ -254,6 +273,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Vertical padding used by text inside the field. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00079">79</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -282,6 +303,8 @@ Properties</h2></td></tr>
 
 <p>Opacity of disabled field content. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00174">174</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a9d35be5edae3b336d88d48ca582c7085" name="a9d35be5edae3b336d88d48ca582c7085"></a>
@@ -308,6 +331,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Minimum height of the text-field container. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00059">59</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -336,6 +361,8 @@ Properties</h2></td></tr>
 
 <p>Resting thickness of the filled active indicator. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00104">104</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a6521cf3942f3b0ef47d0e7c9dc28e37c" name="a6521cf3942f3b0ef47d0e7c9dc28e37c"></a>
@@ -361,7 +388,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the filled field container. </p>
+<p>Shape of the filled field container. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00094">94</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -390,6 +419,8 @@ Properties</h2></td></tr>
 
 <p>Opacity of the filled container when disabled. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00119">119</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a11f76c218a0f2857401d3164a44cbffb" name="a11f76c218a0f2857401d3164a44cbffb"></a>
@@ -416,6 +447,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Focused thickness of the filled active indicator. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00114">114</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -444,6 +477,8 @@ Properties</h2></td></tr>
 
 <p>Hovered thickness of the filled active indicator. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00109">109</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="ae722579495f3c68c985be9797fb209fb" name="ae722579495f3c68c985be9797fb209fb"></a>
@@ -470,6 +505,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Size of the optional leading icon in a filled field. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00099">99</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -498,6 +535,8 @@ Properties</h2></td></tr>
 
 <p>Logical outer padding of field content. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00074">74</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="ad30b57dad9664d267f9809fe94695442" name="ad30b57dad9664d267f9809fe94695442"></a>
@@ -524,6 +563,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Space between a floated label and input text. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00084">84</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -552,6 +593,8 @@ Properties</h2></td></tr>
 
 <p>Space between a leading icon and text content. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00164">164</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a95529200f6bbb988ff17c4d33a6cf4f5" name="a95529200f6bbb988ff17c4d33a6cf4f5"></a>
@@ -579,6 +622,8 @@ Properties</h2></td></tr>
 
 <p>Minimum supported field width. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00064">64</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a18088a12e4fa9e77a616857d7a6dcb16" name="a18088a12e4fa9e77a616857d7a6dcb16"></a>
@@ -604,7 +649,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the outlined field container. </p>
+<p>Shape of the outlined field container. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00124">124</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -633,6 +680,8 @@ Properties</h2></td></tr>
 
 <p>Opacity of the outline when disabled. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00149">149</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a3394b7aac818479f82ecc61b75be8857" name="a3394b7aac818479f82ecc61b75be8857"></a>
@@ -659,6 +708,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Focused thickness of the field outline. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00144">144</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -687,6 +738,8 @@ Properties</h2></td></tr>
 
 <p>Hovered thickness of the field outline. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00139">139</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a019cc6c418dcf4fc8512cbcf1d6fa46d" name="a019cc6c418dcf4fc8512cbcf1d6fa46d"></a>
@@ -713,6 +766,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Surface-backed horizontal padding around a floated outlined-field label. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00154">154</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -741,6 +796,8 @@ Properties</h2></td></tr>
 
 <p>Size of the optional leading icon in an outlined field. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00129">129</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a5e78ba72a898747fa6ac5106cd60a244" name="a5e78ba72a898747fa6ac5106cd60a244"></a>
@@ -767,6 +824,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resting thickness of the field outline. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00134">134</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -795,6 +854,8 @@ Properties</h2></td></tr>
 
 <p>Vertical distance between the field and popup. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00179">179</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="abb640936c76cfb315774f2762dfa0f0b" name="abb640936c76cfb315774f2762dfa0f0b"></a>
@@ -822,6 +883,8 @@ Properties</h2></td></tr>
 
 <p><a class="el" href="classFluid_1_1Elevation.html" title="A QQuickItem that renders elevation-based shadow effects.">Elevation</a> of the popup surface. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00189">189</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a79f1a3cde9a66ab500d1f4df2331486b" name="a79f1a3cde9a66ab500d1f4df2331486b"></a>
@@ -847,7 +910,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the popup surface. </p>
+<p>Shape of the popup surface. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00184">184</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -876,6 +941,8 @@ Properties</h2></td></tr>
 
 <p>Preferred field width. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00069">69</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="ad6a20cdd30476e1bfb29993c14ddf740" name="ad6a20cdd30476e1bfb29993c14ddf740"></a>
@@ -902,6 +969,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Space above supporting or error text. </p>
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00089">89</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -930,6 +999,8 @@ Properties</h2></td></tr>
 
 <p>Space between text content and the dropdown indicator. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00169">169</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a2dec46e8c4422d2b9e2083ca2c2ab405" name="a2dec46e8c4422d2b9e2083ca2c2ab405"></a>
@@ -957,6 +1028,8 @@ Properties</h2></td></tr>
 
 <p>Size of the dropdown indicator icon. </p>
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00159">159</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -980,6 +1053,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00028">28</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a64cbf4e2fa340ec8e29c1a5bf246ecf9" name="a64cbf4e2fa340ec8e29c1a5bf246ecf9"></a>
@@ -1001,6 +1076,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00052">52</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1024,6 +1101,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00024">24</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a9c0bfe619957dfe6946a422b66bccd8a" name="a9c0bfe619957dfe6946a422b66bccd8a"></a>
@@ -1045,6 +1124,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00033">33</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1068,6 +1149,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00031">31</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a7f4afaee8b22b5d2c3561b2255eea163" name="a7f4afaee8b22b5d2c3561b2255eea163"></a>
@@ -1089,6 +1172,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00038">38</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1112,6 +1197,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00036">36</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a584393cb660498bdbd66c4ffa8351a31" name="a584393cb660498bdbd66c4ffa8351a31"></a>
@@ -1133,6 +1220,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00034">34</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1156,6 +1245,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00032">32</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a8c5c7dd741c19c3caedf35fb371c7d2d" name="a8c5c7dd741c19c3caedf35fb371c7d2d"></a>
@@ -1177,6 +1268,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00027">27</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1200,6 +1293,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00029">29</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a4a193a806e15ab5a9463f937003345a8" name="a4a193a806e15ab5a9463f937003345a8"></a>
@@ -1221,6 +1316,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00050">50</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1244,6 +1341,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00025">25</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a9c3ae277b47acfd6814e294adde37f5d" name="a9c3ae277b47acfd6814e294adde37f5d"></a>
@@ -1265,6 +1364,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00040">40</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1288,6 +1389,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00045">45</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="ac3f6ac33a6368e9508adb1c6b692c7e6" name="ac3f6ac33a6368e9508adb1c6b692c7e6"></a>
@@ -1309,6 +1412,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00044">44</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1332,6 +1437,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00043">43</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a99b9d4eda4ffe138a15a073a5b954d5e" name="a99b9d4eda4ffe138a15a073a5b954d5e"></a>
@@ -1353,6 +1460,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00047">47</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1376,6 +1485,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00041">41</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="acc37093e8464187beb6c4f59eb06dc14" name="acc37093e8464187beb6c4f59eb06dc14"></a>
@@ -1397,6 +1508,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00042">42</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1420,6 +1533,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00053">53</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a67dd6e2d68dafb70500422c781aa7139" name="a67dd6e2d68dafb70500422c781aa7139"></a>
@@ -1441,6 +1556,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00055">55</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1464,6 +1581,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00054">54</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a047aba1f925e3ce06952826d53f059d6" name="a047aba1f925e3ce06952826d53f059d6"></a>
@@ -1485,6 +1604,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00026">26</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1508,6 +1629,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00030">30</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <a id="a2dc04df722569b75eeb100219278d58d" name="a2dc04df722569b75eeb100219278d58d"></a>
@@ -1529,6 +1652,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00051">51</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
 
 </div>
 </div>
@@ -1552,15 +1677,21 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="exposeddropdownmenu_8h_source.html#l00049">49</a> of file <a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="exposeddropdownmenu_8h_source.html">exposeddropdownmenu.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1ExposedDropdownMenu.html">ExposedDropdownMenu</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

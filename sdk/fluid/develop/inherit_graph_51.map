@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,92,56"/>
-<area shape="rect" id="Node000001" href="$classElevationRectangle.html" title="A rectangle that casts a Material 3 elevation shadow." alt="" coords="169,5,317,31"/>
-<area shape="poly" id="edge50_Node000000_Node000001" title=" " alt="" coords="106,33,168,25,169,30,106,39"/>
-<area shape="rect" id="Node000002" href="$classNavigationRailItemIndicator.html" title=" " alt="" coords="140,55,345,80"/>
-<area shape="poly" id="edge51_Node000000_Node000002" title=" " alt="" coords="106,48,141,52,140,57,105,53"/>
-</map>

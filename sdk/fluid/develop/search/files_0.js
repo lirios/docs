@@ -6,7 +6,6 @@ var searchData=
   ['appbar_2eh_3',['appbar.h',['../appbar_8h.html',1,'']]],
   ['appbar_2eqml_4',['AppBar.qml',['../AppBar_8qml.html',1,'']]],
   ['appbaraction_2eqml_5',['AppBarAction.qml',['../AppBarAction_8qml.html',1,'']]],
-  ['appbaractiondelegate_2eqml_6',['AppBarActionDelegate.qml',['../AppBarActionDelegate_8qml.html',1,'']]],
-  ['applicationwindow_2eqml_7',['ApplicationWindow.qml',['../ApplicationWindow_8qml.html',1,'']]],
-  ['automaticgrid_2eqml_8',['AutomaticGrid.qml',['../AutomaticGrid_8qml.html',1,'']]]
+  ['applicationwindow_2eqml_6',['ApplicationWindow.qml',['../ApplicationWindow_8qml.html',1,'']]],
+  ['automaticgrid_2eqml_7',['AutomaticGrid.qml',['../AutomaticGrid_8qml.html',1,'']]]
 ];

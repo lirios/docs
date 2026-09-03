@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structFluid_1_1MotionTokens.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1MotionTokens.html">MotionTokens</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -107,6 +124,8 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Material Design 3 system motion tokens. </p>
 <p>For more information see the <a href="https://m3.material.io/styles/motion/easing-and-duration/tokens-specs#2c0659e2-a2c8-4d7b-8964-5b8dce012f7c">Material Design 3 motion guidelines</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00306">306</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad6f0ae268e336ad5e3fb4d0fe9bae4af" name="ad6f0ae268e336ad5e3fb4d0fe9bae4af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6f0ae268e336ad5e3fb4d0fe9bae4af">&#9670;&#160;</a></span>duration()</h2>
@@ -130,6 +149,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00316">316</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -156,6 +177,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00320">320</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a61714a52f4fa00c54f73e1474cb2e59a" name="a61714a52f4fa00c54f73e1474cb2e59a"></a>
@@ -181,6 +204,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00324">324</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -204,6 +229,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00311">311</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a89fa338aaf5da7f30a071e764e198d45" name="a89fa338aaf5da7f30a071e764e198d45"></a>
@@ -225,6 +252,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00312">312</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -248,15 +277,21 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00313">313</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="motiontokens_8h_source.html">motiontokens.h</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="motiontokens_8h_source.html">motiontokens.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1MotionTokens.html">MotionTokens</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

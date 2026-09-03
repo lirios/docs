@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structFluid_1_1ToolTip.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1ToolTip.html">ToolTip</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -131,10 +148,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2882827dc009593e44307e5b13ed4e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bottom padding below rich-tooltip actions.  <br /></td></tr>
 <tr class="separator:a2882827dc009593e44307e5b13ed4e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ae26ae3f0ab4180cbf2d8b0647f2af" id="r_a85ae26ae3f0ab4180cbf2d8b0647f2af"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ToolTip.html#a85ae26ae3f0ab4180cbf2d8b0647f2af">plainContainerShape</a> () const</td></tr>
-<tr class="memdesc:a85ae26ae3f0ab4180cbf2d8b0647f2af"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of a plain tooltip container.  <br /></td></tr>
+<tr class="memdesc:a85ae26ae3f0ab4180cbf2d8b0647f2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of a plain tooltip container.  <br /></td></tr>
 <tr class="separator:a85ae26ae3f0ab4180cbf2d8b0647f2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972a01d2fba17960abc47b2cad0c01df" id="r_a972a01d2fba17960abc47b2cad0c01df"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ToolTip.html#a972a01d2fba17960abc47b2cad0c01df">richContainerShape</a> () const</td></tr>
-<tr class="memdesc:a972a01d2fba17960abc47b2cad0c01df"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of a rich tooltip container.  <br /></td></tr>
+<tr class="memdesc:a972a01d2fba17960abc47b2cad0c01df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of a rich tooltip container.  <br /></td></tr>
 <tr class="separator:a972a01d2fba17960abc47b2cad0c01df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a110eb5645fe4a1f819b924eff1474ab1" id="r_a110eb5645fe4a1f819b924eff1474ab1"><td class="memItemLeft" align="right" valign="top">constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1ToolTip.html#a110eb5645fe4a1f819b924eff1474ab1">richContainerElevation</a> () const</td></tr>
 <tr class="memdesc:a110eb5645fe4a1f819b924eff1474ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow elevation of a rich tooltip container.  <br /></td></tr>
@@ -186,6 +203,8 @@ Properties</h2></td></tr>
 <div class="textblock"><p>Material Design 3 tokens for plain and rich tooltips. </p>
 <p>Generated component values and AndroidX tooltip layout metrics are exposed through <code><a class="el" href="classFluid_1_1Tokens.html#a9a3b6fc4225f154a260058d68365e506">Tokens.toolTip</a></code> for the public <a class="el" href="classPlainToolTip.html" title="A concise Material Design 3 Expressive tooltip.">PlainToolTip</a> and <a class="el" href="classRichToolTip.html" title="An actionable Material Design 3 Expressive tooltip.">RichToolTip</a> controls.</p>
 <p>For the component behavior represented by these values, see the <a href="https://m3.material.io/components/tooltips/overview">Material Design 3 tooltip guidelines</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00028">28</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aee2e0aafe58de533b9eb0c8112088b67" name="aee2e0aafe58de533b9eb0c8112088b67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee2e0aafe58de533b9eb0c8112088b67">&#9670;&#160;</a></span>anchorSpacing()</h2>
@@ -211,6 +230,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Space between the tooltip and its anchor. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00078">78</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -239,6 +260,8 @@ Properties</h2></td></tr>
 
 <p>Scale used at the closed endpoint of tooltip transitions. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00156">156</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a55de3599cc81edf5ed37733bc52b49cd" name="a55de3599cc81edf5ed37733bc52b49cd"></a>
@@ -265,6 +288,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Minimum tooltip height. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00060">60</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -293,6 +318,8 @@ Properties</h2></td></tr>
 
 <p>Minimum tooltip width. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00054">54</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a85ae26ae3f0ab4180cbf2d8b0647f2af" name="a85ae26ae3f0ab4180cbf2d8b0647f2af"></a>
@@ -318,7 +345,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of a plain tooltip container. </p>
+<p>Shape of a plain tooltip container. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00138">138</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -347,6 +376,8 @@ Properties</h2></td></tr>
 
 <p>Horizontal padding of a plain tooltip. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00090">90</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="ab69eebb7f5e493bea14fca1d32e93777" name="ab69eebb7f5e493bea14fca1d32e93777"></a>
@@ -373,6 +404,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum plain-tooltip width. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00066">66</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -401,6 +434,8 @@ Properties</h2></td></tr>
 
 <p>Vertical padding of a plain tooltip. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00096">96</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a2882827dc009593e44307e5b13ed4e59" name="a2882827dc009593e44307e5b13ed4e59"></a>
@@ -427,6 +462,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Bottom padding below rich-tooltip actions. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00132">132</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -455,6 +492,8 @@ Properties</h2></td></tr>
 
 <p>Minimum height reserved for the rich-tooltip action area. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00126">126</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="ada5d6168dfbd3a26e6371d6e03b8dad2" name="ada5d6168dfbd3a26e6371d6e03b8dad2"></a>
@@ -481,6 +520,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Bottom padding below the rich body when a headline or actions are present. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00120">120</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -509,6 +550,8 @@ Properties</h2></td></tr>
 
 <p>Distance from the body slot top to its first baseline when rich content is present. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00114">114</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a110eb5645fe4a1f819b924eff1474ab1" name="a110eb5645fe4a1f819b924eff1474ab1"></a>
@@ -536,6 +579,8 @@ Properties</h2></td></tr>
 
 <p>Shadow elevation of a rich tooltip container. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00150">150</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a972a01d2fba17960abc47b2cad0c01df" name="a972a01d2fba17960abc47b2cad0c01df"></a>
@@ -561,7 +606,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of a rich tooltip container. </p>
+<p>Shape of a rich tooltip container. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00144">144</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -590,6 +637,8 @@ Properties</h2></td></tr>
 
 <p>Distance from the rich container top to the headline's first baseline. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00108">108</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a95d1d62d72a6efd0f2eaaa9d3eabd993" name="a95d1d62d72a6efd0f2eaaa9d3eabd993"></a>
@@ -616,6 +665,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Horizontal padding of a rich tooltip. </p>
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00102">102</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -644,6 +695,8 @@ Properties</h2></td></tr>
 
 <p>Maximum rich-tooltip width. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00072">72</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="aaa78effcd1e33d420a1048676a235fe3" name="aaa78effcd1e33d420a1048676a235fe3"></a>
@@ -671,6 +724,8 @@ Properties</h2></td></tr>
 
 <p>Minimum distance maintained between a tooltip and a viewport edge. </p>
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00084">84</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -694,6 +749,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00037">37</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="acf02a6488d8331830e9c06cbfd96f6d5" name="acf02a6488d8331830e9c06cbfd96f6d5"></a>
@@ -715,6 +772,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00050">50</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -738,6 +797,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00034">34</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a96c9fb1dd19e1cea7772cad4b93e8269" name="a96c9fb1dd19e1cea7772cad4b93e8269"></a>
@@ -759,6 +820,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00033">33</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -782,6 +845,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00047">47</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a542dc94ab5f1fb4864ea4f808bff004a" name="a542dc94ab5f1fb4864ea4f808bff004a"></a>
@@ -803,6 +868,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00039">39</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -826,6 +893,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00035">35</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a211ff005963318f11a42edf185fdc8aa" name="a211ff005963318f11a42edf185fdc8aa"></a>
@@ -847,6 +916,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00040">40</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -870,6 +941,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00046">46</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="ad3240826569385110df713f6930e73fb" name="ad3240826569385110df713f6930e73fb"></a>
@@ -891,6 +964,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00045">45</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -914,6 +989,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00044">44</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="aab5e6827d8e15e1a066acfac58e58787" name="aab5e6827d8e15e1a066acfac58e58787"></a>
@@ -935,6 +1012,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00043">43</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -958,6 +1037,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00049">49</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="af8abe20f6f266b645c693eaca59f4813" name="af8abe20f6f266b645c693eaca59f4813"></a>
@@ -979,6 +1060,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00048">48</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -1002,6 +1085,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00042">42</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="ab28068137d62efddc72f1df711419867" name="ab28068137d62efddc72f1df711419867"></a>
@@ -1023,6 +1108,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00041">41</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
 
 </div>
 </div>
@@ -1046,6 +1133,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00036">36</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <a id="a54fc0c797f8cf14662bf57b9b1f81744" name="a54fc0c797f8cf14662bf57b9b1f81744"></a>
@@ -1068,15 +1157,21 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="tooltip_8h_source.html#l00038">38</a> of file <a class="el" href="tooltip_8h_source.html">tooltip.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="tooltip_8h_source.html">tooltip.h</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="tooltip_8h_source.html">tooltip.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1ToolTip.html">ToolTip</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

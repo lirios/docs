@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structFluid_1_1MotionDurationTokens.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1MotionDurationTokens.html">MotionDurationTokens</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -159,6 +176,8 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Material Design 3 duration tokens. </p>
 <p>For more information see the <a href="https://m3.material.io/styles/motion/easing-and-duration/tokens-specs#2c0659e2-a2c8-4d7b-8964-5b8dce012f7c">Material Design 3 motion guidelines</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00044">44</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a568009d941cc390959019c9bd927d1e7" name="a568009d941cc390959019c9bd927d1e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a568009d941cc390959019c9bd927d1e7">&#9670;&#160;</a></span>extraLong1()</h2>
@@ -182,6 +201,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00067">67</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -208,6 +229,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00071">71</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="aa4aaad8930313949a4f898ff56b978ab" name="aa4aaad8930313949a4f898ff56b978ab"></a>
@@ -232,6 +255,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00075">75</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -258,6 +283,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00079">79</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a3c7ae0dd4d82b4980d35798485eeeffa" name="a3c7ae0dd4d82b4980d35798485eeeffa"></a>
@@ -282,6 +309,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00083">83</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -308,6 +337,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00087">87</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a08dc9af97eaf13a5359095c45cd1b123" name="a08dc9af97eaf13a5359095c45cd1b123"></a>
@@ -332,6 +363,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00091">91</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -358,6 +391,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00095">95</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a4b5fa7fba85d5df0f0c0c0f2d3e1d35f" name="a4b5fa7fba85d5df0f0c0c0f2d3e1d35f"></a>
@@ -382,6 +417,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00099">99</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -408,6 +445,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00103">103</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="af7eb983bebf1237d2d42cdc67fe37479" name="af7eb983bebf1237d2d42cdc67fe37479"></a>
@@ -432,6 +471,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00107">107</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -458,6 +499,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00111">111</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a7adefb1bd454f54e65b21a270237f2ce" name="a7adefb1bd454f54e65b21a270237f2ce"></a>
@@ -482,6 +525,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00115">115</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -508,6 +553,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00119">119</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a9cf49069c34ba96eb668c05323e76051" name="a9cf49069c34ba96eb668c05323e76051"></a>
@@ -532,6 +579,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00123">123</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -558,6 +607,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00127">127</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -581,6 +632,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00049">49</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a2b339ca3653bcffec53d77bd091a8789" name="a2b339ca3653bcffec53d77bd091a8789"></a>
@@ -602,6 +655,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00050">50</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -625,6 +680,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00051">51</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="aeae9925fdb887d57bed8b8da34af5677" name="aeae9925fdb887d57bed8b8da34af5677"></a>
@@ -646,6 +703,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00052">52</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -669,6 +728,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00053">53</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="aefbb2407ca0312e6aa71cebefad6bbd4" name="aefbb2407ca0312e6aa71cebefad6bbd4"></a>
@@ -690,6 +751,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00054">54</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -713,6 +776,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00055">55</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a31ed792f3aaa5410db1856a010f18e2b" name="a31ed792f3aaa5410db1856a010f18e2b"></a>
@@ -734,6 +799,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00056">56</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -757,6 +824,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00057">57</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="ad1e4a1ee6b483b32f62957546fd03a69" name="ad1e4a1ee6b483b32f62957546fd03a69"></a>
@@ -778,6 +847,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00058">58</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -801,6 +872,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00059">59</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="aadb04c4f877dd7c43bf6c54c57cdaba6" name="aadb04c4f877dd7c43bf6c54c57cdaba6"></a>
@@ -822,6 +895,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00060">60</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -845,6 +920,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00061">61</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a094d8bf74da01926b6c328b580fa5780" name="a094d8bf74da01926b6c328b580fa5780"></a>
@@ -866,6 +943,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00062">62</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
 
 </div>
 </div>
@@ -889,6 +968,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00063">63</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <a id="a57fe2300e5da432b51ae4fc0fe09cb9f" name="a57fe2300e5da432b51ae4fc0fe09cb9f"></a>
@@ -911,15 +992,21 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="motiontokens_8h_source.html#l00064">64</a> of file <a class="el" href="motiontokens_8h_source.html">motiontokens.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="motiontokens_8h_source.html">motiontokens.h</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="motiontokens_8h_source.html">motiontokens.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1MotionDurationTokens.html">MotionDurationTokens</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,89,56"/>
-<area shape="rect" id="Node000001" href="$classControl.html" title="The Fluid base wrapper for Qt Quick template controls." alt="" coords="182,5,251,31"/>
-<area shape="poly" id="edge58_Node000000_Node000001" title=" " alt="" coords="103,32,181,20,182,26,103,38"/>
-<area shape="rect" id="Node000002" href="$classModalNavigationRail.html" title="A modal Material Design 3 Expressive navigation rail." alt="" coords="137,55,296,80"/>
-<area shape="poly" id="edge59_Node000000_Node000002" title=" " alt="" coords="103,48,138,53,137,59,102,54"/>
-</map>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structFluid_1_1TypeScaleValue.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1TypeScaleValue.html">TypeScaleValue</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -155,8 +172,10 @@ Properties</h2></td></tr>
 <div class="line">    font.pixelSize: MD.Tokens.typescale.bodyLarge.fontSize</div>
 <div class="line">    <a class="code hl_property" href="structFluid_1_1TypeScaleValue.html#a46d784d34cab053e385a8e5e0b086ded">lineHeight</a>: MD.Tokens.typescale.bodyLarge.lineHeight</div>
 <div class="line">}</div>
-<div class="ttc" id="astructFluid_1_1TypeScaleValue_html_a46d784d34cab053e385a8e5e0b086ded"><div class="ttname"><a href="structFluid_1_1TypeScaleValue.html#a46d784d34cab053e385a8e5e0b086ded">Fluid::TypeScaleValue::lineHeight</a></div><div class="ttdeci">qint32 lineHeight</div><div class="ttdef"><b>Definition</b> typescale.h:37</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="ttc" id="astructFluid_1_1TypeScaleValue_html_a46d784d34cab053e385a8e5e0b086ded"><div class="ttname"><a href="structFluid_1_1TypeScaleValue.html#a46d784d34cab053e385a8e5e0b086ded">Fluid::TypeScaleValue::lineHeight</a></div><div class="ttdeci">qint32 lineHeight</div><div class="ttdef"><b>Definition</b> <a href="typescale_8h_source.html#l00037">typescale.h:37</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00029">29</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aba0c650446558a982de7d6e66217113d" name="aba0c650446558a982de7d6e66217113d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba0c650446558a982de7d6e66217113d">&#9670;&#160;</a></span>crsv()</h2>
 
@@ -179,6 +198,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00081">81</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -205,6 +226,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00091">91</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="ae4566086ebe8fbfc6b31f3f86d308617" name="ae4566086ebe8fbfc6b31f3f86d308617"></a>
@@ -229,6 +252,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00061">61</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -255,6 +280,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00096">96</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="a42ad6f2a513f1d7f7d2eb18453682091" name="a42ad6f2a513f1d7f7d2eb18453682091"></a>
@@ -279,6 +306,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00076">76</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -305,6 +334,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00071">71</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="a74b71d08fb05beaaca8938e0b6f2b76e" name="a74b71d08fb05beaaca8938e0b6f2b76e"></a>
@@ -329,6 +360,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00086">86</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -355,6 +388,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00066">66</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="ae7e3257d90e1256f44697c76c911f74c" name="ae7e3257d90e1256f44697c76c911f74c"></a>
@@ -380,6 +415,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00056">56</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -394,6 +431,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00050">50</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -418,6 +457,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00045">45</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="a5b3340d657cf8a70a0f1d8d61e5b81c9" name="a5b3340d657cf8a70a0f1d8d61e5b81c9"></a>
@@ -431,6 +472,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00035">35</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -454,6 +497,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00047">47</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="aeff7abf19990dcbec7b093ab504cac9e" name="aeff7abf19990dcbec7b093ab504cac9e"></a>
@@ -468,6 +513,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00036">36</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="aa118246ee83ad8308898147b4fd3360c" name="aa118246ee83ad8308898147b4fd3360c"></a>
@@ -481,6 +528,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00038">38</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -504,6 +553,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00041">41</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="aab461fec015958b999a14b71edee259e" name="aab461fec015958b999a14b71edee259e"></a>
@@ -526,6 +577,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00048">48</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="a46d784d34cab053e385a8e5e0b086ded" name="a46d784d34cab053e385a8e5e0b086ded"></a>
@@ -539,6 +592,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00037">37</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -562,6 +617,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00044">44</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="a96d436d139551497b34c2d26727f0903" name="a96d436d139551497b34c2d26727f0903"></a>
@@ -583,6 +640,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00043">43</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -606,6 +665,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00046">46</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="acdf58182f41ab0f308cbd1bcc749f1ed" name="acdf58182f41ab0f308cbd1bcc749f1ed"></a>
@@ -619,6 +680,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00039">39</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
 
 </div>
 </div>
@@ -642,6 +705,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00042">42</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <a id="a56e78ebd7ebe3452ee394237e9dac466" name="a56e78ebd7ebe3452ee394237e9dac466"></a>
@@ -664,15 +729,21 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="typescale_8h_source.html#l00040">40</a> of file <a class="el" href="typescale_8h_source.html">typescale.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="typescale_8h_source.html">typescale.h</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="typescale_8h_source.html">typescale.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1TypeScaleValue.html">TypeScaleValue</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

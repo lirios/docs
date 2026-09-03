@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classTheme.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,7 +89,6 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -81,23 +102,9 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for Theme:</div>
 <div class="dyncontent">
-<div class="center"><img src="classTheme__inherit__graph.png" border="0" usemap="#aTheme_inherit__map" alt="Inheritance graph"/></div>
-<map name="aTheme_inherit__map" id="aTheme_inherit__map">
-<area shape="rect" title=" " alt="" coords="9,79,76,104"/>
-<area shape="rect" title=" " alt="" coords="5,5,80,31"/>
-<area shape="poly" title=" " alt="" coords="45,44,45,79,40,79,40,44"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for Theme:</div>
-<div class="dyncontent">
-<div class="center"><img src="classTheme__coll__graph.png" border="0" usemap="#aTheme_coll__map" alt="Collaboration graph"/></div>
-<map name="aTheme_coll__map" id="aTheme_coll__map">
-<area shape="rect" title=" " alt="" coords="9,79,76,104"/>
-<area shape="rect" title=" " alt="" coords="5,5,80,31"/>
-<area shape="poly" title=" " alt="" coords="45,44,45,79,40,79,40,44"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classTheme.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -121,7 +128,10 @@ Properties</h2></td></tr>
 <tr class="memitem:a68c1c60996ac885aea381ebaf4b840a7" id="r_a68c1c60996ac885aea381ebaf4b840a7"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTheme.html#a68c1c60996ac885aea381ebaf4b840a7">symbolsSharpFontFamily</a></td></tr>
 <tr class="separator:a68c1c60996ac885aea381ebaf4b840a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="theme_8h_source.html#l00008">8</a> of file <a class="el" href="theme_8h_source.html">theme.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac1dc66c7172de7af417d1dbe06d2f23d" name="ac1dc66c7172de7af417d1dbe06d2f23d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1dc66c7172de7af417d1dbe06d2f23d">&#9670;&#160;</a></span>Theme()</h2>
 
@@ -146,6 +156,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="theme_8cpp_source.html#l00008">8</a> of file <a class="el" href="theme_8cpp_source.html">theme.cpp</a>.</p>
+
 </div>
 </div>
 <a id="afc1ece6aa5135b98e14dddac7dddbda8" name="afc1ece6aa5135b98e14dddac7dddbda8"></a>
@@ -162,6 +174,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="theme_8cpp_source.html#l00014">14</a> of file <a class="el" href="theme_8cpp_source.html">theme.cpp</a>.</p>
 
 </div>
 </div>
@@ -181,6 +195,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="theme_8cpp_source.html#l00019">19</a> of file <a class="el" href="theme_8cpp_source.html">theme.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a2edcc585f0cd461d4a5ce91ec9a64fa9" name="a2edcc585f0cd461d4a5ce91ec9a64fa9"></a>
@@ -198,6 +214,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="theme_8cpp_source.html#l00026">26</a> of file <a class="el" href="theme_8cpp_source.html">theme.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a89b5925f5c5bf63f2d02df57b98a08bf" name="a89b5925f5c5bf63f2d02df57b98a08bf"></a>
@@ -214,6 +232,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="theme_8cpp_source.html#l00033">33</a> of file <a class="el" href="theme_8cpp_source.html">theme.cpp</a>.</p>
 
 </div>
 </div>
@@ -238,6 +258,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="theme_8h_source.html#l00013">13</a> of file <a class="el" href="theme_8h_source.html">theme.h</a>.</p>
+
 </div>
 </div>
 <a id="a0a5c6e8cd227d7d2759b101c317e73d7" name="a0a5c6e8cd227d7d2759b101c317e73d7"></a>
@@ -259,6 +281,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="theme_8h_source.html#l00014">14</a> of file <a class="el" href="theme_8h_source.html">theme.h</a>.</p>
 
 </div>
 </div>
@@ -282,16 +306,22 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="theme_8h_source.html#l00015">15</a> of file <a class="el" href="theme_8h_source.html">theme.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/style/<a class="el" href="theme_8h_source.html">theme.h</a></li>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/style/<a class="el" href="theme_8cpp.html">theme.cpp</a></li>
+<li>src/controls/cpp/style/<a class="el" href="theme_8h_source.html">theme.h</a></li>
+<li>src/controls/cpp/style/<a class="el" href="theme_8cpp_source.html">theme.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classTheme.html">Theme</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

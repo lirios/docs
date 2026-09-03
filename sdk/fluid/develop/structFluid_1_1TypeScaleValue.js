@@ -1,0 +1,27 @@
+var structFluid_1_1TypeScaleValue =
+[
+    [ "crsv", "structFluid_1_1TypeScaleValue.html#aba0c650446558a982de7d6e66217113d", null ],
+    [ "fill", "structFluid_1_1TypeScaleValue.html#af466f742706fa0c4139671555d401f40", null ],
+    [ "grad", "structFluid_1_1TypeScaleValue.html#ae4566086ebe8fbfc6b31f3f86d308617", null ],
+    [ "hexp", "structFluid_1_1TypeScaleValue.html#ae0b9ff883c092a964332066a9c1f7041", null ],
+    [ "opsz", "structFluid_1_1TypeScaleValue.html#a42ad6f2a513f1d7f7d2eb18453682091", null ],
+    [ "rond", "structFluid_1_1TypeScaleValue.html#af2cb351eb12e987a9801514c26e6c641", null ],
+    [ "slnt", "structFluid_1_1TypeScaleValue.html#a74b71d08fb05beaaca8938e0b6f2b76e", null ],
+    [ "wdth", "structFluid_1_1TypeScaleValue.html#a040ab671dfc4ba6eeaaf73b8a3b16a84", null ],
+    [ "wght", "structFluid_1_1TypeScaleValue.html#ae7e3257d90e1256f44697c76c911f74c", null ],
+    [ "face", "structFluid_1_1TypeScaleValue.html#a8a2ae38471efdbbf5e89f8201270f0c7", null ],
+    [ "crsv", "structFluid_1_1TypeScaleValue.html#a29425f38f077d54b6125a0c209ee6a52", null ],
+    [ "face", "structFluid_1_1TypeScaleValue.html#a5b3340d657cf8a70a0f1d8d61e5b81c9", null ],
+    [ "fill", "structFluid_1_1TypeScaleValue.html#afb3203304def0b35e111303584f8a932", null ],
+    [ "fontSize", "structFluid_1_1TypeScaleValue.html#aeff7abf19990dcbec7b093ab504cac9e", null ],
+    [ "fontWeight", "structFluid_1_1TypeScaleValue.html#aa118246ee83ad8308898147b4fd3360c", null ],
+    [ "grad", "structFluid_1_1TypeScaleValue.html#aade13505ef77c2c6cca4b44acfe6922f", null ],
+    [ "hexp", "structFluid_1_1TypeScaleValue.html#aab461fec015958b999a14b71edee259e", null ],
+    [ "lineHeight", "structFluid_1_1TypeScaleValue.html#a46d784d34cab053e385a8e5e0b086ded", null ],
+    [ "opsz", "structFluid_1_1TypeScaleValue.html#a493a70766029e4867b43ce18a0c7d2fc", null ],
+    [ "rond", "structFluid_1_1TypeScaleValue.html#a96d436d139551497b34c2d26727f0903", null ],
+    [ "slnt", "structFluid_1_1TypeScaleValue.html#a2d70ae792965aef0ef8e0b01d5065cb6", null ],
+    [ "tracking", "structFluid_1_1TypeScaleValue.html#acdf58182f41ab0f308cbd1bcc749f1ed", null ],
+    [ "wdth", "structFluid_1_1TypeScaleValue.html#a459f80e24d2f435923530268006b1abc", null ],
+    [ "wght", "structFluid_1_1TypeScaleValue.html#a56e78ebd7ebe3452ee394237e9dac466", null ]
+];

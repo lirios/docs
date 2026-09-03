@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structFluid_1_1Slider.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1Slider.html">Slider</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -310,6 +327,8 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Material Design 3 Expressive slider tokens. </p>
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00014">14</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa2745ef61efcbaa3d971877dd4bbc7e5" name="aa2745ef61efcbaa3d971877dd4bbc7e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2745ef61efcbaa3d971877dd4bbc7e5">&#9670;&#160;</a></span>activeHandleHeightExtraLarge()</h2>
@@ -325,6 +344,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00083">83</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,6 +364,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00063">63</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a01768582da8dbbae632efe9436f51d9b" name="a01768582da8dbbae632efe9436f51d9b"></a>
@@ -359,6 +382,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00078">78</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -377,6 +402,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00073">73</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="af94683f3e735c0fbacd29241e7cfbcdd" name="af94683f3e735c0fbacd29241e7cfbcdd"></a>
@@ -393,6 +420,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00068">68</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -411,6 +440,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00143">143</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="afe4c3a1634d807202d6005a8c1a8ac4f" name="afe4c3a1634d807202d6005a8c1a8ac4f"></a>
@@ -427,6 +458,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00088">88</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -445,6 +478,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00093">93</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="aff0e0e678a4fca1235fc569c7977fa8c" name="aff0e0e678a4fca1235fc569c7977fa8c"></a>
@@ -461,6 +496,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00098">98</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -479,6 +516,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00033">33</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="aeb84388fbc3fcb250f8c9a841f7df001" name="aeb84388fbc3fcb250f8c9a841f7df001"></a>
@@ -495,6 +534,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00013">13</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -513,6 +554,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00028">28</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a96ecda1dc285c0454d9c8f536c41d1fe" name="a96ecda1dc285c0454d9c8f536c41d1fe"></a>
@@ -529,6 +572,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00023">23</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -547,6 +592,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00018">18</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a0964af044035622361f8f555e0fec3ae" name="a0964af044035622361f8f555e0fec3ae"></a>
@@ -563,6 +610,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00058">58</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -581,6 +630,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00038">38</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a358fbbd5b3d805320646e5a9eef2d6fe" name="a358fbbd5b3d805320646e5a9eef2d6fe"></a>
@@ -597,6 +648,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00053">53</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -615,6 +668,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00048">48</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ac8b555d19da2652b63552151b847a5a0" name="ac8b555d19da2652b63552151b847a5a0"></a>
@@ -631,6 +686,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00043">43</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -649,6 +706,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00213">213</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="accd5b8022d1f8fc4734031882c869441" name="accd5b8022d1f8fc4734031882c869441"></a>
@@ -665,6 +724,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00243">243</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -683,6 +744,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00253">253</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ad333627da6106d1d5f5fc30df58c360a" name="ad333627da6106d1d5f5fc30df58c360a"></a>
@@ -699,6 +762,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00108">108</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -717,6 +782,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00248">248</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a8bacbe112f006218c76424345b5b7952" name="a8bacbe112f006218c76424345b5b7952"></a>
@@ -733,6 +800,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00133">133</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -751,6 +820,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00233">233</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a9b5f6787b4cac3b5ddc86e2e886bb62c" name="a9b5f6787b4cac3b5ddc86e2e886bb62c"></a>
@@ -767,6 +838,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00138">138</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -785,6 +858,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00148">148</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ae794f844243376823371814a2d4667bc" name="ae794f844243376823371814a2d4667bc"></a>
@@ -801,6 +876,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00123">123</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -819,6 +896,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00223">223</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a96cfde313553d2007fa3e1e037551172" name="a96cfde313553d2007fa3e1e037551172"></a>
@@ -835,6 +914,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00113">113</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -853,6 +934,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00228">228</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a45942ea12d61aec2b223e94910ed10f9" name="a45942ea12d61aec2b223e94910ed10f9"></a>
@@ -869,6 +952,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00103">103</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -887,6 +972,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00208">208</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a7c9e6462819a836d5bd40756c63b4421" name="a7c9e6462819a836d5bd40756c63b4421"></a>
@@ -903,6 +990,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00128">128</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -921,6 +1010,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00238">238</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a8cc0926811075cbd80101a68b3fe811e" name="a8cc0926811075cbd80101a68b3fe811e"></a>
@@ -937,6 +1028,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00153">153</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -955,6 +1048,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00118">118</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="ae8b8c02aa5c0ff3cd363cf5cc6e34362" name="ae8b8c02aa5c0ff3cd363cf5cc6e34362"></a>
@@ -971,6 +1066,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00163">163</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -989,6 +1086,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00158">158</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="acf2d179fb71ec6cbcbdc7f026f2b2064" name="acf2d179fb71ec6cbcbdc7f026f2b2064"></a>
@@ -1005,6 +1104,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00203">203</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -1023,6 +1124,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00198">198</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a5ce6d4c647058279b34f2c24a16bc47f" name="a5ce6d4c647058279b34f2c24a16bc47f"></a>
@@ -1039,6 +1142,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00193">193</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -1057,6 +1162,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00188">188</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a44da355a124b46b56b14846907d7b147" name="a44da355a124b46b56b14846907d7b147"></a>
@@ -1073,6 +1180,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00183">183</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -1091,6 +1200,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00178">178</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a70a820693bf100fba7051a479e1988eb" name="a70a820693bf100fba7051a479e1988eb"></a>
@@ -1107,6 +1218,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00173">173</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -1125,6 +1238,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00168">168</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a4fcfe1bcb77e148bc78537868797cd18" name="a4fcfe1bcb77e148bc78537868797cd18"></a>
@@ -1141,6 +1256,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00278">278</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -1159,6 +1276,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00268">268</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a9f2e2065ff2dfe5ce07005ba85ff0a6f" name="a9f2e2065ff2dfe5ce07005ba85ff0a6f"></a>
@@ -1175,6 +1294,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00263">263</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -1193,6 +1314,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00258">258</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a7f12a81fb1bd98a170daff934f133f3f" name="a7f12a81fb1bd98a170daff934f133f3f"></a>
@@ -1210,6 +1333,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00273">273</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a320fd95ece07e81c20ab3a0486b0d75c" name="a320fd95ece07e81c20ab3a0486b0d75c"></a>
@@ -1226,6 +1351,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8cpp_source.html#l00218">218</a> of file <a class="el" href="slider_8cpp_source.html">slider.cpp</a>.</p>
 
 </div>
 </div>
@@ -1250,6 +1377,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00038">38</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a16fc1ecd173496b18123ab8c29412f5d" name="a16fc1ecd173496b18123ab8c29412f5d"></a>
@@ -1271,6 +1400,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00034">34</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1294,6 +1425,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00037">37</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a2bd52c38f2ff20df36ded40a5f89932d" name="a2bd52c38f2ff20df36ded40a5f89932d"></a>
@@ -1315,6 +1448,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00036">36</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1338,6 +1473,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00035">35</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a0cc84b31f6d173bbeedfca22f6294f9a" name="a0cc84b31f6d173bbeedfca22f6294f9a"></a>
@@ -1359,6 +1496,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00053">53</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1382,6 +1521,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00040">40</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a1c9e5df769c2ce5361703f3c0644ce34" name="a1c9e5df769c2ce5361703f3c0644ce34"></a>
@@ -1403,6 +1544,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00041">41</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1426,6 +1569,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00042">42</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a17f5c1247e0223984e9b3e48a8ce2718" name="a17f5c1247e0223984e9b3e48a8ce2718"></a>
@@ -1447,6 +1592,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00023">23</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1470,6 +1617,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00019">19</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="ac0c975a20df936bba0ee3b12db0749c9" name="ac0c975a20df936bba0ee3b12db0749c9"></a>
@@ -1491,6 +1640,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00022">22</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1514,6 +1665,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00021">21</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a0a13e5ff29e82e59f6fa80e5066e106b" name="a0a13e5ff29e82e59f6fa80e5066e106b"></a>
@@ -1536,6 +1689,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00020">20</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a68813ced34ebf6adda23e0b783d4886c" name="a68813ced34ebf6adda23e0b783d4886c"></a>
@@ -1550,6 +1705,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00032">32</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="afb825e294c5ba02ef594b20763d81f56" name="afb825e294c5ba02ef594b20763d81f56"></a>
@@ -1563,6 +1720,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00024">24</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1586,6 +1745,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00030">30</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="afb514550e47929e99e96c6ea6f24095f" name="afb514550e47929e99e96c6ea6f24095f"></a>
@@ -1607,6 +1768,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00028">28</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1630,6 +1793,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00026">26</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a0f8f6b21736e94a44d93468de045ee24" name="a0f8f6b21736e94a44d93468de045ee24"></a>
@@ -1651,6 +1816,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00070">70</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1674,6 +1841,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00076">76</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a85794db26675184d194019daf2ff5f26" name="a85794db26675184d194019daf2ff5f26"></a>
@@ -1695,6 +1864,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00078">78</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1718,6 +1889,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00046">46</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="aa39c4a14986bf06f505c45e100a3067d" name="aa39c4a14986bf06f505c45e100a3067d"></a>
@@ -1739,6 +1912,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00077">77</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1762,6 +1937,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00051">51</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="ad7c7bb726fdde7ffb7efadd4f4c25807" name="ad7c7bb726fdde7ffb7efadd4f4c25807"></a>
@@ -1783,6 +1960,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00074">74</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1806,6 +1985,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00052">52</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a068246bb539cd1d4683dbc83e638f09e" name="a068246bb539cd1d4683dbc83e638f09e"></a>
@@ -1827,6 +2008,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00054">54</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1850,6 +2033,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00049">49</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="ac96def5944c4777763ac479a3694a90a" name="ac96def5944c4777763ac479a3694a90a"></a>
@@ -1871,6 +2056,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00072">72</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1894,6 +2081,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00047">47</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a0ffc10ce28a86c5bd2269393ff7c1cea" name="a0ffc10ce28a86c5bd2269393ff7c1cea"></a>
@@ -1916,6 +2105,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00073">73</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a239937e635d25519577b548558e1320b" name="a239937e635d25519577b548558e1320b"></a>
@@ -1929,6 +2120,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00044">44</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1952,6 +2145,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00069">69</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="ade6de5a4a298b45770e69c7fdfbea109" name="ade6de5a4a298b45770e69c7fdfbea109"></a>
@@ -1973,6 +2168,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00050">50</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -1996,6 +2193,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00075">75</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a0eaa72fc4617c89abaffb21292517ea6" name="a0eaa72fc4617c89abaffb21292517ea6"></a>
@@ -2017,6 +2216,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00056">56</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2040,6 +2241,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00048">48</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a4ee664b9dfa8202f30cf846e4f67184f" name="a4ee664b9dfa8202f30cf846e4f67184f"></a>
@@ -2061,6 +2264,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00058">58</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2084,6 +2289,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00057">57</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a123b46f13c7fb6771729733ddcb53149" name="a123b46f13c7fb6771729733ddcb53149"></a>
@@ -2105,6 +2312,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00067">67</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2128,6 +2337,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00066">66</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="aacc2b22070a18df227a8857fcc637504" name="aacc2b22070a18df227a8857fcc637504"></a>
@@ -2149,6 +2360,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00065">65</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2172,6 +2385,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00064">64</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a955091782e89be2667fce53a23493a12" name="a955091782e89be2667fce53a23493a12"></a>
@@ -2193,6 +2408,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00063">63</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2216,6 +2433,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00062">62</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a0914e002b784590fe56b5b6f15583422" name="a0914e002b784590fe56b5b6f15583422"></a>
@@ -2237,6 +2456,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00061">61</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2260,6 +2481,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00059">59</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="adc2a31cdb374a09d85fa94ddd79d98e2" name="adc2a31cdb374a09d85fa94ddd79d98e2"></a>
@@ -2281,6 +2504,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00086">86</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2304,6 +2529,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00082">82</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="ae0951963dbe175d099a4f4fec88ac62d" name="ae0951963dbe175d099a4f4fec88ac62d"></a>
@@ -2325,6 +2552,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00081">81</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2348,6 +2577,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00080">80</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <a id="a9c3bfbd63b939b7f4132f8cccce89fe6" name="a9c3bfbd63b939b7f4132f8cccce89fe6"></a>
@@ -2369,6 +2600,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00084">84</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
 
 </div>
 </div>
@@ -2392,16 +2625,22 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="slider_8h_source.html#l00071">71</a> of file <a class="el" href="slider_8h_source.html">slider.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="slider_8h_source.html">slider.h</a></li>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="slider_8cpp.html">slider.cpp</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="slider_8h_source.html">slider.h</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="slider_8cpp_source.html">slider.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1Slider.html">Slider</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

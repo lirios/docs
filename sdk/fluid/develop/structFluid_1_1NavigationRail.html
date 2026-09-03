@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structFluid_1_1NavigationRail.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1NavigationRail.html">NavigationRail</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -92,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7679bbf867b74648b42dfe19838a373e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resting elevation of the persistent rail container.  <br /></td></tr>
 <tr class="separator:a7679bbf867b74648b42dfe19838a373e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e0f91a44d5dd6f406182a1d12d3cdd3" id="r_a0e0f91a44d5dd6f406182a1d12d3cdd3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1NavigationRail.html#a0e0f91a44d5dd6f406182a1d12d3cdd3">containerShape</a> () const</td></tr>
-<tr class="memdesc:a0e0f91a44d5dd6f406182a1d12d3cdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the persistent rail container.  <br /></td></tr>
+<tr class="memdesc:a0e0f91a44d5dd6f406182a1d12d3cdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the persistent rail container.  <br /></td></tr>
 <tr class="separator:a0e0f91a44d5dd6f406182a1d12d3cdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7816ef4076600008a0b2dd5cfe26a190" id="r_a7816ef4076600008a0b2dd5cfe26a190"><td class="memItemLeft" align="right" valign="top">constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1NavigationRail.html#a7816ef4076600008a0b2dd5cfe26a190">collapsedContainerWidth</a> () const</td></tr>
 <tr class="memdesc:a7816ef4076600008a0b2dd5cfe26a190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of a collapsed Expressive navigation rail.  <br /></td></tr>
@@ -107,7 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a367c154ab7ce311509de36389fe9ac39"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classFluid_1_1Elevation.html" title="A QQuickItem that renders elevation-based shadow effects.">Elevation</a> of an expanded modal navigation rail.  <br /></td></tr>
 <tr class="separator:a367c154ab7ce311509de36389fe9ac39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a277a67b78e16e60302f539df6f2f8142" id="r_a277a67b78e16e60302f539df6f2f8142"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1NavigationRail.html#a277a67b78e16e60302f539df6f2f8142">modalContainerShape</a> () const</td></tr>
-<tr class="memdesc:a277a67b78e16e60302f539df6f2f8142"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of an expanded modal navigation rail.  <br /></td></tr>
+<tr class="memdesc:a277a67b78e16e60302f539df6f2f8142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of an expanded modal navigation rail.  <br /></td></tr>
 <tr class="separator:a277a67b78e16e60302f539df6f2f8142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d53ea2b05a914144f09c2603b13382" id="r_a04d53ea2b05a914144f09c2603b13382"><td class="memItemLeft" align="right" valign="top">constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1NavigationRail.html#a04d53ea2b05a914144f09c2603b13382">topSpace</a> () const</td></tr>
 <tr class="memdesc:a04d53ea2b05a914144f09c2603b13382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical space between the rail edge and its content.  <br /></td></tr>
@@ -131,7 +148,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af449a21b7798b0836ad8d15973d83511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a destination icon.  <br /></td></tr>
 <tr class="separator:af449a21b7798b0836ad8d15973d83511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dd1112ca760292fd970ca6a9870c58f" id="r_a4dd1112ca760292fd970ca6a9870c58f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1NavigationRail.html#a4dd1112ca760292fd970ca6a9870c58f">activeIndicatorShape</a> () const</td></tr>
-<tr class="memdesc:a4dd1112ca760292fd970ca6a9870c58f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the active destination indicator.  <br /></td></tr>
+<tr class="memdesc:a4dd1112ca760292fd970ca6a9870c58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the active destination indicator.  <br /></td></tr>
 <tr class="separator:a4dd1112ca760292fd970ca6a9870c58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae299427bed0ae50a7fe65c5da198cbb3" id="r_ae299427bed0ae50a7fe65c5da198cbb3"><td class="memItemLeft" align="right" valign="top">constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1NavigationRail.html#ae299427bed0ae50a7fe65c5da198cbb3">activeIndicatorIconLabelSpace</a> () const</td></tr>
 <tr class="memdesc:ae299427bed0ae50a7fe65c5da198cbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Baseline space between icon and label inside an active indicator.  <br /></td></tr>
@@ -264,6 +281,8 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Material Design 3 Expressive navigation rail tokens. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00024">24</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae299427bed0ae50a7fe65c5da198cbb3" name="ae299427bed0ae50a7fe65c5da198cbb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae299427bed0ae50a7fe65c5da198cbb3">&#9670;&#160;</a></span>activeIndicatorIconLabelSpace()</h2>
@@ -289,6 +308,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Baseline space between icon and label inside an active indicator. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00163">163</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -317,6 +338,8 @@ Properties</h2></td></tr>
 
 <p>Baseline leading space inside an active indicator. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00169">169</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a4dd1112ca760292fd970ca6a9870c58f" name="a4dd1112ca760292fd970ca6a9870c58f"></a>
@@ -342,7 +365,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the active destination indicator. </p>
+<p>Shape of the active destination indicator. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00157">157</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -371,6 +396,8 @@ Properties</h2></td></tr>
 
 <p>Baseline trailing space inside an active indicator. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00175">175</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a7816ef4076600008a0b2dd5cfe26a190" name="a7816ef4076600008a0b2dd5cfe26a190"></a>
@@ -397,6 +424,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Width of a collapsed Expressive navigation rail. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00085">85</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -425,6 +454,8 @@ Properties</h2></td></tr>
 
 <p>Space between consecutive collapsed destinations. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00121">121</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a7679bbf867b74648b42dfe19838a373e" name="a7679bbf867b74648b42dfe19838a373e"></a>
@@ -452,6 +483,8 @@ Properties</h2></td></tr>
 
 <p>Resting elevation of the persistent rail container. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00073">73</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a0e0f91a44d5dd6f406182a1d12d3cdd3" name="a0e0f91a44d5dd6f406182a1d12d3cdd3"></a>
@@ -477,7 +510,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the persistent rail container. </p>
+<p>Shape of the persistent rail container. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00079">79</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -506,6 +541,8 @@ Properties</h2></td></tr>
 
 <p>Opacity of disabled destination content. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00265">265</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a70d1e04e58c8212ae2899c9e215bf40f" name="a70d1e04e58c8212ae2899c9e215bf40f"></a>
@@ -532,6 +569,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum width of an expanded Expressive navigation rail. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00097">97</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -560,6 +599,8 @@ Properties</h2></td></tr>
 
 <p>Minimum width of an expanded Expressive navigation rail. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00091">91</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a90a3d0bafb510178773dfeda356fd58c" name="a90a3d0bafb510178773dfeda356fd58c"></a>
@@ -586,6 +627,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opacity of a keyboard-focused destination's state layer. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00253">253</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -614,6 +657,8 @@ Properties</h2></td></tr>
 
 <p>Minimum space between a header and top-arranged destinations. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00145">145</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a99818517da650a6e406eb77f251d800b" name="a99818517da650a6e406eb77f251d800b"></a>
@@ -640,6 +685,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Height of the expanded, horizontally arranged active indicator. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00211">211</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -668,6 +715,8 @@ Properties</h2></td></tr>
 
 <p>Leading space inside a full-width expanded indicator. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00217">217</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="ad7a97b9c0ea077795e35465c9e4bc443" name="ad7a97b9c0ea077795e35465c9e4bc443"></a>
@@ -694,6 +743,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Trailing space inside a full-width expanded indicator. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00223">223</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -722,6 +773,8 @@ Properties</h2></td></tr>
 
 <p>Space between icon and label in an expanded destination. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00229">229</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="ac33b0254f21b0014e6823219338e311e" name="ac33b0254f21b0014e6823219338e311e"></a>
@@ -748,6 +801,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Leading space of an expanded destination. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00235">235</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -776,6 +831,8 @@ Properties</h2></td></tr>
 
 <p>Opacity of a hovered destination's state layer. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00247">247</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="af449a21b7798b0836ad8d15973d83511" name="af449a21b7798b0836ad8d15973d83511"></a>
@@ -802,6 +859,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Size of a destination icon. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00151">151</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -830,6 +889,8 @@ Properties</h2></td></tr>
 
 <p>Baseline height of a navigation-rail destination. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00127">127</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a9ef60bc371c27f17072a17a0fad2ac8a" name="a9ef60bc371c27f17072a17a0fad2ac8a"></a>
@@ -856,6 +917,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Baseline shape of a destination container. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00133">133</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -884,6 +947,8 @@ Properties</h2></td></tr>
 
 <p>Baseline vertical space between destination containers. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00139">139</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="aafb3d09a5bb23fe1264cb48c59fb688f" name="aafb3d09a5bb23fe1264cb48c59fb688f"></a>
@@ -910,6 +975,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Horizontal inset applied around expanded destinations by AndroidX. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00241">241</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -938,6 +1005,8 @@ Properties</h2></td></tr>
 
 <p><a class="el" href="classFluid_1_1Elevation.html" title="A QQuickItem that renders elevation-based shadow effects.">Elevation</a> of an expanded modal navigation rail. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00103">103</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a277a67b78e16e60302f539df6f2f8142" name="a277a67b78e16e60302f539df6f2f8142"></a>
@@ -963,7 +1032,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of an expanded modal navigation rail. </p>
+<p>Shape of an expanded modal navigation rail. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00109">109</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -992,6 +1063,8 @@ Properties</h2></td></tr>
 
 <p>Opacity of the scrim behind an expanded modal rail. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00271">271</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="ab89bd40ddff6b1f45a92e2b9ea6d11ca" name="ab89bd40ddff6b1f45a92e2b9ea6d11ca"></a>
@@ -1018,6 +1091,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opacity of a pressed destination's state layer. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00259">259</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1046,6 +1121,8 @@ Properties</h2></td></tr>
 
 <p>Vertical space between the rail edge and its content. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00115">115</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a865ac7068da0b7c4153c05814941b6e0" name="a865ac7068da0b7c4153c05814941b6e0"></a>
@@ -1072,6 +1149,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Height of the collapsed, vertically arranged active indicator. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00181">181</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1100,6 +1179,8 @@ Properties</h2></td></tr>
 
 <p>Width of the collapsed, vertically arranged active indicator. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00187">187</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="abcc00767516a310d2b943dcbaac2776a" name="abcc00767516a310d2b943dcbaac2776a"></a>
@@ -1126,6 +1207,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Space between icon and label in a collapsed destination. </p>
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00193">193</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1154,6 +1237,8 @@ Properties</h2></td></tr>
 
 <p>Leading space of a collapsed destination. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00199">199</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a20b6a284abb63327cb95b82548717ccc" name="a20b6a284abb63327cb95b82548717ccc"></a>
@@ -1181,6 +1266,8 @@ Properties</h2></td></tr>
 
 <p>Trailing space of a collapsed destination. </p>
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00205">205</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -1204,6 +1291,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00046">46</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a6178195940d6ca0882bebc8b977f20fb" name="a6178195940d6ca0882bebc8b977f20fb"></a>
@@ -1225,6 +1314,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00048">48</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1248,6 +1339,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00045">45</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="af280f8fb7c4006a79f5f0c5b5e48ced1" name="af280f8fb7c4006a79f5f0c5b5e48ced1"></a>
@@ -1269,6 +1362,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00049">49</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1292,6 +1387,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00031">31</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a4c0870f077b7d1e480213f26df3267f6" name="a4c0870f077b7d1e480213f26df3267f6"></a>
@@ -1313,6 +1410,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00039">39</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1336,6 +1435,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00029">29</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="acebb227246cbfa1204878cc1830084e4" name="acebb227246cbfa1204878cc1830084e4"></a>
@@ -1357,6 +1458,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00030">30</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1380,6 +1483,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00068">68</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="adf7924eb921fbdb7f6132a1bea71a328" name="adf7924eb921fbdb7f6132a1bea71a328"></a>
@@ -1401,6 +1506,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00034">34</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1424,6 +1531,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00032">32</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a70b262675526216a9740e284f294bef1" name="a70b262675526216a9740e284f294bef1"></a>
@@ -1445,6 +1554,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00066">66</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1468,6 +1579,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00043">43</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a1663954790cd7792de7c7d320010302f" name="a1663954790cd7792de7c7d320010302f"></a>
@@ -1489,6 +1602,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00056">56</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1512,6 +1627,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00058">58</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a3c7af1cc0c6939f6eb5dc444a425eb09" name="a3c7af1cc0c6939f6eb5dc444a425eb09"></a>
@@ -1533,6 +1650,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00060">60</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1556,6 +1675,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00062">62</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a91823e0cb8a66cc4bdd591e92722127e" name="a91823e0cb8a66cc4bdd591e92722127e"></a>
@@ -1577,6 +1698,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00063">63</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1600,6 +1723,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00065">65</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="aabff6567c8bc071c2e346670b7d4ad52" name="aabff6567c8bc071c2e346670b7d4ad52"></a>
@@ -1621,6 +1746,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00044">44</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1644,6 +1771,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00040">40</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="af7e371e3ee2f5b500b02f52117fc49ae" name="af7e371e3ee2f5b500b02f52117fc49ae"></a>
@@ -1665,6 +1794,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00041">41</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1688,6 +1819,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00042">42</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a060729758e003e99b58ff4d2f846c04f" name="a060729758e003e99b58ff4d2f846c04f"></a>
@@ -1709,6 +1842,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00064">64</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1732,6 +1867,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00036">36</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a8029e98218025782bfd7ea8c63770fef" name="a8029e98218025782bfd7ea8c63770fef"></a>
@@ -1753,6 +1890,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00037">37</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1776,6 +1915,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00069">69</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a1b8d986e2f99847462b016a0f38315ac" name="a1b8d986e2f99847462b016a0f38315ac"></a>
@@ -1797,6 +1938,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00067">67</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1820,6 +1963,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00038">38</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a3f9bc25212ef076cba26f97ee62b6e60" name="a3f9bc25212ef076cba26f97ee62b6e60"></a>
@@ -1841,6 +1986,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00050">50</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1864,6 +2011,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00052">52</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a53f1d777cf2a1797a3288e28c80fbad8" name="a53f1d777cf2a1797a3288e28c80fbad8"></a>
@@ -1885,6 +2034,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00053">53</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
 
 </div>
 </div>
@@ -1908,6 +2059,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00054">54</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <a id="a44f8c18d61c689e58cf80a9d47e28e27" name="a44f8c18d61c689e58cf80a9d47e28e27"></a>
@@ -1930,15 +2083,21 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="navigationrail_8h_source.html#l00055">55</a> of file <a class="el" href="navigationrail_8h_source.html">navigationrail.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="navigationrail_8h_source.html">navigationrail.h</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="navigationrail_8h_source.html">navigationrail.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1NavigationRail.html">NavigationRail</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -11,7 +11,7 @@ var searchData=
   ['emphasized_8',['emphasized',['../structFluid_1_1MotionEasingTokens.html#a8e0779ac2d542a9c2984b067b9a2d3cb',1,'Fluid::MotionEasingTokens']]],
   ['emphasizedaccelerate_9',['emphasizedAccelerate',['../structFluid_1_1MotionEasingTokens.html#aa9eba53684f0a4273a3c431ad949dc72',1,'Fluid::MotionEasingTokens']]],
   ['emphasizeddecelerate_10',['emphasizedDecelerate',['../structFluid_1_1MotionEasingTokens.html#a7ac7032d99e03e12e090541e53757883',1,'Fluid::MotionEasingTokens']]],
-  ['emphasizedtypescale_11',['emphasizedtypescale',['../classFluid_1_1EmphasizedTypeScale.html#a4b45ec25d87e65e3a62607583bc1c43d',1,'Fluid::EmphasizedTypeScale::EmphasizedTypeScale()'],['../classFluid_1_1Tokens.html#ab7a01d8dab3ea186c4dddd75c63ca9d4',1,'Fluid::Tokens::emphasizedTypeScale()']]],
+  ['emphasizedtypescale_11',['emphasizedtypescale',['../classFluid_1_1Tokens.html#ab7a01d8dab3ea186c4dddd75c63ca9d4',1,'Fluid::Tokens::emphasizedTypeScale()'],['../classFluid_1_1EmphasizedTypeScale.html#a4b45ec25d87e65e3a62607583bc1c43d',1,'Fluid::EmphasizedTypeScale::EmphasizedTypeScale()']]],
   ['enabledchanged_12',['enabledchanged',['../classInputArea.html#af78c9c9952d3b3bd05cdf36a949d7ca7',1,'InputArea::enabledChanged()'],['../classInputRegion.html#a547b6fc9bf430000d49006b0e71232e6',1,'InputRegion::enabledChanged()']]],
   ['errorcolor_13',['errorColor',['../classFluidStyle.html#a54626eb7792124a5498b961493d60ddb',1,'FluidStyle']]],
   ['errorcontainercolor_14',['errorContainerColor',['../classFluidStyle.html#ae5baad07b4b4c1caccf1c656930d3bcc',1,'FluidStyle']]],

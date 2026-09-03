@@ -49,5 +49,5 @@ var searchData=
   ['transparent_46',['transparent',['../classColor.html#af06905a23526f144d9842b152cd3e2bf',1,'Color']]],
   ['twolinecontainerheight_47',['twoLineContainerHeight',['../structFluid_1_1ListItem.html#a1f1aa25bfdbcb6e6ef8388aec395b2c6',1,'Fluid::ListItem']]],
   ['type_48',['type',['../classFluid_1_1SceneGraph_1_1ElevationMaterial.html#a919a7d2b011282cce96031653f36cb09',1,'Fluid::SceneGraph::ElevationMaterial']]],
-  ['typescale_49',['typescale',['../classFluid_1_1Tokens.html#a46126a860d8b1bf0823c15caff387e89',1,'Fluid::Tokens::typescale()'],['../classFluid_1_1TypeScale.html#af67c4aee1df49e5cc278e0517f760833',1,'Fluid::TypeScale::TypeScale()']]]
+  ['typescale_49',['typescale',['../classFluid_1_1TypeScale.html#af67c4aee1df49e5cc278e0517f760833',1,'Fluid::TypeScale::TypeScale()'],['../classFluid_1_1Tokens.html#a46126a860d8b1bf0823c15caff387e89',1,'Fluid::Tokens::typescale()']]]
 ];

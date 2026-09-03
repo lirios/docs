@@ -1,7 +1,0 @@
-<map id="Fluid::TypeScale" name="Fluid::TypeScale">
-<area shape="rect" id="Node000001" title="Material Design 3 type scale tokens." alt="" coords="50,240,177,265"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,43,112,239,107,241,48,45"/>
-<area shape="rect" id="Node000003" href="$structFluid_1_1TypeScaleValue.html" title="Type scale definition for typography tokens." alt="" coords="104,5,267,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,45,119,241,114,239,175,43"/>
-</map>

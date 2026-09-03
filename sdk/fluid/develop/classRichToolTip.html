@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classRichToolTip.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,7 +89,6 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">RichToolTip Class Reference</div></div>
 </div><!--header-->
@@ -78,27 +99,13 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for RichToolTip:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRichToolTip__inherit__graph.png" border="0" usemap="#aRichToolTip_inherit__map" alt="Inheritance graph"/></div>
-<map name="aRichToolTip_inherit__map" id="aRichToolTip_inherit__map">
-<area shape="rect" title="An actionable Material Design 3 Expressive tooltip." alt="" coords="5,79,101,104"/>
-<area shape="rect" title=" " alt="" coords="12,5,95,31"/>
-<area shape="poly" title=" " alt="" coords="56,44,56,79,51,79,51,44"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for RichToolTip:</div>
-<div class="dyncontent">
-<div class="center"><img src="classRichToolTip__coll__graph.png" border="0" usemap="#aRichToolTip_coll__map" alt="Collaboration graph"/></div>
-<map name="aRichToolTip_coll__map" id="aRichToolTip_coll__map">
-<area shape="rect" title="An actionable Material Design 3 Expressive tooltip." alt="" coords="5,79,101,104"/>
-<area shape="rect" title=" " alt="" coords="12,5,95,31"/>
-<area shape="poly" title=" " alt="" coords="56,44,56,79,51,79,51,44"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classRichToolTip.png" alt=""/>
+ </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An actionable Material Design 3 Expressive tooltip. </p>
 <p><a class="el" href="classRichToolTip.html" title="An actionable Material Design 3 Expressive tooltip.">RichToolTip</a> presents a body with an optional headline and zero, one, or two actions. Set <code>headline</code> to an empty string to omit it. The length of <code>actions</code> selects the button count; actions after the first two are ignored with a warning. The second button wraps when both do not fit.</p>
-<p>The inherited <code>text</code> property stores the body and is also exposed as <code>body</code>. Actions use \l <a class="el" href="classAction.html" title="Describes a reusable Fluid action.">Action</a> so their text, enabled state, shortcuts, and triggered signal remain reusable. <a class="el" href="namespaceFluid.html">Fluid</a> renders them as Material text buttons, gives the first enabled action focus when the popup opens, and closes the tooltip after activation.</p>
+<p>The inherited <code>text</code> property stores the body and is also exposed as <code>body</code>. Actions use <a class="el" href="classAction.html">Action</a> so their text, enabled state, shortcuts, and triggered signal remain reusable. <a class="el" href="namespaceFluid.html">Fluid</a> renders them as Material text buttons, gives the first enabled action focus when the popup opens, and closes the tooltip after activation.</p>
 <div class="fragment"><div class="line">MD.RichToolTip {</div>
 <div class="line">    id: formattingTip</div>
 <div class="line">    parent: formattingButton</div>
@@ -109,15 +116,21 @@ Collaboration diagram for RichToolTip:</div>
 <div class="line">        MD.Action { text: qsTr(<span class="stringliteral">&quot;Dismiss&quot;</span>) }</div>
 <div class="line">    ]</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassAction_html"><div class="ttname"><a href="classAction.html">Action</a></div><div class="ttdoc">Describes a reusable Fluid action.</div><div class="ttdef"><b>Definition</b> Action.qml:30</div></div>
+<div class="ttc" id="aclassAction_html"><div class="ttname"><a href="classAction.html">Action</a></div><div class="ttdoc">Describes a reusable Fluid action.</div><div class="ttdef"><b>Definition</b> <a href="Action_8qml_source.html#l00030">Action.qml:30</a></div></div>
 </div><!-- fragment --><p>For more information see the <a href="https://m3.material.io/components/tooltips/overview">Material Design 3 tooltip guidelines</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="RichToolTip_8qml_source.html#l00037">37</a> of file <a class="el" href="RichToolTip_8qml_source.html">RichToolTip.qml</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/qml/components/<a class="el" href="RichToolTip_8qml.html">RichToolTip.qml</a></li>
+<li>src/controls/qml/components/<a class="el" href="RichToolTip_8qml_source.html">RichToolTip.qml</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classRichToolTip.html">RichToolTip</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

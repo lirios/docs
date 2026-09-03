@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classInputRegion.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,7 +89,6 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#signals">Signals</a> &#124;
@@ -83,27 +104,9 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for InputRegion:</div>
 <div class="dyncontent">
-<div class="center"><img src="classInputRegion__inherit__graph.png" border="0" usemap="#aInputRegion_inherit__map" alt="Inheritance graph"/></div>
-<map name="aInputRegion_inherit__map" id="aInputRegion_inherit__map">
-<area shape="rect" title=" " alt="" coords="58,79,158,104"/>
-<area shape="rect" title=" " alt="" coords="5,5,80,31"/>
-<area shape="poly" title=" " alt="" coords="65,39,99,77,95,80,61,43"/>
-<area shape="rect" title=" " alt="" coords="105,5,245,31"/>
-<area shape="poly" title=" " alt="" coords="156,43,121,80,117,77,152,39"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for InputRegion:</div>
-<div class="dyncontent">
-<div class="center"><img src="classInputRegion__coll__graph.png" border="0" usemap="#aInputRegion_coll__map" alt="Collaboration graph"/></div>
-<map name="aInputRegion_coll__map" id="aInputRegion_coll__map">
-<area shape="rect" title=" " alt="" coords="58,79,158,104"/>
-<area shape="rect" title=" " alt="" coords="5,5,80,31"/>
-<area shape="poly" title=" " alt="" coords="65,39,99,77,95,80,61,43"/>
-<area shape="rect" title=" " alt="" coords="105,5,245,31"/>
-<area shape="poly" title=" " alt="" coords="156,43,121,80,117,77,152,39"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classInputRegion.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
@@ -147,7 +150,10 @@ Properties</h2></td></tr>
 <tr class="memitem:ac6e6171bb1e2a9a8d2606aa18ce0f632" id="r_ac6e6171bb1e2a9a8d2606aa18ce0f632"><td class="memItemLeft" align="right" valign="top">QQmlListProperty&lt; <a class="el" href="classInputArea.html">InputArea</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputRegion.html#ac6e6171bb1e2a9a8d2606aa18ce0f632">areas</a></td></tr>
 <tr class="separator:ac6e6171bb1e2a9a8d2606aa18ce0f632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="inputregion_8h_source.html#l00069">69</a> of file <a class="el" href="inputregion_8h_source.html">inputregion.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af298c23de05afc088fd73528e90aec24" name="af298c23de05afc088fd73528e90aec24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af298c23de05afc088fd73528e90aec24">&#9670;&#160;</a></span>InputRegion()</h2>
 
@@ -171,6 +177,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputregion_8cpp_source.html#l00137">137</a> of file <a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a>.</p>
 
 </div>
 </div>
@@ -215,6 +223,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="inputregion_8h_source.html#l00096">96</a> of file <a class="el" href="inputregion_8h_source.html">inputregion.h</a>.</p>
+
 </div>
 </div>
 <a id="a831217841671c2bc844e2c2c1d2b6d3a" name="a831217841671c2bc844e2c2c1d2b6d3a"></a>
@@ -239,6 +249,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputregion_8cpp_source.html#l00209">209</a> of file <a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a>.</p>
 
 </div>
 </div>
@@ -283,6 +295,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="inputregion_8cpp_source.html#l00142">142</a> of file <a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a22d9ff1922c231900358677f46730142" name="a22d9ff1922c231900358677f46730142"></a>
@@ -300,6 +314,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputregion_8cpp_source.html#l00186">186</a> of file <a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a>.</p>
 
 </div>
 </div>
@@ -319,6 +335,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="inputregion_8cpp_source.html#l00147">147</a> of file <a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a8a8d9fa143196aab4c31108e91c241a5" name="a8a8d9fa143196aab4c31108e91c241a5"></a>
@@ -336,6 +354,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputregion_8cpp_source.html#l00163">163</a> of file <a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a>.</p>
 
 </div>
 </div>
@@ -355,6 +375,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="inputregion_8cpp_source.html#l00198">198</a> of file <a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a0337df08bff95760c26397a9fc28bb47" name="a0337df08bff95760c26397a9fc28bb47"></a>
@@ -371,6 +393,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputregion_8cpp_source.html#l00158">158</a> of file <a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a>.</p>
 
 </div>
 </div>
@@ -421,6 +445,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="inputregion_8h_source.html#l00074">74</a> of file <a class="el" href="inputregion_8h_source.html">inputregion.h</a>.</p>
+
 </div>
 </div>
 <a id="ae1a97addd011832eaa0d032cc09b5f0d" name="ae1a97addd011832eaa0d032cc09b5f0d"></a>
@@ -442,6 +468,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputregion_8h_source.html#l00072">72</a> of file <a class="el" href="inputregion_8h_source.html">inputregion.h</a>.</p>
 
 </div>
 </div>
@@ -465,16 +493,22 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="inputregion_8h_source.html#l00073">73</a> of file <a class="el" href="inputregion_8h_source.html">inputregion.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/core/<a class="el" href="inputregion_8h_source.html">inputregion.h</a></li>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/core/<a class="el" href="inputregion_8cpp.html">inputregion.cpp</a></li>
+<li>src/controls/cpp/core/<a class="el" href="inputregion_8h_source.html">inputregion.h</a></li>
+<li>src/controls/cpp/core/<a class="el" href="inputregion_8cpp_source.html">inputregion.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classInputRegion.html">InputRegion</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

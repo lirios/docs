@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structFluid_1_1Menu.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1Menu.html">Menu</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -134,43 +151,43 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a59d2a1a902de56851e9906691455a145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opacity of disabled menu-item content.  <br /></td></tr>
 <tr class="separator:a59d2a1a902de56851e9906691455a145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a679c2ae89476cbb4501110da1ba418b0" id="r_a679c2ae89476cbb4501110da1ba418b0"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a679c2ae89476cbb4501110da1ba418b0">verticalContainerShape</a> () const</td></tr>
-<tr class="memdesc:a679c2ae89476cbb4501110da1ba418b0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of an Expressive vertical menu surface.  <br /></td></tr>
+<tr class="memdesc:a679c2ae89476cbb4501110da1ba418b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of an Expressive vertical menu surface.  <br /></td></tr>
 <tr class="separator:a679c2ae89476cbb4501110da1ba418b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a470665f092357a221b45ab4bfaf3f9a7" id="r_a470665f092357a221b45ab4bfaf3f9a7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a470665f092357a221b45ab4bfaf3f9a7">verticalGroupShape</a> () const</td></tr>
-<tr class="memdesc:a470665f092357a221b45ab4bfaf3f9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of a group within an Expressive vertical menu.  <br /></td></tr>
+<tr class="memdesc:a470665f092357a221b45ab4bfaf3f9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of a group within an Expressive vertical menu.  <br /></td></tr>
 <tr class="separator:a470665f092357a221b45ab4bfaf3f9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a55a5344a430c06a560d52346f6efae" id="r_a1a55a5344a430c06a560d52346f6efae"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a1a55a5344a430c06a560d52346f6efae">verticalFirstGroupShape</a> () const</td></tr>
-<tr class="memdesc:a1a55a5344a430c06a560d52346f6efae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the first surface in a grouped Expressive vertical menu.  <br /></td></tr>
+<tr class="memdesc:a1a55a5344a430c06a560d52346f6efae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the first surface in a grouped Expressive vertical menu.  <br /></td></tr>
 <tr class="separator:a1a55a5344a430c06a560d52346f6efae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7be7b03094d04c44b4b9cb4a264ebdc3" id="r_a7be7b03094d04c44b4b9cb4a264ebdc3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a7be7b03094d04c44b4b9cb4a264ebdc3">verticalMiddleGroupShape</a> () const</td></tr>
-<tr class="memdesc:a7be7b03094d04c44b4b9cb4a264ebdc3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of a middle surface in a grouped Expressive vertical menu.  <br /></td></tr>
+<tr class="memdesc:a7be7b03094d04c44b4b9cb4a264ebdc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of a middle surface in a grouped Expressive vertical menu.  <br /></td></tr>
 <tr class="separator:a7be7b03094d04c44b4b9cb4a264ebdc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5bc54e69174d907c52f77f84c689400" id="r_ab5bc54e69174d907c52f77f84c689400"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#ab5bc54e69174d907c52f77f84c689400">verticalLastGroupShape</a> () const</td></tr>
-<tr class="memdesc:ab5bc54e69174d907c52f77f84c689400"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the last surface in a grouped Expressive vertical menu.  <br /></td></tr>
+<tr class="memdesc:ab5bc54e69174d907c52f77f84c689400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the last surface in a grouped Expressive vertical menu.  <br /></td></tr>
 <tr class="separator:ab5bc54e69174d907c52f77f84c689400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dfc30c14ce5b0e3bec9b9de96c36817" id="r_a3dfc30c14ce5b0e3bec9b9de96c36817"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a3dfc30c14ce5b0e3bec9b9de96c36817">verticalOnlyGroupShape</a> () const</td></tr>
-<tr class="memdesc:a3dfc30c14ce5b0e3bec9b9de96c36817"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the only surface in an Expressive vertical menu.  <br /></td></tr>
+<tr class="memdesc:a3dfc30c14ce5b0e3bec9b9de96c36817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the only surface in an Expressive vertical menu.  <br /></td></tr>
 <tr class="separator:a3dfc30c14ce5b0e3bec9b9de96c36817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebfe5a951dd1ee0f3e5514b630bf3aa3" id="r_aebfe5a951dd1ee0f3e5514b630bf3aa3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#aebfe5a951dd1ee0f3e5514b630bf3aa3">verticalItemShape</a> () const</td></tr>
 <tr class="memdesc:aebfe5a951dd1ee0f3e5514b630bf3aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base shape of an Expressive vertical menu item.  <br /></td></tr>
 <tr class="separator:aebfe5a951dd1ee0f3e5514b630bf3aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc6ec0bbce24563f7634909b8275cdd" id="r_acdc6ec0bbce24563f7634909b8275cdd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#acdc6ec0bbce24563f7634909b8275cdd">verticalOnlyItemShape</a> () const</td></tr>
-<tr class="memdesc:acdc6ec0bbce24563f7634909b8275cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of an item that is the only member of a group.  <br /></td></tr>
+<tr class="memdesc:acdc6ec0bbce24563f7634909b8275cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of an item that is the only member of a group.  <br /></td></tr>
 <tr class="separator:acdc6ec0bbce24563f7634909b8275cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4798a63daa206a64077aa823d226016f" id="r_a4798a63daa206a64077aa823d226016f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a4798a63daa206a64077aa823d226016f">verticalFirstItemShape</a> () const</td></tr>
-<tr class="memdesc:a4798a63daa206a64077aa823d226016f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the first item in a group.  <br /></td></tr>
+<tr class="memdesc:a4798a63daa206a64077aa823d226016f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the first item in a group.  <br /></td></tr>
 <tr class="separator:a4798a63daa206a64077aa823d226016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade8b9c3b8ae52f03c0b7084014d7f717" id="r_ade8b9c3b8ae52f03c0b7084014d7f717"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#ade8b9c3b8ae52f03c0b7084014d7f717">verticalMiddleItemShape</a> () const</td></tr>
-<tr class="memdesc:ade8b9c3b8ae52f03c0b7084014d7f717"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of a middle item in a group.  <br /></td></tr>
+<tr class="memdesc:ade8b9c3b8ae52f03c0b7084014d7f717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of a middle item in a group.  <br /></td></tr>
 <tr class="separator:ade8b9c3b8ae52f03c0b7084014d7f717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b44c84a2d0c2e096056269385ad21a8" id="r_a6b44c84a2d0c2e096056269385ad21a8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a6b44c84a2d0c2e096056269385ad21a8">verticalLastItemShape</a> () const</td></tr>
-<tr class="memdesc:a6b44c84a2d0c2e096056269385ad21a8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of the last item in a group.  <br /></td></tr>
+<tr class="memdesc:a6b44c84a2d0c2e096056269385ad21a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of the last item in a group.  <br /></td></tr>
 <tr class="separator:a6b44c84a2d0c2e096056269385ad21a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ab770e71d3a9f63972d5e788a9a72f" id="r_a78ab770e71d3a9f63972d5e788a9a72f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a78ab770e71d3a9f63972d5e788a9a72f">verticalSelectedItemShape</a> () const</td></tr>
-<tr class="memdesc:a78ab770e71d3a9f63972d5e788a9a72f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> of a selected Expressive menu item.  <br /></td></tr>
+<tr class="memdesc:a78ab770e71d3a9f63972d5e788a9a72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape of a selected Expressive menu item.  <br /></td></tr>
 <tr class="separator:a78ab770e71d3a9f63972d5e788a9a72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d392bfbb92c475eb962f583db20fbd9" id="r_a8d392bfbb92c475eb962f583db20fbd9"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structFluid_1_1ShapeValue.html">ShapeValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a8d392bfbb92c475eb962f583db20fbd9">verticalInactiveItemShape</a> () const</td></tr>
-<tr class="memdesc:a8d392bfbb92c475eb962f583db20fbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classShape.html">Shape</a> used for an inactive Expressive menu item group.  <br /></td></tr>
+<tr class="memdesc:a8d392bfbb92c475eb962f583db20fbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shape used for an inactive Expressive menu item group.  <br /></td></tr>
 <tr class="separator:a8d392bfbb92c475eb962f583db20fbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40bb5359f0e707a0193b3eb81dea5318" id="r_a40bb5359f0e707a0193b3eb81dea5318"><td class="memItemLeft" align="right" valign="top">constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFluid_1_1Menu.html#a40bb5359f0e707a0193b3eb81dea5318">verticalItemHeight</a> () const</td></tr>
 <tr class="memdesc:a40bb5359f0e707a0193b3eb81dea5318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of an Expressive vertical menu item.  <br /></td></tr>
@@ -320,6 +337,8 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Material Design 3 tokens for menus and menu items. </p>
 <p>The values follow the Material 3 Expressive menu specification. They are exposed through <code><a class="el" href="classFluid_1_1Tokens.html#abc6b1c8d599fafa5c012e5e6e12d8151">Tokens.menu</a></code> for use by the public QML <a class="el" href="structFluid_1_1Menu.html" title="Material Design 3 tokens for menus and menu items.">Menu</a> control. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00025">25</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5bfd59b7782ae485a9ee680bc0317926" name="a5bfd59b7782ae485a9ee680bc0317926"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5bfd59b7782ae485a9ee680bc0317926">&#9670;&#160;</a></span>bottomPadding()</h2>
@@ -345,6 +364,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Space below the last menu item. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00101">101</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -373,6 +394,8 @@ Properties</h2></td></tr>
 
 <p>Scale at which an Expressive menu starts and ends its motion. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00339">339</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ab77ca76e0fd0f35a6eaea9f031ef2bbe" name="ab77ca76e0fd0f35a6eaea9f031ef2bbe"></a>
@@ -399,6 +422,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="classFluid_1_1Elevation.html" title="A QQuickItem that renders elevation-based shadow effects.">Elevation</a> of the temporary menu surface. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00083">83</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -427,6 +452,8 @@ Properties</h2></td></tr>
 
 <p>Corner radius of the menu surface. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00089">89</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a59d2a1a902de56851e9906691455a145" name="a59d2a1a902de56851e9906691455a145"></a>
@@ -453,6 +480,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opacity of disabled menu-item content. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00167">167</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -481,6 +510,8 @@ Properties</h2></td></tr>
 
 <p>Opacity of the keyboard-focus state layer. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00155">155</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="adfac3f1c4f29eac10477f07c71ede5ca" name="adfac3f1c4f29eac10477f07c71ede5ca"></a>
@@ -507,6 +538,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Minimum horizontal distance from a menu to the viewport edge. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00345">345</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -535,6 +568,8 @@ Properties</h2></td></tr>
 
 <p>Opacity of the hover state layer. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00149">149</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="aebee971c08f0c4fb3582b02baf7066dd" name="aebee971c08f0c4fb3582b02baf7066dd"></a>
@@ -561,6 +596,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Space between adjacent menu-item content elements. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00143">143</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -589,6 +626,8 @@ Properties</h2></td></tr>
 
 <p>Size of leading, selection, and cascading-menu icons. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00137">137</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ae91a15892e0418574985a95cba1d3134" name="ae91a15892e0418574985a95cba1d3134"></a>
@@ -615,6 +654,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Height of a one-line menu item. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00125">125</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -643,6 +684,8 @@ Properties</h2></td></tr>
 
 <p>Logical leading and trailing padding of a menu item. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00131">131</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a57ac176422d99efa495b34f46e16749e" name="a57ac176422d99efa495b34f46e16749e"></a>
@@ -669,6 +712,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Preferred maximum menu width. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00119">119</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -697,6 +742,8 @@ Properties</h2></td></tr>
 
 <p>Preferred minimum menu width. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00113">113</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a07beed6aa078772f0383202c19a3fb2a" name="a07beed6aa078772f0383202c19a3fb2a"></a>
@@ -723,6 +770,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opacity of the pressed state layer. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00161">161</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -751,6 +800,8 @@ Properties</h2></td></tr>
 
 <p>Space above the first menu item. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00095">95</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a679c2ae89476cbb4501110da1ba418b0" name="a679c2ae89476cbb4501110da1ba418b0"></a>
@@ -776,7 +827,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of an Expressive vertical menu surface. </p>
+<p>Shape of an Expressive vertical menu surface. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00173">173</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -805,6 +858,8 @@ Properties</h2></td></tr>
 
 <p>Horizontal inset of a divider within an Expressive menu group. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00279">279</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a1a55a5344a430c06a560d52346f6efae" name="a1a55a5344a430c06a560d52346f6efae"></a>
@@ -830,7 +885,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the first surface in a grouped Expressive vertical menu. </p>
+<p>Shape of the first surface in a grouped Expressive vertical menu. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00185">185</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +914,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the first item in a group. </p>
+<p>Shape of the first item in a group. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00223">223</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -886,6 +945,8 @@ Properties</h2></td></tr>
 
 <p>Vertical content padding inside an Expressive menu group surface. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00267">267</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a7bdbbfdb328e1841ccc6be175b247310" name="a7bdbbfdb328e1841ccc6be175b247310"></a>
@@ -913,6 +974,8 @@ Properties</h2></td></tr>
 
 <p>Padding between an Expressive menu surface and its item groups. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00261">261</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a470665f092357a221b45ab4bfaf3f9a7" name="a470665f092357a221b45ab4bfaf3f9a7"></a>
@@ -938,7 +1001,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of a group within an Expressive vertical menu. </p>
+<p>Shape of a group within an Expressive vertical menu. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00179">179</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -967,6 +1032,8 @@ Properties</h2></td></tr>
 
 <p>Size of icons in an Expressive menu item. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00333">333</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a8d392bfbb92c475eb962f583db20fbd9" name="a8d392bfbb92c475eb962f583db20fbd9"></a>
@@ -992,7 +1059,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> used for an inactive Expressive menu item group. </p>
+<p>Shape used for an inactive Expressive menu item group. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00249">249</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1021,6 +1090,8 @@ Properties</h2></td></tr>
 
 <p>Space between content elements in an Expressive menu item. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00327">327</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a65ff045927ea88a605dd3f0b81bb5298" name="a65ff045927ea88a605dd3f0b81bb5298"></a>
@@ -1047,6 +1118,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Bottom content padding of an Expressive menu item. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00309">309</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1075,6 +1148,8 @@ Properties</h2></td></tr>
 
 <p>Height of an Expressive vertical menu item. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00255">255</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="aaeb38bfe611a337ceb3ded025eba467d" name="aaeb38bfe611a337ceb3ded025eba467d"></a>
@@ -1101,6 +1176,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Logical leading content space of an Expressive menu item. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00315">315</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1129,6 +1206,8 @@ Properties</h2></td></tr>
 
 <p>Base shape of an Expressive vertical menu item. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00211">211</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ae934d333258121e6871f6054c4f764d0" name="ae934d333258121e6871f6054c4f764d0"></a>
@@ -1155,6 +1234,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Top content padding of an Expressive menu item. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00303">303</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1183,6 +1264,8 @@ Properties</h2></td></tr>
 
 <p>Logical trailing content space of an Expressive menu item. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00321">321</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ab5bc54e69174d907c52f77f84c689400" name="ab5bc54e69174d907c52f77f84c689400"></a>
@@ -1208,7 +1291,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the last surface in a grouped Expressive vertical menu. </p>
+<p>Shape of the last surface in a grouped Expressive vertical menu. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00198">198</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1320,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the last item in a group. </p>
+<p>Shape of the last item in a group. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00236">236</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1349,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of a middle surface in a grouped Expressive vertical menu. </p>
+<p>Shape of a middle surface in a grouped Expressive vertical menu. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00192">192</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1289,7 +1378,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of a middle item in a group. </p>
+<p>Shape of a middle item in a group. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00230">230</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1316,7 +1407,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of the only surface in an Expressive vertical menu. </p>
+<p>Shape of the only surface in an Expressive vertical menu. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00205">205</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1436,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of an item that is the only member of a group. </p>
+<p>Shape of an item that is the only member of a group. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00217">217</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1372,6 +1467,8 @@ Properties</h2></td></tr>
 
 <p>Minimum height of an Expressive menu section label. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00285">285</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a49a3419114f3652999a5f7df92bbb20b" name="a49a3419114f3652999a5f7df92bbb20b"></a>
@@ -1398,6 +1495,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Logical leading padding of an Expressive menu section label. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00291">291</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1426,6 +1525,8 @@ Properties</h2></td></tr>
 
 <p>Logical trailing padding of an Expressive menu section label. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00297">297</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ae5e8788663e9bac660b10d1674327c77" name="ae5e8788663e9bac660b10d1674327c77"></a>
@@ -1453,6 +1554,8 @@ Properties</h2></td></tr>
 
 <p>Gap between adjacent surfaces in an Expressive grouped menu. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00273">273</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a78ab770e71d3a9f63972d5e788a9a72f" name="a78ab770e71d3a9f63972d5e788a9a72f"></a>
@@ -1478,7 +1581,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classShape.html">Shape</a> of a selected Expressive menu item. </p>
+<p>Shape of a selected Expressive menu item. </p>
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00243">243</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1507,6 +1612,8 @@ Properties</h2></td></tr>
 
 <p>Minimum vertical distance from a menu to the viewport edge. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00351">351</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ad9eadaf0e7b7fc9f2dcbf55036601dc1" name="ad9eadaf0e7b7fc9f2dcbf55036601dc1"></a>
@@ -1534,6 +1641,8 @@ Properties</h2></td></tr>
 
 <p>Minimum distance maintained between a menu and a viewport edge. </p>
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00107">107</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -1557,6 +1666,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00033">33</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a925377cda6f430edcfbdefb7bd987a80" name="a925377cda6f430edcfbdefb7bd987a80"></a>
@@ -1578,6 +1689,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00077">77</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1601,6 +1714,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00030">30</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a1271f88016220da6f5c249007dfb8243" name="a1271f88016220da6f5c249007dfb8243"></a>
@@ -1622,6 +1737,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00031">31</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1645,6 +1762,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00044">44</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a33b1683884789ea5130c917683262621" name="a33b1683884789ea5130c917683262621"></a>
@@ -1666,6 +1785,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00042">42</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1689,6 +1810,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00078">78</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a0e51d2808d07ade5a434d29f8ad67c5d" name="a0e51d2808d07ade5a434d29f8ad67c5d"></a>
@@ -1710,6 +1833,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00041">41</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1733,6 +1858,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00040">40</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a263012f28543a31f952f3b88fcadd3b2" name="a263012f28543a31f952f3b88fcadd3b2"></a>
@@ -1754,6 +1881,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00039">39</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1777,6 +1906,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00037">37</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="accf3995de351be2e57095f613ef05e07" name="accf3995de351be2e57095f613ef05e07"></a>
@@ -1798,6 +1929,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00038">38</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1821,6 +1954,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00036">36</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a89668b5f7c3b68a1a185d731b057d945" name="a89668b5f7c3b68a1a185d731b057d945"></a>
@@ -1842,6 +1977,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00035">35</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1865,6 +2002,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00043">43</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="aa2debe6808eb8b386f54160fc2ea7ef2" name="aa2debe6808eb8b386f54160fc2ea7ef2"></a>
@@ -1886,6 +2025,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00032">32</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1909,6 +2050,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00045">45</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="abfbe4dd70a1796979982245b5a31987b" name="abfbe4dd70a1796979982245b5a31987b"></a>
@@ -1930,6 +2073,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00065">65</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1953,6 +2098,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00047">47</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ad374d481a7924d26d4652709a8fc432f" name="ad374d481a7924d26d4652709a8fc432f"></a>
@@ -1974,6 +2121,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00053">53</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -1997,6 +2146,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00063">63</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ad70a44b4902d6b03c96e1160d7a810da" name="ad70a44b4902d6b03c96e1160d7a810da"></a>
@@ -2018,6 +2169,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00062">62</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2041,6 +2194,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00046">46</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a200a5bbbd61eb60dbfaa7aff5819361d" name="a200a5bbbd61eb60dbfaa7aff5819361d"></a>
@@ -2062,6 +2217,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00076">76</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2085,6 +2242,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00059">59</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a5049bd35a8105c1083d238ba7c995adf" name="a5049bd35a8105c1083d238ba7c995adf"></a>
@@ -2106,6 +2265,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00075">75</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2129,6 +2290,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00072">72</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a58b8b0661d0bd5fcd8b61206bd6c4cd3" name="a58b8b0661d0bd5fcd8b61206bd6c4cd3"></a>
@@ -2150,6 +2313,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00061">61</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2173,6 +2338,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00073">73</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="aad5ed62c3ff1cdb38f413b2e09cc3238" name="aad5ed62c3ff1cdb38f413b2e09cc3238"></a>
@@ -2194,6 +2361,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00051">51</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2217,6 +2386,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00071">71</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a6f99d90874e40af6ca70a5f475850993" name="a6f99d90874e40af6ca70a5f475850993"></a>
@@ -2238,6 +2409,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00074">74</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2261,6 +2434,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00049">49</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a096bbeb66e1a37980481256e07c205fd" name="a096bbeb66e1a37980481256e07c205fd"></a>
@@ -2282,6 +2457,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00056">56</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2305,6 +2482,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00048">48</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="af21afee8e19c14a3bf74e6e9617b89fa" name="af21afee8e19c14a3bf74e6e9617b89fa"></a>
@@ -2326,6 +2505,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00054">54</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2349,6 +2530,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00050">50</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a71d7c731fc53626fcd7a7091ee54e843" name="a71d7c731fc53626fcd7a7091ee54e843"></a>
@@ -2370,6 +2553,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00052">52</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2393,6 +2578,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00066">66</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a2ef9fd53f604a23b6a2cf484cda25e97" name="a2ef9fd53f604a23b6a2cf484cda25e97"></a>
@@ -2414,6 +2601,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00067">67</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2437,6 +2626,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00069">69</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="ad741d32a36559898e45b01432ebdfe9e" name="ad741d32a36559898e45b01432ebdfe9e"></a>
@@ -2458,6 +2649,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00064">64</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2481,6 +2674,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00057">57</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <a id="a560a1e64d0cc17ee778feae1cf4c4452" name="a560a1e64d0cc17ee778feae1cf4c4452"></a>
@@ -2502,6 +2697,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00079">79</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
 
 </div>
 </div>
@@ -2525,15 +2722,21 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="menu_8h_source.html#l00034">34</a> of file <a class="el" href="menu_8h_source.html">menu.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/docs/docs/fluid/src/controls/cpp/tokens/<a class="el" href="menu_8h_source.html">menu.h</a></li>
+<li>src/controls/cpp/tokens/<a class="el" href="menu_8h_source.html">menu.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceFluid.html">Fluid</a></li><li class="navelem"><a class="el" href="structFluid_1_1Menu.html">Menu</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

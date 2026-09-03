@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Fluid
+   <div id="projectname">Fluid<span id="projectnumber">&#160;1.3.0</span>
    </div>
+   <div id="projectbrief">Material Design for QtQuick and Qml</div>
   </td>
  </tr>
  </tbody>
@@ -47,6 +52,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_o.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,32 +106,33 @@ $(function() {
 <li>onScrollContainerElevation&#160;:&#160;<a class="el" href="structFluid_1_1AppBar.html#a6a761a66944f10c329df2726cb38845a">Fluid::AppBar</a></li>
 <li>onSecondaryColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a2ce8f4bd4c90f5ac0cf79fe8be135919">FluidStyle</a></li>
 <li>onSecondaryContainerColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a3418f5e6bb26a4bf0454e164eb2681c1">FluidStyle</a></li>
-<li>onSecondaryFixedColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a2f52b560a79bb9e29c8c528f75aa41e2">FluidStyle</a></li>
+<li>onSecondaryFixedColor()&#160;:&#160;<a class="el" href="classFluidStyle.html#a66981bf2dbc45bab42312bf3d84b10f4">FluidStyle</a></li>
 <li>onSecondaryFixedVariantColor&#160;:&#160;<a class="el" href="classFluidStyle.html#aca9680671bdb9fff3a0acbf53f157d99">FluidStyle</a></li>
 <li>onSurfaceColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a99e818ffed966561dc19ae41cd0408ce">FluidStyle</a></li>
 <li>onSurfaceVariantColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a7cb1a50b2bbdd49f46a50d81df113d8e">FluidStyle</a></li>
 <li>onTertiaryColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a995929c2b71172f180a89c811b5286e0">FluidStyle</a></li>
-<li>onTertiaryContainerColor()&#160;:&#160;<a class="el" href="classFluidStyle.html#a25b1f8aac0e495dcf46f2e7608f81e30">FluidStyle</a></li>
+<li>onTertiaryContainerColor&#160;:&#160;<a class="el" href="classFluidStyle.html#aa4ebe32c85d110c080b55760f314c6db">FluidStyle</a></li>
 <li>onTertiaryFixedColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a527c7cacf904092a7ce56bbeb0f79efd">FluidStyle</a></li>
 <li>onTertiaryFixedVariantColor&#160;:&#160;<a class="el" href="classFluidStyle.html#a2d53e23909563b86274e4cf0044c1f8f">FluidStyle</a></li>
 <li>operator QColor()&#160;:&#160;<a class="el" href="structFluid_1_1SceneGraph_1_1RectangleVertex.html#a95a723b1418a1816560186849414ec8a">Fluid::SceneGraph::RectangleVertex</a></li>
 <li>operator QVector2D()&#160;:&#160;<a class="el" href="structFluid_1_1SceneGraph_1_1RectangleVertex.html#a34681133087a0d9d2de8287bac170ace">Fluid::SceneGraph::RectangleVertex</a></li>
 <li>opsz&#160;:&#160;<a class="el" href="structFluid_1_1TypeScaleValue.html#a493a70766029e4867b43ce18a0c7d2fc">Fluid::TypeScaleValue</a></li>
 <li>outer_radii&#160;:&#160;<a class="el" href="structFluid_1_1Skia_1_1ShadowCircularRRectOp_1_1Geometry.html#ac37b103d9f9945f895ad4369ce9a7404">Fluid::Skia::ShadowCircularRRectOp::Geometry</a></li>
-<li>outlineColor()&#160;:&#160;<a class="el" href="classFluidStyle.html#a301eb0521fa7dbcb9b67e69f910f2624">FluidStyle</a></li>
+<li>outlineColor&#160;:&#160;<a class="el" href="classFluidStyle.html#adf80421310aa1b0d13e4dd7389dad56f">FluidStyle</a></li>
 <li>outlinedContainerShape&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a9c3ae277b47acfd6814e294adde37f5d">Fluid::ExposedDropdownMenu</a></li>
 <li>outlinedDisabledOutlineOpacity&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a0198780ddbae10208d29f79a42f64374">Fluid::ExposedDropdownMenu</a></li>
 <li>outlinedFocusOutlineWidth&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#ac3f6ac33a6368e9508adb1c6b692c7e6">Fluid::ExposedDropdownMenu</a></li>
 <li>outlinedHoverOutlineWidth&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#afb74cc3842690796884235f45dbbf8d1">Fluid::ExposedDropdownMenu</a></li>
 <li>outlinedLabelHorizontalPadding&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a99b9d4eda4ffe138a15a073a5b954d5e">Fluid::ExposedDropdownMenu</a></li>
-<li>outlinedLeadingIconSize()&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a3e51ffce613e66828e7de8f99f7963d4">Fluid::ExposedDropdownMenu</a></li>
-<li>outlinedOutlineWidth&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#acc37093e8464187beb6c4f59eb06dc14">Fluid::ExposedDropdownMenu</a></li>
+<li>outlinedLeadingIconSize&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a8e5935825e50b71bc3b9b0c7e681d30e">Fluid::ExposedDropdownMenu</a></li>
+<li>outlinedOutlineWidth()&#160;:&#160;<a class="el" href="structFluid_1_1ExposedDropdownMenu.html#a5e78ba72a898747fa6ac5106cd60a244">Fluid::ExposedDropdownMenu</a></li>
 <li>outlinedOutlineWidthExtraLarge&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#aa0ba12f4e799f6c195a3aae137e6e72b">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a2e6a4770cba6ddc2e30d1dbac81c4277">Fluid::IconButton</a></li>
 <li>outlinedOutlineWidthExtraSmall&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a6f673f31643e54fe06ca4eae0a978ac2">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a3d000ddba9c565464167ca631bdd3a98">Fluid::IconButton</a></li>
-<li>outlinedOutlineWidthLarge&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a698496ec3d1c3215260f23eaa817a425">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a05f449ff5c14d8120f95ee4ebd129939">Fluid::IconButton</a></li>
+<li>outlinedOutlineWidthLarge()&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a5b05a28e5db33805b4bc9294f4d3fa53">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a05f449ff5c14d8120f95ee4ebd129939">Fluid::IconButton</a></li>
 <li>outlinedOutlineWidthMedium&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a4a4b3becaffccf0be6f405bb04f5e496">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a4fef80f3fe63f24aba3a1befeff136e0">Fluid::IconButton</a></li>
 <li>outlinedOutlineWidthSmall&#160;:&#160;<a class="el" href="structFluid_1_1Button.html#a336bdf98edaa60b72cd90331f58806d7">Fluid::Button</a>, <a class="el" href="structFluid_1_1IconButton.html#a812232b4c973a70435349d1dc4dcdb63">Fluid::IconButton</a></li>
 <li>outlineVariantColor()&#160;:&#160;<a class="el" href="classFluidStyle.html#a5eefffb33b0ec3e250eae1482cb4f846">FluidStyle</a></li>
+<li>outlineWidth&#160;:&#160;<a class="el" href="structFluid_1_1RadioButton.html#a9ecad269b2a98ad46bc68d0e9591d560">Fluid::RadioButton</a></li>
 <li>overflowHorizontalPadding&#160;:&#160;<a class="el" href="structFluid_1_1AppBar.html#a6575b398008977199da650645e317031">Fluid::AppBar</a></li>
 <li>overflowIconLabelGap&#160;:&#160;<a class="el" href="structFluid_1_1AppBar.html#a36c8e31ed5e76898e544b89c9e190485">Fluid::AppBar</a></li>
 <li>overflowItemHeight&#160;:&#160;<a class="el" href="structFluid_1_1AppBar.html#aafee5780eff52191e30a0cbefefa5692">Fluid::AppBar</a></li>
@@ -118,9 +140,12 @@ $(function() {
 <li>overflowMinimumWidth&#160;:&#160;<a class="el" href="structFluid_1_1AppBar.html#af7a1fa126428e0155794408ad60fcf53">Fluid::AppBar</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,0 +1,26 @@
+var skia__shadow_8h =
+[
+    [ "Fluid::Skia::ShadowCircularRRectOp", "classFluid_1_1Skia_1_1ShadowCircularRRectOp.html", "classFluid_1_1Skia_1_1ShadowCircularRRectOp" ],
+    [ "Fluid::Skia::ShadowCircularRRectOp::Geometry", "structFluid_1_1Skia_1_1ShadowCircularRRectOp_1_1Geometry.html", "structFluid_1_1Skia_1_1ShadowCircularRRectOp_1_1Geometry" ],
+    [ "SK_CHECK_NAN", "skia__shadow_8h.html#a42a8674b1d81f09d22ed5ed0d1ec2ede", null ],
+    [ "scalar", "skia__shadow_8h.html#ab7d5f2e22acf3223fb7ca3c5c77eaa62", null ],
+    [ "AmbientBlurRadius", "skia__shadow_8h.html#a66df4a4001d65f50b7ea0095608d78f5", null ],
+    [ "AmbientRecipAlpha", "skia__shadow_8h.html#acbe066b71f070f12a3ca00fb5685c017", null ],
+    [ "divide_and_pin", "skia__shadow_8h.html#ac73e5728ee4e9da6872a315e24217655", null ],
+    [ "GetDirectionalParams", "skia__shadow_8h.html#a6adc6deabc621e1773136c0303a7bf9b", null ],
+    [ "GetSpotParams", "skia__shadow_8h.html#a5f62ee4c028b9df80b761d5b2705b3a6", null ],
+    [ "sk_double_round", "skia__shadow_8h.html#a737818dc19de223a1c0450084c89877f", null ],
+    [ "sk_float_round", "skia__shadow_8h.html#a0c3e871ab837984efda78e21897ce00b", null ],
+    [ "sk_float_saturate2int", "skia__shadow_8h.html#aa70452b4f1ea112faee5f7ac14a47bd3", null ],
+    [ "SkIsNaN", "skia__shadow_8h.html#adb9e2a810075bdefdcdb2aba236bb783", null ],
+    [ "SkScalarRoundToInt", "skia__shadow_8h.html#a6800cbc7537723a44fc6586b119b8067", null ],
+    [ "SkTPin", "skia__shadow_8h.html#a4a2c568579a01c86e3572fdd3af2972d", null ],
+    [ "SpotBlurRadius", "skia__shadow_8h.html#a73be0cb4c5567ff923158f850a07627e", null ],
+    [ "kAmbientGeomFactor", "skia__shadow_8h.html#a482e6aa8b6e61b51ccb2a8916eeac9ed", null ],
+    [ "kAmbientHeightFactor", "skia__shadow_8h.html#aa8e49d5e29902bc2ea46e0845650f21f", null ],
+    [ "kMaxAmbientRadius", "skia__shadow_8h.html#a4ceb5ddb090620e836b29ddc2fa138dd", null ],
+    [ "SK_MaxS32FitsInFloat", "skia__shadow_8h.html#a06d12fee04e383f06f849d54bec8fab2", null ],
+    [ "SK_MinS32FitsInFloat", "skia__shadow_8h.html#a8ecaebdb318ca21157ac3f432b6511c7", null ],
+    [ "SK_Scalar1", "skia__shadow_8h.html#a500b349525ca5d0e1b8407531a3a40a3", null ],
+    [ "SK_ScalarNearlyZero", "skia__shadow_8h.html#a5aafe16adf1bbb63c2b7a1a132de3600", null ]
+];
