@@ -48,6 +48,8 @@ var dir_4a742cbc3947d0c3648adf1e954edac0 =
     [ "switch.h", "switch_8h.html", "switch_8h" ],
     [ "symbol.cpp", "symbol_8cpp.html", null ],
     [ "symbol.h", "symbol_8h.html", "symbol_8h" ],
+    [ "textfield.cpp", "textfield_8cpp.html", null ],
+    [ "textfield.h", "textfield_8h.html", "textfield_8h" ],
     [ "tokens.cpp", "tokens_8cpp.html", null ],
     [ "tokens.h", "tokens_8h.html", "tokens_8h" ],
     [ "tooltip.cpp", "tooltip_8cpp.html", null ],

@@ -68,20 +68,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Action_8qml.html",
-"classFluidStyle.html#ac105bd70ff1767cf7e2ab5f3c1c074cc",
-"classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a748da35b5514dadb407240f02ffd44c8",
-"classInputArea.html#a23dad6827a6c4ba0076d19f5cff40173",
-"geometry_8h.html#a92f340bb35b92f02c77ab458ee6fd71e",
-"structFluid_1_1AppBar.html#a93f827910abcefd64ecddc400b25bd2e",
-"structFluid_1_1Button.html#aa762ef8efd48bb11f9b155f103c281f5",
-"structFluid_1_1ExposedDropdownMenu.html#a78bc51a7834e82bfae80d032ec73bbfc",
-"structFluid_1_1IconButton.html#a05f449ff5c14d8120f95ee4ebd129939",
-"structFluid_1_1IconButton.html#aec832f39bdb7efea826733b1d28f3680",
-"structFluid_1_1Menu.html#a470665f092357a221b45ab4bfaf3f9a7",
-"structFluid_1_1MotionEasingValue.html#a79faec2afac294983a9a6494510a3f45",
-"structFluid_1_1RadioButton.html#a80bd3207370d9262cde86e47218babbb",
-"structFluid_1_1Slider.html#a0ffc10ce28a86c5bd2269393ff7c1cea",
-"structFluid_1_1Switch.html#a5b2d6bc6c736c67ad85b8d72e57c5f09"
+"classFluidStyle.html#abc08ac9a4c0fda373889b4bc92ad4d8c",
+"classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a71cc5e820a071f6885488e55d149fe8c",
+"classIconButton.html",
+"geometry_8h.html#a6f811ac306d61c5069ca52e4e58c90daa32f0b8ebc37acfd1900911121fb49aa9",
+"structFluid_1_1AppBar.html#a798785b8f10390a2ab856c361647f48e",
+"structFluid_1_1Button.html#a9d690cc1dea6eeac293b87ac7b051500",
+"structFluid_1_1ExposedDropdownMenu.html#a64cbf4e2fa340ec8e29c1a5bf246ecf9",
+"structFluid_1_1FabMenu.html#af9fe161ca19a225c9ef0fffbe4c33ae6",
+"structFluid_1_1IconButton.html#ae501f7a2887ae192cb5fb3732280d067",
+"structFluid_1_1Menu.html#a3431e01acf4ff3bcb7773e8592fb2c91",
+"structFluid_1_1MotionEasingTokens.html#aed082c932c9f7cdd58cac32fa7cd0482",
+"structFluid_1_1RadioButton.html#a5784fc98e10b3775fbbd0dcd47cbb0d6",
+"structFluid_1_1Slider.html#a0ea28ce52c270c630ef8307a2b0e5327",
+"structFluid_1_1Switch.html#a44eb83c2e8349bcc9a51fff304fb09c7",
+"structFluid_1_1TypeScaleValue.html#a493a70766029e4867b43ce18a0c7d2fc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

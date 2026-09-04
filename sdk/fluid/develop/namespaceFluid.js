@@ -37,6 +37,7 @@ var namespaceFluid =
     [ "StateTokens", "structFluid_1_1StateTokens.html", "structFluid_1_1StateTokens" ],
     [ "Switch", "structFluid_1_1Switch.html", "structFluid_1_1Switch" ],
     [ "Symbol", "structFluid_1_1Symbol.html", "structFluid_1_1Symbol" ],
+    [ "TextField", "structFluid_1_1TextField.html", "structFluid_1_1TextField" ],
     [ "Tokens", "classFluid_1_1Tokens.html", "classFluid_1_1Tokens" ],
     [ "ToolTip", "structFluid_1_1ToolTip.html", "structFluid_1_1ToolTip" ],
     [ "TypeScale", "classFluid_1_1TypeScale.html", "classFluid_1_1TypeScale" ],

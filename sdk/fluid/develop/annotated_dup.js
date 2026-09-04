@@ -48,6 +48,7 @@ var annotated_dup =
       [ "StateTokens", "structFluid_1_1StateTokens.html", "structFluid_1_1StateTokens" ],
       [ "Switch", "structFluid_1_1Switch.html", "structFluid_1_1Switch" ],
       [ "Symbol", "structFluid_1_1Symbol.html", "structFluid_1_1Symbol" ],
+      [ "TextField", "structFluid_1_1TextField.html", "structFluid_1_1TextField" ],
       [ "Tokens", "classFluid_1_1Tokens.html", "classFluid_1_1Tokens" ],
       [ "ToolTip", "structFluid_1_1ToolTip.html", "structFluid_1_1ToolTip" ],
       [ "TypeScale", "classFluid_1_1TypeScale.html", "classFluid_1_1TypeScale" ],
@@ -111,6 +112,7 @@ var annotated_dup =
     [ "Switch", "classSwitch.html", null ],
     [ "Symbol", "classSymbol.html", null ],
     [ "SymbolNames", "classSymbolNames.html", null ],
+    [ "TextField", "classTextField.html", null ],
     [ "Theme", "classTheme.html", "classTheme" ],
     [ "Vignette", "classVignette.html", null ],
     [ "Wave", "classWave.html", null ]

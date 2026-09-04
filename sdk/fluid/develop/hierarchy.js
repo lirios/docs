@@ -181,6 +181,10 @@ var hierarchy =
       [ "Switch", "classSwitch.html", null ]
     ] ],
     [ "Fluid::Symbol", "structFluid_1_1Symbol.html", null ],
+    [ "Fluid::TextField", "structFluid_1_1TextField.html", null ],
+    [ "T::TextField", null, [
+      [ "TextField", "classTextField.html", null ]
+    ] ],
     [ "T::ToolButton", null, [
       [ "FAB", "classFAB.html", null ],
       [ "FabMenuButton", "classFabMenuButton.html", null ],

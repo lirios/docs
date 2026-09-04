@@ -27,6 +27,7 @@ var classFluid_1_1Tokens =
     [ "state", "classFluid_1_1Tokens.html#aee0769cebefa73b1696f374f0cb3f76a", null ],
     [ "switchControl", "classFluid_1_1Tokens.html#a5b08bdd1a18b77e88e015964fc28afcf", null ],
     [ "symbol", "classFluid_1_1Tokens.html#aab5caf1416439a897b775317b794c8f4", null ],
+    [ "textField", "classFluid_1_1Tokens.html#afc739e3313fdace2912d88283b4ed52f", null ],
     [ "toolTip", "classFluid_1_1Tokens.html#add3fb394c8b7feded704d2c688a8123e", null ],
     [ "typescale", "classFluid_1_1Tokens.html#a46126a860d8b1bf0823c15caff387e89", null ],
     [ "appBar", "classFluid_1_1Tokens.html#a402ccbb1cd524d778bfc0559da37947e", null ],
@@ -54,6 +55,7 @@ var classFluid_1_1Tokens =
     [ "state", "classFluid_1_1Tokens.html#ab8c9310a72940eb956226523b55abab7", null ],
     [ "switch", "classFluid_1_1Tokens.html#a4605fb0b84b4330f54f03156bb3a13b9", null ],
     [ "symbol", "classFluid_1_1Tokens.html#a1b996465b2bfd2943df29f45d54e0b7b", null ],
+    [ "textField", "classFluid_1_1Tokens.html#a88b3ce1304c963e45ffed48bb13a12e4", null ],
     [ "toolTip", "classFluid_1_1Tokens.html#a9a3b6fc4225f154a260058d68365e506", null ],
     [ "typescale", "classFluid_1_1Tokens.html#a82d825cb3ec3041cf0e0e7c7f7ac5494", null ]
 ];
