@@ -25,6 +25,10 @@ var hierarchy =
       [ "Fluid::SceneGraph::ShadowVertex", "structFluid_1_1SceneGraph_1_1ShadowVertex.html", null ]
     ] ],
     [ "Fluid::Button", "structFluid_1_1Button.html", null ],
+    [ "T::Button", null, [
+      [ "SegmentedButton", "classSegmentedButton.html", null ]
+    ] ],
+    [ "Fluid::ButtonGroup", "structFluid_1_1ButtonGroup.html", null ],
     [ "Fluid::CheckBox", "structFluid_1_1CheckBox.html", null ],
     [ "T::CheckBox", null, [
       [ "CheckBox", "classCheckBox.html", null ]
@@ -35,6 +39,7 @@ var hierarchy =
       [ "ExposedDropdownMenu", "classExposedDropdownMenu.html", null ]
     ] ],
     [ "T::Container", null, [
+      [ "ButtonGroup", "classButtonGroup.html", null ],
       [ "NavigationRail", "classNavigationRail.html", null ]
     ] ],
     [ "T::Control", null, [
@@ -59,6 +64,9 @@ var hierarchy =
     [ "Fluid::Skia::ShadowCircularRRectOp::Geometry", "structFluid_1_1Skia_1_1ShadowCircularRRectOp_1_1Geometry.html", null ],
     [ "Grid", null, [
       [ "AutomaticGrid", "classAutomaticGrid.html", null ]
+    ] ],
+    [ "GridLayout", null, [
+      [ "AutomaticGridLayout", "classAutomaticGridLayout.html", null ]
     ] ],
     [ "T::GroupBox", null, [
       [ "GroupBox", "classGroupBox.html", null ]
@@ -145,7 +153,7 @@ var hierarchy =
     [ "QtObject", null, [
       [ "Breakpoints", "classBreakpoints.html", null ],
       [ "Object", "classObject.html", [
-        [ "SymbolNames", "classSymbolNames.html", null ]
+        [ "Symbols", "classSymbols.html", null ]
       ] ]
     ] ],
     [ "Fluid::RadioButton", "structFluid_1_1RadioButton.html", null ],
@@ -167,6 +175,7 @@ var hierarchy =
     [ "T::ScrollView", null, [
       [ "ScrollView", "classScrollView.html", null ]
     ] ],
+    [ "Fluid::SegmentedButton", "structFluid_1_1SegmentedButton.html", null ],
     [ "Fluid::Skia::ShadowCircularRRectOp", "classFluid_1_1Skia_1_1ShadowCircularRRectOp.html", null ],
     [ "Fluid::SceneGraph::ShadowParams", "structFluid_1_1SceneGraph_1_1ShadowParams.html", null ],
     [ "Fluid::ShapeTokens", "structFluid_1_1ShapeTokens.html", null ],

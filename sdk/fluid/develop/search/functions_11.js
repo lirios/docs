@@ -41,7 +41,7 @@ var searchData=
   ['trackwidth_38',['trackWidth',['../structFluid_1_1Switch.html#abf292585a51230c1c384f76d0cc56059',1,'Fluid::Switch']]],
   ['trailingiconcontentspace_39',['trailingIconContentSpace',['../structFluid_1_1ExposedDropdownMenu.html#a469a8cb752aeaa1259ae0b6c5e9a08ef',1,'Fluid::ExposedDropdownMenu']]],
   ['trailingiconsize_40',['trailingiconsize',['../structFluid_1_1ExposedDropdownMenu.html#a2dec46e8c4422d2b9e2083ca2c2ab405',1,'Fluid::ExposedDropdownMenu::trailingIconSize()'],['../structFluid_1_1ListItem.html#a3b3b9d573687fe79720d3b62cdca8fbc',1,'Fluid::ListItem::trailingIconSize()']]],
-  ['trailingspace_41',['trailingspace',['../structFluid_1_1AppBar.html#afb4412a4276a45e4bd2ee7abc8df3db9',1,'Fluid::AppBar::trailingSpace()'],['../structFluid_1_1ListItem.html#addb8a80addc1b52bd6ce60b706922bc1',1,'Fluid::ListItem::trailingSpace()']]],
+  ['trailingspace_41',['trailingspace',['../structFluid_1_1AppBar.html#afb4412a4276a45e4bd2ee7abc8df3db9',1,'Fluid::AppBar::trailingSpace()'],['../structFluid_1_1Fab.html#afc55eec45b683f83b1c7c63b22117616',1,'Fluid::Fab::trailingSpace()'],['../structFluid_1_1ListItem.html#addb8a80addc1b52bd6ce60b706922bc1',1,'Fluid::ListItem::trailingSpace()']]],
   ['trailingspaceextralarge_42',['trailingSpaceExtraLarge',['../structFluid_1_1Button.html#adb0bf8dbab6cd0211e86d9355604a396',1,'Fluid::Button']]],
   ['trailingspaceextrasmall_43',['trailingSpaceExtraSmall',['../structFluid_1_1Button.html#a06bb1e68b28fa3e3c3e3756f81a4ef4a',1,'Fluid::Button']]],
   ['trailingspacelarge_44',['trailingSpaceLarge',['../structFluid_1_1Button.html#af20332350c60eb2616d5fd4c9ab0d5ba',1,'Fluid::Button']]],

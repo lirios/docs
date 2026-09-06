@@ -5,6 +5,7 @@ var dir_1d0fe0dadbff74900db5523a089d694a =
     [ "AppBarAction.qml", "AppBarAction_8qml.html", "AppBarAction_8qml" ],
     [ "ApplicationWindow.qml", "ApplicationWindow_8qml.html", "ApplicationWindow_8qml" ],
     [ "Button.qml", "Button_8qml.html", "Button_8qml" ],
+    [ "ButtonGroup.qml", "ButtonGroup_8qml.html", "ButtonGroup_8qml" ],
     [ "CheckBox.qml", "CheckBox_8qml.html", "CheckBox_8qml" ],
     [ "CheckIndicator.qml", "CheckIndicator_8qml.html", "CheckIndicator_8qml" ],
     [ "Divider.qml", "Divider_8qml.html", "Divider_8qml" ],
@@ -33,11 +34,13 @@ var dir_1d0fe0dadbff74900db5523a089d694a =
     [ "ScrollIndicator.qml", "ScrollIndicator_8qml.html", "ScrollIndicator_8qml" ],
     [ "ScrollView.qml", "ScrollView_8qml.html", "ScrollView_8qml" ],
     [ "SearchAppBar.qml", "SearchAppBar_8qml.html", "SearchAppBar_8qml" ],
+    [ "SegmentedButton.qml", "SegmentedButton_8qml.html", "SegmentedButton_8qml" ],
+    [ "SegmentedButtonGroup.qml", "SegmentedButtonGroup_8qml.html", null ],
     [ "Slider.qml", "Slider_8qml.html", "Slider_8qml" ],
     [ "SliderHandle.qml", "SliderHandle_8qml.html", "SliderHandle_8qml" ],
     [ "SliderTrack.qml", "SliderTrack_8qml.html", "SliderTrack_8qml" ],
     [ "Switch.qml", "Switch_8qml.html", "Switch_8qml" ],
     [ "Symbol.qml", "Symbol_8qml.html", "Symbol_8qml" ],
-    [ "SymbolNames.qml", "SymbolNames_8qml.html", "SymbolNames_8qml" ],
+    [ "Symbols.qml", "Symbols_8qml.html", "Symbols_8qml" ],
     [ "TextField.qml", "TextField_8qml.html", "TextField_8qml" ]
 ];
