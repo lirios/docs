@@ -46,6 +46,8 @@ var dir_4a742cbc3947d0c3648adf1e954edac0 =
     [ "shapetokens.h", "shapetokens_8h.html", "shapetokens_8h" ],
     [ "slider.cpp", "slider_8cpp.html", null ],
     [ "slider.h", "slider_8h.html", "slider_8h" ],
+    [ "splitbutton.cpp", "splitbutton_8cpp.html", null ],
+    [ "splitbutton.h", "splitbutton_8h.html", "splitbutton_8h" ],
     [ "statetokens.cpp", "statetokens_8cpp.html", null ],
     [ "statetokens.h", "statetokens_8h.html", "statetokens_8h" ],
     [ "switch.cpp", "switch_8cpp.html", null ],

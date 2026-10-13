@@ -47,6 +47,7 @@ var annotated_dup =
       [ "ShapeTokens", "structFluid_1_1ShapeTokens.html", "structFluid_1_1ShapeTokens" ],
       [ "ShapeValue", "structFluid_1_1ShapeValue.html", "structFluid_1_1ShapeValue" ],
       [ "Slider", "structFluid_1_1Slider.html", "structFluid_1_1Slider" ],
+      [ "SplitButton", "structFluid_1_1SplitButton.html", "structFluid_1_1SplitButton" ],
       [ "StateTokens", "structFluid_1_1StateTokens.html", "structFluid_1_1StateTokens" ],
       [ "Switch", "structFluid_1_1Switch.html", "structFluid_1_1Switch" ],
       [ "Symbol", "structFluid_1_1Symbol.html", "structFluid_1_1Symbol" ],

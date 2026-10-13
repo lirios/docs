@@ -39,6 +39,7 @@ var dir_1d0fe0dadbff74900db5523a089d694a =
     [ "Slider.qml", "Slider_8qml.html", "Slider_8qml" ],
     [ "SliderHandle.qml", "SliderHandle_8qml.html", "SliderHandle_8qml" ],
     [ "SliderTrack.qml", "SliderTrack_8qml.html", "SliderTrack_8qml" ],
+    [ "SplitButton.qml", "SplitButton_8qml.html", null ],
     [ "Switch.qml", "Switch_8qml.html", "Switch_8qml" ],
     [ "Symbol.qml", "Symbol_8qml.html", "Symbol_8qml" ],
     [ "Symbols.qml", "Symbols_8qml.html", "Symbols_8qml" ],

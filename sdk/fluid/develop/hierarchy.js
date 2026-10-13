@@ -184,6 +184,7 @@ var hierarchy =
     [ "T::Slider", null, [
       [ "Slider", "classSlider.html", null ]
     ] ],
+    [ "Fluid::SplitButton", "structFluid_1_1SplitButton.html", null ],
     [ "Fluid::StateTokens", "structFluid_1_1StateTokens.html", null ],
     [ "Fluid::Switch", "structFluid_1_1Switch.html", null ],
     [ "T::Switch", null, [

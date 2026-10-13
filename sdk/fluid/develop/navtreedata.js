@@ -68,21 +68,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Action_8qml.html",
-"classFluidStyle.html#aa31bfa22c9d0b6cf0911376fb9f17c95",
-"classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a2f3f54ba72488765ae06b68930ed2ca7",
-"classFluid_1_1TypeScale.html#adb99576ae2e4afa6c900ca48f509abaa",
-"functions_prop_v.html",
-"structFluid_1_1AppBar.html#a6613acf311e72aa18dbf06260eefde8d",
-"structFluid_1_1Button.html#a8983ac79c2d285d897fa83796ebb5046",
-"structFluid_1_1ElevationTokens.html#a5963bb5c40b0691db2f08ec90f047a43",
-"structFluid_1_1Fab.html#afc55eec45b683f83b1c7c63b22117616",
-"structFluid_1_1IconButton.html#a77f152195e0b4165926145e4d83226ba",
-"structFluid_1_1MeasurementTokens.html#a2de27e4057606d43a2a29e50a22c9649",
-"structFluid_1_1MotionDurationTokens.html#a08dc9af97eaf13a5359095c45cd1b123",
-"structFluid_1_1NavigationRail.html#a70b262675526216a9740e284f294bef1",
-"structFluid_1_1ShapeTokens.html#a08bcfae10245138f1ee3952f618166b7",
-"structFluid_1_1Slider.html#a9a72cdf0240be7ad993675e0362eb6a7",
-"structFluid_1_1TextField.html#a5f1fdb939e23bce695ec8dcfb3b80ff6"
+"classFluidStyle.html#a9c51def1fcae269859eefa9d4be3a52b",
+"classFluid_1_1Skia_1_1ShadowCircularRRectOp.html#a2dccc772f35883672c48f24fb7d01773",
+"classFluid_1_1TypeScale.html#abb193ead5eb66441f7430422c0db2cda",
+"functions_prop_o.html",
+"structFluid_1_1AppBar.html#a5b4df75ad359469f3adb23a0cd1eb608",
+"structFluid_1_1Button.html#a80828581405fa0e477c55bffd495228c",
+"structFluid_1_1ElevationTokens.html#a008a6ad76b583cd5b51991496519307a",
+"structFluid_1_1Fab.html#aeb4d654c6c9af04e339c27dbfab8a044",
+"structFluid_1_1IconButton.html#a73d400c57736954da161f01be3a0a46a",
+"structFluid_1_1MeasurementTokens.html#a05bfe53564ef11929358e41bc54a7498",
+"structFluid_1_1Menu.html#aeea36691671ee926077158311ca015f9",
+"structFluid_1_1NavigationRail.html#a4c0870f077b7d1e480213f26df3267f6",
+"structFluid_1_1SegmentedButton.html#ae8c048062d5cc746436a51905ed99e30",
+"structFluid_1_1Slider.html#a955091782e89be2667fce53a23493a12",
+"structFluid_1_1SplitButton.html#a8b5a275e9a5c9d998482275a221e7265",
+"structFluid_1_1TextField.html#a54d4ff78714d918e29d7434ee12abe26"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

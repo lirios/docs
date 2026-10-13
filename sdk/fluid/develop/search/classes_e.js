@@ -16,8 +16,9 @@ var searchData=
   ['slidertrack_13',['SliderTrack',['../classSliderTrack.html',1,'']]],
   ['smoothfadeimage_14',['SmoothFadeImage',['../classSmoothFadeImage.html',1,'']]],
   ['smoothfadeloader_15',['SmoothFadeLoader',['../classSmoothFadeLoader.html',1,'']]],
-  ['statetokens_16',['StateTokens',['../structFluid_1_1StateTokens.html',1,'Fluid']]],
-  ['switch_17',['switch',['../structFluid_1_1Switch.html',1,'Fluid::Switch'],['../classSwitch.html',1,'Switch']]],
-  ['symbol_18',['symbol',['../structFluid_1_1Symbol.html',1,'Fluid::Symbol'],['../classSymbol.html',1,'Symbol']]],
-  ['symbols_19',['Symbols',['../classSymbols.html',1,'']]]
+  ['splitbutton_16',['SplitButton',['../structFluid_1_1SplitButton.html',1,'Fluid']]],
+  ['statetokens_17',['StateTokens',['../structFluid_1_1StateTokens.html',1,'Fluid']]],
+  ['switch_18',['switch',['../structFluid_1_1Switch.html',1,'Fluid::Switch'],['../classSwitch.html',1,'Switch']]],
+  ['symbol_19',['symbol',['../structFluid_1_1Symbol.html',1,'Fluid::Symbol'],['../classSymbol.html',1,'Symbol']]],
+  ['symbols_20',['Symbols',['../classSymbols.html',1,'']]]
 ];
