@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('Button_8qml_source.html',''); initResi
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    font.letterSpacing: typescale.tracking</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    QtObject {</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        id: state</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        id: visualState</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        property color containerColor: {</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keywordflow">switch</span> (control.type) {</div>
@@ -416,8 +416,8 @@ $(document).ready(function(){initNavTree('Button_8qml_source.html',''); initResi
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        typescale: control.typescale</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        text: control.text</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        opacity: state.contentOpacity</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        color: state.labelColor</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        opacity: visualState.contentOpacity</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        color: visualState.labelColor</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    }</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    background: MD.ElevationRectangle {</div>
@@ -467,11 +467,11 @@ $(document).ready(function(){initNavTree('Button_8qml_source.html',''); initResi
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        border.width: control.type == P.BaseButton.Type.Outlined ? UiMetrics.buttonOutlineWidth(control) : 0</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        border.color: MD.Style.outlineVariantColor</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>        elevation: state.elevation</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>        elevation: visualState.elevation</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>        elevationVisible: !MD.Utils.epsilonEqual(elevation, MD.Tokens.elevation.level0) &amp;&amp; !control.flat &amp;&amp; color.a &gt; 0</div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        opacity: state.containerOpacity</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>        color: state.containerColor</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        opacity: visualState.containerOpacity</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>        color: visualState.containerColor</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        MD.Ripple {</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>            anchors.fill: parent</div>
@@ -485,8 +485,8 @@ $(document).ready(function(){initNavTree('Button_8qml_source.html',''); initResi
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>            pressX: control.pressX</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>            pressY: control.pressY</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>            stateOpacity: state.stateLayerOpacity</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>            color: state.stateLayerColor</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>            stateOpacity: visualState.stateLayerOpacity</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>            color: visualState.stateLayerColor</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        }</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    }</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>}</div>

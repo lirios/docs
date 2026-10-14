@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('CheckIndicator_8qml_source.html',''); 
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    id: indicatorItem</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Accessible.ignored: <span class="keyword">true</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">property</span> Item control</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">property</span> var control</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">property</span> color color</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('CheckIndicator_8qml_source.html',''); 
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            id: checkmark</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            anchors.fill: parent</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            visible: control.checkState !== Qt.Unchecked</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            visible: indicatorItem.control.checkState !== Qt.Unchecked</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            transform: [</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                Translate {</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('CheckIndicator_8qml_source.html',''); 
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                objectName: <span class="stringliteral">&quot;svg_path:checked&quot;</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                strokeColor: <span class="stringliteral">&quot;transparent&quot;</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                fillRule: ShapePath.WindingFill</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                fillColor: control.checkState === Qt.Checked ? indicatorItem.color : <span class="stringliteral">&quot;transparent&quot;</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                fillColor: indicatorItem.control.checkState === Qt.Checked ? indicatorItem.color : <span class="stringliteral">&quot;transparent&quot;</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                pathHints: ShapePath.PathQuadratic | ShapePath.PathNonIntersecting | ShapePath.PathNonOverlappingControlPointTriangles</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                PathSvg {</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('CheckIndicator_8qml_source.html',''); 
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                objectName: <span class="stringliteral">&quot;svg_path:partially_checked&quot;</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                strokeColor: <span class="stringliteral">&quot;transparent&quot;</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                fillRule: ShapePath.WindingFill</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                fillColor: control.checkState === Qt.PartiallyChecked ? indicatorItem.color : <span class="stringliteral">&quot;transparent&quot;</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                fillColor: indicatorItem.control.checkState === Qt.PartiallyChecked ? indicatorItem.color : <span class="stringliteral">&quot;transparent&quot;</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                pathHints: ShapePath.PathQuadratic | ShapePath.PathNonIntersecting | ShapePath.PathNonOverlappingControlPointTriangles</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                PathSvg {</div>

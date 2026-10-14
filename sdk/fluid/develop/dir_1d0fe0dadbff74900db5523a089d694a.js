@@ -4,6 +4,8 @@ var dir_1d0fe0dadbff74900db5523a089d694a =
     [ "AppBar.qml", "AppBar_8qml.html", "AppBar_8qml" ],
     [ "AppBarAction.qml", "AppBarAction_8qml.html", "AppBarAction_8qml" ],
     [ "ApplicationWindow.qml", "ApplicationWindow_8qml.html", "ApplicationWindow_8qml" ],
+    [ "Badge.qml", "Badge_8qml.html", "Badge_8qml" ],
+    [ "BadgeOverlay.qml", "BadgeOverlay_8qml.html", "BadgeOverlay_8qml" ],
     [ "Button.qml", "Button_8qml.html", "Button_8qml" ],
     [ "ButtonGroup.qml", "ButtonGroup_8qml.html", "ButtonGroup_8qml" ],
     [ "CheckBox.qml", "CheckBox_8qml.html", "CheckBox_8qml" ],
@@ -43,5 +45,7 @@ var dir_1d0fe0dadbff74900db5523a089d694a =
     [ "Switch.qml", "Switch_8qml.html", "Switch_8qml" ],
     [ "Symbol.qml", "Symbol_8qml.html", "Symbol_8qml" ],
     [ "Symbols.qml", "Symbols_8qml.html", "Symbols_8qml" ],
+    [ "TabBar.qml", "TabBar_8qml.html", "TabBar_8qml" ],
+    [ "TabButton.qml", "TabButton_8qml.html", "TabButton_8qml" ],
     [ "TextField.qml", "TextField_8qml.html", "TextField_8qml" ]
 ];

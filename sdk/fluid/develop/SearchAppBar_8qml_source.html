@@ -126,14 +126,14 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        Center</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">property</span> <span class="keywordtype">int</span> mode: <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Launcher</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">property</span> <span class="keywordtype">int</span> mode: MD.SearchAppBar.Launcher</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">property</span> <span class="keywordtype">string</span> text</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">property</span> <span class="keywordtype">string</span> placeholderText: qsTr(<span class="stringliteral">&quot;Search&quot;</span>)</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    property <span class="keywordtype">int</span> textAlignment: <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Start</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    property <span class="keywordtype">int</span> textAlignment: MD.<a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Start</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    property <span class="keywordtype">int</span> inputMethodHints: Qt.ImhNone</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    function forceSearchFocus() {</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="keywordflow">if</span> (mode === <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Editable &amp;&amp; _searchFieldItem)</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="keywordflow">if</span> (mode === MD.SearchAppBar.Editable &amp;&amp; _searchFieldItem)</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            _searchFieldItem.forceActiveFocus();</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    onSearchNavigationActionChanged: _scheduleSearchReflow()</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    on_CapsuleWidthChanged: _scheduleSearchReflow()</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    onModeChanged: {</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">if</span> (mode === <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Editable &amp;&amp; _searchFieldItem)</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">if</span> (mode === MD.SearchAppBar.Editable &amp;&amp; _searchFieldItem)</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            Qt.callLater(() =&gt; control.forceSearchFocus());</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    }</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
@@ -319,7 +319,7 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                    anchors.fill: parent</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                    text: control.text.length &gt; 0 ? control.text : control.placeholderText</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                    visible: control.mode === <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Launcher</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                    visible: control.mode === MD.<a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Launcher</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    hoverEnabled: true</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                    focusPolicy: Qt.StrongFocus</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                    background: Item {}</div>
@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                    actionData: control.searchNavigationAction || defaultSearchAction</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                    contentColor: control.searchContentColor</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                    visible: control.searchNavigationAction !== null &amp;&amp; control.searchNavigationAction.visible</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                    accessibilityIgnored: control.mode === <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Launcher</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                    accessibilityIgnored: control.mode === MD.SearchAppBar.Launcher</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                                          &amp;&amp; control.searchNavigationAction === defaultSearchAction</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                    z: 2</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                }</div>
@@ -424,7 +424,7 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>                    verticalAlignment: Text.AlignVCenter</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>                    maximumLineCount: 1</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>                    elide: Text.ElideRight</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>                    visible: control.mode === <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Launcher</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>                    visible: control.mode === MD.<a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Launcher</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>                    Accessible.ignored: true</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>                }</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                    topPadding: 0</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>                    bottomPadding: 0</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>                    focusPolicy: Qt.StrongFocus</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>                    visible: control.mode === <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Editable</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>                    visible: control.mode === MD.SearchAppBar.Editable</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>                    background: Item {}</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>                    Accessible.role: Accessible.EditableText</div>
@@ -472,7 +472,7 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>                }</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>                TapHandler {</div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>                    enabled: control.mode === <a class="code hl_class" href="classSearchAppBar.html">SearchAppBar</a>.Editable</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>                    enabled: control.mode === MD.SearchAppBar.Editable</div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>                    gesturePolicy: TapHandler.ReleaseWithinBounds</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>                    onTapped: searchFieldProxy.forceActiveFocus()</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>                }</div>
@@ -481,7 +481,7 @@ $(document).ready(function(){initNavTree('SearchAppBar_8qml_source.html',''); in
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    }</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>}</div>
 <div class="ttc" id="aclassAppBarAction_html"><div class="ttname"><a href="classAppBarAction.html">AppBarAction</a></div><div class="ttdoc">Describes an action shown by an AppBar or SearchAppBar.</div><div class="ttdef"><b>Definition</b> <a href="AppBarAction_8qml_source.html#l00015">AppBarAction.qml:15</a></div></div>
-<div class="ttc" id="aclassFluid_1_1Tokens_html"><div class="ttname"><a href="classFluid_1_1Tokens.html">Fluid::Tokens</a></div><div class="ttdoc">Material Design 3 design tokens.</div><div class="ttdef"><b>Definition</b> <a href="tokens_8h_source.html#l00068">tokens.h:69</a></div></div>
+<div class="ttc" id="aclassFluid_1_1Tokens_html"><div class="ttname"><a href="classFluid_1_1Tokens.html">Fluid::Tokens</a></div><div class="ttdoc">Material Design 3 design tokens.</div><div class="ttdef"><b>Definition</b> <a href="tokens_8h_source.html#l00070">tokens.h:71</a></div></div>
 <div class="ttc" id="aclassFluid_1_1Tokens_html_a24084d74d00617dfd86ed8f3369f6c1f"><div class="ttname"><a href="classFluid_1_1Tokens.html#a24084d74d00617dfd86ed8f3369f6c1f">Fluid::Tokens::Tokens</a></div><div class="ttdeci">Tokens(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="tokens_8cpp_source.html#l00008">tokens.cpp:8</a></div></div>
 <div class="ttc" id="aclassLabel_html"><div class="ttname"><a href="classLabel.html">Label</a></div><div class="ttdoc">Displays text using a selectable Material 3 type scale.</div><div class="ttdef"><b>Definition</b> <a href="Label_8qml_source.html#l00015">Label.qml:15</a></div></div>
 <div class="ttc" id="aclassSearchAppBar_html"><div class="ttname"><a href="classSearchAppBar.html">SearchAppBar</a></div><div class="ttdoc">A Material 3 Expressive app bar containing an adaptive search field.</div><div class="ttdef"><b>Definition</b> <a href="SearchAppBar_8qml_source.html#l00043">SearchAppBar.qml:43</a></div></div>

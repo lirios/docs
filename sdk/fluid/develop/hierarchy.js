@@ -13,6 +13,10 @@ var hierarchy =
     [ "T::ApplicationWindow", null, [
       [ "ApplicationWindow", "classApplicationWindow.html", null ]
     ] ],
+    [ "Fluid::Badge", "structFluid_1_1Badge.html", null ],
+    [ "MD::Badge", null, [
+      [ "BadgeOverlay", "classBadgeOverlay.html", null ]
+    ] ],
     [ "MD::BaseAppBar", null, [
       [ "AppBar", "classAppBar.html", null ],
       [ "SearchAppBar", "classSearchAppBar.html", null ]
@@ -43,6 +47,7 @@ var hierarchy =
       [ "NavigationRail", "classNavigationRail.html", null ]
     ] ],
     [ "T::Control", null, [
+      [ "Badge", "classBadge.html", null ],
       [ "Control", "classControl.html", null ],
       [ "ModalNavigationRail", "classModalNavigationRail.html", null ]
     ] ],
@@ -191,6 +196,13 @@ var hierarchy =
       [ "Switch", "classSwitch.html", null ]
     ] ],
     [ "Fluid::Symbol", "structFluid_1_1Symbol.html", null ],
+    [ "Fluid::Tab", "structFluid_1_1Tab.html", null ],
+    [ "T::TabBar", null, [
+      [ "TabBar", "classTabBar.html", null ]
+    ] ],
+    [ "T::TabButton", null, [
+      [ "TabButton", "classTabButton.html", null ]
+    ] ],
     [ "Fluid::TextField", "structFluid_1_1TextField.html", null ],
     [ "T::TextField", null, [
       [ "TextField", "classTextField.html", null ]

@@ -131,9 +131,9 @@ $(document).ready(function(){initNavTree('MenuItem_8qml_source.html',''); initRe
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        Last</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">property</span> <span class="keywordtype">int</span> variant: <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Vertical</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">property</span> <span class="keywordtype">int</span> colorStyle: <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Standard</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">property</span> <span class="keywordtype">int</span> groupPosition: <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Only</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">property</span> <span class="keywordtype">int</span> variant: MD.MenuItem.Vertical</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">property</span> <span class="keywordtype">int</span> colorStyle: MD.MenuItem.Standard</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">property</span> <span class="keywordtype">int</span> groupPosition: MD.MenuItem.Only</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">property</span> <span class="keywordtype">string</span> supportingText: <span class="stringliteral">&quot;&quot;</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">property</span> <span class="keywordtype">string</span> trailingText: <span class="stringliteral">&quot;&quot;</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">property</span> var badgeContent: <span class="stringliteral">&quot;&quot;</span></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('MenuItem_8qml_source.html',''); initRe
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    readonly <span class="keyword">property</span> <span class="keywordtype">bool</span> _hasShortcut: _shortcutText.length &gt; 0</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    readonly <span class="keyword">property</span> <span class="keywordtype">bool</span> _hasBadge: badgeContent !== undefined &amp;&amp; badgeContent !== null</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                                      &amp;&amp; badgeContent.toString().length &gt; 0</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    readonly <span class="keyword">property</span> <span class="keywordtype">bool</span> _vertical: variant === <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Vertical</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    readonly <span class="keyword">property</span> <span class="keywordtype">bool</span> _vertical: variant === MD.MenuItem.Vertical</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    readonly <span class="keyword">property</span> real _iconSize: _vertical ? MD.Tokens.menu.verticalIconSize</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                                : MD.Tokens.menu.iconSize</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    readonly <span class="keyword">property</span> var _containerShape: {</div>
@@ -155,9 +155,9 @@ $(document).ready(function(){initNavTree('MenuItem_8qml_source.html',''); initRe
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">if</span> (checked)</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">return</span> MD.Tokens.menu.verticalSelectedItemShape;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">switch</span> (groupPosition) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">case</span> <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.First: <span class="keywordflow">return</span> MD.Tokens.menu.verticalFirstItemShape;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">case</span> <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Middle: <span class="keywordflow">return</span> MD.Tokens.menu.verticalMiddleItemShape;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">case</span> <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Last: <span class="keywordflow">return</span> MD.Tokens.menu.verticalLastItemShape;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">case</span> MD.MenuItem.First: <span class="keywordflow">return</span> MD.Tokens.menu.verticalFirstItemShape;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">case</span> MD.MenuItem.Middle: <span class="keywordflow">return</span> MD.Tokens.menu.verticalMiddleItemShape;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">case</span> MD.MenuItem.Last: <span class="keywordflow">return</span> MD.Tokens.menu.verticalLastItemShape;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">default</span>: <span class="keywordflow">return</span> MD.Tokens.menu.verticalOnlyItemShape;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('MenuItem_8qml_source.html',''); initRe
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">if</span> (!_vertical)</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">return</span> checked ? menuItem.MD.Style.onSecondaryContainerColor</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                           : menuItem.MD.Style.onSurfaceColor;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span> (colorStyle === <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Vibrant)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span> (colorStyle === MD.MenuItem.Vibrant)</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">return</span> checked ? menuItem.MD.Style.onTertiaryColor</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                           : menuItem.MD.Style.onTertiaryContainerColor;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">return</span> checked ? menuItem.MD.Style.onTertiaryContainerColor</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('MenuItem_8qml_source.html',''); initRe
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    readonly <span class="keyword">property</span> color _secondaryColor: {</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">if</span> (checked)</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">return</span> _contentColor;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">if</span> (_vertical &amp;&amp; colorStyle === <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Vibrant)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">if</span> (_vertical &amp;&amp; colorStyle === MD.MenuItem.Vibrant)</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">return</span> menuItem.MD.Style.onTertiaryContainerColor;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> menuItem.MD.Style.onSurfaceVariantColor;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
@@ -347,7 +347,7 @@ $(document).ready(function(){initNavTree('MenuItem_8qml_source.html',''); initRe
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;transparent&quot;</span>;</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            <span class="keywordflow">if</span> (!menuItem._vertical)</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                <span class="keywordflow">return</span> menuItem.MD.Style.secondaryContainerColor;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">return</span> menuItem.colorStyle === <a class="code hl_class" href="classMenuItem.html">MenuItem</a>.Vibrant</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">return</span> menuItem.colorStyle === MD.MenuItem.Vibrant</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    ? menuItem.MD.Style.tertiaryColor</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                    : menuItem.MD.Style.tertiaryContainerColor;</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        }</div>
@@ -382,9 +382,8 @@ $(document).ready(function(){initNavTree('MenuItem_8qml_source.html',''); initRe
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    }</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>}</div>
-<div class="ttc" id="aclassFluid_1_1Tokens_html"><div class="ttname"><a href="classFluid_1_1Tokens.html">Fluid::Tokens</a></div><div class="ttdoc">Material Design 3 design tokens.</div><div class="ttdef"><b>Definition</b> <a href="tokens_8h_source.html#l00068">tokens.h:69</a></div></div>
+<div class="ttc" id="aclassFluid_1_1Tokens_html"><div class="ttname"><a href="classFluid_1_1Tokens.html">Fluid::Tokens</a></div><div class="ttdoc">Material Design 3 design tokens.</div><div class="ttdef"><b>Definition</b> <a href="tokens_8h_source.html#l00070">tokens.h:71</a></div></div>
 <div class="ttc" id="aclassLabel_html"><div class="ttname"><a href="classLabel.html">Label</a></div><div class="ttdoc">Displays text using a selectable Material 3 type scale.</div><div class="ttdef"><b>Definition</b> <a href="Label_8qml_source.html#l00015">Label.qml:15</a></div></div>
-<div class="ttc" id="aclassMenuItem_html"><div class="ttname"><a href="classMenuItem.html">MenuItem</a></div><div class="ttdoc">A selectable Material Design 3 menu item.</div><div class="ttdef"><b>Definition</b> <a href="MenuItem_8qml_source.html#l00017">MenuItem.qml:17</a></div></div>
 <div class="ttc" id="aclassSymbols_html"><div class="ttname"><a href="classSymbols.html">Symbols</a></div><div class="ttdef"><b>Definition</b> <a href="Symbols_8qml_source.html#l00006">Symbols.qml:6</a></div></div>
 <div class="ttc" id="astructFluid_1_1Symbol_html"><div class="ttname"><a href="structFluid_1_1Symbol.html">Fluid::Symbol</a></div><div class="ttdoc">Material Symbols icon tokens.</div><div class="ttdef"><b>Definition</b> <a href="symbol_8h_source.html#l00016">symbol.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

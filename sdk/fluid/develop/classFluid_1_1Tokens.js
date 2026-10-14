@@ -2,6 +2,7 @@ var classFluid_1_1Tokens =
 [
     [ "Tokens", "classFluid_1_1Tokens.html#a24084d74d00617dfd86ed8f3369f6c1f", null ],
     [ "appBar", "classFluid_1_1Tokens.html#a1851da8ce709cb9dee53591cb5c33d73", null ],
+    [ "badge", "classFluid_1_1Tokens.html#a15441ce1a78a53a11a13b08c1416ae94", null ],
     [ "button", "classFluid_1_1Tokens.html#a298e6aacb983415f1ecbbdbc11748547", null ],
     [ "buttonGroup", "classFluid_1_1Tokens.html#a18265d04d3d0ee06b2ea587e9ec5f650", null ],
     [ "checkBox", "classFluid_1_1Tokens.html#af89c2552f3e9d8292f738867e1e7ec7a", null ],
@@ -30,10 +31,12 @@ var classFluid_1_1Tokens =
     [ "state", "classFluid_1_1Tokens.html#aee0769cebefa73b1696f374f0cb3f76a", null ],
     [ "switchControl", "classFluid_1_1Tokens.html#a5b08bdd1a18b77e88e015964fc28afcf", null ],
     [ "symbol", "classFluid_1_1Tokens.html#aab5caf1416439a897b775317b794c8f4", null ],
+    [ "tab", "classFluid_1_1Tokens.html#a232b0600f847641351a315651f554e04", null ],
     [ "textField", "classFluid_1_1Tokens.html#afc739e3313fdace2912d88283b4ed52f", null ],
     [ "toolTip", "classFluid_1_1Tokens.html#add3fb394c8b7feded704d2c688a8123e", null ],
     [ "typescale", "classFluid_1_1Tokens.html#a46126a860d8b1bf0823c15caff387e89", null ],
     [ "appBar", "classFluid_1_1Tokens.html#a402ccbb1cd524d778bfc0559da37947e", null ],
+    [ "badge", "classFluid_1_1Tokens.html#aa97590d614c4815a32d8c9eec81bcda6", null ],
     [ "button", "classFluid_1_1Tokens.html#a7ea233cfe7ad55fdbc5f845ec5d730c3", null ],
     [ "buttonGroup", "classFluid_1_1Tokens.html#a343eb6fdc4deeb00d3056554e257aae3", null ],
     [ "checkBox", "classFluid_1_1Tokens.html#ae484d96ff58ebe02e7a9326b3e65d506", null ],
@@ -61,6 +64,7 @@ var classFluid_1_1Tokens =
     [ "state", "classFluid_1_1Tokens.html#ab8c9310a72940eb956226523b55abab7", null ],
     [ "switch", "classFluid_1_1Tokens.html#a4605fb0b84b4330f54f03156bb3a13b9", null ],
     [ "symbol", "classFluid_1_1Tokens.html#a1b996465b2bfd2943df29f45d54e0b7b", null ],
+    [ "tab", "classFluid_1_1Tokens.html#afe3c380f53d003ac1f9307b6974f485a", null ],
     [ "textField", "classFluid_1_1Tokens.html#a88b3ce1304c963e45ffed48bb13a12e4", null ],
     [ "toolTip", "classFluid_1_1Tokens.html#a9a3b6fc4225f154a260058d68365e506", null ],
     [ "typescale", "classFluid_1_1Tokens.html#a82d825cb3ec3041cf0e0e7c7f7ac5494", null ]

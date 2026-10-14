@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('CheckBox_8qml_source.html',''); initRe
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>import Fluid as MD</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>T.CheckBox {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    id: control</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    id: rootControl</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    property MD.typescale typescale: MD.Tokens.typescale.labelLarge</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -123,15 +123,15 @@ $(document).ready(function(){initNavTree('CheckBox_8qml_source.html',''); initRe
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    focusPolicy: Qt.StrongFocus</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    QtObject {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        id: state</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        id: visualState</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        property color iconColor: control.error ? control.MD.Style.onErrorColor : control.MD.Style.onPrimaryColor</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        property color containerColor: control.checkState === Qt.Unchecked ? &quot;transparent&quot; : control.error ? control.MD.Style.errorColor : control.MD.Style.primaryColor</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">property</span> color outlineColor: control.error ? control.MD.Style.errorColor : MD.Style.onSurfaceVariantColor</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">property</span> color labelColor: control.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        property color iconColor: rootControl.error ? rootControl.MD.Style.onErrorColor : rootControl.MD.Style.onPrimaryColor</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        property color containerColor: rootControl.checkState === Qt.Unchecked ? &quot;transparent&quot; : rootControl.error ? rootControl.MD.Style.errorColor : rootControl.MD.Style.primaryColor</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">property</span> color outlineColor: rootControl.error ? rootControl.MD.Style.errorColor : MD.Style.onSurfaceVariantColor</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">property</span> color labelColor: rootControl.MD.Style.onSurfaceColor</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">property</span> color stateLayerColor: <span class="stringliteral">&quot;transparent&quot;</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">property</span> real outlineWidth: control.checkState == Qt.Checked ? MD.Tokens.checkBox.selectedOutlineWidth : MD.Tokens.checkBox.unselectedOutlineWidth</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">property</span> real outlineWidth: rootControl.checkState == Qt.Checked ? MD.Tokens.checkBox.selectedOutlineWidth : MD.Tokens.checkBox.unselectedOutlineWidth</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">property</span> real contentOpacity: 1.0</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">property</span> real containerOpacity: 1.0</div>
@@ -141,90 +141,86 @@ $(document).ready(function(){initNavTree('CheckBox_8qml_source.html',''); initRe
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    states: [</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        State {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            name: <span class="stringliteral">&quot;disabled&quot;</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            when: !control.enabled</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            when: !rootControl.enabled</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            PropertyChanges {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                target: state</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                iconColor: control.MD.Style.surfaceColor</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                containerColor: control.checkState === Qt.Unchecked ? <span class="stringliteral">&quot;transparent&quot;</span> : control.error ? control.MD.Style.errorColor : control.MD.Style.onSurfaceColor</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                outlineColor: control.error ? control.MD.Style.errorColor : control.checkState === Qt.Checked ? MD.Style.onSurfaceVariantColor : control.MD.Style.onSurfaceColor</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                outlineWidth: control.checkState == Qt.Checked ? MD.Tokens.checkBox.selectedOutlineWidth : MD.Tokens.checkBox.unselectedOutlineWidth</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                contentOpacity: MD.Tokens.checkBox.selectedDisabledContainerOpacity</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                containerOpacity: MD.Tokens.checkBox.selectedDisabledContainerOpacity</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        },</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        State {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            name: <span class="stringliteral">&quot;hovered&quot;</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            when: control.hovered &amp;&amp; control.enabled</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            PropertyChanges {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                target: state</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                outlineColor: control.error ? control.MD.Style.errorColor : control.checkState === Qt.Checked ? MD.Style.onSurfaceVariantColor : control.MD.Style.onSurfaceColor</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                stateLayerColor: control.error ? control.MD.Style.errorColor : control.checkState === Qt.Checked ? control.MD.Style.primaryColor : control.MD.Style.onSurfaceColor</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                stateLayerOpacity: MD.Tokens.checkBox.hoverStateLayerOpacity</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        },</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        State {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            name: <span class="stringliteral">&quot;focused&quot;</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            when: control.visualFocus &amp;&amp; control.enabled</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            PropertyChanges {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                target: state</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                outlineColor: control.error ? control.MD.Style.errorColor : control.checkState === Qt.Checked ? MD.Style.onSurfaceVariantColor : control.MD.Style.onSurfaceColor</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                stateLayerColor: control.error ? control.MD.Style.errorColor : control.checkState === Qt.Checked ? control.MD.Style.primaryColor : control.MD.Style.onSurfaceColor</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                stateLayerOpacity: MD.Tokens.checkBox.focusStateLayerOpacity</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        },</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        State {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            name: <span class="stringliteral">&quot;pressed&quot;</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            when: control.down &amp;&amp; control.enabled</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            PropertyChanges {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                target: state</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                outlineColor: control.error ? control.MD.Style.errorColor : control.checkState === Qt.Checked ? MD.Style.onSurfaceVariantColor : control.MD.Style.onSurfaceColor</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                stateLayerColor: control.error ? control.MD.Style.errorColor : control.checkState === Qt.Checked ? control.MD.Style.primaryColor : control.MD.Style.onSurfaceColor</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                stateLayerOpacity: MD.Tokens.checkBox.pressedStateLayerOpacity</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    ]</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                visualState.iconColor: rootControl.MD.Style.surfaceColor</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                visualState.containerColor: rootControl.checkState === Qt.Unchecked ? <span class="stringliteral">&quot;transparent&quot;</span> : rootControl.error ? rootControl.MD.Style.errorColor : rootControl.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                visualState.outlineColor: rootControl.error ? rootControl.MD.Style.errorColor : rootControl.checkState === Qt.Checked ? MD.Style.onSurfaceVariantColor : rootControl.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                visualState.outlineWidth: rootControl.checkState == Qt.Checked ? MD.Tokens.checkBox.selectedOutlineWidth : MD.Tokens.checkBox.unselectedOutlineWidth</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                visualState.contentOpacity: MD.Tokens.checkBox.selectedDisabledContainerOpacity</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                visualState.containerOpacity: MD.Tokens.checkBox.selectedDisabledContainerOpacity</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        },</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        State {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            name: <span class="stringliteral">&quot;hovered&quot;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            when: rootControl.hovered &amp;&amp; rootControl.enabled</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            PropertyChanges {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                visualState.outlineColor: rootControl.error ? rootControl.MD.Style.errorColor : rootControl.checkState === Qt.Checked ? MD.Style.onSurfaceVariantColor : rootControl.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                visualState.stateLayerColor: rootControl.error ? rootControl.MD.Style.errorColor : rootControl.checkState === Qt.Checked ? rootControl.MD.Style.primaryColor : rootControl.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                visualState.stateLayerOpacity: MD.Tokens.checkBox.hoverStateLayerOpacity</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        },</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        State {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            name: <span class="stringliteral">&quot;focused&quot;</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            when: rootControl.visualFocus &amp;&amp; rootControl.enabled</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            PropertyChanges {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                visualState.outlineColor: rootControl.error ? rootControl.MD.Style.errorColor : rootControl.checkState === Qt.Checked ? MD.Style.onSurfaceVariantColor : rootControl.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                visualState.stateLayerColor: rootControl.error ? rootControl.MD.Style.errorColor : rootControl.checkState === Qt.Checked ? rootControl.MD.Style.primaryColor : rootControl.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                visualState.stateLayerOpacity: MD.Tokens.checkBox.focusStateLayerOpacity</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        },</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        State {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            name: <span class="stringliteral">&quot;pressed&quot;</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            when: rootControl.down &amp;&amp; rootControl.enabled</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            PropertyChanges {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                visualState.outlineColor: rootControl.error ? rootControl.MD.Style.errorColor : rootControl.checkState === Qt.Checked ? MD.Style.onSurfaceVariantColor : rootControl.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                visualState.stateLayerColor: rootControl.error ? rootControl.MD.Style.errorColor : rootControl.checkState === Qt.Checked ? rootControl.MD.Style.primaryColor : rootControl.MD.Style.onSurfaceColor</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                visualState.stateLayerOpacity: MD.Tokens.checkBox.pressedStateLayerOpacity</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    ]</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    indicator: MD.CheckIndicator {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        x: rootControl.text ? (rootControl.mirrored ? rootControl.width - width - rootControl.rightPadding : rootControl.leftPadding) : rootControl.leftPadding + (rootControl.availableWidth - width) / 2</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        y: rootControl.topPadding + (rootControl.availableHeight - height) / 2</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    indicator: MD.CheckIndicator {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        x: control.text ? (control.mirrored ? control.width - width - control.rightPadding : control.leftPadding) : control.leftPadding + (control.availableWidth - width) / 2</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        y: control.topPadding + (control.availableHeight - height) / 2</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        control: control</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        color: state.iconColor</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        opacity: state.containerOpacity</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        backgroundColor: state.containerColor</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        outlineColor: state.outlineColor</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        outlineWidth: state.outlineWidth</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        MD.Ripple {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            anchors.centerIn: parent</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            width: MD.<a class="code hl_class" href="classFluid_1_1Tokens.html">Tokens</a>.checkBox.stateLayerSize</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            height: MD.<a class="code hl_class" href="classFluid_1_1Tokens.html">Tokens</a>.checkBox.stateLayerSize</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            radius: width / 2</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            pressX: control.pressX</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            pressY: control.pressY</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            pressed: control.pressed</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            stateOpacity: state.stateLayerOpacity</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            color: state.stateLayerColor</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        control: rootControl</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        color: visualState.iconColor</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        opacity: visualState.containerOpacity</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        backgroundColor: visualState.containerColor</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        outlineColor: visualState.outlineColor</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        outlineWidth: visualState.outlineWidth</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        MD.Ripple {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            anchors.centerIn: parent</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            width: MD.<a class="code hl_class" href="classFluid_1_1Tokens.html">Tokens</a>.checkBox.stateLayerSize</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            height: MD.<a class="code hl_class" href="classFluid_1_1Tokens.html">Tokens</a>.checkBox.stateLayerSize</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            radius: width / 2</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            pressX: rootControl.pressX</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            pressY: rootControl.pressY</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            pressed: rootControl.pressed</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            stateOpacity: visualState.stateLayerOpacity</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            color: visualState.stateLayerColor</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    contentItem: MD.<a class="code hl_class" href="classLabel.html">Label</a> {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        leftPadding: rootControl.indicator &amp;&amp; !rootControl.mirrored ? rootControl.indicator.width + rootControl.spacing : 0</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        rightPadding: rootControl.indicator &amp;&amp; rootControl.mirrored ? rootControl.indicator.width + rootControl.spacing : 0</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    contentItem: MD.<a class="code hl_class" href="classLabel.html">Label</a> {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        leftPadding: control.indicator &amp;&amp; !control.mirrored ? control.indicator.width + control.spacing : 0</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        rightPadding: control.indicator &amp;&amp; control.mirrored ? control.indicator.width + control.spacing : 0</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        text: control.text</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        typescale: control.typescale</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        color: state.labelColor</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        opacity: state.contentOpacity</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        elide: Text.ElideRight</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        verticalAlignment: Text.AlignVCenter</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
-<div class="ttc" id="aclassFluid_1_1Tokens_html"><div class="ttname"><a href="classFluid_1_1Tokens.html">Fluid::Tokens</a></div><div class="ttdoc">Material Design 3 design tokens.</div><div class="ttdef"><b>Definition</b> <a href="tokens_8h_source.html#l00068">tokens.h:69</a></div></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        text: rootControl.text</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        typescale: rootControl.typescale</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        color: visualState.labelColor</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        opacity: visualState.contentOpacity</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        elide: Text.ElideRight</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        verticalAlignment: Text.AlignVCenter</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="ttc" id="aclassFluid_1_1Tokens_html"><div class="ttname"><a href="classFluid_1_1Tokens.html">Fluid::Tokens</a></div><div class="ttdoc">Material Design 3 design tokens.</div><div class="ttdef"><b>Definition</b> <a href="tokens_8h_source.html#l00070">tokens.h:71</a></div></div>
 <div class="ttc" id="aclassLabel_html"><div class="ttname"><a href="classLabel.html">Label</a></div><div class="ttdoc">Displays text using a selectable Material 3 type scale.</div><div class="ttdef"><b>Definition</b> <a href="Label_8qml_source.html#l00015">Label.qml:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

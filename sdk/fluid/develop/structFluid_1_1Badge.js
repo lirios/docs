@@ -1,0 +1,25 @@
+var structFluid_1_1Badge =
+[
+    [ "horizontalOffset", "structFluid_1_1Badge.html#ac61af24107d6d0eee4f8f420c44c0586", null ],
+    [ "horizontalPadding", "structFluid_1_1Badge.html#aad7adb889de3bd0515957b4ba32486b4", null ],
+    [ "largeHorizontalOffset", "structFluid_1_1Badge.html#adac09e6ff539897d23659b62ecf3a7e3", null ],
+    [ "largeShape", "structFluid_1_1Badge.html#a064f53a6541881289aec5899e22d817c", null ],
+    [ "largeSize", "structFluid_1_1Badge.html#a5158ef10367958ca35da28731c522c31", null ],
+    [ "largeVerticalOffset", "structFluid_1_1Badge.html#aa59120b37fd514975be8536970823510", null ],
+    [ "maximumCharacters", "structFluid_1_1Badge.html#acfd39b2608c7ca6abdc8e79f52830a16", null ],
+    [ "maximumCount", "structFluid_1_1Badge.html#a6c55da906df9f6065d70364781f42b42", null ],
+    [ "shape", "structFluid_1_1Badge.html#adf03431c56d54d915938ba77a837ab08", null ],
+    [ "size", "structFluid_1_1Badge.html#a7bab42d148a852749a84fac59c58f8fb", null ],
+    [ "verticalOffset", "structFluid_1_1Badge.html#a44167b6145c20f71a620a49efa2d7a5e", null ],
+    [ "horizontalOffset", "structFluid_1_1Badge.html#a4445b83a2b1aec32eb27de54ca600154", null ],
+    [ "horizontalPadding", "structFluid_1_1Badge.html#a2383986ccf4dd14b5bfc5b47081326c8", null ],
+    [ "largeHorizontalOffset", "structFluid_1_1Badge.html#aeae36dca9a38ef749d6b8cc1d2552ef2", null ],
+    [ "largeShape", "structFluid_1_1Badge.html#a1336da16b78256a2b2c7d55aeb981b0c", null ],
+    [ "largeSize", "structFluid_1_1Badge.html#ab5aa3c75b7266e077d1f97608649a163", null ],
+    [ "largeVerticalOffset", "structFluid_1_1Badge.html#ad4693177fdb79cde481f2b70fedebc1c", null ],
+    [ "maximumCharacters", "structFluid_1_1Badge.html#ac157f5c9b3c3ae3851933739f55356aa", null ],
+    [ "maximumCount", "structFluid_1_1Badge.html#ad03509b512285830771a26e12062f666", null ],
+    [ "shape", "structFluid_1_1Badge.html#a7072be6c385b17ce4cd4bcdfc62487fa", null ],
+    [ "size", "structFluid_1_1Badge.html#a5c1b7d2701250ee2ccafd4e5912acd97", null ],
+    [ "verticalOffset", "structFluid_1_1Badge.html#a0bf473dc28b257dc2ba0e3b7489adaf9", null ]
+];

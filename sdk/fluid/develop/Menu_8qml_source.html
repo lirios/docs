@@ -124,9 +124,9 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        Vibrant</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    property int variant: Menu.Vertical</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    property int variant: MD.Menu.Vertical</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    property int colorStyle: Menu.Standard</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    property int colorStyle: MD.Menu.Standard</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    readonly property real _viewportWidth: parent &amp;&amp; parent.Window.window &amp;&amp; parent.Window.window.width &gt; 0</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                                           ? parent.Window.window.width - leftMargin - rightMargin</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    property var _surfaceGroups: []</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    function _updateSurfaceGroups() {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        if (variant !== Menu.Vertical) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        if (variant !== MD.Menu.Vertical) {</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            _surfaceGroups = [];</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
@@ -268,13 +268,13 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    implicitHeight: Math.max(0, Math.min(_viewportHeight, _naturalHeight))</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    margins: 0</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    leftMargin: variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a9d28cd080d22584c6b2fa0c64ef4634a">horizontalViewportMargin</a> : MD.Tokens.menu.viewportMargin</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    leftMargin: variant === MD.Menu.Vertical ? MD.Tokens.menu.horizontalViewportMargin : MD.Tokens.menu.viewportMargin</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    rightMargin: leftMargin</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    topMargin: variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a560a1e64d0cc17ee778feae1cf4c4452">verticalViewportMargin</a> : MD.Tokens.menu.viewportMargin</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    topMargin: variant === MD.Menu.Vertical ? MD.Tokens.menu.verticalViewportMargin : MD.Tokens.menu.viewportMargin</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    bottomMargin: topMargin</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    topPadding: variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a3431e01acf4ff3bcb7773e8592fb2c91">verticalGroupContentPadding</a> : MD.Tokens.menu.topPadding</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    bottomPadding: variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a3431e01acf4ff3bcb7773e8592fb2c91">verticalGroupContentPadding</a> : MD.Tokens.menu.bottomPadding</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    leftPadding: variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#ad70a44b4902d6b03c96e1160d7a810da">verticalGroupPadding</a> : 0</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    topPadding: variant === MD.Menu.Vertical ? MD.Tokens.menu.verticalGroupContentPadding : MD.Tokens.menu.topPadding</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    bottomPadding: variant === MD.Menu.Vertical ? MD.Tokens.menu.verticalGroupContentPadding : MD.Tokens.menu.bottomPadding</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    leftPadding: variant === MD.Menu.Vertical ? MD.Tokens.menu.verticalGroupPadding : 0</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    rightPadding: leftPadding</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    overlap: 0</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
@@ -297,8 +297,8 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        }</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        variant: control.variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.MenuItem.Vertical : MD.MenuItem.Baseline</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        colorStyle: control.colorStyle === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vibrant ? MD.MenuItem.Vibrant : MD.MenuItem.Standard</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        variant: control.variant === MD.Menu.Vertical ? MD.MenuItem.Vertical : MD.MenuItem.Baseline</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        colorStyle: control.colorStyle === MD.Menu.Vibrant ? MD.MenuItem.Vibrant : MD.MenuItem.Standard</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        groupPosition: control._itemGroupPosition(_menuIndex)</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        supportingText: _materialAction ? _materialAction.supportingText : <span class="stringliteral">&quot;&quot;</span></div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        trailingText: _materialAction ? _materialAction.trailingText : <span class="stringliteral">&quot;&quot;</span></div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        implicitHeight: control._itemsImplicitHeight</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        model: control.contentModel</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        currentIndex: control.currentIndex</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        interactive: contentHeight + control.<a class="code hl_property" href="structFluid_1_1Menu.html#aa2debe6808eb8b386f54160fc2ea7ef2">topPadding</a> + control.bottomPadding &gt; control.height</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        interactive: contentHeight + control.topPadding + control.bottomPadding &gt; control.height</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        boundsBehavior: Flickable.StopAtBounds</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        spacing: 0</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        clip: <span class="keyword">true</span></div>
@@ -334,14 +334,14 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        objectName: <span class="stringliteral">&quot;menuBackground&quot;</span></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        implicitWidth: MD.Tokens.menu.minimumWidth</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        readonly <span class="keyword">property</span> var containerShape: control.variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                                              ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a0b31524c1fe7f318eb45436c7853331a">verticalContainerShape</a></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        readonly <span class="keyword">property</span> var containerShape: control.variant === MD.Menu.Vertical</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                                              ? MD.Tokens.menu.verticalContainerShape</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                                              : MD.Tokens.menu.containerShape</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        implicitHeight: control.variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a58b8b0661d0bd5fcd8b61206bd6c4cd3">verticalItemHeight</a> : MD.Tokens.menu.itemHeight</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        color: control.variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        implicitHeight: control.variant === MD.Menu.Vertical ? MD.Tokens.menu.verticalItemHeight : MD.Tokens.menu.itemHeight</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        color: control.variant === MD.Menu.Vertical</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>               ? <span class="stringliteral">&quot;transparent&quot;</span></div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>               : control.colorStyle === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vibrant</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>               : control.colorStyle === MD.Menu.Vibrant</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                 ? control.MD.Style.tertiaryContainerColor</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                 : control.MD.Style.surfaceContainerColor</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        topLeftRadius: UiMetrics.resolveShapeRadius(containerShape.topLeft,</div>
@@ -352,7 +352,7 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                                                       width, height)</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        bottomRightRadius: UiMetrics.resolveShapeRadius(containerShape.bottomRight,</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                                                        width, height)</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        elevation: MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a08c0e0d839fe4adda20e93244969ac9b">containerElevation</a></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        elevation: MD.Tokens.menu.containerElevation</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        Repeater {</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            model: control._surfaceGroups</div>
@@ -371,14 +371,14 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                y: control._surfaceY(index, modelData)</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                width: parent.width</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                height: control._surfaceHeight(index, modelData)</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                color: control.colorStyle === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vibrant</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                color: control.colorStyle === MD.Menu.Vibrant</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>                       ? control.MD.Style.tertiaryContainerColor</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                       : control.MD.Style.surfaceContainerLowColor</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                topLeftRadius: UiMetrics.resolveShapeRadius(groupShape.topLeft, width, height)</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                topRightRadius: UiMetrics.resolveShapeRadius(groupShape.topRight, width, height)</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                bottomLeftRadius: UiMetrics.resolveShapeRadius(groupShape.bottomLeft, width, height)</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                bottomRightRadius: UiMetrics.resolveShapeRadius(groupShape.bottomRight, width, height)</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                elevation: MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a08c0e0d839fe4adda20e93244969ac9b">containerElevation</a></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                elevation: MD.Tokens.menu.containerElevation</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>            }</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        }</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    }</div>
@@ -386,7 +386,7 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    enter: Transition {</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        NumberAnimation {</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>            property: <span class="stringliteral">&quot;scale&quot;</span></div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>            from: control.variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a925377cda6f430edcfbdefb7bd987a80">closedScale</a> : 0.94</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>            from: control.variant === MD.Menu.Vertical ? MD.Tokens.menu.closedScale : 0.94</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>            to: 1</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>            duration: MotionAnimation.expressiveFastSpatialDuration</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>            easing.type: Easing.BezierSpline</div>
@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>        NumberAnimation {</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>            property: <span class="stringliteral">&quot;scale&quot;</span></div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>            from: 1</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>            to: control.variant === <a class="code hl_struct" href="structFluid_1_1Menu.html">Menu</a>.Vertical ? MD.Tokens.menu.<a class="code hl_property" href="structFluid_1_1Menu.html#a925377cda6f430edcfbdefb7bd987a80">closedScale</a> : 0.94</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>            to: control.variant === MD.Menu.Vertical ? MD.Tokens.menu.closedScale : 0.94</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>            duration: MotionAnimation.expressiveFastSpatialDuration</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>            easing.type: Easing.BezierSpline</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>            easing.bezierCurve: MotionAnimation.expressiveFastSpatialCurve</div>
@@ -424,16 +424,6 @@ $(document).ready(function(){initNavTree('Menu_8qml_source.html',''); initResiza
 <div class="ttc" id="aclassAction_html"><div class="ttname"><a href="classAction.html">Action</a></div><div class="ttdoc">Describes a reusable Fluid action.</div><div class="ttdef"><b>Definition</b> <a href="Action_8qml_source.html#l00030">Action.qml:30</a></div></div>
 <div class="ttc" id="aclassMenuItem_html"><div class="ttname"><a href="classMenuItem.html">MenuItem</a></div><div class="ttdoc">A selectable Material Design 3 menu item.</div><div class="ttdef"><b>Definition</b> <a href="MenuItem_8qml_source.html#l00017">MenuItem.qml:17</a></div></div>
 <div class="ttc" id="aclassScrollIndicator_html"><div class="ttname"><a href="classScrollIndicator.html">ScrollIndicator</a></div><div class="ttdoc">A non-interactive indicator of the visible portion of scrolling content.</div><div class="ttdef"><b>Definition</b> <a href="ScrollIndicator_8qml_source.html#l00016">ScrollIndicator.qml:16</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html"><div class="ttname"><a href="structFluid_1_1Menu.html">Fluid::Menu</a></div><div class="ttdoc">Material Design 3 tokens for menus and menu items.</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00025">menu.h:26</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_a08c0e0d839fe4adda20e93244969ac9b"><div class="ttname"><a href="structFluid_1_1Menu.html#a08c0e0d839fe4adda20e93244969ac9b">Fluid::Menu::containerElevation</a></div><div class="ttdeci">QML_ANONYMOUSqreal containerElevation</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00030">menu.h:30</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_a0b31524c1fe7f318eb45436c7853331a"><div class="ttname"><a href="structFluid_1_1Menu.html#a0b31524c1fe7f318eb45436c7853331a">Fluid::Menu::verticalContainerShape</a></div><div class="ttdeci">Fluid::ShapeValue verticalContainerShape</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00045">menu.h:45</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_a3431e01acf4ff3bcb7773e8592fb2c91"><div class="ttname"><a href="structFluid_1_1Menu.html#a3431e01acf4ff3bcb7773e8592fb2c91">Fluid::Menu::verticalGroupContentPadding</a></div><div class="ttdeci">qreal verticalGroupContentPadding</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00063">menu.h:63</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_a560a1e64d0cc17ee778feae1cf4c4452"><div class="ttname"><a href="structFluid_1_1Menu.html#a560a1e64d0cc17ee778feae1cf4c4452">Fluid::Menu::verticalViewportMargin</a></div><div class="ttdeci">qreal verticalViewportMargin</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00079">menu.h:79</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_a58b8b0661d0bd5fcd8b61206bd6c4cd3"><div class="ttname"><a href="structFluid_1_1Menu.html#a58b8b0661d0bd5fcd8b61206bd6c4cd3">Fluid::Menu::verticalItemHeight</a></div><div class="ttdeci">qreal verticalItemHeight</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00061">menu.h:61</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_a925377cda6f430edcfbdefb7bd987a80"><div class="ttname"><a href="structFluid_1_1Menu.html#a925377cda6f430edcfbdefb7bd987a80">Fluid::Menu::closedScale</a></div><div class="ttdeci">qreal closedScale</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00077">menu.h:77</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_a9d28cd080d22584c6b2fa0c64ef4634a"><div class="ttname"><a href="structFluid_1_1Menu.html#a9d28cd080d22584c6b2fa0c64ef4634a">Fluid::Menu::horizontalViewportMargin</a></div><div class="ttdeci">qreal horizontalViewportMargin</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00078">menu.h:78</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_aa2debe6808eb8b386f54160fc2ea7ef2"><div class="ttname"><a href="structFluid_1_1Menu.html#aa2debe6808eb8b386f54160fc2ea7ef2">Fluid::Menu::topPadding</a></div><div class="ttdeci">qreal topPadding</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00032">menu.h:32</a></div></div>
-<div class="ttc" id="astructFluid_1_1Menu_html_ad70a44b4902d6b03c96e1160d7a810da"><div class="ttname"><a href="structFluid_1_1Menu.html#ad70a44b4902d6b03c96e1160d7a810da">Fluid::Menu::verticalGroupPadding</a></div><div class="ttdeci">qreal verticalGroupPadding</div><div class="ttdef"><b>Definition</b> <a href="menu_8h_source.html#l00062">menu.h:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

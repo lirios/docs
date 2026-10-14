@@ -2,6 +2,8 @@ var dir_4a742cbc3947d0c3648adf1e954edac0 =
 [
     [ "appbar.cpp", "appbar_8cpp.html", null ],
     [ "appbar.h", "appbar_8h.html", "appbar_8h" ],
+    [ "badge.cpp", "badge_8cpp.html", null ],
+    [ "badge.h", "badge_8h.html", "badge_8h" ],
     [ "button.cpp", "button_8cpp.html", null ],
     [ "button.h", "button_8h.html", "button_8h" ],
     [ "buttongroup.cpp", "buttongroup_8cpp.html", null ],
@@ -54,6 +56,8 @@ var dir_4a742cbc3947d0c3648adf1e954edac0 =
     [ "switch.h", "switch_8h.html", "switch_8h" ],
     [ "symbol.cpp", "symbol_8cpp.html", null ],
     [ "symbol.h", "symbol_8h.html", "symbol_8h" ],
+    [ "tab.cpp", "tab_8cpp.html", null ],
+    [ "tab.h", "tab_8h.html", "tab_8h" ],
     [ "textfield.cpp", "textfield_8cpp.html", null ],
     [ "textfield.h", "textfield_8h.html", "textfield_8h" ],
     [ "tokens.cpp", "tokens_8cpp.html", null ],
